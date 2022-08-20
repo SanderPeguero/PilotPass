@@ -5,7 +5,6 @@
 
     width: 100%;
     padding-top: 100px;
-
     background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%);
 }
 
@@ -16,4 +15,11 @@
 
 .QuizWrapper {
     width: 600px;
+    height: 450px;
+    background-color: #4d5761;
+}
+
+.AvatarSty {
+    background-color: grey;
+    border-radius: 10rem;
 }

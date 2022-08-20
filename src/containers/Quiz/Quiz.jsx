@@ -1,23 +1,37 @@
-import React, {Component} from "react";
-import {connect} from "react-redux";
+import React, { Component } from "react";
+import { connect } from "react-redux";
 import classes from "./Quiz.module.css"
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
 import Loader from "../../components/UI/Loader/Loader";
-import {fetchQuizById, quizAnswerClick, retryQuiz} from "../../store/actions/quizActions";
+import { fetchQuizById, quizAnswerClick, retryQuiz } from "../../store/actions/quizActions";
 import { useParams } from "react-router-dom";
+import { Avatar, Grid, Stack } from "@mui/material";
 
-export function withRouter(Children){
-    return(props)=>{
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
-       const match  = {params: useParams()};
-       return <Children {...props}  match = {match}/>
-   }
+export function withRouter(Children) {
+
+    return (props) => {
+
+        const match = { params: useParams() };
+        return <Children {...props} match={match} />
+    }
 }
 
 
 class Quiz extends React.Component {
-    
+
     componentDidMount() {
         this.props.fetchQuizById(this.props.match.params.id);
     }
@@ -34,9 +48,14 @@ class Quiz extends React.Component {
         return (
             <div className={classes.Quiz}>
                 <div className={classes.QuizWrapper}>
+                    <Stack >
+                        <Avatar style={{top: '1rem', margin: '1rem' }}>{this.props.activeQuestionNumber + 1}</Avatar>
+                    </Stack>
+                    
+
                     {
                         this.props.isLoading || !this.props.quiz
-                            ? <Loader/>
+                            ? <Loader />
                             :
                             this.props.isQuizFinished
                                 ? <FinishedQuiz
@@ -52,7 +71,9 @@ class Quiz extends React.Component {
                                     answerState={this.props.answerState}
                                     quizLength={this.props.quiz.length}
                                 />
+
                     }
+
                 </div>
             </div>
         )
