@@ -12,7 +12,7 @@ const FinishedQuiz = props => {
 
     return (
         <React.Fragment>
-            <h1 style={{margin: '30px'}}>Finished</h1>
+            <h1 style={{margin: '25px'}}>Finished</h1>
             <div className={classes.FinishedQuiz}>
                 <h3>Right Answered: {rightAnswersCount}/{props.quiz.length}</h3>
                 <ul>
