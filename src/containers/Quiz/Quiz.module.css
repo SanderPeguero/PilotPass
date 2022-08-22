@@ -15,8 +15,10 @@
 
 .QuizWrapper {
     width: 600px;
-    height: 450px;
+    height:  auto;
     background-color: #4d5761;
+    margin: 5rem;
+
 }
 
 .AvatarSty {

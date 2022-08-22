@@ -2,10 +2,10 @@
     margin: 0 10px;
     padding: 20px;
 
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 
     /* border: 2px solid white; */
-    /* border-radius: 5px; */
+    border-radius: 5px;
 
     color: white;
 }
@@ -13,8 +13,8 @@
 .FinishedQuiz ul {
     margin: 0;
     padding: 0;
-
     list-style: none;
+    height: auto;
 }
 
 .FinishedQuiz ul li i {
@@ -27,4 +27,12 @@
 
 .error {
     color: rgba(240, 87, 108, .7);
+}
+
+.BoxF {
+    background-color: #4d5761;
+
+
+    /* width: 600px;
+    height:450px; */
 }

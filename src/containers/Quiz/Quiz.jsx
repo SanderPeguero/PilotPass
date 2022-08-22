@@ -6,7 +6,7 @@ import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
 import Loader from "../../components/UI/Loader/Loader";
 import { fetchQuizById, quizAnswerClick, retryQuiz } from "../../store/actions/quizActions";
 import { useParams } from "react-router-dom";
-import { Avatar, Grid, Stack } from "@mui/material";
+import { Avatar, Box, Grid, Modal, Stack } from "@mui/material";
 
 const style = {
     position: 'absolute',
@@ -46,7 +46,9 @@ class Quiz extends React.Component {
 
     render() {
         return (
-            <div className={classes.Quiz}>
+            
+            <Box className={classes.Quiz}
+       >
                 <div className={classes.QuizWrapper}>
                     <Stack >
                         <Avatar style={{top: '1rem', margin: '1rem' }}>{this.props.activeQuestionNumber + 1}</Avatar>
@@ -58,11 +60,15 @@ class Quiz extends React.Component {
                             ? <Loader />
                             :
                             this.props.isQuizFinished
-                                ? <FinishedQuiz
+                                ? 
+                              
+                                    <FinishedQuiz
                                     results={this.props.results}
                                     quiz={this.props.quiz}
                                     onRetry={this.props.retryQuiz}
+
                                 />
+                                
                                 : <ActiveQuiz
                                     questionNumber={this.props.activeQuestionNumber + 1}
                                     question={this.props.currentQuizQuestion.question}
@@ -75,7 +81,7 @@ class Quiz extends React.Component {
                     }
 
                 </div>
-            </div>
+            </Box>
         )
     }
 }
