@@ -9,6 +9,7 @@ import Logout from './components/Logout/Logout.jsx'
 import Quiz from './containers/Quiz/Quiz.jsx'
 import QuizList from './containers/QuizList/QuizList.jsx'
 import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
+import Payment from './components/Payment/Wallet.jsx'
 
 import { autoLogin } from './store/actions/authActions'
 
@@ -35,6 +36,7 @@ class App extends Component {
           <Routes>
             <Route path={'logout'} element={<Logout/>}></Route>
             <Route path={'/quiz-creator'} element={<QuizCreator/>} ></Route>
+            <Route path={'/payment'} element={<Payment/>} ></Route>
             <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
             <Route path={'/'} exact element={<QuizList/>}></Route>
             <Route path="*" element={<Navigate to="/" replace />}/>
@@ -65,7 +67,7 @@ function mapDispatchToProps(dispatch) {
   return {
     autoLogin: () => dispatch(autoLogin())
   }
-  s
+  
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
