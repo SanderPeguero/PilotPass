@@ -16,8 +16,6 @@ export function auth(email, password, isLogIn){
         const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData)
         const data = response.data
         const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
-        console.log(expirationDate.getTime())
-        console.log(expirationDate.getDate())
 
         localStorage.setItem("token", data.idToken)
         localStorage.setItem("expirationDate", expirationDate)

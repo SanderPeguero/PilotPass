@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import classes from './Layout.module.css'
 import MenuToggle from '../../components/Navigation/MenuToggle/MenuToggle'
 import Drawer from '../../components/Navigation/Drawer/Drawer.jsx'
+import Navbar from "../../components/Navigation/navbar/navbar.jsx";
 
 class Layout extends Component{
     
@@ -26,7 +27,12 @@ class Layout extends Component{
     render(){
         return(
             <div className={classes.Layout}>
-                <Drawer
+
+                <Navbar
+                    isAuthenticated={this.props.isAuthenticated}
+                />
+
+                {/* <Drawer
                     isMenuOpen={this.state.isMenuOpen}
                     onClose={this.menuCloseHandler}
                     isAuthenticated={this.props.isAuthenticated}
@@ -34,7 +40,7 @@ class Layout extends Component{
                 <MenuToggle
                     onToggle={this.toggleMenuHandler}
                     isMenuOpen={this.state.isMenuOpen}
-                />
+                /> */}
                 <main>
                     {this.props.children}
                 </main>

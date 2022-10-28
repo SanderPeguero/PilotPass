@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./FinishedQuiz.module.css"
 import Button from "../UI/Button/Button";
-import { Box } from "@mui/material";
+import { Box } from '@mui/material'
 
 const FinishedQuiz = props => {
     const rightAnswersCount = Object.keys(props.results).reduce((total, key) => {

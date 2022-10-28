@@ -7,7 +7,8 @@
     padding-top: 100px;
 
     /* background: linear-gradient(90deg, #5041b2 0%, #7969e6 100%); */
-    background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%);
+    /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
+    background: rgb(42, 41, 41);
 }
 
 .Auth > div {
@@ -26,5 +27,5 @@
     padding: 15px;
     box-shadow: 5px 5px 5px rgba(84, 58, 136, 0.15);
     border-radius: 5px;
-    background: #1e98c0;
+    background: #4f4f4f;
 }

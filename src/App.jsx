@@ -53,22 +53,19 @@ class App extends Component {
 
 
 function mapStateToProps(state){
+  
   return {
     isAuthenticated: Boolean(state.authControl.authToken)
   }
+  
 }
 
 function mapDispatchToProps(dispatch) {
-  
-  // useEffect(() => {
-  //   window.process = {
-  //     ...window.process,
-  //   };
-  // }, []);
 
   return {
     autoLogin: () => dispatch(autoLogin())
   }
+  s
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
