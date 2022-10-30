@@ -5,6 +5,7 @@ import { auth } from '../../store/actions/authActions'
 import Input from './Input'
 import classes from './Input.module.css'
 import './Login.css'
+import { NavLink } from 'react-router-dom'
 
 function isInvalid({valid, touched, shouldValidate}){
     return !valid && shouldValidate && touched
@@ -164,9 +165,9 @@ const Logins = () => {
                         <span></span>
                         Log In
                     </a>
-                    <a href="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
+                    <NavLink href="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
                         Sign Up
-                    </a>
+                    </NavLink>
                 </div>
             </form>
         </div>
