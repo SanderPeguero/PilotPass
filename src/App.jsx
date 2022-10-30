@@ -12,6 +12,7 @@ import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
 import Payment from './components/Payment/Wallet.jsx'
 import Login from './components/Login/Login.jsx'
 import Signup from './components/Signup/Signup.jsx'
+import Home from './pages/home/home.jsx'
 
 import { autoLogin } from './store/actions/authActions'
 
@@ -26,10 +27,11 @@ class App extends Component {
 
     let routes = (
         <Routes>
+          <Route path={'/'} exact element={<Home/>}></Route>
           <Route path='/login' element={<Login/>} ></Route>
           <Route path='/signup' element={<Signup/>} ></Route>
           {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
-          <Route path={'/'} exact element={<QuizList/>}></Route>
+          {/* <Route path={'/tests'} element={<QuizList/>}></Route> */}
           <Route path="*" element={<Navigate to="/" replace />}/>
         </Routes>
     )
@@ -37,11 +39,12 @@ class App extends Component {
     if(this.props.isAuthenticated){
       routes = (
           <Routes>
+            <Route path={'/'} exact element={<Home/>}></Route>
             <Route path={'logout'} element={<Logout/>}></Route>
             <Route path={'/quiz-creator'} element={<QuizCreator/>} ></Route>
             <Route path={'/payment'} element={<Payment/>} ></Route>
             <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
-            <Route path={'/'} exact element={<QuizList/>}></Route>
+            <Route path={'/tests'} element={<QuizList/>}></Route>
             <Route path="*" element={<Navigate to="/" replace />}/>
           </Routes>
       )

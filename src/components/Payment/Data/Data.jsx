@@ -28,7 +28,7 @@ const Data = ({ publicKey, secret, resetAccount }) => {
 
   return (
     <div className={Styles.background} style={{
-      height: '100vh',
+      height: '105vh',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

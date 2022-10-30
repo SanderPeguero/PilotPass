@@ -69,13 +69,7 @@ const Login = ({ setSecret, setPublicKey, setKeyCopied }) => {
 	    // animation: 'gradient 10s ease infinite',
       overflow: 'hidden'
     }}>
-      <div className="card" style={{ height: '22rem', width: '35rem', background: "linear-gradient(90deg, #24d1e8 0%, #009ef3 100%)", padding: "10px",
-
-  boxSizing: "border-box",
-  resize: "horizontal",
-  border: "1px dashed",
-  overflow: "auto",
-  maxWidth: "100%" }}>
+      <div className="card" style={{ height: '22rem', width: '35rem', background: "linear-gradient(90deg, #24d1e8 0%, #009ef3 100%)", padding: "10px" }}>
         <form>
           <h1 className="card__title">Payment Information</h1>
           <div className="card__row" style={{ paddingTop: '1rem'}}>
@@ -89,7 +83,7 @@ const Login = ({ setSecret, setPublicKey, setKeyCopied }) => {
                 type="text"
                 className="card__input card__input--large"
                 id="cardNumber"
-                placeholder="xxxxxxxxxxxxxxxx"
+                placeholder="x x x x x x x x x x x x x x x x x x x x x x"
               />
             </div>
             <div className="card__col card__chip">

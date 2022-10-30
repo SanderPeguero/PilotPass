@@ -113,7 +113,7 @@ class QuizCreator extends Component {
                         onChange={event => this.onChangeHandler(event.target.value, formControlName)}
                     />
                     {index === 0 ? <hr /> : null}
-                </Auxiliary>
+             </Auxiliary>
             );
         });
     };
@@ -130,6 +130,8 @@ class QuizCreator extends Component {
                 { text: "D", value: 4 }
             ]}
         />;
+        
+        const ref = React.createRef()
 
         return (
             <div className={classes.QuizCreator}>
@@ -141,22 +143,26 @@ class QuizCreator extends Component {
 
                         {select}
                         <Tooltip title="Add Quiz">
-                            <Button
-                                type="primary"
-                                onClick={this.addQuestionHandler}
-                                disabled={!this.state.isFormValid}
-                            >
-                                Add Quiz Question &nbsp;&nbsp;<i className="fa fa-plus-circle" />
-                            </Button>
+                            <span>
+                                <Button
+                                    type="primary"
+                                    onClick={this.addQuestionHandler}
+                                    disabled={!this.state.isFormValid}
+                                    >
+                                    Add Quiz Question &nbsp;&nbsp;<i className="fa fa-plus-circle" />
+                                </Button>
+                            </span>
                         </Tooltip>
                         <Tooltip title="Save">
-                            <Button
-                                type="success"
-                                onClick={this.createQuizHandler}
-                                disabled={this.props.quiz.length === 0}
-                            >
-                                Create the Quiz
-                            </Button>
+                            <span>
+                                <Button
+                                    type="success"
+                                    onClick={this.createQuizHandler}
+                                    disabled={this.props.quiz.length === 0}
+                                    >
+                                    Create the Quiz
+                                </Button>
+                            </span>
                         </Tooltip>
 
                     </form>
