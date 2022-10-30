@@ -3,13 +3,15 @@ import { connect } from 'react-redux'
 import { Route, Routes, Navigate } from 'react-router-dom'
 
 //Components
-import Auth from './containers/Auth/Auth.jsx'
+// import Auth from './containers/Auth/Auth.jsx'
 import Layout from './hoc/Layout/Layout.jsx'
 import Logout from './components/Logout/Logout.jsx'
 import Quiz from './containers/Quiz/Quiz.jsx'
 import QuizList from './containers/QuizList/QuizList.jsx'
 import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
 import Payment from './components/Payment/Wallet.jsx'
+import Login from './components/Login/Login.jsx'
+import Signup from './components/Signup/Signup.jsx'
 
 import { autoLogin } from './store/actions/authActions'
 
@@ -24,7 +26,8 @@ class App extends Component {
 
     let routes = (
         <Routes>
-          <Route path='/login' element={<Auth/>} ></Route>
+          <Route path='/login' element={<Login/>} ></Route>
+          <Route path='/signup' element={<Signup/>} ></Route>
           {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
           <Route path={'/'} exact element={<QuizList/>}></Route>
           <Route path="*" element={<Navigate to="/" replace />}/>

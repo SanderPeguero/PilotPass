@@ -28,7 +28,7 @@ const Navbar = ({ isAuthenticated }) => {
 
                 <li className="logo">
                     <NavLink to="/" className="nav-link">
-                        <span className="link-text logo-text">SCoin</span>
+                        <span className="link-text logo-text">PilotPass</span>
                         <img src={logo}/>                            
                     </NavLink>
                 </li>
@@ -88,7 +88,7 @@ const Navbar = ({ isAuthenticated }) => {
     
                     <li className="logo">
                         <NavLink to="/" className="nav-link">
-                            <span className="link-text logo-text">SCoin</span>
+                            <span className="link-text logo-text">PilotPass</span>
                             <img src={logo}/>                            
                         </NavLink>
                     </li>

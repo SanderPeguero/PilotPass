@@ -75,7 +75,7 @@ class Auth extends Component {
         formControls[controlName] = formControl
         this.setState({
             formControls: formControls,
-            isFormValid: isFromValid(formControls)
+            isFormValid: isFromValid(formControls) //AWKWARD NAMING "isFromValid"
         })
     }
 

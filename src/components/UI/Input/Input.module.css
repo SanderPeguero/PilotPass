@@ -29,9 +29,9 @@
 }
 
 .Input span {
-    color: rgb(254, 180, 190);
+    color: rgb(255, 0, 0);
 }
 
 .Input.invalid input {
-    border: 2px solid rgb(254, 180, 190);
+    border: 2px solid rgb(157, 255, 71);
 }

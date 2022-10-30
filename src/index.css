@@ -105,7 +105,7 @@ code {
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 0.3ch;
   width: 100%;
 }
@@ -130,7 +130,7 @@ code {
 @media only screen and (max-width: 600px) {
   .navbar {
       bottom: 0;
-      width: 100vw;
+      width: 105vw;
       height: 5rem;
       overflow: hidden;
 
