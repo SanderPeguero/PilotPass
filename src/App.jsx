@@ -31,7 +31,7 @@ class App extends Component {
           <Route path='/login' element={<Login/>} ></Route>
           <Route path='/signup' element={<Signup/>} ></Route>
           {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
-          {/* <Route path={'/tests'} element={<QuizList/>}></Route> */}
+          <Route path={'/tests'} element={<QuizList/>}></Route>
           <Route path="*" element={<Navigate to="/" replace />}/>
         </Routes>
     )
@@ -40,11 +40,11 @@ class App extends Component {
       routes = (
           <Routes>
             <Route path={'/'} exact element={<Home/>}></Route>
+            <Route path={'/tests'} element={<QuizList/>}></Route>
             <Route path={'logout'} element={<Logout/>}></Route>
             <Route path={'/quiz-creator'} element={<QuizCreator/>} ></Route>
             <Route path={'/payment'} element={<Payment/>} ></Route>
             <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
-            <Route path={'/tests'} element={<QuizList/>}></Route>
             <Route path="*" element={<Navigate to="/" replace />}/>
           </Routes>
       )
