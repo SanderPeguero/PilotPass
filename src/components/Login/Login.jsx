@@ -133,9 +133,9 @@ class Login extends Component {
                             <span></span>
                             Log In
                         </a>
-                        <a href="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
+                        <NavLink to="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
                             Sign Up
-                        </a>
+                        </NavLink>
                     </div>
                 </form>
             </div>
@@ -165,9 +165,9 @@ const Logins = () => {
                         <span></span>
                         Log In
                     </a>
-                    <NavLink to="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
+                    <Link to="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
                         Sign Up
-                    </NavLink>
+                    </Link>
                 </div>
             </form>
         </div>
