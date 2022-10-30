@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import App from './App'
 //Redux
 import { createStore, compose, applyMiddleware } from 'redux'
@@ -26,9 +26,9 @@ window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   // </React.StrictMode>
 )

@@ -27,11 +27,11 @@ class App extends Component {
 
     let routes = (
         <Routes>
-          <Route path={'/'} exact element={<Home/>}></Route>
-          <Route path='/login' element={<Login/>} ></Route>
-          <Route path='/signup' element={<Signup/>} ></Route>
+          <Route exact path={'/'} element={<Home/>}></Route>
+          <Route exact path='/login' element={<Login/>} ></Route>
+          <Route exact path='/signup' element={<Signup/>} ></Route>
           {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
-          <Route path={'/tests'} element={<QuizList/>}></Route>
+          <Route exact path={'/tests'} element={<QuizList/>}></Route>
           <Route path="*" element={<Navigate to="/" replace />}/>
         </Routes>
     )
@@ -39,12 +39,12 @@ class App extends Component {
     if(this.props.isAuthenticated){
       routes = (
           <Routes>
-            <Route path={'/'} exact element={<Home/>}></Route>
-            <Route path={'/tests'} element={<QuizList/>}></Route>
-            <Route path={'logout'} element={<Logout/>}></Route>
-            <Route path={'/quiz-creator'} element={<QuizCreator/>} ></Route>
-            <Route path={'/payment'} element={<Payment/>} ></Route>
-            <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
+            <Route exact path={'/'} element={<Home/>}></Route>
+            <Route exact path={'/logout'} element={<Logout/>}></Route>
+            <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route>
+            <Route exact path={'/payment'} element={<Payment/>} ></Route>
+            <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
+            <Route exact path={'/tests'} element={<QuizList/>}></Route>
             <Route path="*" element={<Navigate to="/" replace />}/>
           </Routes>
       )
