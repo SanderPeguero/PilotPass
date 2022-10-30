@@ -165,7 +165,7 @@ const Logins = () => {
                         <span></span>
                         Log In
                     </a>
-                    <NavLink href="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
+                    <NavLink to="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
                         Sign Up
                     </NavLink>
                 </div>
