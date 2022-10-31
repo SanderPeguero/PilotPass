@@ -9,10 +9,10 @@
 .html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 91%;
+  font-size: 100%;
 }
 @media only screen and (max-width: 800px) {
-  html {
+  .html {
     font-size: 57%;
   }
 }
