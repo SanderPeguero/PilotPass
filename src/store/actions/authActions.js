@@ -25,6 +25,46 @@ export function auth(email, password, isLogIn){
     }
 }
 
+export function signup(userName, name, lastName, email, password,admin, account, isLogIn) {
+    return async dispatch => {
+        
+        const authData = {
+            userName,
+            name,
+            lastName,
+            email,
+            password,
+            admin,
+            account,
+            returnSecureToken: true
+        }
+
+        const authData2 = {
+            email,
+            password,
+            returnSecureToken: true
+        }
+
+        const FIREBASE_API_KEY = import.meta.env.VITE_APP_FIREBASE_API_KEY
+        
+        const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
+        const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
+
+        const response2 = await axios.post('/users', authData)
+        
+        const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData2)
+
+        const data = response.data
+        const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
+
+        localStorage.setItem("token", data.idToken)
+        localStorage.setItem("expirationDate", expirationDate)
+
+        dispatch(authSucceed(data.idToken))
+        dispatch(autoLogout(data.expiresIn))
+    }
+}
+
 export function autoLogin(){
     return dispatch => {
         const token = localStorage.getItem("token")

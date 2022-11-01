@@ -143,8 +143,6 @@ class Login extends Component {
     }
 }
 
-
-
 function mapDispatchToProps(dispatch){
     return{
         auth: (email, password, isLogIn) => dispatch(auth(email, password, isLogIn))
@@ -152,39 +150,3 @@ function mapDispatchToProps(dispatch){
 }
 
 export default connect(null, mapDispatchToProps)(Login)
-
-
-
-
-
-const Logins = () => {
-    
-    return(
-        <div className="login-box">
-            <h2>Login</h2>
-            <form>
-                <div className="user-box">
-                    <input type="text" name="" required=""/>
-                    <label>Username</label>
-                </div>
-                <div className="user-box">
-                    <input type="password" name="" required=""/>
-                    <label>Password</label>
-                </div>
-                <div >
-                    <a href="#" >
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Log In
-                    </a>
-                    <Link to="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
-                        Sign Up
-                    </Link>
-                </div>
-            </form>
-        </div>
-    )
-
-}
