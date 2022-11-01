@@ -143,6 +143,20 @@ class Login extends Component {
     }
 }
 
+
+
+function mapDispatchToProps(dispatch){
+    return{
+        auth: (email, password, isLogIn) => dispatch(auth(email, password, isLogIn))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(Login)
+
+
+
+
+
 const Logins = () => {
     
     return(
@@ -174,11 +188,3 @@ const Logins = () => {
     )
 
 }
-
-function mapDispatchToProps(dispatch){
-    return{
-        auth: (email, password, isLogIn) => dispatch(auth(email, password, isLogIn))
-    }
-}
-
-export default connect(null, mapDispatchToProps)(Login)
