@@ -50,7 +50,8 @@ export function signup(userName, name, lastName, email, password,admin, account,
         const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
         const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
 
-        const response2 = await axios.post('/users', authData)
+        // const response2 = await axios.post('/users', authData)
+        const response2 = await axios.post('users.json', authData)
         
         const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData2)
 
