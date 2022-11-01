@@ -5,7 +5,6 @@ const prices = () => {
         <div className="pricingTable html">
             <h2 className="pricingTable-title">Find a plan that's right for you.</h2>
             <h3 className="pricingTable-subtitle">Every plan comes with a 2-day free trial.</h3>
-            
             <ul className="pricingTable-firstTable">
                 <li className="pricingTable-firstTable_table">
                     <h1 className="pricingTable-firstTable_table__header">Bronze Packege</h1>
