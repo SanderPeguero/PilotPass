@@ -25,7 +25,7 @@ export function auth(email, password, isLogIn){
     }
 }
 
-export function signup(userName, name, lastName, email, password,admin, account, isLogIn) {
+export function signup(userName, name, lastName, email, password, admin, account, isLogIn) {
     return async dispatch => {
         
         const authData = {

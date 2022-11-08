@@ -1,6 +1,6 @@
 import './home.css'
 // import Slider from './slider/slider'
-// import Home from './home copy.jsx'
+// import Home from './home.jsx'
 import Prices from './prices/prices'
 
 const home = () => {

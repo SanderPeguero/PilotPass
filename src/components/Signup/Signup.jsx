@@ -3,6 +3,7 @@ import { Component } from 'react'
 import { signup } from '../../store/actions/authActions'
 import { isFromValid, isValueValid } from '../../form/formFramework'
 import Input from './Input'
+import { NavLink } from 'react-router-dom'
 
 function isInvalid({valid, touched, shouldValidate}){
     return !valid && shouldValidate && touched
@@ -91,13 +92,13 @@ class Signup extends Component{
 
     signUpHandler = () => {
         this.props.signup(
-            this.state.formControls.userName,
-            this.state.formControls.name,
-            this.state.formControls.lastName,
+            this.state.formControls.userName.value,
+            this.state.formControls.name.value,
+            this.state.formControls.lastName.value,
             this.state.formControls.email.value,
             this.state.formControls.password.value,
-            this.state.formControls.admin,
-            this.state.formControls.account,
+            this.state.formControls.admin.value,
+            this.state.formControls.account.value,
             false
         )
     }
@@ -164,13 +165,13 @@ class Signup extends Component{
                 <form onSubmit={this.submitHandler}>
                     {this.renderInputs()}
                     <div>
-                        <a href="#" onClick={this.signUpHandler}>
+                        <NavLink to="/tests" onClick={this.signUpHandler}>
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             Sign Up
-                        </a>
+                        </NavLink>
                     </div>
                 </form>
             </div> 
@@ -180,7 +181,7 @@ class Signup extends Component{
 
 function mapDispatchToProps(dispatch){
     return{
-        signup: (userName,name, lastName, email,password, isLogin ) => dispatch(signup(userName, name, lastName, email, password, isLogin))
+        signup: (userName,name, lastName, email,password, admin, account, isLogin ) => dispatch(signup(userName, name, lastName, email, password, admin, account, isLogin))
     }
 }
 
