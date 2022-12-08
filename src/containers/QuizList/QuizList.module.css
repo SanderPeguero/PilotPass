@@ -12,7 +12,11 @@
 }
 
 .QuizList h1 {
-    color: white;
+    color: black;
+    width: 10.9rem;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border-radius: 30% 30% 0 0;
 }
 
 .QuizList ul {
@@ -23,13 +27,25 @@
 
 .QuizList li {
     margin-bottom: 10px;
+    height: 30px;
 }
 
-.QuizList li a {
-    text-decoration: none;
+
+.QuizList li:hover {
+    background-color: rgb(99, 96, 91);
     color: white;
 }
 
-.QuizList li a:hover {
-    color: #363f54;
+
+.QuizList li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 5px;
 }
+
+.QuizList li a:hover {
+    color: #ffffff;
+    
+}
+
