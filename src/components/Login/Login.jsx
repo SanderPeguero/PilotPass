@@ -45,11 +45,20 @@ class Login extends Component {
     }
 
     loginHandler = () => {
-        this.props.auth(
-            this.state.formControls.email.value,
-            this.state.formControls.password.value,
-            true
-        )
+        // try{
+
+            this.props.auth(
+                this.state.formControls.email.value,
+                this.state.formControls.password.value,
+                true
+            )
+
+        // }catch(error){
+            
+        //     console.log("ERROR CAPTURADO: ")
+        //     console.log(error)
+
+        // }
     }
 
     submitHandler = event => {
@@ -126,13 +135,13 @@ class Login extends Component {
                 <form action="" onSubmit={this.submitHandler}>
                     {this.renderInputs()}
                     <div>
-                        <a href="#" onClick={this.loginHandler}>
+                        <NavLink to="/tests" onClick={this.loginHandler}>
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             Log In
-                        </a>
+                        </NavLink>
                         <NavLink to="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
                             Sign Up
                         </NavLink>

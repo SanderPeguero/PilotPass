@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { Route, Routes, Navigate } from 'react-router-dom'
 
 //Components
-// import Auth from './containers/Auth/Auth.jsx'
 import Layout from './hoc/Layout/Layout.jsx'
 import Logout from './components/Logout/Logout.jsx'
 import Quiz from './containers/Quiz/Quiz.jsx'
@@ -13,6 +12,7 @@ import Payment from './components/Payment/Wallet.jsx'
 import Login from './components/Login/Login.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Home from './pages/home/home.jsx'
+import Alert from './components/Alert/Snackbar'
 
 import { autoLogin } from './store/actions/authActions'
 
@@ -24,39 +24,50 @@ class App extends Component {
   }
 
   render(){
+    
+    // const Navigate = useNavigate();
 
-    let routes = (
-        <Routes>
-          <Route exact path={'/'} element={<Home/>}></Route>
-          <Route exact path='/login' element={<Login/>} ></Route>
-          <Route exact path='/signup' element={<Signup/>} ></Route>
-          {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
-          <Route exact path={'/tests'} element={<QuizList/>}></Route>
-          <Route path="*" element={<Navigate to="/" replace />}/>
-        </Routes>
-    )
-
-    if(this.props.isAuthenticated){
-      routes = (
+    // useEffect(() => {
+      
+    // }, [this.props.appError]);
+    
+    if(!this.props.isAuthenticated){
+      
+      return(
           <Routes>
-            <Route exact path={'/'} element={<Home/>}></Route>
+            
+            <Route exact path={'/'} element={
+              <div>
+                {/* <Alert severity={4} title={"Error"} detail={"Error en la app"}/> */}
+                <Home/>
+              </div>
+            }></Route>
+            <Route exact path='/login' element={<Login/>} ></Route>
+            <Route exact path='/signup' element={<Signup/>} ></Route>
+            <Route path="*" element={<Navigate to="/" replace/>}/>
+            {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
+            {/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
+          </Routes>
+      )
+      
+    }else{
+
+     return(
+        <Layout>
+          <Routes>
+            {/* <Route exact path={'/'} element={<Home/>}></Route> */}
             <Route exact path={'/logout'} element={<Logout/>}></Route>
             <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route>
             <Route exact path={'/payment'} element={<Payment/>} ></Route>
             <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
             <Route exact path={'/tests'} element={<QuizList/>}></Route>
-            <Route path="*" element={<Navigate to="/" replace />}/>
+            <Route path="*" element={<Navigate to="/tests" replace/>}/>
           </Routes>
+        </Layout>
       )
+
     }
-
-    return (
-      <Layout>
-        {routes}
-      </Layout>
-    )
   }
-
 }
 
 
