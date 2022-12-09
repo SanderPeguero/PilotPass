@@ -31,22 +31,26 @@ class QuizList extends Component {
     render() {
         return (
             <div className={classes.QuizList}>
-                <div class="card" style={{Width:'20rem', background:"white"}}>
-                    <h1 class="card-header" style={{background:'grey'}}>Mis Cursos</h1>
+                <div class="row justify-content-end" style={{ width:'80%', height:'95%', position:'absolute', left: '12%'}}>
+                <div class="card col-lg-4 col-md-7 col-sm-12" style={{ background:"white"}}>
+                    <h1 class="card-header col-lg-4 col-md-7 col-sm-12" style={{background:'grey'}}>Mis Cursos</h1>
                     
-                    <div class="card" style={{width: '66rem'}} >
-                    <h2 class="card-title" style={{color:'black'}}>Piloto Privado</h2>
-                    <div class="card-body" style={{width: '100%'}} >
-                        <hr style={{margin:'30px 0'}}/>
-                        {
-                            this.props.isLoading && this.props.quizList.length > 0
-                                ? <Loader/>
-                                : <ul class="list-group list-group-flush">
-                                    {this.renderQuizList()}
-                                </ul>
-                        }
+                    <div class="row">
+                        <div class="card col-lg-4 col-md-12 col-sm-12"  >
+                        <h2 class="card-title col-lg-4 col-md-7 col-sm-12" style={{color:'black'}}>Piloto Privado</h2>
+                        <div class="card-body col-lg-4 col-md-7 col-sm-12" >
+                            <hr style={{margin:'30px 0'}}/>
+                            {
+                                this.props.isLoading && this.props.quizList.length > 0
+                                    ? <Loader/>
+                                    : <ul class="list-group list-group-flush col-lg-4 col-md-7 col-sm-12">
+                                        {this.renderQuizList()}
+                                    </ul>
+                            }
+                        </div>
+                        </div>
                     </div>
-                    </div>
+                </div>
                 </div>
             </div>
         );
