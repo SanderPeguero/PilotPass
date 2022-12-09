@@ -1,6 +1,7 @@
+
+//Current Quiz
 export const FETCH_START = 'FETCH_START'
 export const FETCH_FAILED = 'FETCH_FAILED'
-
 export const FETCH_QUIZ_LIST_SUCCEED = 'FETCH_QUIZ_LIST_SUCCEED'
 export const FETCH_QUIZ_SUCCEED = "FETCH_QUIZ_SUCCEED"
 export const QUIZ_SET_STATE = "QUIZ_SET_STATE"
@@ -8,8 +9,15 @@ export const QUIZ_FINISHED = 'QUIZ_FINISHED'
 export const QUIZ_NEXT_QUESTION = 'QUIZ_NEXT_QUESTION'
 export const QUIZ_RETRY = 'QUIZ_RETRY'
 
+//Quiz Creator
 export const CREATE_QUIZ_QUESTION = 'CREATE_QUIZ_QUESTION'
 export const RESET_QUIZ_CREATOR = 'RESET_QUIZ_CREATOR'
 
+//Auth Control
 export const AUTH_SUCCEED = 'AUTH_SUCCEED'
 export const AUTH_LOGOUT = 'AUTH_LOGOUT'
+
+//App Error
+export const CREATE_ERROR = 'CREATE_ERROR'
+export const UPDATE_ERROR = 'UPDATE_ERROR'
+export const DELETE_ERROR = 'DELETE_ERROR'

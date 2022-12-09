@@ -1,27 +1,39 @@
 import axios from "../../axios/axios-quiz"
 import { AUTH_SUCCEED, AUTH_LOGOUT } from "./actionTypes"
+import { CreateError } from "./appErrorActions"
 
 export function auth(email, password, isLogIn){
     return async dispatch => {
-        const authData = {
-            email,
-            password,
-            returnSecureToken: true
+        
+        try{
+            
+            const authData = {
+                email,
+                password,
+                returnSecureToken: true
+            }
+
+            const FIREBASE_API_KEY = import.meta.env.VITE_APP_FIREBASE_API_KEY
+            const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
+            const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
+
+            const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData)
+            const data = response.data
+            const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
+
+            localStorage.setItem("token", data.idToken)
+            localStorage.setItem("expirationDate", expirationDate)
+
+            dispatch(authSucceed(data.idToken))
+            dispatch(autoLogout(data.expiresIn))
+
+        }catch(error){
+            console.log("ERROR CAPTURADO: ")
+            console.log(error.response.data)
+            dispatch(CreateError(error.response.data.error.message))
+            // Alert(1, "Error", error.response.data.error.message)
         }
 
-        const FIREBASE_API_KEY = import.meta.env.VITE_APP_FIREBASE_API_KEY
-        const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
-        const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
-
-        const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData)
-        const data = response.data
-        const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
-
-        localStorage.setItem("token", data.idToken)
-        localStorage.setItem("expirationDate", expirationDate)
-
-        dispatch(authSucceed(data.idToken))
-        dispatch(autoLogout(data.expiresIn))
     }
 }
 
