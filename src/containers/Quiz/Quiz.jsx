@@ -50,14 +50,15 @@ class Quiz extends React.Component {
             <Box className={classes.Quiz}
        >
                 <div className={classes.QuizWrapper}>
-                    <div className="container row" style={{borderRadius:'0'}}>
+                    <div className="row">
+                    <div className="container col-lg-4 col-md-7 col-sm-12" style={{borderRadius:'0'}}>
 
-                        <div className="card-header" style={{color:'white', margin: "2%"}}>
+                        <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
                             <h2 className="col-lg-4 col-md-7 col-sm-12">Exam Name</h2>
                             <p>Questions Number</p>
                             <p>Time res for complete</p>
                         </div>
-                        
+
                         <div className="card col-lg-4 col-md-7 col-sm-12">
                             <div className="card-header">
                                 <p className="" style={{color:'white'}}>Question {this.props.activeQuestionNumber + 1}</p>
@@ -71,7 +72,7 @@ class Quiz extends React.Component {
                             :
                             this.props.isQuizFinished
                                 ? 
-                              
+                            
                                     <FinishedQuiz
                                     results={this.props.results}
                                     quiz={this.props.quiz}
@@ -88,15 +89,17 @@ class Quiz extends React.Component {
                                     quizLength={this.props.quiz.length}
                                 />
 
-                    }
+                        }
                             </div>
 
 
                         </div>
-                        
 
 
+
+                        </div>
                     </div>
+                    
 
                 </div>
             </Box>
