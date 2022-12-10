@@ -50,12 +50,22 @@ class Quiz extends React.Component {
             <Box className={classes.Quiz}
        >
                 <div className={classes.QuizWrapper}>
-                    <Stack >
-                        <Avatar style={{top: '1rem', margin: '1rem' }}>{this.props.activeQuestionNumber + 1}</Avatar>
-                    </Stack>
-                    
+                    <div className="container row" style={{borderRadius:'0'}}>
 
-                    {
+                        <div className="card-header" style={{color:'white', margin: "2%"}}>
+                            <h2 className="col-lg-4 col-md-7 col-sm-12">Exam Name</h2>
+                            <p>Questions Number</p>
+                            <p>Time res for complete</p>
+                        </div>
+                        
+                        <div className="card col-lg-4 col-md-7 col-sm-12">
+                            <div className="card-header">
+                                <p className="" style={{color:'white'}}>Question {this.props.activeQuestionNumber + 1}</p>
+                            </div>
+                            <hr />
+
+                            <div>
+                            {
                         this.props.isLoading || !this.props.quiz
                             ? <Loader />
                             :
@@ -79,6 +89,14 @@ class Quiz extends React.Component {
                                 />
 
                     }
+                            </div>
+
+
+                        </div>
+                        
+
+
+                    </div>
 
                 </div>
             </Box>

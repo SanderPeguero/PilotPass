@@ -14,10 +14,10 @@ class QuizList extends Component {
     renderQuizList() {
         return this.props.quizList.map(quiz => {
             return (
-                <div class="form-check" style={{margin:'20px 0', gap:'15px'}}>
-                    <input class="form-check-input" type="checkbox" readOnly style={{width:"50px", height:'30px', float: "left"}}/>
-                    <label class="form-check-label" for="flexCheckDefault">
-                        <li key={quiz.id} class="list-group-item">
+                <div className="form-check form-check-inline" key={quiz.id} style={{margin:'20px 0', gap:'15px'}}>
+                    <input className="form-check-input" type="checkbox" id="flexCheckDefault" disabled style={{width:"50px", height:'30px', float: "left"}}/>
+                    <label className="form-check-label" htmlFor="flexCheckDefault">
+                        <li key={quiz.id} className="list-group-item">
                             <NavLink to={"/quiz/" + quiz.id}>
                                 {quiz.name}
                             </NavLink>
@@ -31,19 +31,20 @@ class QuizList extends Component {
     render() {
         return (
             <div className={classes.QuizList}>
-                <div class="row justify-content-end" style={{ width:'80%', height:'95%', position:'absolute', left: '12%'}}>
-                <div class="card col-lg-4 col-md-7 col-sm-12" style={{ background:"white"}}>
-                    <h1 class="card-header col-lg-4 col-md-7 col-sm-12" style={{background:'grey'}}>Mis Cursos</h1>
+                <div className="row justify-content-end" style={{ width:'80%', height:'95%', position:'absolute', left: '12%'}}>
+                <div className="col-lg-4 col-md-7 col-sm-12">
+                    <h1 className="card-header col-lg-4 col-md-7 col-sm-12">My Courses</h1>
                     
-                    <div class="row">
-                        <div class="card col-lg-4 col-md-12 col-sm-12"  >
-                        <h2 class="card-title col-lg-4 col-md-7 col-sm-12" style={{color:'black'}}>Piloto Privado</h2>
-                        <div class="card-body col-lg-4 col-md-7 col-sm-12" >
+                    <div className="row">
+                        <div className="card col-lg-4 col-md-12 col-sm-12"  >
+                        <h2 className="card-title col-lg-4 col-md-7 col-sm-12" style={{color:'white', fontWeight:'300'}}>Private Pilot</h2>
+                        
+                        <div className="card-body col-lg-4 col-md-7 col-sm-12" >
                             <hr style={{margin:'30px 0'}}/>
                             {
                                 this.props.isLoading && this.props.quizList.length > 0
                                     ? <Loader/>
-                                    : <ul class="list-group list-group-flush col-lg-4 col-md-7 col-sm-12">
+                                    : <ul className="list-group list-group-flush col-lg-4 col-md-7 col-sm-12">
                                         {this.renderQuizList()}
                                     </ul>
                             }

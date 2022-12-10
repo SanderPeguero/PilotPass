@@ -12,11 +12,10 @@
 }
 
 .QuizList h1 {
-    color: black;
-    width: 10.9rem;
+    color: white;
     margin: 5px 5px;
     padding: 5px 5px;
-    border-radius: 0 30% 0 30%;
+    border-radius: 30% 30% 0 0;
 }
 
 .QuizList ul {
@@ -37,9 +36,10 @@
 }
 
 
+
 .QuizList li a {
     text-decoration: none;
-    color: black;
+    color: white;
     position: relative;
     top: 5px;
 }
