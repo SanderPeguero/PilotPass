@@ -13,6 +13,7 @@ import Login from './components/Login/Login.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Home from './pages/home/home.jsx'
 import Alert from './components/Alert/Snackbar'
+import Signup2 from './components/Signup2/signup.jsx'
 
 import { autoLogin } from './store/actions/authActions'
 
@@ -43,7 +44,7 @@ class App extends Component {
               </div>
             }></Route>
             <Route exact path='/login' element={<Login/>} ></Route>
-            <Route exact path='/signup' element={<Signup/>} ></Route>
+            <Route exact path='/signup' element={<Signup2/>} ></Route>
             <Route path="*" element={<Navigate to="/" replace/>}/>
             {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
             {/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
