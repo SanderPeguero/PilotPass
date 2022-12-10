@@ -10,7 +10,7 @@ const ActiveQuiz = props => (
 
             <p className={classes.Question} style={{margin:'15px 20px'}}>
 
-                <span>
+                <span className="col-lg-4 col-md-7 col-sm-12">
                     <strong>{props.questionNumber}. {props.question}</strong>
                 </span>
 
