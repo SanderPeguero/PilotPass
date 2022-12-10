@@ -55,48 +55,43 @@ class Quiz extends React.Component {
 
                         <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
                             <h2 className="col-lg-4 col-md-7 col-sm-12">Exam Name</h2>
-                            <p>Questions Number</p>
-                            <p>Time res for complete</p>
                         </div>
 
                         <div className="card col-lg-4 col-md-7 col-sm-12">
                             <div className="card-header">
-                                <p className="" style={{color:'white'}}>Question {this.props.activeQuestionNumber + 1}</p>
+                                <p className="row" style={{color:'white'}}> 
+                                    <span className="">Question {this.props.activeQuestionNumber + 1}</span>  
+                                    <span className="" style={{float:'right'}}>1:43:00</span> 
+                                </p>
                             </div>
                             <hr />
 
                             <div>
-                            {
-                        this.props.isLoading || !this.props.quiz
-                            ? <Loader />
-                            :
-                            this.props.isQuizFinished
-                                ? 
-                            
-                                    <FinishedQuiz
-                                    results={this.props.results}
-                                    quiz={this.props.quiz}
-                                    onRetry={this.props.retryQuiz}
-
-                                />
+                                {
+                                    this.props.isLoading || !this.props.quiz
+                                    ? <Loader />
+                                    :
+                                    this.props.isQuizFinished
+                                    ? 
                                 
-                                : <ActiveQuiz
-                                    questionNumber={this.props.activeQuestionNumber + 1}
-                                    question={this.props.currentQuizQuestion.question}
-                                    answers={this.props.currentQuizQuestion.answers}
-                                    onAnswerClick={this.onAnswerClickHandler}
-                                    answerState={this.props.answerState}
-                                    quizLength={this.props.quiz.length}
-                                />
+                                        <FinishedQuiz
+                                        results={this.props.results}
+                                        quiz={this.props.quiz}
+                                        onRetry={this.props.retryQuiz}
 
-                        }
+                                    />
+                                    
+                                    : <ActiveQuiz
+                                        questionNumber={this.props.activeQuestionNumber + 1}
+                                        question={this.props.currentQuizQuestion.question}
+                                        answers={this.props.currentQuizQuestion.answers}
+                                        onAnswerClick={this.onAnswerClickHandler}
+                                        answerState={this.props.answerState}
+                                        quizLength={this.props.quiz.length}
+                                    />
+                                }
                             </div>
-
-
                         </div>
-
-
-
                         </div>
                     </div>
                     
