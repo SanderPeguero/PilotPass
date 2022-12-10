@@ -17,11 +17,11 @@
 .QuizWrapper {
     width: 85%;
     height:  auto;
-    background-color: #4d576118;
+    background-color: #4d576100;
     position: relative;
     bottom: 10%;
-    left: 5%;
-
+    left: 2%;
+    margin: 0 10%;
 }
 
 .AvatarSty {
