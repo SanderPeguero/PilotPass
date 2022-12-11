@@ -37,19 +37,22 @@ export function auth(email, password, isLogIn){
     }
 }
 
-export function signup(userName, name, lastName, email, password, admin, account, isLogIn) {
+export function signup( name, lastName, email, password, bio, formation, admin, account, isLogIn) {
     return async dispatch => {
         
         const authData = {
-            userName,
+            // userName,
             name,
             lastName,
             email,
             password,
+            bio,
+            formation,
             admin,
-            account,
-            returnSecureToken: true
+            account
         }
+
+        console.log(authData)
 
         const authData2 = {
             email,
@@ -63,9 +66,9 @@ export function signup(userName, name, lastName, email, password, admin, account
         const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
 
         // const response2 = await axios.post('/users', authData)
-        const response2 = await axios.post('users.json', authData)
-        
         const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData2)
+        
+        const response2 = await axios.post('users.json', authData)
 
         const data = response.data
         const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)

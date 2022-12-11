@@ -39,12 +39,12 @@ class App extends Component {
             
             <Route exact path={'/'} element={
               <div>
-                {/* <Alert severity={4} title={"Error"} detail={"Error en la app"}/> */}
+                <Alert severity={5} title={"Error"} detail={"Error en la app"}/>
                 <Home/>
               </div>
             }></Route>
             <Route exact path='/login' element={<Login/>} ></Route>
-            <Route exact path='/signup' element={<Signup2/>} ></Route>
+            <Route exact path='/signup' element={<Signup/>} ></Route>
             <Route path="*" element={<Navigate to="/" replace/>}/>
             {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
             {/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}

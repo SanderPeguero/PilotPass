@@ -8,6 +8,7 @@ const Input = props => {
     
     const inputType = props.type || "text"
     const classNames = [classes.Input]
+    // const classNames = []
     const htmlFor = `${inputType}-${Math.random()}`
     const errorOcurred = isInvalid(props)
 
@@ -16,20 +17,20 @@ const Input = props => {
     }
 
     return (
-        <div className={classNames.join(" ")}>
+        <fieldset className={classNames.join(" ")}>
+            <label htmlFor={htmlFor}>{props.label}</label>
             <input
                 type={inputType}
                 id={htmlFor}
                 value={props.value}
                 onChange={props.onChange}
             />
-            <label htmlFor={htmlFor}>{props.label}</label>
             {
                 errorOcurred
                 ? <span>{props.errorMessage || "Enter valid data"}</span>
                 : null
             }
-        </div>
+        </fieldset>
     )
 }
 
