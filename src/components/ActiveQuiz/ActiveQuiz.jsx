@@ -7,12 +7,14 @@ const ActiveQuiz = props => (
         {/* <h1>Take the Quiz</h1> */}
 
         <div className={classes.ActiveQuiz}>
-            <p className={classes.Question}>
-            <span>
-                <strong>{props.questionNumber}. {props.question}</strong>
-            </span>
 
-            <small style={{ width: '7rem', textAlign: 'center'}}>{props.questionNumber} / {props.quizLength}</small>
+            <p className={classes.Question} style={{margin:'15px 20px'}}>
+
+                <span className="col-lg-4 col-md-7 col-sm-12">
+                    <strong>{props.questionNumber}. {props.question}</strong>
+                </span>
+
+                <small style={{ width: '7rem', textAlign: 'center'}}>{props.questionNumber} / {props.quizLength}</small>
             </p>
 
             <AnswersList
