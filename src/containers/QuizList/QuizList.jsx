@@ -14,16 +14,13 @@ class QuizList extends Component {
     renderQuizList() {
         return this.props.quizList.map(quiz => {
             return (
-                <div className="form-check form-check-inline" key={quiz.id} style={{margin:'20px 0', gap:'15px'}}>
-                    <input className="form-check-input" type="checkbox" id={quiz.id} disabled style={{width:"50px", height:'30px', float: "left"}}/>
-                    <label className="form-check-label" htmlFor={quiz.id}>
-                        <li key={quiz.id} className="list-group-item">
-                            <NavLink to={"/quiz/" + quiz.id}>
-                                {quiz.name}
-                            </NavLink>
-                        </li>
-                    </label>
-                </div>   
+                    <li key={quiz.id} className="list-group-item" style={{width:'100%', height:'100%', display:'flex'}}>
+                        <input class="form-check-input check" type="checkbox" id={quiz.id} disabled style={{width:"50px", height:'25px', float: "left"}}/>
+                        <NavLink to={"/quiz/" + quiz.id} style={{width:'100%', height:'100%'}}>
+                            {quiz.name}
+                        </NavLink>
+                        
+                    </li>
             );
         });
     };
