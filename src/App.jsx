@@ -1,6 +1,6 @@
 import { Component, useEffect } from 'react'
 import { connect } from 'react-redux'
-import { Route, Routes, Navigate } from 'react-router-dom'
+import { Route, Routes, Navigate, Router } from 'react-router-dom'
 
 //Components
 import Layout from './hoc/Layout/Layout.jsx'
@@ -12,6 +12,8 @@ import Payment from './components/Payment/Wallet.jsx'
 import Login from './components/Login/Login.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Home from './pages/home/home.jsx'
+import HomeBox from './pages/home/Home/Home.jsx'
+import HomeMain from './pages/HomeW/HomeMain.jsx'
 import Alert from './components/Alert/Snackbar'
 
 import { autoLogin } from './store/actions/authActions'
@@ -34,20 +36,28 @@ class App extends Component {
     if(!this.props.isAuthenticated){
       
       return(
+        
+        <>
+        <HomeBox/>
           <Routes>
-            
-            <Route exact path={'/'} element={
-              <div>
+          
+            {/* <Route exact path={'/'} element={
+              <div> */}
                 {/* <Alert severity={4} title={"Error"} detail={"Error en la app"}/> */}
-                <Home/>
+                {/* <HomeBox/>
               </div>
-            }></Route>
+            }></Route> */}
+           
+            <Route exact path='/' element={<HomeMain></HomeMain>}></Route>
+            <Route exact path='/plan' element={<Home/>}></Route>
             <Route exact path='/login' element={<Login/>} ></Route>
             <Route exact path='/signup' element={<Signup/>} ></Route>
             <Route path="*" element={<Navigate to="/" replace/>}/>
             {/* <Route path={'/quiz/:id'} element={<Quiz/>}></Route> */}
             {/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
           </Routes>
+        </>
+        
       )
       
     }else{
