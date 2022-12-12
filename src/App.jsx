@@ -15,6 +15,7 @@ import Home from './pages/home/home.jsx'
 import HomeBox from './pages/home/Home/Home.jsx'
 import HomeMain from './pages/HomeW/HomeMain.jsx'
 import Alert from './components/Alert/Snackbar'
+import Signup2 from './components/Signup2/signup.jsx'
 
 import { autoLogin } from './store/actions/authActions'
 
@@ -40,13 +41,13 @@ class App extends Component {
         <>
         <HomeBox/>
           <Routes>
-          
-            {/* <Route exact path={'/'} element={
-              <div> */}
-                {/* <Alert severity={4} title={"Error"} detail={"Error en la app"}/> */}
-                {/* <HomeBox/>
+            
+            <Route exact path={'/'} element={
+              <div>
+                <Alert severity={5} title={"Error"} detail={"Error en la app"}/>
+                <Home/>
               </div>
-            }></Route> */}
+            }></Route> 
            
             <Route exact path='/' element={<HomeMain></HomeMain>}></Route>
             <Route exact path='/plan' element={<Home/>}></Route>

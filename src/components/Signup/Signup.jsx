@@ -3,7 +3,7 @@ import { Component } from 'react'
 import { signup } from '../../store/actions/authActions'
 import { isFromValid, isValueValid } from '../../form/formFramework'
 import Input from './Input'
-import { NavLink } from 'react-router-dom'
+import './signup.css'
 
 function isInvalid({valid, touched, shouldValidate}){
     return !valid && shouldValidate && touched
@@ -15,21 +15,21 @@ class Signup extends Component{
         isFormValid: false,
         formControls: {
 
-            userName:{
-                value: '',
-                type: 'username',
-                label: 'Username',
-                errorMessage: '',
-                valid: false,
-                touched: false,
-                validation: {
-                    required: false
-                }
-            },
+            // userName:{
+            //     value: '',
+            //     type: 'username',
+            //     label: 'Username',
+            //     errorMessage: '',
+            //     valid: false,
+            //     touched: false,
+            //     validation: {
+            //         required: false
+            //     }
+            // },
 
             name: {
                 value: '',
-                type: 'name',
+                type: 'text',
                 label: 'Name',
                 errorMessage: '',
                 valid: false,
@@ -41,7 +41,7 @@ class Signup extends Component{
 
             lastName: {
                 value: '',
-                type: 'lastname',
+                type: 'text',
                 label: 'Last Name',
                 errorMessage: '',
                 valid: false,
@@ -76,6 +76,16 @@ class Signup extends Component{
                     minLength: 6
                 }
             },
+
+            bio:{
+                value: '',
+                show: false
+            },
+
+            formation:{
+                value: 'student',
+                show: false
+            },
             
             admin:{
                 value: false,
@@ -92,11 +102,13 @@ class Signup extends Component{
 
     signUpHandler = () => {
         this.props.signup(
-            this.state.formControls.userName.value,
+            // this.state.formControls.userName.value,
             this.state.formControls.name.value,
             this.state.formControls.lastName.value,
             this.state.formControls.email.value,
             this.state.formControls.password.value,
+            this.state.formControls.bio.value,
+            this.state.formControls.formation.value,
             this.state.formControls.admin.value,
             this.state.formControls.account.value,
             false
@@ -112,6 +124,8 @@ class Signup extends Component{
         const formControl = {...formControls[controlName]}
 
         formControl.value = event.target.value
+        console.log("Control Name: " + controlName)
+        console.log("Value: " + formControl.value)
         formControl.touched = true
         formControl.valid = isValueValid(formControl.value, formControl.validation)
 
@@ -122,6 +136,21 @@ class Signup extends Component{
         })
     }
 
+    // onChangeSelect = (event, controlName) => {
+    //     const formControls = {...this.state.formControls}
+    //     const formControl = {...formControls[controlName]}
+
+    //     formControl.value = event.target.value
+    //     formControl.touched = true
+    //     formControl.valid = isValueValid(formControl.value, formControl.validation)
+
+    //     formControls[controlName] = formControl
+    //     this.setState({
+    //         formControls: formControls,
+    //         isFormValid: isFromValid(formControls)
+    //     })
+    // }
+
     renderInputs(){
         
         return Object.keys(this.state.formControls).map((formControlName, index) => {
@@ -130,8 +159,8 @@ class Signup extends Component{
             if(formControl.show == false){
                 return
             }
-            const inputType = formControl.type || "text"
-            const htmlFor = `${inputType}-${Math.random()}`
+            // const inputType = formControl.type || "text"
+            // const htmlFor = `${inputType}-${Math.random()}`
             const errorOcurred = isInvalid(formControl.valid, formControl.touched, Boolean(formControl.validation))
 
             if(errorOcurred){
@@ -160,11 +189,56 @@ class Signup extends Component{
 
         return(
 
-            <div className="login-box">
-                <h2>Sign Up</h2>
-                <form onSubmit={this.submitHandler}>
-                    {this.renderInputs()}
-                    <div>
+            <div className="h-25 row">
+                <form onSubmit={this.submitHandler} className="form">
+                    <h1>Sign Up</h1>
+                    <fieldset>
+                        <legend><span className="number">1</span> Account</legend>
+                        {this.renderInputs()}
+                    </fieldset>
+                    <fieldset className='col'>  
+                        
+                            <legend><span className="number">2</span> Your Profile</legend>
+                            
+                            <label htmlFor="bio">Bio:</label>
+                            <textarea id="bio" name="user_bio" onChange={event => this.onChangeHandler(event, "bio")}></textarea>
+                            
+                            
+                            <label htmlFor="formation">Formation:</label>
+                            <select id="formation" name="user_formation" value={this.state.formControls.formation.value} onChange={event => this.onChangeHandler(event,"formation")}>
+                                <optgroup label="Initial">
+                                    <option value="student">Student</option>
+                                    <option value="student_pilot">Student Pilot</option>
+                                    <option value="sport_pilot">Sport Pilot</option>
+                                    <option value="private_pilot">Private Pilot</option>
+                                    <option value="private_pilot_IFR">Private Pilot IFR</option>
+                                    <option value="private_pilot_multi_engine">Private Pilot Multi Engine</option>
+                                </optgroup>
+                                <optgroup label="Middle">
+                                    <option value="private_pilot_multi_engine_IFR">Private Pilot Multi Engine IFR</option>
+                                    <option value="commertial_pilot">Commertial Pilot</option>
+                                    <option value="commertial_pilot_IFR">Commertial Pilot IFR</option>
+                                    <option value="commertial_pilot_multi_engine">Commertial Pilot Multi Engine</option>
+                                    <option value="commertial_pilot_multi_engine_IFR">Commertial Pilot Multi Engine IFR</option>
+                                    <option value="certified_flight_instructor_VFR">Certified Flight Instructor VFR</option>
+                                </optgroup>
+                                <optgroup label="Advance">
+                                    <option value="certified_flight_instructor_IFR">Certified Flight Instructor IFR</option>
+                                    <option value="certified_flight_instructor_multi_engine">Certified Flight Instructor Multi Engine</option>
+                                    <option value="certified_flight_instructor_multi_engine_IFR">Certified Flight Instructor Multi Engine IFR</option>
+                                    <option value="airline_transport_pilot">Airline Transport Pilot</option>
+                                    <option value="airline_transport_pilot_IFR">Airline Transport Pilot IFR</option>
+                                    <option value="airline_transport_pilot_multi_engine_IFR">Airline Transport Pilot Multi Engine IFR</option>
+                                </optgroup>
+                            </select>
+                            
+                            {/* <label>Interests:</label>
+                            <input type="checkbox" id="development" value="interest_development" name="user_interest"/><label className="light" htmlFor="development">Development</label><br/>
+                            <input type="checkbox" id="design" value="interest_design" name="user_interest"/><label className="light" htmlFor="design">Design</label><br/>
+                            <input type="checkbox" id="business" value="interest_business" name="user_interest"/><label className="light" htmlFor="business">Business</label>
+                                */}
+                        </fieldset>
+                    {/* <div>
                         <NavLink to="/tests" onClick={this.signUpHandler}>
                             <span></span>
                             <span></span>
@@ -172,7 +246,8 @@ class Signup extends Component{
                             <span></span>
                             Sign Up
                         </NavLink>
-                    </div>
+                    </div> */}
+                    <button onClick={this.signUpHandler} type="submit">Sign Up</button>
                 </form>
             </div> 
         )
@@ -181,7 +256,7 @@ class Signup extends Component{
 
 function mapDispatchToProps(dispatch){
     return{
-        signup: (userName,name, lastName, email,password, admin, account, isLogin ) => dispatch(signup(userName, name, lastName, email, password, admin, account, isLogin))
+        signup: (name, lastName, email,password, bio, formation, admin, account, isLogin ) => dispatch(signup( name, lastName, email, password, bio, formation, admin, account, isLogin))
     }
 }
 
