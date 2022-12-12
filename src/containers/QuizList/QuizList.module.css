@@ -25,17 +25,15 @@
 }
 
 .QuizList li {
+    background-color: rgba(255, 255, 255, 0.062);
     margin-bottom: 10px;
     height: 30px;
 }
 
-
 .QuizList li:hover {
-    background-color: rgb(99, 96, 91);
     color: white;
+    background-color: rgba(255, 255, 255, 0.288);
 }
-
-
 
 .QuizList li a {
     text-decoration: none;
@@ -45,7 +43,7 @@
 }
 
 .QuizList li a:hover {
-    color: #ffffff;
+    color: #ffffff9a;
     
 }
 
