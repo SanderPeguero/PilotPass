@@ -13,6 +13,7 @@ import Login from './components/Login/Login.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Home from './pages/home/home.jsx'
 import Alert from './components/Alert/Snackbar'
+import Signup2 from './components/Signup2/signup.jsx'
 
 import { autoLogin } from './store/actions/authActions'
 
@@ -38,7 +39,7 @@ class App extends Component {
             
             <Route exact path={'/'} element={
               <div>
-                {/* <Alert severity={4} title={"Error"} detail={"Error en la app"}/> */}
+                <Alert severity={5} title={"Error"} detail={"Error en la app"}/>
                 <Home/>
               </div>
             }></Route>
