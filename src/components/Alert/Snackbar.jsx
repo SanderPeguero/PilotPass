@@ -60,9 +60,9 @@ const SnackbarAlert = ({ severity, title, detail }) => {
 
     return (
         <Stack spacing={2} sx={{ width: '100%' }}>
-            <Button variant="outlined" onClick={handleClick}>
+            {/* <Button variant="outlined" onClick={handleClick}>
                 Open success snackbar
-            </Button>
+            </Button> */}
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                 {/* <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
                 This is a success message!

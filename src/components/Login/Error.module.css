@@ -1,12 +1,16 @@
-.Input {
+.input {
     margin-bottom: 15px;
 }
 
-.Input span {
+.input span {
     color: rgb(255, 0, 34);
     font-size: 0.7rem;
 }
 
-.Input.invalid input {
+.input.invalid input {
+    border: 2px solid rgb(255, 78, 102);
+}
+
+.invalid{
     border: 2px solid rgb(255, 78, 102);
 }
