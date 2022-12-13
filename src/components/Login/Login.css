@@ -18,7 +18,7 @@ body {
     width: 365px;
     padding: 45px;
     transform: translate(-50%, -50%);
-    background: rgba(0,0,0,.5);
+    background: rgb(244 247 248 / 8%);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
