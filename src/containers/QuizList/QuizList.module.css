@@ -48,3 +48,8 @@
     
 }
 
+@media(max-width: 800px){
+    .QuizList div.card {
+        background-color: black;
+    }
+}
