@@ -14,6 +14,11 @@ import './Login.css'
 
 const login = () => {
 
+    //State
+    const classNames = [Error.input]
+    const error = useSelector(state => state.error.error)
+    const dispatch = useDispatch()
+
     const [email, setemail] = useState({
         value: '',
         errorMessage: 'Invalid Email',
@@ -32,6 +37,7 @@ const login = () => {
         touched: false
     });
 
+    //Use Effects
     useEffect(() => {
         if(email.value.length > 0){
 
@@ -48,11 +54,15 @@ const login = () => {
 
     }, [email.value, password.value]);
 
-    let classNames = [Error.input]
-    const dispatch = useDispatch()
+    useEffect(() => {
 
-    const error = useSelector(state => state.error.error)
+        sleep(5000).then( r => {
+            dispatch(deleteError())
+        })
 
+    }, [error]);
+
+    //Handlers and Helpers
     const onChangeHandler = (event, state, setState) => {
         
         setState({...state, 
@@ -65,24 +75,12 @@ const login = () => {
 
     function loginHandler(){
         dispatch(auth(email.value, password.value, true))
-        // try{
-        //     dispatch(auth(email.value, password.value, true))
-        // }catch(e){
-        //     console.log(e)
-        // }
     }
+
     const sleep = (ms) => {
         return new Promise((resolve) => setTimeout(resolve, ms));
     };
-
-    useEffect(() => {
-
-        sleep(5000).then( r => {
-            dispatch(deleteError())
-        })
-
-    }, [error]);
-
+    
 
     return(
         <div className="h-25 row">
