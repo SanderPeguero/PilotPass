@@ -54,7 +54,7 @@ class Quiz extends React.Component {
                     <div className="container col-lg-4 col-md-7 col-sm-12" style={{borderRadius:'0'}}>
 
                         <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
-                            <h2 className="col-lg-4 col-md-7 col-sm-12">Exam Name</h2>
+                            <h2 className="col-lg-4 col-md-7 col-sm-12">{this.props.currentQuizQuestion.materia}</h2>
                         </div>
 
                         <div className="card col-lg-4 col-md-7 col-sm-12">
@@ -83,6 +83,7 @@ class Quiz extends React.Component {
                                     
                                     : <ActiveQuiz
                                         questionNumber={this.props.activeQuestionNumber + 1}
+                                        materia={this.props.currentQuizQuestion.materia}
                                         question={this.props.currentQuizQuestion.question}
                                         answers={this.props.currentQuizQuestion.answers}
                                         onAnswerClick={this.onAnswerClickHandler}
