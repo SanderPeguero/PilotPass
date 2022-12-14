@@ -13,6 +13,9 @@
 
 .QuizList h1 {
     color: white;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border-radius: 30% 30% 0 0;
 }
 
 .QuizList ul {
@@ -22,14 +25,26 @@
 }
 
 .QuizList li {
+    background-color: rgba(255, 255, 255, 0.062);
     margin-bottom: 10px;
+    height: 30px;
+    padding: 10px 0;
+}
+
+.QuizList li:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.288);
 }
 
 .QuizList li a {
     text-decoration: none;
     color: white;
+    position: relative;
+    top: 5px;
 }
 
 .QuizList li a:hover {
-    color: #363f54;
+    color: #ffffff9a;
+    
 }
+
