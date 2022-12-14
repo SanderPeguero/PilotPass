@@ -1,3 +1,13 @@
+/* *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+   */
+  /* body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+  } */
   
   .form {
     max-width: 450px;
@@ -9,37 +19,7 @@
   }
   
   h1 {
-    margin: 0 0 30px 0;}
-html {
-    height: 100%;
-}
-body {
-    margin:0;
-    padding:0;
-    /* font-family: sans-serif; */
-    background: linear-gradient(#141e30, #243b55);
-    /* background-repeat: no-repeat; */
-    background-attachment: fixed;
-}
-
-.login-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 365px;
-    width: 365px;
-    padding: 45px;
-    transform: translate(-50%, -50%);
-    background: rgb(244 247 248 / 8%);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-}
-
-.login-box h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
+    margin: 0 0 30px 0;
     text-align: center;
   }
   

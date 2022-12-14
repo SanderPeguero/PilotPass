@@ -1,188 +1,215 @@
-import { connect } from 'react-redux'
-import { Component } from 'react'
-import { signup } from '../../store/actions/authActions'
 import { isFromValid, isValueValid } from '../../form/formFramework'
-import Input from './Input'
-import { NavLink } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { useState, useEffect } from 'react'
+import { deleteError } from '../../redux/error/errorSlice'
+import { signup } from '../../redux/user/authFunctions'
+import Error from './Error.module.css'
+import Alert from '../../components/Alert/Snackbar'
+import './signup.css'
 
-function isInvalid({valid, touched, shouldValidate}){
-    return !valid && shouldValidate && touched
-}
+const SignUp = () => {
 
-class Signup extends Component{
-    
-    state = {
-        isFormValid: false,
-        formControls: {
-
-            userName:{
-                value: '',
-                type: 'username',
-                label: 'Username',
-                errorMessage: '',
-                valid: false,
-                touched: false,
-                validation: {
-                    required: false
-                }
-            },
-
-            name: {
-                value: '',
-                type: 'name',
-                label: 'Name',
-                errorMessage: '',
-                valid: false,
-                touched: false,
-                validation: {
-                    required: false
-                }
-            },
-
-            lastName: {
-                value: '',
-                type: 'lastname',
-                label: 'Last Name',
-                errorMessage: '',
-                valid: false,
-                touched: false,
-                validation: {
-                    required: false
-                }
-            },
-
-            email:{
-                value: '',
-                type: 'email',
-                label: 'Email',
-                errorMessage: 'Invalid Email',
-                valid: false,
-                touched: false,
-                validation: {
-                    required: true,
-                    email: true
-                }
-            }, 
-
-            password:{
-                value: '',
-                type: 'password',
-                label: 'Password',
-                errorMessage: 'Password Must Have 8 Characters or More',
-                valid: false,
-                touched: false,
-                validation: {
-                    required: true,
-                    minLength: 6
-                }
-            },
-            
-            admin:{
-                value: false,
-                show: false
-            },
-
-            account: {
-                value: 1,
-                show: false
-            }
-
+    const [name, setname] = useState({
+        value: '',
+        errorMessage: '',
+        valid: false,
+        touched: false,
+        validation: {
+            required: false
         }
-    }
+    });
+    const [lastName, setlastName] = useState({
+        value: '',
+        errorMessage: '',
+        valid: false,
+        touched: false,
+        validation: {
+            required: false
+        }
+    });
+    const [email, setemail] = useState({
+        value: '',
+        errorMessage: 'Invalid Email',
+        valid: null,
+        touched: false,
+        validation: {
+            required: true,
+            email: true
+        }
+    });
+    const [password, setpassword] = useState({
+        value: '',
+        errorMessage: 'Password Must Have 8 Characters or More',
+        valid: null,
+        touched: false,
+        validation: {
+            required: true,
+            minLength: 8
+        }
+    });
+    const [bio, setbio] = useState({ value: ''});
+    const [formation, setformation] = useState({ value: 'Student' });
+    const [admin, setadmin] = useState(false);
+    const [account, setaccount] = useState(1);
 
-    signUpHandler = () => {
-        this.props.signup(
-            this.state.formControls.userName.value,
-            this.state.formControls.name.value,
-            this.state.formControls.lastName.value,
-            this.state.formControls.email.value,
-            this.state.formControls.password.value,
-            this.state.formControls.admin.value,
-            this.state.formControls.account.value,
-            false
-        )
-    }
+    let classNames = [Error.input]
 
-    submitHandler = event => {
-        event.preventDefault()
-    }
+    
 
-    onChangeHandler = (event, controlName) => {
-        const formControls = {...this.state.formControls}
-        const formControl = {...formControls[controlName]}
+    useEffect(() => {
+        if(email.value.length > 0){
 
-        formControl.value = event.target.value
-        formControl.touched = true
-        formControl.valid = isValueValid(formControl.value, formControl.validation)
+            setemail({...email,
+                'valid': isValueValid(email.value, email.validation)
+            })
+        }
+        if(password.value.length > 0){
 
-        formControls[controlName] = formControl
-        this.setState({
-            formControls: formControls,
-            isFormValid: isFromValid(formControls)
-        })
-    }
+            setpassword({...password,
+                'valid': isValueValid(password.value, password.validation)
+            })
+        }
 
-    renderInputs(){
+    }, [email.value, password.value]);
+
+    const onChangeHandler = (event, state, setState) => {
         
-        return Object.keys(this.state.formControls).map((formControlName, index) => {
-            
-            const formControl = this.state.formControls[formControlName]
-            if(formControl.show == false){
-                return
-            }
-            const inputType = formControl.type || "text"
-            const htmlFor = `${inputType}-${Math.random()}`
-            const errorOcurred = isInvalid(formControl.valid, formControl.touched, Boolean(formControl.validation))
-
-            if(errorOcurred){
-                classNames.push(classes.invalid)
-            }
-            
-            return(
-                <div className="user-box" key={formControlName + index + 1}>
-                    <Input
-                        key={formControlName + index}
-                        type={formControl.type}
-                        value={formControl.value}
-                        label={formControl.label}
-                        errorMessage={formControl.errorMessage}
-                        valid={formControl.valid}
-                        touched={formControl.touched}
-                        shouldValidate={Boolean(formControl.validation)}
-                        onChange={event => this.onChangeHandler(event, formControlName)}
-                    />
-                </div>
-            )
+        setState({...state, 
+            'value': event.target.value,
+            'touched': true,
+            'valid': isValueValid(state.value, state.validation)
         })
+
     }
 
-    render(){
+    const dispatch = useDispatch()
+    const error = useSelector(state => state.error.error)
 
-        return(
-
-            <div className="login-box">
-                <h2>Sign Up</h2>
-                <form onSubmit={this.submitHandler}>
-                    {this.renderInputs()}
-                    <div>
-                        <NavLink to="/tests" onClick={this.signUpHandler}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Sign Up
-                        </NavLink>
-                    </div>
-                </form>
-            </div> 
-        )
+    function signUpHandler(){
+        dispatch(signup( name.value, lastName.value, email.value, password.value, bio.value, formation.value, admin, account, false))
     }
-}
 
-function mapDispatchToProps(dispatch){
-    return{
-        signup: (userName,name, lastName, email,password, admin, account, isLogin ) => dispatch(signup(userName, name, lastName, email, password, admin, account, isLogin))
-    }
-}
+    const sleep = (ms) => {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+    };
 
-export default connect(null, mapDispatchToProps)(Signup)
+    useEffect(() => {
+
+        sleep(5000).then( r => {
+            dispatch(deleteError())
+        })
+
+    }, [error]);
+    
+
+
+    return(
+        <div className="h-25 row">
+            {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}
+            <div className='form'>
+                <h1> Sign Up </h1>
+                <div className='row'>
+                    
+                    <fieldset className='col'>
+                    
+                        <legend><span className="number">1</span> Your Basic Info</legend>
+                        
+                        <label htmlFor="name" >Name:</label>
+                        <input type="text" id="name" name="user_name" value={name.value} onChange={
+                            event => onChangeHandler(event,name,setname)
+                        }/>
+
+                        <label htmlFor="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" onChange={
+                             event => onChangeHandler(event,lastName,setlastName)
+                        }/>
+
+                        <div className={classNames}>
+                            <label htmlFor="email">Email:</label>
+                            <input style={ (email.valid) == false ? { border: "1.5px solid rgb(252 0 34)" } : null} type="email" id="email" name="user_email" onChange={
+                                event => onChangeHandler(event,email,setemail)
+                            }/>
+                            {
+                                (email.valid == false)
+                                ? <span>{email.errorMessage || "Enter valid data"}</span>
+                                : null
+                            }
+                        </div>
+                        
+                        <div className={classNames}>
+                            <label htmlFor="password">Password:</label>
+                            <input style={ (password.valid) == false ? { border: "1.5px solid rgb(252 0 34)" } : null} type="password" id="password" name="user_password" onChange={
+                                event => onChangeHandler(event,password,setpassword)
+                            }/>
+                            {
+                                (password.valid == false)
+                                ? <span>{password.errorMessage || "Enter valid data"}</span>
+                                : null
+                            }
+                        </div>
+                        
+                        
+                        {/* <label>Age:</label>
+                        <input type="radio" id="under_13" value="under_13" name="user_age"/>
+                        <label htmlFor="under_13" className="light">Under 13</label>
+                        <br/>
+                        <input type="radio" id="over_13" value="over_13" name="user_age"/>
+                        <label htmlFor="over_13" className="light">Over 13</label> */}
+                        
+                    </fieldset>
+                    <fieldset className='col'>  
+                    
+                        <legend><span className="number">2</span> Your Profile</legend>
+                        
+                        <label htmlFor="bio">Bio:</label>
+                        <textarea id="bio" name="user_bio" onChange={
+                            event => onChangeHandler(event,bio,setbio)
+                        }></textarea>
+                        
+                        
+                        <label htmlFor="formation">Formation:</label>
+                        <select id="formation" name="user_formation" value={formation.value} onChange={
+                            event => onChangeHandler(event,formation,setformation)
+                        }>
+                            <optgroup label="Initial">
+                                <option value="Student">Student</option>
+                                <option value="Student Pilot">Student Pilot</option>
+                                <option value="Sport Pilot">Sport Pilot</option>
+                                <option value="Private Pilot">Private Pilot</option>
+                                <option value="Private Pilot IFR">Private Pilot IFR</option>
+                                <option value="Private Pilot Multi Engine">Private Pilot Multi Engine</option>
+                            </optgroup>
+                            <optgroup label="Middle">
+                                <option value="Private Pilot Multi Engine IFR">Private Pilot Multi Engine IFR</option>
+                                <option value="Commertial Pilot">Commertial Pilot</option>
+                                <option value="Commertial Pilot IFR">Commertial Pilot IFR</option>
+                                <option value="Commertial Pilot Multi Engine">Commertial Pilot Multi Engine</option>
+                                <option value="Commertial Pilot Multi Engine IFR">Commertial Pilot Multi Engine IFR</option>
+                                <option value="Certified Flight Instructor VFR">Certified Flight Instructor VFR</option>
+                            </optgroup>
+                            <optgroup label="Advance">
+                                <option value="Certified Flight Instructor IFR">Certified Flight Instructor IFR</option>
+                                <option value="Certified Flight Instructor Multi Engine">Certified Flight Instructor Multi Engine</option>
+                                <option value="Certified Flight Instructor Multi Engine IFR">Certified Flight Instructor Multi Engine IFR</option>
+                                <option value="Airline Transport Pilot">Airline Transport Pilot</option>
+                                <option value="Airline Transport Pilot IFR">Airline Transport Pilot IFR</option>
+                                <option value="Airline Transport Pilot Multi Engine IFR">Airline Transport Pilot Multi Engine IFR</option>
+                            </optgroup>
+                        </select>
+                        
+                        {/* <label>Interests:</label>
+                        <input type="checkbox" id="development" value="interest_development" name="user_interest"/><label className="light" htmlFor="development">Development</label><br/>
+                        <input type="checkbox" id="design" value="interest_design" name="user_interest"/><label className="light" htmlFor="design">Design</label><br/>
+                        <input type="checkbox" id="business" value="interest_business" name="user_interest"/><label className="light" htmlFor="business">Business</label>
+                            */}
+                    </fieldset>
+                </div>
+            
+                <button onClick={signUpHandler}>Sign Up</button>
+                
+            </div>
+        </div>
+    )
+} 
+
+export default SignUp

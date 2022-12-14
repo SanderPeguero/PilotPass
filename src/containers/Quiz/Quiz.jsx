@@ -50,35 +50,52 @@ class Quiz extends React.Component {
             <Box className={classes.Quiz}
        >
                 <div className={classes.QuizWrapper}>
-                    <Stack >
-                        <Avatar style={{top: '1rem', margin: '1rem' }}>{this.props.activeQuestionNumber + 1}</Avatar>
-                    </Stack>
-                    
+                    <div className="row">
+                    <div className="container col-lg-4 col-md-7 col-sm-12" style={{borderRadius:'0'}}>
 
-                    {
-                        this.props.isLoading || !this.props.quiz
-                            ? <Loader />
-                            :
-                            this.props.isQuizFinished
-                                ? 
-                              
-                                    <FinishedQuiz
-                                    results={this.props.results}
-                                    quiz={this.props.quiz}
-                                    onRetry={this.props.retryQuiz}
+                        <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
+                            <h2 className="col-lg-4 col-md-7 col-sm-12">{this.props.currentQuizQuestion.materia}</h2>
+                        </div>
 
-                                />
+                        <div className="card col-lg-4 col-md-7 col-sm-12">
+                            <div className="card-header">
+                                <p className="row" style={{color:'white'}}> 
+                                    <span className="">Question {this.props.activeQuestionNumber + 1}</span>  
+                                    <span className="" style={{float:'right'}}>1:43:00</span> 
+                                </p>
+                            </div>
+                            <hr />
+
+                            <div>
+                                {
+                                    this.props.isLoading || !this.props.quiz
+                                    ? <Loader />
+                                    :
+                                    this.props.isQuizFinished
+                                    ? 
                                 
-                                : <ActiveQuiz
-                                    questionNumber={this.props.activeQuestionNumber + 1}
-                                    question={this.props.currentQuizQuestion.question}
-                                    answers={this.props.currentQuizQuestion.answers}
-                                    onAnswerClick={this.onAnswerClickHandler}
-                                    answerState={this.props.answerState}
-                                    quizLength={this.props.quiz.length}
-                                />
+                                        <FinishedQuiz
+                                        results={this.props.results}
+                                        quiz={this.props.quiz}
+                                        onRetry={this.props.retryQuiz}
 
-                    }
+                                    />
+                                    
+                                    : <ActiveQuiz
+                                        questionNumber={this.props.activeQuestionNumber + 1}
+                                        materia={this.props.currentQuizQuestion.materia}
+                                        question={this.props.currentQuizQuestion.question}
+                                        answers={this.props.currentQuizQuestion.answers}
+                                        onAnswerClick={this.onAnswerClickHandler}
+                                        answerState={this.props.answerState}
+                                        quizLength={this.props.quiz.length}
+                                    />
+                                }
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
 
                 </div>
             </Box>
