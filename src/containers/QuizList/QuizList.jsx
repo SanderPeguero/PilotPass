@@ -15,7 +15,7 @@ class QuizList extends Component {
         return this.props.quizList.map(quiz => {
             return (
                     <li key={quiz.id} className="list-group-item" style={{width:'100%', height:'100%', display:'flex'}}>
-                        <input class="form-check-input check" type="checkbox" id={quiz.id} disabled style={{width:"50px", height:'25px', float: "left"}}/>
+                        <input className="form-check-input check" type="checkbox" id={quiz.id} disabled style={{width:"50px", height:'25px', float: "left"}}/>
                         <NavLink to={"/quiz/" + quiz.id} style={{width:'100%', height:'100%'}}>
                             {quiz.name}
                         </NavLink>

@@ -37,7 +37,7 @@ const Navbar = ({ isAuthenticated }) => {
                 <li className="nav-item">
                     <NavLink to="/tests" className="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" className="fa-primary" d="M0 96C0 60.7 28.7 32 64 32H512c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM128 288c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32zm32-128c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM128 384c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32zm96-248c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224z"/></svg>
-                        <span className="link-text">Tests</span>
+                        <span className="link-text">My Course</span>
                     </NavLink>
                 </li>
 
@@ -48,7 +48,7 @@ const Navbar = ({ isAuthenticated }) => {
                     </NavLink>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <NavLink to="/payment" className="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path 
@@ -59,7 +59,7 @@ const Navbar = ({ isAuthenticated }) => {
                         </svg>
                         <span className="link-text">Payment</span>
                     </NavLink>
-                </li>
+                </li> */}
 
                 {/* Log Out Nav Button */}
                 <li className="nav-item">
@@ -129,7 +129,7 @@ const Navbar = ({ isAuthenticated }) => {
                                     ></path>
                                 </g>
                             </svg>
-                            <span className="link-text">Quantum</span>
+                            <span className="link-text">Reactor</span>
                         </a>
                     </li>
     
