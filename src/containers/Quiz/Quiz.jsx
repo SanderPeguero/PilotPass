@@ -50,15 +50,16 @@ const Quiz = (props) => {
     }, []);
 
     //Component will unmount
-    useEffect(() => {
+    // useEffect(() => {
 
-        return () => {
+    //     return () => {
 
-            dispatch(retryQuiz())
+    //         dispatch(fetchQuizById(props.match.params.id))
+    //         dispatch(retryQuiz())
 
-        }
+    //     }
         
-    }, []);
+    // }, []);
 
     
     const onAnswerClickHandler = answerId => {

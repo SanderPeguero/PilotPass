@@ -161,7 +161,7 @@ export function finishquiz() {
 }
 
 export function retryQuiz() {
-    return (dispatch, getState) => {
+    return dispatch => {
         const state = store.getState().courses;
         dispatch(resetquizState(state.quiz[0]));
     }

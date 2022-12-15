@@ -29,7 +29,6 @@ const FinishedQuiz = props => {
                     <ul>
 
                         {props.quiz.map((quizItem, index) => {
-                            console.log(index)
                             const classNames = [
                                 "fa",
                                 props.results[index] === "error" ? "fa-times" : "fa-check",
