@@ -1,10 +1,11 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { useEffect } from "react";
+import { connect, useSelector, useDispatch } from "react-redux";
 import classes from "./Quiz.module.css"
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
 import Loader from "../../components/UI/Loader/Loader";
-import { fetchQuizById, quizAnswerClick, retryQuiz } from "../../store/actions/quizActions";
+// import { fetchQuizById, quizAnswerClick, retryQuiz } from "../../store/actions/quizActions";
+import { fetchQuizById, quizAnswerClick, retryQuiz } from "../../redux/courses/functions";
 import { useParams } from "react-router-dom";
 import { Avatar, Box, Grid, Modal, Stack } from "@mui/material";
 
@@ -30,96 +31,186 @@ export function withRouter(Children) {
 }
 
 
-class Quiz extends React.Component {
+const Quiz = (props) => {
 
-    componentDidMount() {
-        this.props.fetchQuizById(this.props.match.params.id);
+    const activeQuestionNumber = useSelector(state => state.courses.activeQuestionNumber);
+    const isQuizFinished = useSelector(state => state.courses.isQuizFinished);
+    const answerState = useSelector(state => state.courses.answerState);
+    const results = useSelector(state => state.courses.results);
+    const quiz = useSelector(state => state.courses.quiz);
+    const currentQuizQuestion = useSelector(state => state.courses.currentQuizQuestion);
+    const isLoading = useSelector(state => state.courses.isLoading);
+    const dispatch = useDispatch();
+
+    //Component did mount
+    useEffect(() => {
+
+        dispatch(fetchQuizById(props.match.params.id))
+        
+    }, []);
+
+    //Component will unmount
+    useEffect(() => {
+
+        return () => {
+
+            dispatch(retryQuiz())
+
+        }
+        
+    }, []);
+
+    
+    const onAnswerClickHandler = answerId => {
+        dispatch(quizAnswerClick(answerId))
     }
 
-    componentWillUnmount() {
-        this.props.retryQuiz();
-    }
+    // console.log(currentQuizQuestion)
 
-    onAnswerClickHandler = answerId => {
-        this.props.quizAnswerClick(answerId);
-    };
+    return (
+        <Box className={classes.Quiz}>
+            <div className={classes.QuizWrapper}>
+                <div className="row">
+                <div className="container col-lg-4 col-md-7 col-sm-12" style={{borderRadius:'0'}}>
 
-    render() {
-        return (
-            
-            <Box className={classes.Quiz}
-       >
-                <div className={classes.QuizWrapper}>
-                    <div className="row">
-                    <div className="container col-lg-4 col-md-7 col-sm-12" style={{borderRadius:'0'}}>
+                    <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
+                        <h2 className="col-lg-4 col-md-7 col-sm-12">Exam Name</h2>
+                    </div>
 
-                        <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
-                            <h2 className="col-lg-4 col-md-7 col-sm-12">Exam Name</h2>
+                    <div className="card col-lg-4 col-md-7 col-sm-12">
+                        <div className="card-header">
+                            <p className="row" style={{color:'white'}}> 
+                                <span className="">Question {activeQuestionNumber + 1}</span>  
+                                <span className="" style={{float:'right'}}>1:43:00</span> 
+                            </p>
                         </div>
+                        <hr />
 
-                        <div className="card col-lg-4 col-md-7 col-sm-12">
-                            <div className="card-header">
-                                <p className="row" style={{color:'white'}}> 
-                                    <span className="">Question {this.props.activeQuestionNumber + 1}</span>  
-                                    <span className="" style={{float:'right'}}>1:43:00</span> 
-                                </p>
-                            </div>
-                            <hr />
-
-                            <div>
-                                {
-                                    this.props.isLoading || !this.props.quiz
-                                    ? <Loader />
-                                    :
-                                    this.props.isQuizFinished
-                                    ? 
-                                
-                                        <FinishedQuiz
-                                        results={this.props.results}
-                                        quiz={this.props.quiz}
-                                        onRetry={this.props.retryQuiz}
-
+                        <div>
+                            {
+                                isLoading || !quiz
+                                ? <Loader />
+                                :
+                                isQuizFinished
+                                ? 
+                            
+                                    <FinishedQuiz
+                                        results={results}
+                                        quiz={quiz}
+                                        onRetry={retryQuiz}
                                     />
-                                    
-                                    : <ActiveQuiz
-                                        questionNumber={this.props.activeQuestionNumber + 1}
-                                        question={this.props.currentQuizQuestion.question}
-                                        answers={this.props.currentQuizQuestion.answers}
-                                        onAnswerClick={this.onAnswerClickHandler}
-                                        answerState={this.props.answerState}
-                                        quizLength={this.props.quiz.length}
-                                    />
-                                }
-                            </div>
-                        </div>
+
+                                : <ActiveQuiz
+                                    questionNumber={activeQuestionNumber + 1}
+                                    question={currentQuizQuestion.question}
+                                    answers={currentQuizQuestion}
+                                    onAnswerClick={onAnswerClickHandler}
+                                    answerState={answerState}
+                                    quizLength={quiz.length}
+                                />
+                            }
                         </div>
                     </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </Box>
+    )
+}
+
+export default withRouter(Quiz)
+
+//  class Quiz extends React.Component {
+
+//     componentDidMount() {
+//         this.props.fetchQuizById(this.props.match.params.id);
+//     }
+
+//     componentWillUnmount() {
+//         this.props.retryQuiz();
+//     }
+
+//     onAnswerClickHandler = answerId => {
+//         this.props.quizAnswerClick(answerId);
+//     };
+
+//     render() {
+//         return (
+            
+//             <Box className={classes.Quiz}>
+//                 <div className={classes.QuizWrapper}>
+//                     <div className="row">
+//                     <div className="container col-lg-4 col-md-7 col-sm-12" style={{borderRadius:'0'}}>
+
+//                         <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
+//                             <h2 className="col-lg-4 col-md-7 col-sm-12">Exam Name</h2>
+//                         </div>
+
+//                         <div className="card col-lg-4 col-md-7 col-sm-12">
+//                             <div className="card-header">
+//                                 <p className="row" style={{color:'white'}}> 
+//                                     <span className="">Question {this.props.activeQuestionNumber + 1}</span>  
+//                                     <span className="" style={{float:'right'}}>1:43:00</span> 
+//                                 </p>
+//                             </div>
+//                             <hr />
+
+//                             <div>
+//                                 {
+//                                     this.props.isLoading || !this.props.quiz
+//                                     ? <Loader />
+//                                     :
+//                                     this.props.isQuizFinished
+//                                     ? 
+                                
+//                                         <FinishedQuiz
+//                                         results={results}
+//                                         quiz={quiz}
+//                                         onRetry={retryQuiz}
+
+//                                     />
+                                    
+//                                     : <ActiveQuiz
+//                                         questionNumber={this.props.activeQuestionNumber + 1}
+//                                         question={this.props.currentQuizQuestion.question}
+//                                         answers={this.props.currentQuizQuestion.answers}
+//                                         onAnswerClick={this.onAnswerClickHandler}
+//                                         answerState={this.props.answerState}
+//                                         quizLength={this.props.quiz.length}
+//                                     />
+//                                 }
+//                             </div>
+//                         </div>
+//                         </div>
+//                     </div>
                     
 
-                </div>
-            </Box>
-        )
-    }
-}
+//                 </div>
+//             </Box>
+//         )
+//     }
+// }
 
-function mapStateToProps(state) {
-    return {
-        activeQuestionNumber: state.currentQuiz.activeQuestionNumber,
-        isQuizFinished: state.currentQuiz.isQuizFinished,
-        answerState: state.currentQuiz.answerState, // { [id]: "success"/"error" } - current state
-        results: state.currentQuiz.results, // { [id]: "success"/"error" } - all first states
-        quiz: state.currentQuiz.quiz,
-        currentQuizQuestion: state.currentQuiz.currentQuizQuestion,
-        isLoading: state.currentQuiz.isLoading
-    }
-}
+// function mapStateToProps(state) {
+//     return {
+//         activeQuestionNumber: state.currentQuiz.activeQuestionNumber,
+//         isQuizFinished: state.currentQuiz.isQuizFinished,
+//         answerState: state.currentQuiz.answerState, // { [id]: "success"/"error" } - current state
+//         results: state.currentQuiz.results, // { [id]: "success"/"error" } - all first states
+//         quiz: state.currentQuiz.quiz,
+//         currentQuizQuestion: state.currentQuiz.currentQuizQuestion,
+//         isLoading: state.currentQuiz.isLoading
+//     }
+// }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        fetchQuizById: quizId => dispatch(fetchQuizById(quizId)),
-        quizAnswerClick: answerId => dispatch(quizAnswerClick(answerId)),
-        retryQuiz: () => dispatch(retryQuiz())
-    }
-}
+// function mapDispatchToProps(dispatch) {
+//     return {
+//         fetchQuizById: quizId => dispatch(fetchQuizById(quizId)),
+//         quizAnswerClick: answerId => dispatch(quizAnswerClick(answerId)),
+//         retryQuiz: () => dispatch(retryQuiz())
+//     }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Quiz));
+// export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Quiz));

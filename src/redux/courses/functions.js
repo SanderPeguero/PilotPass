@@ -1,7 +1,8 @@
 import { display } from "@mui/system";
 import axios from "../../axios/axios-quiz";
 import { createError } from "../error/errorSlice";
-import { fetchFailed, fetchQuizListSucceed, fetchQuizSucceed, fetchStart, quizFinished, quizNextQuestion, quizRetry, quizSetState } from "./slice";
+import { fetchFailed, fetchQuizListSucceed, fetchQuizSucceed, fetchStart, quizFinished, quizNextQuestion, quizRetry, quizSetState, setResult } from "./slice";
+import store from "../store";
 
 export function fetchQuizList() {
     return async dispatch => {
@@ -14,29 +15,12 @@ export function fetchQuizList() {
             // console.log(response)
             let data = response.data
 
-                // console.log(data)
-            // data.map( quiz => {
-            // })
-            
-            Object.values(response.data).map((question, index) => {
-                // console.log(index)
+            Object.keys(data).map((question, index, value) => {
                 quizList.push({
-                    id: index,
-                    name: question.subject
+                    id: question,
+                    name: data[question].subject
                 })
             })
-            // Object.values(response.data).forEach((key, index, subject) => {
-            //     // subject.forEach((quiz) => {
-            //     //     console.log(quiz)
-            //     // })
-            //     subject.map(quiz => {
-            //         quizList.push({
-            //             id: quiz.subject,
-            //             // name: `Quiz #${index + 1}`
-            //             name: quiz.subject
-            //         });
-            //     })
-            // });
 
             dispatch(fetchquizListSucceed(quizList))
             
@@ -50,23 +34,28 @@ export function fetchQuizList() {
 
 export function fetchQuizById(quizId) {
     return async dispatch => {
+
         dispatch(fetchstart());
 
         try {
             const response = await axios.get(`quizList/${quizId}.json`);
-            const quiz = response.data;
+            const quiz = response.data.preguntas;
 
             dispatch(fetchquizSucceed(quiz));
 
         } catch (error) {
+
             dispatch(fetchfailed(error));
+
         }
     };
 }
 
 export function quizAnswerClick(answerId) {
     return (dispatch, getState) => {
-        const state = getState().currentQuiz;
+        // const state = getState().currentQuiz;
+        const state = store.getState().courses;
+        
 
         // prevent event handles twice (on each click)
         let currentState = state.answerState;
@@ -78,28 +67,41 @@ export function quizAnswerClick(answerId) {
         // initialize variables
         let activeQuestionNumber = state.activeQuestionNumber;
         let currentQuiz = state.quiz[activeQuestionNumber];
-        let isRightAnswerChosen = currentQuiz.rightAnswerId === answerId;
+        let isRightAnswerChosen = currentQuiz.correctAnswer === answerId;
         let isFinalQuestion = activeQuestionNumber + 1 === state.quiz.length;
 
         // set answer state and first chosen result
         let answerState = isRightAnswerChosen ? "success" : "error";
         let results = state.results;
-        if (!results[currentQuiz.id]) results[currentQuiz.id] = answerState;
-        dispatch(quizsetState({[answerId]: answerState}, results));
-
+        if(results){
+            if (!results[activeQuestionNumber]){
+                // results[activeQuestionNumber] = answerState;
+                dispatch(setResult(answerState))
+            } 
+        }
+        
+        // dispatch(quizsetState({[answerId]: answerState}, results));
+        if(results[activeQuestionNumber] == "error"){
+            dispatch(quizsetState({[answerId]: answerState}, {...results}));   
+        }else{
+            dispatch(quizsetState({[answerId]: answerState}, {...results, [activeQuestionNumber]: answerState}));
+        }
+        
         // control colors changing and final state
         if (isRightAnswerChosen) {
+            // dispatch(quizsetState({[answerId]: answerState}, {...results, [activeQuestionNumber]: answerState}));
             const timeout = window.setTimeout(() => {
                 if (isFinalQuestion)
-                    dispatch(finishquiz());
+                dispatch(finishquiz());
                 else {
                     let nextQuestionNumber = activeQuestionNumber + 1;
-                    dispatch(quizsetState(nextQuestionNumber, state.quiz[nextQuestionNumber]));
+                    dispatch(quiznextQuestion(nextQuestionNumber, state.quiz[nextQuestionNumber]));
                 }
-
+                
                 window.clearTimeout(timeout);
             }, 500);
         }
+
     }
 }
 
@@ -160,7 +162,7 @@ export function finishquiz() {
 
 export function retryQuiz() {
     return (dispatch, getState) => {
-        const state = getState().currentQuiz;
+        const state = store.getState().courses;
         dispatch(resetquizState(state.quiz[0]));
     }
 }

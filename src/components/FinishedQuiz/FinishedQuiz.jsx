@@ -1,10 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import classes from "./FinishedQuiz.module.css"
 import Button from "../UI/Button/Button";
 import { Box } from '@mui/material'
+import { retryQuiz } from "../../redux/courses/functions";
 
 const FinishedQuiz = props => {
+    
+    const dispatch = useDispatch();
+
+    const onClickHandler = () => {
+        dispatch(retryQuiz())
+    }
+
     const rightAnswersCount = Object.keys(props.results).reduce((total, key) => {
         if (props.results[key] === "success")
             total++;
@@ -20,9 +29,10 @@ const FinishedQuiz = props => {
                     <ul>
 
                         {props.quiz.map((quizItem, index) => {
+                            console.log(index)
                             const classNames = [
                                 "fa",
-                                props.results[quizItem.id] === "error" ? "fa-times" : "fa-check",
+                                props.results[index] === "error" ? "fa-times" : "fa-check",
                                 classes[props.results[quizItem.id]]
                             ];
                             return (
@@ -38,9 +48,9 @@ const FinishedQuiz = props => {
 
                     <div>
                         <Link to={"/tests"}>
-                            <Button onClick={props.onRetry} type="success">To Quiz List</Button>
+                            <Button onClick={onClickHandler} type="success">To Quiz List</Button>
                         </Link>
-                        <Button onClick={props.onRetry} type="primary">Retry</Button>
+                        <Button onClick={onClickHandler} type="primary">Retry</Button>
                     </div>
             </div>
         </React.Fragment>
