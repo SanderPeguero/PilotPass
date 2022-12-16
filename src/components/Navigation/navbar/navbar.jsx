@@ -48,7 +48,7 @@ const Navbar = ({ isAuthenticated }) => {
                     </NavLink>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <NavLink to="/payment" className="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path 
@@ -59,7 +59,7 @@ const Navbar = ({ isAuthenticated }) => {
                         </svg>
                         <span className="link-text">Payment</span>
                     </NavLink>
-                </li>
+                </li> */}
 
                 {/* Log Out Nav Button */}
                 <li className="nav-item">

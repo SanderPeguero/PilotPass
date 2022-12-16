@@ -9,6 +9,7 @@ import './signup.css'
 
 const SignUp = () => {
 
+    //State
     const [name, setname] = useState({
         value: '',
         errorMessage: '',
@@ -51,11 +52,11 @@ const SignUp = () => {
     const [formation, setformation] = useState({ value: 'Student' });
     const [admin, setadmin] = useState(false);
     const [account, setaccount] = useState(1);
+    const dispatch = useDispatch()
+    const error = useSelector(state => state.error.error)
+    const classNames = [Error.input]
 
-    let classNames = [Error.input]
-
-    
-
+    //Use Effects
     useEffect(() => {
         if(email.value.length > 0){
 
@@ -72,6 +73,17 @@ const SignUp = () => {
 
     }, [email.value, password.value]);
 
+    useEffect(() => {
+
+        sleep(5000).then( r => {
+            dispatch(deleteError())
+        })
+
+    }, [error]);
+
+
+    //Handlers and Helpers
+
     const onChangeHandler = (event, state, setState) => {
         
         setState({...state, 
@@ -81,10 +93,7 @@ const SignUp = () => {
         })
 
     }
-
-    const dispatch = useDispatch()
-    const error = useSelector(state => state.error.error)
-
+    
     function signUpHandler(){
         dispatch(signup( name.value, lastName.value, email.value, password.value, bio.value, formation.value, admin, account, false))
     }
@@ -93,19 +102,9 @@ const SignUp = () => {
         return new Promise((resolve) => setTimeout(resolve, ms));
     };
 
-    useEffect(() => {
-
-        sleep(5000).then( r => {
-            dispatch(deleteError())
-        })
-
-    }, [error]);
-    
-
-
     return(
         <div className="h-25 row">
-            {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}
+            {error ? <Alert severity={5} title={"Error"} detail={error}/> : null} 
             <div className='form'>
                 <h1> Sign Up </h1>
                 <div className='row'>

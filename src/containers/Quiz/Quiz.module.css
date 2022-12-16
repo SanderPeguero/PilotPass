@@ -1,12 +1,15 @@
-.Quiz {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-
-    width: 100%;
-    padding-top: 100px;
-    /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
-    background: linear-gradient(#141e30, #243b55);
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .Quiz {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    
+        width: 100%;
+        padding-top: 100px;
+        /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
+        background: linear-gradient(#141e30, #243b55);
+    }
 }
 
 .Quiz h1 {
@@ -15,14 +18,31 @@
 }
 
 .QuizWrapper {
-    width: 600px;
+    width: 85%;
     height:  auto;
-    background-color: #4d5761;
-    margin: 5rem;
-
+    background-color: #4d576100;
+    position: relative;
+    bottom: 10%;
+    left: 2%;
+    margin: 0 10%;
 }
 
 .AvatarSty {
     background-color: grey;
     border-radius: 10rem;
 }
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .Quiz {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    
+        width: 100%;
+        padding-top: 2rem;
+        /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
+        background: linear-gradient(#141e30, #243b55);
+    }
+}
+
