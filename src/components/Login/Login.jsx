@@ -1,161 +1,131 @@
-import { connect } from 'react-redux'
-import { Component } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { isFromValid, isValueValid } from '../../form/formFramework'
-import { auth } from '../../store/actions/authActions'
-import Input from './Input'
-import classes from './Input.module.css'
-import './Login.css'
+import { useState, useEffect } from 'react'
+import { deleteError } from '../../redux/error/errorSlice'
 import { NavLink } from 'react-router-dom'
+import { auth } from '../../redux/user/authFunctions'
+import Button from "../UI/Button/Button";
+import Error from './Error.module.css'
+import Alert from '../../components/Alert/Snackbar'
+import './Login.css'
 
-function isInvalid({valid, touched, shouldValidate}){
-    return !valid && shouldValidate && touched
-}
+// function isInvalid({valid, touched, shouldValidate}){
+//     return !valid && shouldValidate && touched
+// }
 
-class Login extends Component {
-    state = {
-        isFormValid: false,
-        formControls: {
-            email:{
+const login = () => {
 
-                value: "",
-                type: "email",
-                label: "Email",
-                errorMessage: "Invalid Email",
-                valid: false,
-                touched: false,
-                validation: {
-                    required: true,
-                    email: true
-                }
-            },
-            
-            password:{
-                value: "",
-                type: "password",
-                label: "Password",
-                errorMessage: "Password Must Have 8 Characters or More",
-                valid: false,
-                touched: false,
-                validation: {
-                    required: true,
-                    minLength: 6
-                }
-            }
+    //State
+    const classNames = [Error.input]
+    const error = useSelector(state => state.error.error)
+    const dispatch = useDispatch()
+
+    const [email, setemail] = useState({
+        value: '',
+        errorMessage: 'Invalid Email',
+        valid: null,
+        touched: false,
+        validation: {
+            required: true,
+            email: true
         }
-    }
+    });
 
-    loginHandler = () => {
-        // try{
+    const [password, setpassword] = useState({
+        value: '',
+        errorMessage: 'Password Must Have 8 Characters or More',
+        valid: null,
+        touched: false
+    });
 
-            this.props.auth(
-                this.state.formControls.email.value,
-                this.state.formControls.password.value,
-                true
-            )
+    //Use Effects
+    useEffect(() => {
+        if(email.value.length > 0){
 
-        // }catch(error){
-            
-        //     console.log("ERROR CAPTURADO: ")
-        //     console.log(error)
+            setemail({...email,
+                'valid': isValueValid(email.value, email.validation)
+            })
+        }
+        if(password.value.length > 0){
 
-        // }
-    }
+            setpassword({...password,
+                'valid': isValueValid(password.value, password.validation)
+            })
+        }
 
-    submitHandler = event => {
-        event.preventDefault()
-    }
+    }, [email.value, password.value]);
 
-    onChangeHandler = ( event, controlName ) => {
-        const formControls = {...this.state.formControls}
-        const formControl = {...formControls[controlName]}
+    useEffect(() => {
 
-        formControl.value = event.target.value
-        formControl.touched = true
-        formControl.valid = isValueValid(formControl.value, formControl.validation)
-
-        formControls[controlName] = formControl
-        this.setState({
-            formControls: formControls,
-            isFormValid: isFromValid(formControls) //AWKWARD NAMING "isFromValid"
+        sleep(5000).then( r => {
+            dispatch(deleteError())
         })
+
+    }, [error]);
+
+    //Handlers and Helpers
+    const onChangeHandler = (event, state, setState) => {
+        
+        setState({...state, 
+            'value': event.target.value,
+            'touched': true,
+            'valid': isValueValid(state.value, state.validation)
+        })
+
     }
 
+    function loginHandler(){
+        dispatch(auth(email.value, password.value, true))
+    }
+
+    const sleep = (ms) => {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+    };
     
 
-    renderInputs(){
-        return Object.keys(this.state.formControls).map((formControlName, index) => {
-            
-            const formControl = this.state.formControls[formControlName]
-            const inputType = formControl.type || "text"
-            const htmlFor = `${inputType}-${Math.random()}`
-            const errorOcurred = isInvalid(formControl.valid, formControl.touched, Boolean(formControl.validation))
+    return(
+        <div className="h-25 row">
+            {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}
+            <div className='form' style={{margin: '10rem auto'}}>
+                <h1> Login </h1>
+                <div className='row'>
+                    
+                    <fieldset className='col' style={{ marginBottom: '0'}}>
 
-            if(errorOcurred){
-                classNames.push(classes.invalid)
-            }
-            
-            return(
-                <div className="user-box" key={formControlName + index + 1}>
-                    <Input
-                        key={formControlName + index}
-                        type={formControl.type}
-                        value={formControl.value}
-                        label={formControl.label}
-                        errorMessage={formControl.errorMessage}
-                        valid={formControl.valid}
-                        touched={formControl.touched}
-                        shouldValidate={Boolean(formControl.validation)}
-                        onChange={event => this.onChangeHandler(event, formControlName)}
-                    />
-{/*                 
-                    <input 
-                        type={formControl.type} 
-                        id={htmlFor} 
-                        value={formControl.value} 
-                        onChange={event => this.onChangeHandler(event, formControlName)}
-                    />
-                    {
-                        errorOcurred
-                        ? <span>{formControl.errorMessage || "Enter valid data"}</span>
-                        : null
-                    }
-                    <label htmlFor={htmlFor}>{formControl.label}</label> */}
-                    {/* <label>Username</label> */}
+                        <div className={classNames}>
+                            <label htmlFor="email">Email:</label>
+                            <input style={ (email.valid) == false ? { border: "1.5px solid rgb(252 0 34)" } : null} type="email" id="email" name="user_email" onChange={
+                                event => onChangeHandler(event,email,setemail)
+                            }/>
+                            {
+                                (email.valid == false)
+                                ? <span>{email.errorMessage || "Enter valid data"}</span>
+                                : null
+                            }
+                        </div>
+                        
+                        <div className={classNames}>
+                            <label htmlFor="password">Password:</label>
+                            <input style={ (password.valid) == false ? { border: "1.5px solid rgb(252 0 34)" } : null} type="password" id="password" name="user_password" onChange={
+                                event => onChangeHandler(event,password,setpassword)
+                            }/>
+                            {
+                                (password.valid == false)
+                                ? <span>{password.errorMessage || "Enter valid data"}</span>
+                                : null
+                            }
+                        </div>
+                        
+                    </fieldset>
 
                 </div>
 
-            )
-        })
-    }
-
-    render(){
-        return(
-            <div className='login-box'>
-                <h2>Login</h2>
-                <form action="" onSubmit={this.submitHandler}>
-                    {this.renderInputs()}
-                    <div>
-                        <NavLink to="/tests" onClick={this.loginHandler}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Log In
-                        </NavLink>
-                        <NavLink to="/signup" style={{ marginLeft: '5.8rem', background: 'black'}}>
-                            Sign Up
-                        </NavLink>
-                    </div>
-                </form>
+                <Button onClick={loginHandler} type="primary" style={{border: 'none', fontSize: '18px'}}>Login</Button>
+                <div style={{marginBottom: '1rem'}}>Don't have an accoung yet? <NavLink style={{color: '#69c9ef', textDecoration: 'none'}} to='/signup'>create account</NavLink></div>
+                
             </div>
-        )
-    }
+        </div>
+    )
 }
 
-function mapDispatchToProps(dispatch){
-    return{
-        auth: (email, password, isLogIn) => dispatch(auth(email, password, isLogIn))
-    }
-}
-
-export default connect(null, mapDispatchToProps)(Login)
+export default login

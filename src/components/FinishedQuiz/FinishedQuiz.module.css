@@ -1,6 +1,5 @@
 .FinishedQuiz {
-    margin: 0 10px;
-    padding: 20px;
+    
 
     box-sizing: border-box;
 
@@ -9,6 +8,19 @@
 
     color: white;
 }
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .FinishedQuiz{
+        margin: 0 10px;
+        padding: 20px;
+    }
+}
+
+/* Small screens
+@media only screen and (max-width: 600px) {
+
+} */
 
 .FinishedQuiz ul {
     margin: 0;

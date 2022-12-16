@@ -1,10 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, Navigate, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import classes from "./FinishedQuiz.module.css"
 import Button from "../UI/Button/Button";
 import { Box } from '@mui/material'
+import { retryQuiz } from "../../redux/courses/functions";
 
 const FinishedQuiz = props => {
+    
+    const dispatch = useDispatch();
+    const navigate  = useNavigate()
+
+    const onQuizList = () => {
+        dispatch(retryQuiz())
+        navigate('/tests')
+    }
+
+    const onRetry = () => {
+        dispatch(retryQuiz())
+    }
+
     const rightAnswersCount = Object.keys(props.results).reduce((total, key) => {
         if (props.results[key] === "success")
             total++;
@@ -13,7 +28,7 @@ const FinishedQuiz = props => {
 
     return (
         <React.Fragment>
-            <h1 style={{ margin: '25px' }}>Finished</h1>
+            <h1 style={{ margin: '0', marginTop: '25px' }}>Finished</h1>
             <div className={classes.FinishedQuiz}>
                 <h3>Right Answered: {rightAnswersCount}/{props.quiz.length}</h3>
                
@@ -22,7 +37,7 @@ const FinishedQuiz = props => {
                         {props.quiz.map((quizItem, index) => {
                             const classNames = [
                                 "fa",
-                                props.results[quizItem.id] === "error" ? "fa-times" : "fa-check",
+                                props.results[index] === "error" ? "fa-times" : "fa-check",
                                 classes[props.results[quizItem.id]]
                             ];
                             return (
@@ -36,11 +51,9 @@ const FinishedQuiz = props => {
 
                     </ul>
 
-                    <div>
-                        <Link to={"/tests"}>
-                            <Button onClick={props.onRetry} type="success">To Quiz List</Button>
-                        </Link>
-                        <Button onClick={props.onRetry} type="primary">Retry</Button>
+                    <div style={{display: 'flex'}}>
+                        <Button onClick={onQuizList} type="success">To Quiz List</Button>
+                        <Button onClick={onRetry} type="primary">Retry</Button>
                     </div>
             </div>
         </React.Fragment>

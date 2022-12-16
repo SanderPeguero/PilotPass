@@ -1,18 +1,37 @@
-.QuizList {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-
-    width: 100%;
-    padding-top: 100px;
-
-    /* background: linear-gradient(90deg, #fd8355 0%, #f0576c 37%, #f79cbd 100%); */
-    /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
-    background: linear-gradient(#141e30, #243b55) ;
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .QuizList {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    
+        width: 100%;
+        padding-top: 100px;
+        /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
+        background: linear-gradient(#141e30, #243b55);
+    }
 }
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .QuizList {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    
+        width: 100%;
+        padding-top: 2rem;
+        /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
+        background: linear-gradient(#141e30, #243b55);
+    }
+}
+
 
 .QuizList h1 {
     color: white;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border-radius: 30% 30% 0 0;
 }
 
 .QuizList ul {
@@ -22,14 +41,26 @@
 }
 
 .QuizList li {
+    background-color: rgba(255, 255, 255, 0.062);
     margin-bottom: 10px;
+    height: 30px;
+    padding: 10px 0;
+}
+
+.QuizList li:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.288);
 }
 
 .QuizList li a {
     text-decoration: none;
     color: white;
+    position: relative;
+    top: 5px;
 }
 
 .QuizList li a:hover {
-    color: #363f54;
+    color: #ffffff9a;
+    
 }
+

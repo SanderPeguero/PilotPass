@@ -7,13 +7,13 @@
     padding: 10px 20px;
 
     /* border-radius: 5px; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* border: none; */
 
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1.03rem;
     color: white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
     cursor: pointer;
 }
