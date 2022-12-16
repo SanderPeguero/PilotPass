@@ -1,0 +1,342 @@
+[
+    {
+        "question": "(Ver fig. 36) Con un reporte de viento desde el Sur a 20 nudos. ¿Cuál pista (10,14, o 24) es aceptable usar para un avión con un componente de viento cruzado máximo de 13 nudos?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Pista 10.",
+                "id": 1
+            },
+            {
+                "text": "Pista 14.",
+                "id": 2
+            },
+            {
+                "text": "Pista 24.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver fig. 36) Con un viento reportado del Norte a 20 nudos, ¿Cuál pista (6, 29, o 32) es aceptable para el uso de un avión con un máximo componente de viento cruzado de 13 nudos?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Pista 6.",
+                "id": 1
+            },
+            {
+                "text": "Pista 29.",
+                "id": 2
+            },
+            {
+                "text": "Pista 32.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 36) ¿ Cuál es el componente de viento cruzado para un aterrizaje en la pista 18, si la torre de control reporta vientos de 220° a 30 nudos?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "19 nudos.",
+                "id": 1
+            },
+            {
+                "text": "23 nudos.",
+                "id": 2
+            },
+            {
+                "text": "30 nudos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 36) ¿Cuál es la máxima velocidad de viento para un viento cruzado de 30° si el máximo componente de viento cruzado para el avión es de 12 KTS?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "16 KTS.",
+                "id": 1
+            },
+            {
+                "text": "20 KTS.",
+                "id": 2
+            },
+            {
+                "text": "24 KTS.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 37) ¿Determine la distancia total requerida para aterrizar?OAT........................................................... 90° F Altitud de presión........................................ 3,000 ft Peso.......................................................... 2,900 lb Componente de viento de frente.. 10 kts Obstáculo.................................................... 50ft",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,450 pies",
+                "id": 1
+            },
+            {
+                "text": "1,550 pies",
+                "id": 2
+            },
+            {
+                "text": "1,725 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 37) ¿Determine la distancia total requerida para aterrizar? OAT.......................................... Std Altura de presión ........................ 10,000 pies Peso................................... 2,400 lb Componente de viento................. Calm Obstáculos................................. 50 Piés",
+        "image": " ",
+        "choices": [
+            {
+                "text": "750 pies",
+                "id": 1
+            },
+            {
+                "text": "1,925 pies",
+                "id": 2
+            },
+            {
+                "text": "1,450 pies",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 38) Determine la distancia total requerida para aterrizar sobre un obstáculo de 50 pies Altitud de presión ...................7,500 ft Viento de frente............................................. 8 knt Temperatura................................................. 32° F Pista....................................... Superficie Dura",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,004 pies",
+                "id": 1
+            },
+            {
+                "text": "1,205 pies",
+                "id": 2
+            },
+            {
+                "text": "1,506 pies",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver fig. 38) ¿ Determine la distancia aproximada de carrera de aterrizaje ? Altura de presión ..............................1,250 ft Viento de frente.................................. 8 kts Temperatura............................ Std",
+        "image": " ",
+        "choices": [
+            {
+                "text": "275 pies",
+                "id": 1
+            },
+            {
+                "text": "366 pies",
+                "id": 2
+            },
+            {
+                "text": "470 pies",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 38) ¿ Determine la distancia total requerida de aterrizaje sobre un obstáculo de 50 pies? Altura de presión ..........................5,000 pies Viento frontal.......................... 8 kts Temperatura......................... 41° F Pista aterrizaje........... Superficie Dura",
+        "image": " ",
+        "choices": [
+            {
+                "text": "837 pies",
+                "id": 1
+            },
+            {
+                "text": "956 pies",
+                "id": 2
+            },
+            {
+                "text": "1,076 pies",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 40) Determine la distancia aproximada de recorrido en tierra requerida para el despegue. OAT........................................ 95°F Altitud de presión............. 2,000 ft Peso de despegue............ 2,500 lbs. Componente de viento de frente................................. 20 kts",
+        "image": " ",
+        "choices": [
+            {
+                "text": "650 pies",
+                "id": 1
+            },
+            {
+                "text": "850 pies",
+                "id": 2
+            },
+            {
+                "text": "1,000 pies",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver fig. 40) ¿Determine la distancia total requerida para un despegue sobre un obstáculo de 50 pies?OAT.......................................... Std. Altitud de Presión...................... Nivel del mar Peso de despegue........................ 2,700 lbs. Componente de viento de frente…........................Calma",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,000 pies",
+                "id": 1
+            },
+            {
+                "text": "1,400 pies",
+                "id": 2
+            },
+            {
+                "text": "1,700 pies",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 8) Determinar la altitud de densidad para estas condiciones: Altímetro............................. 30.35” Temperatura de la pista........ +25° F Elevación del Aeropuerto................. 3,894 ft. MSL",
+        "image": " ",
+        "choices": [
+            {
+                "text": "2,000 pies MSL",
+                "id": 1
+            },
+            {
+                "text": "2,900 pies MSL",
+                "id": 2
+            },
+            {
+                "text": "3,500 pies MSL",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 40) Determine la distancia aproximada de recorrido en tierra requerida para el despegue. OAT ...................................... 100ºF. Altitud de presión......................... 2,000 Pies. Peso de aterrizaje............................. 2,750. Componentes de viento de frente.................................... Calma",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,150 pies.",
+                "id": 1
+            },
+            {
+                "text": "1,300 pies.",
+                "id": 2
+            },
+            {
+                "text": "1,800 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 35)¿Cuál es el consumo de combustible esperado para un vuelo de 500 millas náuticas, bajo las siguientes condiciones? Altitud de presión......................... 4,000 pies. Temperatura....................... +29ºC. Presión del múltiple........... 21.3” Hg Viento.................................. Calma.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "31.4 Galones.",
+                "id": 1
+            },
+            {
+                "text": "36.1 Galones.",
+                "id": 2
+            },
+            {
+                "text": "40.1 Galones.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 38) Determine la distancia aproximada de recorrido en tierra durante aterrizaje: Altitud de presión....... Nivel del mar. Viento frontal.................... 4 Nudos temperatura............................ STD",
+        "image": " ",
+        "choices": [
+            {
+                "text": "356 Pies.",
+                "id": 1
+            },
+            {
+                "text": "401 Pies.",
+                "id": 2
+            },
+            {
+                "text": "490 Pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 38) Determine la distancia aproximada de recorrido en tierra para aterrizaje. Altitud de presión........... 5,000 Pies. Viento de frente.................... Calma. Temperatura........................ 101º F.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "495 pies.",
+                "id": 1
+            },
+            {
+                "text": "545 pies.",
+                "id": 2
+            },
+            {
+                "text": "445 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "El efecto de tierra es más probable que resulte en qué problema?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Hundirse hacia la superficie abruptamente durante el aterrizaje.",
+                "id": 1
+            },
+            {
+                "text": "Despegar antes de alcanzar la velocidad de despegue recomendada.",
+                "id": 2
+            },
+            {
+                "text": "Imposibilidad de despegar aunque la velocidad sea suficiente para las necesidades normales de despegue.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    }
+]

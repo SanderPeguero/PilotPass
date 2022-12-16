@@ -1,0 +1,242 @@
+[
+    {
+        "question": "Qué condiciones puede provocar que el altímetro indique una altura menor que la altitud verdadera?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una altitud más alta que la altitud normal.",
+                "id": 1
+            },
+            {
+                "text": "Una presión atmosférica más baja que la normal",
+                "id": 2
+            },
+            {
+                "text": "Una temperatura más caliente que la normal",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Si un vuelo es hecho desde un área de alta presión, hasta un área de baja presión sin haber ajustado el altímetro, este podría indicar:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Más baja que la altitud actual sobre el nivel del mar.",
+                "id": 1
+            },
+            {
+                "text": "Más alta que la altura sobre el nivel del mar.",
+                "id": 2
+            },
+            {
+                "text": "La altura actual sobre el nivel del mar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Si un vuelo se hace desde un área de presión baja a un área de alta presión sin ajustar el altímetro, el altímetro indicará:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La altura real sobre nivel del mar.",
+                "id": 1
+            },
+            {
+                "text": "Más arriba que la altitud real sobre nivel del mar.",
+                "id": 2
+            },
+            {
+                "text": "Más baja que la altura real sobre nivel del mar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Al aterrizar detrás de una aeronave grande, ¿Qué procedimiento debe seguirse para evitar el vórtice?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Manténgase arriba de su trayectoria de planeo todo el tiempo hasta aterrizar en la pista.",
+                "id": 1
+            },
+            {
+                "text": "Manténgase por debajo y a un lado de la trayectoria de aproximación final.",
+                "id": 2
+            },
+            {
+                "text": "Quedarse bien por debajo de su trayectoria final y aterrice por lo menos 2,000 pies detrás.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cómo circula el vórtice de la estela de turbulencia alrededor de cada punta de alas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Hacia adentro, hacia arriba, y alrededor cada punta.",
+                "id": 1
+            },
+            {
+                "text": "Hacia adentro, hacia arriba, y en contra de las manecillas del reloj.",
+                "id": 2
+            },
+            {
+                "text": "Hacia afuera, hacia arriba y alrededor de cada punta.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 2) Si un avión pesa 3,300 libras, ¿Qué peso aproximado deberá soportar la estructura durante un giro de 30° de banqueo mientras mantiene altitud?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,200 libras.",
+                "id": 1
+            },
+            {
+                "text": "3,100 libras.",
+                "id": 2
+            },
+            {
+                "text": "3,960 libras",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 2) Si un avión pesa 4,500 libras, ¿Qué peso aproximado deberá soportar su estructura durante un giro de 45° de banqueo mientras mantiene altitud?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "4,500 libras.",
+                "id": 1
+            },
+            {
+                "text": "6,750 libras.",
+                "id": 2
+            },
+            {
+                "text": "7,200 libras.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "El ángulo entre la línea de cuerda de un perfil aerodinámico y el viento relativo se conoce como el ángulo de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Sustentación.",
+                "id": 1
+            },
+            {
+                "text": "Ataque.",
+                "id": 2
+            },
+            {
+                "text": "Incidencia.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué afectan en una aeronave, los cambios en el centro de presión de un ala?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La proporción (rate) de sustentación/Gravedad.",
+                "id": 1
+            },
+            {
+                "text": "Capacidad de sustentación",
+                "id": 2
+            },
+            {
+                "text": "Balance aerodinámico y controlabilidad.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Mientras la altura aumenta, la velocidad indicada en la cual un avión entra en pérdida en una configuración en particular...",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Disminuirá a medidas en que la velocidad verdadera disminuye.",
+                "id": 1
+            },
+            {
+                "text": "Disminuirá a medidas en que la velocidad verdadera aumenta.",
+                "id": 2
+            },
+            {
+                "text": "Permanecerá igual sin importar la altitud.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "La flotación causada por el fenómeno efecto de tierra será más notoria durante aproximaciones para aterrizar cuando se está a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "menos que el largo de la envergadura sobre la superficie.",
+                "id": 1
+            },
+            {
+                "text": "Dos veces la longitud de la envergadura de ala por encima de la superficie.",
+                "id": 2
+            },
+            {
+                "text": "Un ángulo de ataque mayor que lo normal.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿De qué debe un piloto estar consciente como resultado del efecto de tierra?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El vortice de punta de alas creando problemas de la turbulencia de estela aviones que salen y entran.",
+                "id": 1
+            },
+            {
+                "text": "La resistencia inducida disminuye, cualquier exceso de velocidad en el punto de flotación puede causar flotación considerable.",
+                "id": 2
+            },
+            {
+                "text": "Un aterrizaje con pérdida total (full stall) requerirá menos elevador arriba cuando se hace un aterrizaje con pérdida total sin efecto de tierra.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    }
+]

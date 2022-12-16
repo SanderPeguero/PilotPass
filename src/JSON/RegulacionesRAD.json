@@ -1,0 +1,1862 @@
+[
+    {
+        "question": "¿Qué operación se puede describir como un mantenimiento preventivo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Reparación de los puntales de apoyo del tren de aterrizaje",
+                "id": 1
+            },
+            {
+                "text": "Rellenado de fluido hidráulico",
+                "id": 2
+            },
+            {
+                "text": "Reparación de una porción de la cubierta de la estructura haciendo costura adicional",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué operación se describiría como mantenimiento preventivo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Reposición de liquido hidráulico",
+                "id": 1
+            },
+            {
+                "text": "Reparación de una porción de la cubierta de la estructura haciendo costura adicional",
+                "id": 2
+            },
+            {
+                "text": "Reparación de los puntales del tren de aterrizaje",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cómo puede usted determinar si otra aeronave está un curso de colisión con su aeronave?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La otra aeronave parecerá ser siempre más grande y más cercana a un régimen mayor.",
+                "id": 1
+            },
+            {
+                "text": "La nariz de cada aeronave apunta al mismo punto en el espacio.",
+                "id": 2
+            },
+            {
+                "text": "No habrá movimiento relativo evidente entre su aeronave y la otra aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "La responsabilidad de evitar colisiones en un área de alerta descansa en:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La agencia controladora.",
+                "id": 1
+            },
+            {
+                "text": "Todos los pilotos.",
+                "id": 2
+            },
+            {
+                "text": "Control de trafico aereo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Se pueden mover los restos del avión antes que la Junta Investigadora tome custodia?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Sí, pero solamente si es movido por un oficial de la ley nacional, del estado, o local.",
+                "id": 1
+            },
+            {
+                "text": "Sí, pero solamente para proteger los restos contra daño adicional.",
+                "id": 2
+            },
+            {
+                "text": "No, no pueden ser movido bajo ninguna circunstancia.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Ninguna persona puede comenzar un vuelo en una aeronave de rotor bajo VFR a menos que haya bastante combustible para volar al primer punto de aterrizaje previsto y asumiendo velocidad de crucero normal, para volar después de eso por lo menos:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "20 minutos.",
+                "id": 1
+            },
+            {
+                "text": "30 minutos.",
+                "id": 2
+            },
+            {
+                "text": "1 hora.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Puede un piloto operar una aeronave que no esté en cumplimiento con una Directiva de Aeronavegabilidad?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Si, bajo condiciones VFR solamente.",
+                "id": 1
+            },
+            {
+                "text": "Si, las Directivas de Aeronavegabilidad (AD'S) son sólo voluntarias.",
+                "id": 2
+            },
+            {
+                "text": "Si, si la Directiva de Aeronavegabilidad lo permite.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Que debe saber un propietario u operador de una aeronave acerca de las Directivas de Aeronavegabilidad (AD's)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Sólo para propósito de información.",
+                "id": 1
+            },
+            {
+                "text": "Son mandatorias.",
+                "id": 2
+            },
+            {
+                "text": "Son voluntarias.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Vuelo a través de una zona restringida no debe ser realizado a menos que el piloto haya",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Llenado un plan de vuelo IFR.",
+                "id": 1
+            },
+            {
+                "text": "Recibido autorización previa de la agencia de control.",
+                "id": 2
+            },
+            {
+                "text": "Recibido permiso previo del oficial comandante de la base aérea militar más cercana.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Bajo qué condición, si la hay, pueden los pilotos volar a través de un área restringida?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Al volar en aerovías con una autorización de ATC.",
+                "id": 1
+            },
+            {
+                "text": "Con la autorización de la agencia controladora.",
+                "id": 2
+            },
+            {
+                "text": "Las regulaciones no permiten esto.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué acción debe un piloto tomar al operar bajo VFR en un Área de Operaciones Militares (MOA)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Obtenga una autorización de la agencia controladora antes de ingresar al MOA.",
+                "id": 1
+            },
+            {
+                "text": "Opere solamente en las vías aéreas transversales.",
+                "id": 2
+            },
+            {
+                "text": "Ejerza precaución extrema cuando se estén conduciendo actividades militares.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Antes de comenzar cada maniobra el piloto debe:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Chequear la altitud, velocidad y las indicaciones de rumbo (heading).",
+                "id": 1
+            },
+            {
+                "text": "Explorar visualmente toda el área para evitar colisión.",
+                "id": 2
+            },
+            {
+                "text": "Anunciar sus intenciones con la frecuencia CTA más cercano.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Además de otras acciones de prevuelo, para un vuelo VFR lejos de la vecindad del aeropuerto de salida, las regulaciones requieren específicamente al piloto al mando:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Revisar los procedimientos de señal de luz de control de tráfico.",
+                "id": 1
+            },
+            {
+                "text": "Verificar la exactitud del equipo de navegación y el transmisor localizador de emergencia (ELT).",
+                "id": 2
+            },
+            {
+                "text": "Determinar las longitudes de las pistas en los aeropuertos de uso previsto y los datos de distancia de despegue y aterrizaje de la aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "A los tripulantes de vuelo se les requiere mantener sus cinturones de seguridad y los arneses del hombro sujetados durante:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Despegues y aterrizajes.",
+                "id": 1
+            },
+            {
+                "text": "Todas las condiciones de vuelo.",
+                "id": 2
+            },
+            {
+                "text": "Vuelo en aire turbulento.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Con ciertas excepciones, los cinturones de seguridad se requieren que sean asegurados sobre los pasajeros durante:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Carreteo, despegues y aterrizajes.",
+                "id": 1
+            },
+            {
+                "text": "Todas las condiciones de vuelo.",
+                "id": 2
+            },
+            {
+                "text": "Vuelo en aire turbulento.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Con respecto a los pasajeros, ¿Qué obligación tiene el piloto en mando con relación al uso de los cinturón de seguridad?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El piloto al mando debe dar intrucciones a los pasajeros de como mantener el cinturon de seguridad facilmente durante el trancurso de el vuelo.",
+                "id": 1
+            },
+            {
+                "text": "El piloto en mando debe dar resumen a los pasajeros, respecto al uso del cinturón de seguridad durante el recorrigido de la pista , despegue y aterrizada.",
+                "id": 2
+            },
+            {
+                "text": "El piloto al mando no tiene ninguna obligación en cuanto a los pasajeros el uso de los cinturones de seguridad.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "El cinturón de seguridad es requerido para la seguridad de los pasajeros de cada cual en la aeronave y cuándo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Solo los pilotos,durante el despegue y aterrizaje.",
+                "id": 1
+            },
+            {
+                "text": "Pasajeros,durante el carreteo en la pista ,despegues y aterrizajes.",
+                "id": 2
+            },
+            {
+                "text": "Cada persona durante el vuelo completo en la aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "La acción de pre-vuelo, según lo requerido para todos los vuelos lejos de la vecindad de un aeropuerto, incluirá:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La designación de un aeropuerto.",
+                "id": 1
+            },
+            {
+                "text": "Un estudio de los procedimientos de llegada en los aeropuertos/helipuertos de uso previsto.",
+                "id": 2
+            },
+            {
+                "text": "Un curso de acción alterno, si el vuelo no se puede terminar tal y como fue planeado.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "La autoridad final en cuanto a la operación de un avión es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El Instituto Dominicano de Aviación Civil.",
+                "id": 1
+            },
+            {
+                "text": "Piloto al mando",
+                "id": 2
+            },
+            {
+                "text": "Del fabricante del avion.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "La persona responsable directamente de determinar si un avión es seguro para un vuelo es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Oficial de seguridad.",
+                "id": 1
+            },
+            {
+                "text": "El piloto al mando.",
+                "id": 2
+            },
+            {
+                "text": "La tripulacion de tierra.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Ninguna persona puede procurar actuar como tripulante de un avión civil con:",
+        "image": " ",
+        "choices": [
+            {
+                "text": ".008 Por ciento en peso o más de alcohol en la sangre.",
+                "id": 1
+            },
+            {
+                "text": ".004 Por ciento en peso o más de alcohol en la sangre.",
+                "id": 2
+            },
+            {
+                "text": ".04 Por ciento en peso o más de alcohol en la sangre.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Si una emergencia en vuelo requiere acción inmediata, el piloto al mando puede:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Desviarse de cualquier regla del RAD 91, hasta lo requerido para resolver la emergencia, pero debe someter un informe escrito al administrador en un plazo de 24 horas.",
+                "id": 1
+            },
+            {
+                "text": "Desviarse de cualquier regla del RAD 91, hasta lo requerido para resolver esa emergencia.",
+                "id": 2
+            },
+            {
+                "text": "No desviarse de cualquier regla del RAD 91, a menos que antes de la desviación la aprobación sea concedida por el administrador.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Una persona no puede actuar como tripulante de un avión civil si ha consumido bebidas alcohólicas dentro de las precedentes:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "8 horas.",
+                "id": 1
+            },
+            {
+                "text": "12 horas.",
+                "id": 2
+            },
+            {
+                "text": "24 horas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 4,
+        "explanation": " "
+    },
+    {
+        "question": "¿Bajo qué condición puede ser lanzado un objetos desde un avión?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Solo en una emergencia",
+                "id": 1
+            },
+            {
+                "text": "Si se toma las precauciones para evitar lesión o daño a las personas o a las propiedades en la superficie",
+                "id": 2
+            },
+            {
+                "text": "Si se recibe un permiso anterior del IDAC",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Bajo qué condición, si la hay, puede un piloto permitir a una persona que esté obviamente bajo influencia de drogas, ser llevada a bordo de una aeronave?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En una emergencia o si la persona es un paciente médico bajo cuidado apropiado.",
+                "id": 1
+            },
+            {
+                "text": "Solamente si la persona no tiene acceso al compartimento de cabina o del piloto.",
+                "id": 2
+            },
+            {
+                "text": "Bajo nunguna condicion.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la mejor descripción de las condiciones de vuelo bajo las cuales los miembros de la tripulación de vuelo están específicamente obligados a mantener abrochados sus cinturones de seguridad y arneses?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cinturones de seguridad durante el despegue y aterrizaje; arneses de hombros durante el despegue y aterrizaje.",
+                "id": 1
+            },
+            {
+                "text": "Cinturones de seguridad durante el despegue y aterrizaje; arneses de hombros durante el despegue y aterrizaje y mientras están en ruta.",
+                "id": 2
+            },
+            {
+                "text": "Cinturones de seguridad durante el despegue y aterrizaje y mientras están en ruta; arneses de hombro durante el despegue y aterrizaje.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuándo debe un piloto que se desvía de una regulación durante una emergencia, enviar un informe escrito de esa desviación al director general.?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Dentro de 7 dias.",
+                "id": 1
+            },
+            {
+                "text": "Dentro de 10 dias.",
+                "id": 2
+            },
+            {
+                "text": "Cuando sea requerido",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Dónde se pueden encontrar las limitaciones de operaciones de una aeronave?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En el certificado de aeronavegabilidad.",
+                "id": 1
+            },
+            {
+                "text": "En el manual de vuelo vigente aprobado por IDAC, el material aprobado, las marcas y los letreros, o cualquier combinación de los mismos.",
+                "id": 2
+            },
+            {
+                "text": "Los registros de estructura y motor de la aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Dónde se pueden encontrar las limitaciones de operaciones, si la aeronave tiene un certificado de aeronavegabilidad Experimental o Especial deportivo-ligero?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Adjunto al certificado de aeronavegabilidad.",
+                "id": 1
+            },
+            {
+                "text": "En el manual de vuelo actual aprobado por el IDAC.",
+                "id": 2
+            },
+            {
+                "text": "En un diario de vuelo de una aeronave de su estructura y motor.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué acción de pre-vuelo es específicamente requerida al piloto antes de cada vuelo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Chequear los diarios de operación del avión para saber si hay entradas apropiadas.",
+                "id": 1
+            },
+            {
+                "text": "Familiarizarse con toda la información disponible referente al vuelo.",
+                "id": 2
+            },
+            {
+                "text": "Revisar los procedimientos para evitar la estela de turbulencia.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Quién es responsable de determinar si un avión está en condición para vuelo seguro?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un mecánico de aviones certificado.",
+                "id": 1
+            },
+            {
+                "text": "El piloto al mando.",
+                "id": 2
+            },
+            {
+                "text": "El dueño du operador.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "El ancho de una aerovía desde cualquier lado de la línea central en espacio aéreo dominicano es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "5 Millas náuticas.",
+                "id": 1
+            },
+            {
+                "text": "6 Millas náuticas.",
+                "id": 2
+            },
+            {
+                "text": " Millas náuticas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "A menos que a cada ocupante se le proporciona con oxígeno suplementario, ninguna persona puede operar una aeronave civil de registro de R.D por encima de un máximo de altura de presión en cabina de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "12,500 pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "14,000 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "15,000 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Al operar una aeronave a una altitud de presión en cabina sobre 12.500 pies MSL hasta e incluyendo 14.000 pies MSL, el oxígeno suplementario deberá ser utilizado durante:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El tiempo total de vuelo en esas alturas.",
+                "id": 1
+            },
+            {
+                "text": "Ese tiempo de vuelo en exceso de 10 minutos en esas alturas.",
+                "id": 2
+            },
+            {
+                "text": "Ese tiempo de vuelo en exceso de 30 minutos en esas altitudes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "En adición a un certificado de aeronavegabilidad valido,¿ Qué otros documentos o registro debe estar abordo en una aeronave durante un vuelo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Diarios de operación del motor) (bitácora) y de estructura del avión, y el manual del dueño.",
+                "id": 1
+            },
+            {
+                "text": "Permiso del operador de radio y formularios de reparación y alteración.",
+                "id": 2
+            },
+            {
+                "text": "Limitaciones operacional y Certificado de registro.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuándo debe ser reemplazada o recargadas la batería en un ELT?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Después de cualquier activación involuntaria de el transmisor de localizacion de emergencia.",
+                "id": 1
+            },
+            {
+                "text": "Cuando el ELT se ha usado por mas de una hora (Tiempo acumulado).",
+                "id": 2
+            },
+            {
+                "text": "Cuando el ELT no puede ya ser oído durante el avión por la Comisión receptora de radio.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuándo, las baterías no-recargables de un transmisor localizador de emergencia (ELT) requieren ser substituidas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cada 24 meses.",
+                "id": 1
+            },
+            {
+                "text": "Cuando está a un 50% o haya expirado su tiempo de vida.",
+                "id": 2
+            },
+            {
+                "text": "Al momento de cada inspección anual o de 100 horas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Durante que período de tiempo deben encenderse las luces de posición en un avión?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Desde el Final del ocaso de la tarde hasta el principio del crepúsculo de la mañana.",
+                "id": 1
+            },
+            {
+                "text": "Desde 1 hora después de la puesta del sol hasta 1 hora antes de la salida del sol.",
+                "id": 2
+            },
+            {
+                "text": "Desde la puesta del sol hasta la salida del sol.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Antes de que los pasajeros puedan ser transportados en una aeronave que ha sido modificada de una manera que se pudiese haber cambiado apreciablemente sus características de vuelo, debe de hacérsele una prueba de vuelo por un piloto debidamente calificado el cual posea por lo menos:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Certificado de piloto comercial con una calificación de instrumento.",
+                "id": 1
+            },
+            {
+                "text": "Certificado de piloto.",
+                "id": 2
+            },
+            {
+                "text": "Certificado de piloto comercial y mecanico certificado.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "La responsabilidad de asegurarse de que un avión esté mantenido en condiciones Aero navegable es sobre todo del",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Piloto al mando.",
+                "id": 1
+            },
+            {
+                "text": "Dueño u operador.",
+                "id": 2
+            },
+            {
+                "text": "Mecanico que realice el trabajo",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "La aeronavegabilidad de una aeronave puede determinarse por una inspección de pre-vuelo y",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una declaración del propietario u operador de que la aeronave está en condiciones de aeronavegabilidad.",
+                "id": 1
+            },
+            {
+                "text": "Endoso en el libro de registro por un instructor de vuelo.",
+                "id": 2
+            },
+            {
+                "text": "La revisión de los registros de mantenimiento.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "La inspección anual de un avión fue realizada el 12 de Julio de este año. La inspección anual siguiente deberá ser no más tarde",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El 1ero de Julio, próximo año.",
+                "id": 1
+            },
+            {
+                "text": "El 13 de Julio, próximo año.",
+                "id": 2
+            },
+            {
+                "text": "El 31 de Julio, próximo año.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "La responsabilidad de garantizar que el personal de mantenimiento realice las entradas apropiadas en los registros de mantenimiento de la aeronave, que indiquen que la aeronave ha sido aprobada para su regreso al servicio corresponde a",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El dueño u operador.",
+                "id": 1
+            },
+            {
+                "text": "Piloto al mando.",
+                "id": 2
+            },
+            {
+                "text": "Mecanico que realizo el trabajo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "La terminación de una inspección de condición anual y la vuelta del avión al servicio, se debe indicar siempre por:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La fecha renovación de licencia en el certificado de registro.",
+                "id": 1
+            },
+            {
+                "text": "Una notificación apropiada en los expedientes de mantenimiento del avión.",
+                "id": 2
+            },
+            {
+                "text": "Una etiqueta engomada de la inspección colocada en el tablero de instrumentos que enumera la fecha anual de la terminación de la inspección.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Los expedientes de mantenimiento muestran que la última inspección del transpondedor fue realizada el 1ero de septiembre de 1993. La inspección siguiente debe ser no más tarde que el:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El 30 de Septiembre de 1994.",
+                "id": 1
+            },
+            {
+                "text": "El 1ero de Septiembre de 1995.",
+                "id": 2
+            },
+            {
+                "text": "El 30 de Septiembre 1995.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Ninguna persona puede utilizar un transpondedor ATC, a menos que se haya probado y se haya examinado dentro de por lo menos los precedentes:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "6 meses calendario.",
+                "id": 1
+            },
+            {
+                "text": "12 meses calendario.",
+                "id": 2
+            },
+            {
+                "text": "24 meses calendario.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Para determinar la fecha de vencimiento de la última inspección anual de una aeronaves, una persona debe referirse a",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Certificado de aeronavegabilidad.",
+                "id": 1
+            },
+            {
+                "text": "Certificado de registro.",
+                "id": 2
+            },
+            {
+                "text": "Registro de mantenimiento de la aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Si una alteración o reparación afecta substancialmente la operación de un avión en vuelo, ese avión debe ser probado en vuelo por un piloto calificado apropiadamente y aprobado para la vuelta al servicio antes de ser operado",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Por cualquier piloto privado.",
+                "id": 1
+            },
+            {
+                "text": "Con pasajeros abordo.",
+                "id": 2
+            },
+            {
+                "text": "Para compensación o emplear.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Un avión tenía una inspección de 100 horas, cuando el tacómetro leyó 1259,6. ¿Cuándo debe ser la inspección siguiente de 100 horas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1349.6 horas.",
+                "id": 1
+            },
+            {
+                "text": "1359.6 horas.",
+                "id": 2
+            },
+            {
+                "text": "1369.6 horas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Una inspección de 100 horas, se debió haber hecho a las 3302,5 horas, Esa inspección de 100 horas fue hecha a las 3309,5 horas .¿Cuándo serán las próximas inspección de 100 horas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "3312.5 horas.",
+                "id": 1
+            },
+            {
+                "text": "3402.5 horas.",
+                "id": 2
+            },
+            {
+                "text": "3409.5 horas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuáles récords o documentos debe mantener el dueño u operador de un avión, para demostrar cumplimiento con una Directiva de Aeronavegabilidad aplicable?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Records de mantenimiento del avión.",
+                "id": 1
+            },
+            {
+                "text": "Certificado de Aeronavegabilidad y el Manual operativo del Piloto.",
+                "id": 2
+            },
+            {
+                "text": "Certificados de Aeronavegabilidad y Registro.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Por cuanto tiempo es válido el certificado de aeronavegabilidad de un avión?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Mientras el avión tenga un certificado de registro actual.",
+                "id": 1
+            },
+            {
+                "text": "Indefinidamente, a menos que el avión sufra un daño importante.",
+                "id": 2
+            },
+            {
+                "text": "Mientras el avión se mantenga y se opere según los requisitos del Reglamento Aeronáutico Dominicano.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué tipo de inspección de aeronave es requerida para renta de aeronaves, y también para vuelos de instrucción?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Condicion anual e inspección de 100 horas.",
+                "id": 1
+            },
+            {
+                "text": "Condicion bianual e inspección de 100 horas.",
+                "id": 2
+            },
+            {
+                "text": "Condición anual, e inspección de 50 horas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Quién es el principal responsable para mantener a una aeronave en condición de aeronavegabilidad?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Piloto en comando.",
+                "id": 1
+            },
+            {
+                "text": "Propietario u operador.",
+                "id": 2
+            },
+            {
+                "text": "Mecanico.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Quien determina que la aeronave indicada haya sido aprobada hacia el retorno a servicio?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Propietario u operador.",
+                "id": 1
+            },
+            {
+                "text": "Mecanico certificado.",
+                "id": 2
+            },
+            {
+                "text": "Estacion de reparacion.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Quién es responsable de asegurar que los directrices de aeronavegabilidad (AD's) se cumplan?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Propietario u operador.",
+                "id": 1
+            },
+            {
+                "text": "Estación de reparación.",
+                "id": 2
+            },
+            {
+                "text": "Mecanico con autorizacion de inspeccion (IA).",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "El mantenimiento preventivo se ha realizado en una aeronave, que papeleo se requiere?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una descripción completa y detallada del trabajo realizado debe ingresarse en la bitácora de estructura de la aeronave.",
+                "id": 1
+            },
+            {
+                "text": "La fecha en que se completó el trabajo y el nombre de la persona que lo hizo debe ingresarse en el registro de estructura y motor de la aeronave.",
+                "id": 2
+            },
+            {
+                "text": "La firma, el número del certificado y la clase de certificado perteneciente a la persona que aprueba el trabajo y una descripción del trabajo, se deben incorporar en los registros de mantenimiento de la aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué regulación permite que un piloto privado realice mantenimiento preventivo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "RAD 91.403",
+                "id": 1
+            },
+            {
+                "text": "RAD 43.7",
+                "id": 2
+            },
+            {
+                "text": "RAD 61.113",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Quién puede realizar mantenimiento preventivo en un aeronave y aprobarlo para la vuelta al servicio?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Estudiante o piloto recreativo.",
+                "id": 1
+            },
+            {
+                "text": "Piloto privado o comercial.",
+                "id": 2
+            },
+            {
+                "text": "Ninguno de los anteriores.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Si una aeronave está involucrada en un accidente que resulte en un daño sustancial a la aeronave, debe ser notificada a la NTSB más cercana",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Inmediatamente.",
+                "id": 1
+            },
+            {
+                "text": "Dentro de 48 horas.",
+                "id": 2
+            },
+            {
+                "text": "Dentro de 7 dias.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Qué incidente requiere una notificación inmediata a la oficina de campo más cercana del NTSB?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un aterrizaje forzoso debido a la perdida de motor.",
+                "id": 1
+            },
+            {
+                "text": "Daños del tren de aterrizaje, debido a un aterrizaje duro.",
+                "id": 2
+            },
+            {
+                "text": "Malfuncionamiento o falla del sistema de mandos de vuelo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál incidente necesita una notificación inmediatamente a la NTSB?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En un vuelo de perdida Generador/Alternador.",
+                "id": 1
+            },
+            {
+                "text": "Fuego en vuelo.",
+                "id": 2
+            },
+            {
+                "text": "Una perdida del generador o alternador en un avion.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál incidente requiere hacer una inmediatamente notificación a la NTSB?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una sobre carga en la aeronave que se involucre en un accidente.",
+                "id": 1
+            },
+            {
+                "text": "En un vuelo y la perdida de radio de comunicacion.",
+                "id": 2
+            },
+            {
+                "text": "En un veulo la perdida de generador o alternador.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Ninguna persona puede operar un avión en vuelo acrobático cuando está:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La visibilidad de vuelo es menos de 5 millas.",
+                "id": 1
+            },
+            {
+                "text": "Sobre cualquier área congestionada de una ciudad, pueblo, o establecimiento.",
+                "id": 2
+            },
+            {
+                "text": "Menos de 2,500 pies AGL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Ninguna persona puede operar un avión en vuelo acrobático cuando la visibilidad de vuelo es menos que:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "3 Millas.",
+                "id": 1
+            },
+            {
+                "text": "5 Millas.",
+                "id": 2
+            },
+            {
+                "text": "7 Millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la altura más baja permitida para el vuelo acrobático?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,000 piés AGL.",
+                "id": 1
+            },
+            {
+                "text": "1,500 piés AGL.",
+                "id": 2
+            },
+            {
+                "text": "2,000 piés AGL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿En qué clase de espacio aéreo está prohibido el vuelo acrobático?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En la Clase G de el espacio aereo por encima de los 1,500 pies de el nivel de el terreno (AGL).",
+                "id": 1
+            },
+            {
+                "text": "En espacio aereo Clase E por debajo de 1,500 pies de el nivelde el terreno ( AGL).",
+                "id": 2
+            },
+            {
+                "text": "En la Clase E de el espacio aereo no designado por el espacio aereo federal sobre los 1,500 pies de el nivel de el terreno (AGL).",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Que se prohíbe normalmente, al operar un avión civil de la categoría restringida?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Vuelo bajo reglas de vuelo por instrumento",
+                "id": 1
+            },
+            {
+                "text": "Vuelo sobre un área densamente poblada.",
+                "id": 2
+            },
+            {
+                "text": "Vuelo dentro del espacio aéreo Clase D.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 26, área 3.) Cuando vuela sobre el refugio nacional de vida silvestre Arrowwood, un piloto no debe volar más bajo de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "2,000 pies AGL.",
+                "id": 1
+            },
+            {
+                "text": "2,500 pies AGL.",
+                "id": 2
+            },
+            {
+                "text": "3,000 pies AGL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Se requiere a los pilotos que vuelan sobre un refugio nacional de vida silvestre no volar por debajo de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,000 pies AGL.",
+                "id": 1
+            },
+            {
+                "text": "2,000 pies AGL.",
+                "id": 2
+            },
+            {
+                "text": "3,000 pies AGL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es el requerimiento específico de combustible para el vuelo bajo VFR durante horas de luz del día en un avión?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Bastante para terminar el vuelo a velocidad de crucero normal en condiciones de viento adverso.",
+                "id": 1
+            },
+            {
+                "text": "Bastantes para volar al primer punto de aterrizaje previsto y volar después de eso por 30 minutos a velocidad normal de crucero.",
+                "id": 2
+            },
+            {
+                "text": "Bastantes para volar al primer punto de aterrizaje previsto y volar después de eso por 45 minutos a velocidad normal de crucero.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es el requisito específico de combustible para el vuelo bajo VFR de noche en un avión?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Bastante para terminar el vuelo a la velocidad de crucero normal en condiciones de viento adverso.",
+                "id": 1
+            },
+            {
+                "text": "Bastantes para volar al primer punto de aterrizaje previsto y para volar después de eso por 30 minutos a velocidad de crucero normal.",
+                "id": 2
+            },
+            {
+                "text": "Bastantes para volar al primer punto de aterrizaje previsto y para volar después de eso por 45 minutos a la velocidad de crucero normal.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Excepto ,cuando sea necesario en un aterrizaje o despegue ¿ Cuál es la altura segura requerida para un piloto a operar una aeronave en una área determinada congestionada?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "A una altura de 1,000 pies por encima de cualquier obstáculo, vehículo, y cualquier estructura o embarcacion.",
+                "id": 1
+            },
+            {
+                "text": "A una altura de 500 pies por encima de el obstáculo mas alto, dentro de el radio horizontal de 1,000 pies de la aeronave.",
+                "id": 2
+            },
+            {
+                "text": "A una altura de 1,000 pies sobre el obstáculo dentro de el radio horizontal de 2,000 pies de la aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Excepto cuando sea necesario para el despegue o el aterrizaje, un avión no puede ser operado a una distancia más cerca de cualquier persona, embarcación, vehículo o estructura a la distancia de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "500 Pies.",
+                "id": 1
+            },
+            {
+                "text": "700 Pies.",
+                "id": 2
+            },
+            {
+                "text": "1,000 Pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Excepto cuando sea necesario para el despegue o el aterrizaje, ¿Cuál es la altura mínima requerida para un piloto para operar una aeronave con seguridad, aunque no sea una zona congestionada?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una altura que permita, si una la unidad de energía falla, un aterrizaje de emergencia sin peligro para las personas o los bienes en la superficie",
+                "id": 1
+            },
+            {
+                "text": "A una altura de 500 pies AGL ,Excepto por el agua o zona de baja densidad de población, que requiere de 500 pies de distancia de cualquier persona, embarcación, vehículo o estructura fisica",
+                "id": 2
+            },
+            {
+                "text": "A una altura de 500 Pies por encima de de el nivel del obstaculo , y dentro de un radio horizontal de 1,000 Pies",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Ninguna persona puede operar un avión en vuelo de formación:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Sobre un área densamente poblada.",
+                "id": 1
+            },
+            {
+                "text": "En espacio aéreo Clase D bajo VFR especial.",
+                "id": 2
+            },
+            {
+                "text": "Excepto por arreglo anterior con el piloto al mando de cada avión.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Un avión y un dirigible llegan al mismo punto. Si el dirigible está a la izquierda de la posición del avión ¿Cuál aeronave tiene el derecho a paso?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El dirigible.",
+                "id": 1
+            },
+            {
+                "text": "El aeroplano.",
+                "id": 2
+            },
+            {
+                "text": "Cada piloto debe cambiar su rumbo hacia la derecha.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál aeronave tiene el derecho de paso sobre la otra aeronave que está en lista?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Planeador",
+                "id": 1
+            },
+            {
+                "text": "Dirigible",
+                "id": 2
+            },
+            {
+                "text": "Aeronave reabasteciendo otra aeronave",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál aeronave tiene la preferencia sobre el otro avión en lista?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Giroplano",
+                "id": 1
+            },
+            {
+                "text": "Dirigible",
+                "id": 2
+            },
+            {
+                "text": "Un avion que remolque a otro",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es el mínimo equipo de radio requerido por el VFR para operar dentro del espacio aéreo a CLASE B?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un equipo de radio de dos vias y un transpondedor con codigo 4096.",
+                "id": 1
+            },
+            {
+                "text": "Un equipo de radio de dos vias con un tranpondedor con codigo 4096 y altimetro codificado.",
+                "id": 2
+            },
+            {
+                "text": "Un equipo de comunicación de radio de dos vías, transpondedor con código 4096, codificación de altimetro y un receptor VOR o TACAN.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es el procedimiento correcto a utilizar, en la salida del patrón de tráfico, en un aeropuerto no controlado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Salga en cualquier dirección consistente con la seguridad, después de cruzar el límite del aeropuerto.",
+                "id": 1
+            },
+            {
+                "text": "Hacer todos los giros hacia la izquierda.",
+                "id": 2
+            },
+            {
+                "text": "Cumplir con cualquier patrón de tráfico establecido por el IDAC para el aeropuerto.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuándo un piloto debe presentar un informe detallado de una situación de emergencia que causó el piloto al desviarse de un despeje del ATC?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Dentro de 48 horas si es requerido por el control de trafico aereo (ATC).",
+                "id": 1
+            },
+            {
+                "text": "Inmediatamente.",
+                "id": 2
+            },
+            {
+                "text": "Dentro de 7 dias.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Excepto cuando sea necesario, para el despegue o el aterrizaje, ¿Cuál es la altura segura mínima para que un piloto opere un avión en cualquier área?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una altura que permitiendo que si falla el motor, pueda realizar un aterrizaje de emergencia sin peligro a las personas o propiedades en la superficie.",
+                "id": 1
+            },
+            {
+                "text": "Una altura de 500 pies sobre la superficie y no más cerca de 500 pies, a cualquier persona, buque, vehículo, o estructura.",
+                "id": 2
+            },
+            {
+                "text": "Una altura de 500 pies sobre el obstáculo más alto dentro de un radio horizontal de 1.000 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué acción es requerida cuando dos aviones de la misma categoría llegan al mismo tiempo ,pero no de frente.?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La aeronave mas rapida debera ceder el paso.",
+                "id": 1
+            },
+            {
+                "text": "La aeronave que este en la posicion izquierda cede el paso.",
+                "id": 2
+            },
+            {
+                "text": "Cada aeronave da paso a la derecha.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué acción, si la hay, es apropiada si el piloto se desvía de una instrucción del ATC durante una emergencia y se le da prioridad?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "No tome ninguna acción especial puesto que usted es piloto al mando.",
+                "id": 1
+            },
+            {
+                "text": "Haga un informe detallado en un plazo de 48 horas al jefe de la facilidad apropiada del ATC, si es solicitado.",
+                "id": 2
+            },
+            {
+                "text": "Haga un informe al director del IDAC, lo antes posible.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué avión tiene el derecho de paso sobre el resto del tráfico aéreo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un globo.",
+                "id": 1
+            },
+            {
+                "text": "Un avión en señal de socorro o en aprietos.",
+                "id": 2
+            },
+            {
+                "text": "Un avión en aproximación final para aterrizar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué medidas deben tener los pilotos de un planeador y de un avión que coinciden en curso de colisión?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El piloto de el avion debe ceder el paso a la derecha.",
+                "id": 1
+            },
+            {
+                "text": "El piloto del planeador debe ceder el paso a la derecha.",
+                "id": 2
+            },
+            {
+                "text": "Ambos pilotos deben girar a la derecha.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "El operador de una aeronave que ha estado implicado en un accidente, se le requiere suministrar un informe de accidente dentro de",
+        "image": " ",
+        "choices": [
+            {
+                "text": "5 dias.",
+                "id": 1
+            },
+            {
+                "text": "7 dias.",
+                "id": 2
+            },
+            {
+                "text": "10 dias.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "El operador de una aeronave que ha estado involucrado en un incidente debe presentar un informe a la oficina de seguridad de transporte (NTSB). en un plazo:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Dentro de 7 dias.",
+                "id": 1
+            },
+            {
+                "text": "Dentro de 10 dias.",
+                "id": 2
+            },
+            {
+                "text": "Cuando sea requerido.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando se activa un Transmisor Localizador de Emergencia (ELT) se transmite en:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "118.0 y 118.8 MHz.",
+                "id": 1
+            },
+            {
+                "text": "121.5 y 243.0 MHz.",
+                "id": 2
+            },
+            {
+                "text": "123.0 y 119.0 MHz.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuándo debe la batería de un Transmisor Localizador de Emergencia (ELT) ser sustituida (o recargada si la batería es recargable)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Después de la mitad de vida útil de la batería.",
+                "id": 1
+            },
+            {
+                "text": "Durante cada inspección anual y de 100 horas.",
+                "id": 2
+            },
+            {
+                "text": "Cada 24 meses calendario.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuándo puede un Transmisor Localizador de Emergencia (ELT) ser probado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuando sea.",
+                "id": 1
+            },
+            {
+                "text": "A los 15 y 45 minutos después de la hora.",
+                "id": 2
+            },
+            {
+                "text": "Durante los primeros 5 minutos después de la hora.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué procedimiento se recomienda para asegurarse de que el Transmisor Localizador de Emergencia (ELT) no ha sido activado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Apague el ELT de la aeronave después de aterrizar.",
+                "id": 1
+            },
+            {
+                "text": "Pregunte a la torre del aeropuerto si están recibiendo una señal de ELT.",
+                "id": 2
+            },
+            {
+                "text": "Monitoreé 121.5 antes de apagar el motor.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    }
+]

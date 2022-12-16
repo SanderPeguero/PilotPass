@@ -1,0 +1,242 @@
+[
+    {
+        "question": "La diferencia angular entre el Norte verdadero y Norte magnético es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Desviación magnética.",
+                "id": 1
+            },
+            {
+                "text": "Variación magnética.",
+                "id": 2
+            },
+            {
+                "text": "Error de la aceleración del compás.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Bajo qué condición la altitud de presión será igual a la altitud verdadera?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuando la presión atmosférica es 29.92 pulgadas de Hg.",
+                "id": 1
+            },
+            {
+                "text": "Cuando existen condiciones atmosféricas estándar.",
+                "id": 2
+            },
+            {
+                "text": "Cuando la altitud indicada es igual a la altitud de presión.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "( Ver la figura 3) ¿Cuál(es) altímetro(s) indica (n) más de 10,000 pies?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1, 2 y 3.",
+                "id": 1
+            },
+            {
+                "text": "1 y 2 solamente.",
+                "id": 2
+            },
+            {
+                "text": "1 solamente.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 3) El altímetro Nº 2, indica:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,500 pies.",
+                "id": 1
+            },
+            {
+                "text": "4,500 pies.",
+                "id": 2
+            },
+            {
+                "text": "14,500 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 3) El altímetro Nº 3 indica:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "9,500 pies.",
+                "id": 1
+            },
+            {
+                "text": "10,950 pies.",
+                "id": 2
+            },
+            {
+                "text": "15,940 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál (es)instrumento (s) estará (n) inoperativo (s) si se obstruyen las puertas de estáticas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Solo el velocímetro.",
+                "id": 1
+            },
+            {
+                "text": "Solo el altímetro.",
+                "id": 2
+            },
+            {
+                "text": "Velocímetro, altímetro, y velocidad vertical.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál instrumento estará inoperativo si se obstruye el tubo pitot?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Altímetro.",
+                "id": 1
+            },
+            {
+                "text": "Velocidad vertical.",
+                "id": 2
+            },
+            {
+                "text": "Velocidad.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Una falla del sistema eléctrico (batería y alternador) ocurre durante un vuelo. En esta situación, usted:",
+        "image": "",
+        "choices": [
+            {
+                "text": "Experimentaría una falla del equipo de aviónica.",
+                "id": 1
+            },
+            {
+                "text": "Experimenta una probable falla en el sistema de ignición del motor, indicadores de combustible, sistema de luces del avión y equipo de aviónica.",
+                "id": 2
+            },
+            {
+                "text": "Probablemente experimenta una falla de motor debido a la pérdida de la bomba de combustible y también, experimenta falla del equipo de radio, luces, y todos los instrumentos que requieren corriente alterna.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "En el hemisferio norte, si planeador es acelerado o desacelerado, la brújula magnética indicará normalmente:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un giro hacia el Norte durante la desaceleración en una dirección Este.",
+                "id": 1
+            },
+            {
+                "text": "Correctamente sólo cuando está en una dirección (heading) Norte o Sur.",
+                "id": 2
+            },
+            {
+                "text": "Un giro hacia el Sur, mientras se acelera en una dirección Oeste.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "En el hemisferio Norte, una brújula magnética indicará normalmente un giro hacia el Norte si",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una aeronave es desacelerada mientras está en dirección (heading) Este u Oeste.",
+                "id": 1
+            },
+            {
+                "text": "Entra en un giro a la izquierda desde la dirección (heading) Oeste.",
+                "id": 2
+            },
+            {
+                "text": "Una aeronave es acelerada mientras está en dirección (heading) Este u Oeste.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "En el hemisferio Norte, una brújula magnética normalmente indicará inicialmente un giro hacia el Este si",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una aeronave desacelera, mientras está en rumbo Sur.",
+                "id": 1
+            },
+            {
+                "text": "Una aeronave acelera mientras está en rumbo Norte.",
+                "id": 2
+            },
+            {
+                "text": "Un giro hacia la izquierda es iniciado desde rumbo Norte.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál deberá ser la indicación en la brújula magnética según usted entra en un giro a la derecha a un régimen estándar desde la dirección (heading) Sur en el Hemisferio Norte?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La brújula inicialmente indicará un giro a la izquierda.",
+                "id": 1
+            },
+            {
+                "text": "La brújula indicará un giro a la derecha, pero a una tasa más rápida de lo que está ocurriendo en realidad.",
+                "id": 2
+            },
+            {
+                "text": "La brújula permanecerá en el Sur por un corto tiempo, luego gradualmente alcanza la dirección magnética (magnetic heading) del avión.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    }
+]

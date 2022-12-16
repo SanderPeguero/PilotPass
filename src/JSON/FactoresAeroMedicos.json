@@ -1,0 +1,242 @@
+[
+    {
+        "question": "El método más efectivo de explorar por otra aeronave para evitar colisión durante las horas de la noche es usar:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Concentración regularmente espaciada en las posiciones 3-, 9- y 12 horas del reloj.",
+                "id": 1
+            },
+            {
+                "text": "Una serie de movimientos oculares cortos y regularmente espaciados para buscar cada sector de 30 grados.",
+                "id": 2
+            },
+            {
+                "text": "Visión periférica mediante la exploración de pequeños sectores y utilizando visión descentrada.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando una situación de estrés es encontrada en vuelo, un aumento anormal en el volumen de aire que se respira hacia dentro y hacia fuera puede causar una condición conocida como",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Hiperventilación.",
+                "id": 1
+            },
+            {
+                "text": "Aerosinusitis.",
+                "id": 2
+            },
+            {
+                "text": "Aerotitis.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "El método más eficaz de exploración (scan) por otras aeronaves para evitar colisiones durante las horas diurnas es utilizar",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Concentración regularmente espaciada en posiciones 3-, 9-, y 12- en punto.",
+                "id": 1
+            },
+            {
+                "text": "Una serie de movimientos oculares cortos regularmente espaciados para buscar cada sector de 10 grados.",
+                "id": 2
+            },
+            {
+                "text": "Visión periférica mediante la exploración (scanning) de pequeños sectores y utilizar visión fuera del centro (off-center vision).",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "El peligro de la desorientación espacial durante vuelo en condiciones visuales pobres puede ser reducida por:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Movimiento rápido de los ojos entre el espacio visual exterior y el panel de instrumentos.",
+                "id": 1
+            },
+            {
+                "text": "Tener fe en los instrumentos en lugar de arriesgarse con los órganos sensoriales.",
+                "id": 2
+            },
+            {
+                "text": "Inclinar el cuerpo en dirección opuesta al movimiento de la aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Si un piloto experimenta desorientación espacial durante el vuelo en una condición de visibilidad restringida, la mejor manera de superar el efecto es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Confiar en las indicaciones de los instrumentos de la aeronave.",
+                "id": 1
+            },
+            {
+                "text": "Concéntrese en las sensaciones de guiñada (yaw), cabeceo (pitch) y alabeo (roll).",
+                "id": 2
+            },
+            {
+                "text": "Disminuya conscientemente el ritmo respiratorio hasta que los síntomas desaparezcan y después reasuma el ritmo respiratorio normal.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Un estado de confusión temporal que resulte de información errónea enviada al cerebro por varios órganos sensoriales es definido como:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Desorientación espacial.",
+                "id": 1
+            },
+            {
+                "text": "Hiperventilación.",
+                "id": 2
+            },
+            {
+                "text": "Hipoxia.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Un piloto debe ser capaz de superar los síntomas o evitar ocurrencias futuras de hiperventilación por:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El monitoreo de los instrumentos de vuelo muy de cerca, para controlar el avión.",
+                "id": 1
+            },
+            {
+                "text": "La reducción del ritmo de respiración, respirando en una bolsa, o hablar en voz alta.",
+                "id": 2
+            },
+            {
+                "text": "El aumento del ritmo de respiratorio para aumentar la ventilación pulmonar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál, muy probablemente, resultaría en hiperventilación?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Tensión emocional, ansiedad o miedo.",
+                "id": 1
+            },
+            {
+                "text": "El excesivo consumo de alcohol.",
+                "id": 2
+            },
+            {
+                "text": "Un ritmo respiratorio extremadamente lento e insuficiencia de oxígeno.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué afirmación define mejor la hipoxia?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un estado de deficiencia de oxígeno en el cuerpo.",
+                "id": 1
+            },
+            {
+                "text": "Un aumento anormal en el volumen de aire respirado.",
+                "id": 2
+            },
+            {
+                "text": "Una condición de formación de burbuja de gas alrededor de las coyunturas o músculos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué efecto tiene la neblina en la habilidad de ver tráfico o las características del terreno durante vuelo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La neblina causa que los ojos se enfoquen en el infinito.",
+                "id": 1
+            },
+            {
+                "text": "Los ojos tienden a sobre trabajar en la neblina y no detectan el movimiento relativo fácilmente.",
+                "id": 2
+            },
+            {
+                "text": "Todo el tráfico o las características del terreno parecen estar más lejos que su distancia real.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué preparación debe hacer un piloto para adaptar los ojos para vuelo nocturno?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Usar gafas de sol después del ocaso hasta que esté listo para el vuelo.",
+                "id": 1
+            },
+            {
+                "text": "Evitar las luces rojas por lo menos 30 minutos antes del vuelo.",
+                "id": 2
+            },
+            {
+                "text": "Evitar luces blancas brillantes por lo menos 30 minutos antes del vuelo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué técnica debe un piloto utilizar para explorar por tráfico a la derecha y a la izquierda durante vuelo recto y nivelado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Enfocarse sistemáticamente en diferentes segmentos del cielo por intervalos cortos.",
+                "id": 1
+            },
+            {
+                "text": "Concentrarse en movimiento relativo detectado en el área periférica de la visión.",
+                "id": 2
+            },
+            {
+                "text": "Barrer continuamente con la vista a través del parabrisas de derecha a izquierda.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    }
+]

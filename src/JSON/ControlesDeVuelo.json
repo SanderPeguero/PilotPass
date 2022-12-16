@@ -1,0 +1,122 @@
+[
+    {
+        "question": "(Ver Fig. 9 área A) ¿Cómo deben ser mantenidos los controles de vuelo durante el rodaje de un avión equipado con tren de aterrizaje triciclo hacia un viento de frente desde el cuadrante izquierdo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Alerón izquierdo arriba, elevador neutral.",
+                "id": 1
+            },
+            {
+                "text": "Alerón izquierdo abajo, elevador neutral.",
+                "id": 2
+            },
+            {
+                "text": "Alerón izquierdo arriba, elevador bajo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 9 área C) ¿Cómo deben ser mantenidos los controles de vuelo mientras carreteamos un avión equipado con tren de aterrizaje triciclo, con viento de cola desde el cuadrante izquierdo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Alerón izquierdo arriba, elevador.",
+                "id": 1
+            },
+            {
+                "text": "Alerón izquierdo abajo, elevador abajo.",
+                "id": 2
+            },
+            {
+                "text": "Alerón izquierdo arriba, elevador abajo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Fig. 9, área C) ¿Cómo deben ser mantenidos los controles de vuelo mientras rodamos en un avión con patín o rueda la cola, con un viento de cola desde el cuadrante izquierdo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Alerón izquierdo arriba, elevador neutral.",
+                "id": 1
+            },
+            {
+                "text": "Alerón izquierdo abajo, elevador neutral.",
+                "id": 2
+            },
+            {
+                "text": "Alerón izquierdo bajo, elevador abajo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando se está carreteando con fuertes vientos de los cuadrantes de cola, ¿Cuáles posiciones de los alerones deben ser usadas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Alerón abajo en el lado a favor del viento (downwind side)",
+                "id": 1
+            },
+            {
+                "text": "Alerón neutral.",
+                "id": 2
+            },
+            {
+                "text": "Alerón abajo del lado desde donde está soplando el viento (upwind side).",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué condición de viento será más crítica cuando carreteamos un avión equipado con tren de nariz, y de ala alta?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Viento de los cuadrantes de cola.",
+                "id": 1
+            },
+            {
+                "text": "Viento directo cruzado.",
+                "id": 2
+            },
+            {
+                "text": "De los cuadrantes de frente.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué posición de alerón debe generalmente usar un piloto cuando está rodando con un fuerte viento de los cuadrantes de frente?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Alerón arriba en el lado desde donde está soplando el viento.",
+                "id": 1
+            },
+            {
+                "text": "Alerón abajo en el lado desde donde está soplando el viento.",
+                "id": 2
+            },
+            {
+                "text": "Alerón neutral.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    }
+]

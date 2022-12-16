@@ -1,0 +1,82 @@
+[
+    {
+        "question": "¿Bajo qué condición la altitud de presión y la altitud de densidad son el mismo valor?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "A nivel del mar, cuando la temperatura es 0 °F.",
+                "id": 1
+            },
+            {
+                "text": "Cuando el altímetro no tiene ningún error de instalación.",
+                "id": 2
+            },
+            {
+                "text": "A temperatura estándar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Bajo qué condición la altura verdadera será más baja que la altitud indicada?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En temperaturas de aire más frío que el estándar.",
+                "id": 1
+            },
+            {
+                "text": "En temperaturas de aire más caliente que el estándar.",
+                "id": 2
+            },
+            {
+                "text": "Cuando la densidad de altitud es más alta que la altura indicada.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué factor tendría a aumentar la densidad de altura en un aeropuerto dado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un aumento en la presión barométrica.",
+                "id": 1
+            },
+            {
+                "text": "Un aumento en la temperatura ambiental.",
+                "id": 2
+            },
+            {
+                "text": "Un descenso en la humedad relativa.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál oración está relacionada al principio de BERNOULLI?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Para cada acción hay una reacción igual y opuesta.",
+                "id": 1
+            },
+            {
+                "text": "Una fuerza ascendente adicional es generada a medidas que la superficie inferior del ala desvía aire hacia abajo.",
+                "id": 2
+            },
+            {
+                "text": "El aire que viaja más rápido sobre la superficie superior curvada de un perfil aerodinámico produce una presión más baja en la superficie superior.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    }
+]

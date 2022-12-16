@@ -1,0 +1,2822 @@
+[
+    {
+        "question": "(Refiérase a la fig. 47.) Las luces de VASI según se muestra en la ilustración C indican que el avión está:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Fuera de curso a la izquierda.",
+                "id": 1
+            },
+            {
+                "text": "Por encima de la senda de planeo.",
+                "id": 2
+            },
+            {
+                "text": "Debajo de la senda de planeo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 47.) La ilustración A indica que la aeronave está:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Debajo de la senda de planeo.",
+                "id": 1
+            },
+            {
+                "text": "En la senda de planeo.",
+                "id": 2
+            },
+            {
+                "text": "Por encima de la senda de planeo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 47.) Mientras está en aproximación final a una pista equipada de un VASI estándar de 2 barras, las luces aparecen según lo mostrado por la ilustración D. Esto significa que la aeronave está:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Sobre la senda de planeo",
+                "id": 1
+            },
+            {
+                "text": "Debajo de la senda de planeo.",
+                "id": 2
+            },
+            {
+                "text": "En la senda de planeo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Referirse a la fig. 52.) Los patrones de tráfico vigentes en lincoln municipal son:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "A la derecha en la pista 18 y la pista 36.",
+                "id": 1
+            },
+            {
+                "text": "A la derecha en la pista 18 y la pista 35; a la izquierda en la pista 36.",
+                "id": 2
+            },
+            {
+                "text": "A la derecha en las pistas de aterrizaje 14-32.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver a la figura 52)¿Dónde está ubicado Loup City Municipal con relación a la ciudad?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Al nordeste aproximadamente 3 millas.",
+                "id": 1
+            },
+            {
+                "text": "Al NorOeste aproximadamente 1 milla.",
+                "id": 2
+            },
+            {
+                "text": "Hacia el Este, aproximadamente 7 millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la Figura 52) ,¿Cuál es el procedimiento recomendado de comunicación para aterrizaje en el Aeropuerto Lincoln Municipal durante las horas en que la torre no está en operación?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Monitoree el tráfico del aeropuerto y anuncie su posición y las intenciones en la frecuencia de 118.5 MHz.",
+                "id": 1
+            },
+            {
+                "text": "Contactar UNICOM para avisos de trafico a la frecuencia de 122.95 MHz para avisos de trafico.",
+                "id": 2
+            },
+            {
+                "text": "Servicio de transito aéreo (ATIS) para vigilar condiciones de el aeropuerto , y luego anunciar su posición sobre una frecuencia de 122,95 MHz.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Las letras VHF / DF figuran en el Aeropuerto / directorio de la instalación de un determinado aeropuerto indica que:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Este aeropuerto ha sido designado como aeropuerto de entrada",
+                "id": 1
+            },
+            {
+                "text": "El FSS tiene equipo para determinar su dirección de la estación.",
+                "id": 2
+            },
+            {
+                "text": "Este aeropuerto cuenta con una línea directa de teléfono a la estación de servicio de vuelo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Las luces del borde de la pista de rodaje del aeropuerto se identifican en la noche por:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Luces direccionales blancas.",
+                "id": 1
+            },
+            {
+                "text": "Luces omnidireccionales azules.",
+                "id": 2
+            },
+            {
+                "text": "Luces rojas y verdes alternadas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Para ajustar las luces de alta intensidad de la pista en intensidad media, el piloto debe presionar el micrófono siete veces y después lo presiona:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una vez en un plazo de cuatro segundos.",
+                "id": 1
+            },
+            {
+                "text": "Tres veces en un plazo de tres segundos.",
+                "id": 2
+            },
+            {
+                "text": "Cinco veces en un plazo de cinco segundos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Un faro rotatorio de un aeropuerto operado durante las horas del día indica:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Hay obstrucciones en el aeropuerto.",
+                "id": 1
+            },
+            {
+                "text": "Que el clima en el aeropuerto situado en espacio aéreo Clase D está debajo de los mínimos básicos meteorológicos para VFR.",
+                "id": 2
+            },
+            {
+                "text": "La torre de control del tráfico aéreo no está en operación.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Un helipuerto iluminado se puede identificar por un:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Faro rotatorio verde, amarillo, y blanco.",
+                "id": 1
+            },
+            {
+                "text": "Luz amarilla destellante.",
+                "id": 2
+            },
+            {
+                "text": "Zona de aterrizaje cuadrada iluminada de azul.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Una estación aérea militar se puede identificar por un faro rotatorio que emite:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Destellos blancos y verdes que se alternan.",
+                "id": 1
+            },
+            {
+                "text": "Dos destellos blancos rápidos, entre los destellos verdes.",
+                "id": 2
+            },
+            {
+                "text": "Destellos verdes, amarillos y blancos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Una indicación de estar en la senda de planeo de un VASI tricolor es",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una señal de luz blanca.",
+                "id": 1
+            },
+            {
+                "text": "Una señal de luz verde.",
+                "id": 2
+            },
+            {
+                "text": "Una señal de luz ámbar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Una indicación de estar por arriba de la senda de planeo de un VASI tricolor es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una señal de luz blanca.",
+                "id": 1
+            },
+            {
+                "text": "Una señal de luz verde.",
+                "id": 2
+            },
+            {
+                "text": "Una señal de luz ámbar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Una indicación levemente alta de senda de planeo de un Indicador de Trayectoria de Aproximación de Precisión (PAPI)es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuatro luces blancas.",
+                "id": 1
+            },
+            {
+                "text": "Tres luces blancas y una luz roja.",
+                "id": 2
+            },
+            {
+                "text": "Dos luces blancas y dos luces rojas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Una indicación por debajo de la trayectoria de descenso de un VASI tricolor es una:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Señal de luz roja.",
+                "id": 1
+            },
+            {
+                "text": "Señal luz rosada.",
+                "id": 2
+            },
+            {
+                "text": "Señal de luz verde.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Una indicación por debajo de la senda de planeo de un indicador pulsante de pendiente de aproximación es una",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Luz blanca parpadeante.",
+                "id": 1
+            },
+            {
+                "text": "Luz blanca fija.",
+                "id": 2
+            },
+            {
+                "text": "Luz roja parpadeante.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cómo se puede identificar un aeropuerto militar en la noche?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Destellos alternos de luz blanca y verde.",
+                "id": 1
+            },
+            {
+                "text": "Destellos blancos dobles (dos rápidos) entre destellos verdes.",
+                "id": 2
+            },
+            {
+                "text": "Luces intermitentes (flashing lights) blancas, con verde constante en la misma localización.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Durante una barrena hacia la izquierda, ¿Cuál (es) ala (s) está (n) en pérdida de sustentación?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Ambas alas están en pérdida.",
+                "id": 1
+            },
+            {
+                "text": "Ninguna ala está en pérdida.",
+                "id": 2
+            },
+            {
+                "text": "Solo el ala izquierda está en pérdida.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿En qué condición de vuelo debe ser puesta una aeronave para entrar en barrena?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En pérdida parcial con un ala baja.",
+                "id": 1
+            },
+            {
+                "text": "En una pronunciada espiral en picada.",
+                "id": 2
+            },
+            {
+                "text": "En pérdida.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver figura 22, área 1) Los requisitos de visibilidad y distancia desde las las nubes para operar de noche en el Aeropuerto Sandpoint a menos de 700 pies AGL son",
+        "image": " ",
+        "choices": [
+            {
+                "text": "3 millas y sobre 1,000 pies, 500 pies por debajo, y 2,000 pies horizontalmente de cada nube.",
+                "id": 1
+            },
+            {
+                "text": "3 millas y libre de nubes.",
+                "id": 2
+            },
+            {
+                "text": "Una milla y 1,000 pies por encima, 500 pies por debajo, y 2,000 pies horizontalmente desde cada nube.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver figura 22, área 3) Los límites verticales de la porción del espacio aéreo Clase E designados como una Aerovía Federal sobre el aeropuerto Magee son",
+        "image": " ",
+        "choices": [
+            {
+                "text": "700 pies MSL a 12,500 pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "7,500 pies MSL a 17,999 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "1,200 pies AGL a 17,999 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 25, área 2.) La base del espacio aéreo Clase B en el aeropuerto de Addison está en:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La superficie.",
+                "id": 1
+            },
+            {
+                "text": "3,000 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "3,100 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 25, área 4.) El piso del espacio aéreo Clase B que cubre el Aeropuerto Hicks (T67) al norte-noroeste de Fort Worth Meacham Field está",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En la superficie.",
+                "id": 1
+            },
+            {
+                "text": "A 3,200 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "A 4,000 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Con ciertas excepciones, el espacio aéreo Clase E se extiende hacia arriba desde 700 pies o 1200 pies (AGL), pero no incluye:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "10,000 pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "14,500 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "18,000 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando una torre de control, localizada en un aeropuerto dentro del espacio aéreo Clase D, termina las operaciones del día ¿Qué ocurre en cuanto a la designación del espacio aéreo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La designación del espacio aéreo normalmente no cambiará.",
+                "id": 1
+            },
+            {
+                "text": "El espacio aéreo permanece como espacio aéreo Clase D siempre y cuando un observador del estado del tiempo o sistema automatizado del estado del tiempo esté disponible.",
+                "id": 2
+            },
+            {
+                "text": "El espacio aéreo se revierte a la Clase E o una combinación de Clase E y G durante el tiempo que la torre no esté operando.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "El límite vertical del espacio aéreo Clase C sobre el aeropuerto primario está normalmente a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,200 pies AGL.",
+                "id": 1
+            },
+            {
+                "text": "3,000 pies AGL",
+                "id": 2
+            },
+            {
+                "text": "4,000 pies AGL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "El radio normal del área exterior del espacio aéreo de Clase C es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "5 millas náuticas.",
+                "id": 1
+            },
+            {
+                "text": "15 millas náuticas.",
+                "id": 2
+            },
+            {
+                "text": "20 millas náuticas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Las dimensiones laterales del espacio aéreo Clase D están basadas en:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El número de aeropuertos que se encuentran dentro del espacio aéreo Clase D.",
+                "id": 1
+            },
+            {
+                "text": "5 millas estatutas del centro geográfico del aeropuerto primario.",
+                "id": 2
+            },
+            {
+                "text": "Los procedimientos de instrumentos para los cuales el espacio aéreo controlado se ha establecido.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Todas las operaciones dentro del espacio aéreo Clase C deben estar:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "De acuerdo a las reglas de vuelo por instrumento.",
+                "id": 1
+            },
+            {
+                "text": "En conformidad con autorizaciones e instrucciones del ATC.",
+                "id": 2
+            },
+            {
+                "text": "En una aeronave equipada con transpondedor de 4096 códigos con capacidad de codificar en modo C.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Un aeropuerto satélite sin torre, dentro del mismo espacio aéreo Clase D como el designado para el aeropuerto primario, requiere que las comunicaciones por radio se establezcan y se mantengan con:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El UNICOM del aeropuerto Satélite.",
+                "id": 1
+            },
+            {
+                "text": "Estación de Servicio de Vuelo (FSS) asociada.",
+                "id": 2
+            },
+            {
+                "text": "La torre de control del aeropuerto primario.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Bajo qué condición puede una aeronave operar desde un aeropuerto satélite dentro del espacio aéreo Clase C?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El piloto debe llenar un plan de vuelo antes de la salida.",
+                "id": 1
+            },
+            {
+                "text": "El piloto debe monitorear el ATC, hasta despejar el espacio aéreo Clase C.",
+                "id": 2
+            },
+            {
+                "text": "El piloto debe contactar el ATC, tan pronto como sea práctico después del despegue.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "A menos que sea especificado de otra forma, las aerovías incluyen ese espacio aéreo clase E, que se extiende hacia arriba desde",
+        "image": " ",
+        "choices": [
+            {
+                "text": "700 pies sobre la superficie hasta e incluyendo 17,999 pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "1,200 pies sobre la superficie hasta e incluyendo 17,999 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "La superficie hasta e incluyendo 18,000 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Las operaciones VFR normales en espacio aéreo Clase D con torre de control en operación, requieren que el techo y la visibilidad estén por lo menos a ",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,000 pies y 1 milla.",
+                "id": 1
+            },
+            {
+                "text": "1,000 pies y 3 millas.",
+                "id": 2
+            },
+            {
+                "text": "2,500 pies y 3 millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "El ancho de una aerovía federal (USA) desde cualquier lado de la línea central es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "8 Millas Náuticas.",
+                "id": 1
+            },
+            {
+                "text": "6 Millas Náuticas.",
+                "id": 2
+            },
+            {
+                "text": "4 Millas Náuticas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Una autorización de ATC provee:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Prioridad sobre todo otro tráfico.",
+                "id": 1
+            },
+            {
+                "text": "Separación adecuada de todo tráfico.",
+                "id": 2
+            },
+            {
+                "text": "Autorización para proceder bajo condiciones específicas de tráfico en espacio aéreo controlado.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Con algunas excepciones, todos los aviones dentro de 30 millas de la Clase B de un aeropuerto primario desde la superficie hacia arriba hasta los 10,000 pies MSL deben estar equipados con:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un reflector VOR o TACAN receptor y un receptor ADF.",
+                "id": 1
+            },
+            {
+                "text": "Instrumentos y equipos necesarios para las operaciones IFR.",
+                "id": 2
+            },
+            {
+                "text": "Un respondedor operativo que posea el modo S o el codigo 4096 con capacidad de respuesta automatica de alturaoperable.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Un transpondedor operable de 4096 códigos, con un codificador de altímetro. Es requerido en ¿Cuál espacio aéreo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Clase A, Clase B ( y dentro de las 30 millas de la Clase B de un aeropuerto primario).y la Clase C.",
+                "id": 1
+            },
+            {
+                "text": "Clase D y Clase E (debajo de 10,000 pies MSL)",
+                "id": 2
+            },
+            {
+                "text": "Clase D y Clase G ( debajo de los 10,000 pies MSL)",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Debajo de FL180, los Asesoramientos Meteorológicos En Ruta (Enroute Weather Advisories) deben ser obtenido de una Estación de Servicio de Vuelo (FSS) en:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "122.0 MHz",
+                "id": 1
+            },
+            {
+                "text": "122.1 MHz",
+                "id": 2
+            },
+            {
+                "text": "123.6 MHz",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cómo debe ser establecida la comunicación con una Estación de Servicio de Asesoramiento de Vuelo en Ruta (EFAS), y qué servicio se debe esperar?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Llame EFAS en 122.2 para el tiempo de rutina, informes actuales de tiempo peligroso, y los ajustes del altímetro.",
+                "id": 1
+            },
+            {
+                "text": "Llame a asistencia de vuelo en 122.5 para el servicio de asesoramiento relacionados con tiempo severo.",
+                "id": 2
+            },
+            {
+                "text": "Llame a la vigilancia de vuelo (flight watch) en 122.0 para información relacionada con el clima actual y la actividad de tormentas eléctricas a lo largo de la ruta propuesta.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué servicio debe un piloto normalmente esperar de una Estación de Servicio de Asesoramiento de Vuelo en Ruta (EFAS)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Información meteorológica actual y actividad de tormenta eléctrica a lo largo de la ruta.",
+                "id": 1
+            },
+            {
+                "text": "Ruta preferencial y vectores de radar para circunnavegar condiciones meteorológicas severas.",
+                "id": 2
+            },
+            {
+                "text": "Información de meteorología severa, cambios en el plan de vuelo, y recibir informes rutinarios de posición.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 49.) Seleccione el patrón de tráfico y la pista apropiada para el aterrizaje.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Tráfico izquierdo y pista 18.",
+                "id": 1
+            },
+            {
+                "text": "Tráfico derecho y pista 18.",
+                "id": 2
+            },
+            {
+                "text": "Tráfico izquierdo y pista 22.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 49.) Si el viento está según lo mostrado por el indicador de dirección de aterrizaje, el piloto debe aterrizar en:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La pista 18 y esperar un viento cruzado desde la derecha.",
+                "id": 1
+            },
+            {
+                "text": "La pista 22 directamente frente al viento.",
+                "id": 2
+            },
+            {
+                "text": "La pista 36 y esperar viento cruzado desde la derecha.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 50.) El círculo segmentado indica que un aterrizaje en la pista 26 será con un",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Viento de frente desde el cuadrante derecho.",
+                "id": 1
+            },
+            {
+                "text": "Viento de frente desde el cuadrante izquierdo.",
+                "id": 2
+            },
+            {
+                "text": "Viento de cola desde el cuadrante derecho.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 50.) Los patrones de tráfico indicados en el círculo segmentado, han sido arreglados para evitar vuelos sobre un área al:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Sur del aeropuerto.",
+                "id": 1
+            },
+            {
+                "text": "Norte del aeropuerto.",
+                "id": 2
+            },
+            {
+                "text": "Sureste del aeropuerto.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 50.)El círculo segmentado indica que el tráfico del aeropuerto es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Izquierdo para la pista 36 y derecho para la pista 18.",
+                "id": 1
+            },
+            {
+                "text": "Izquierdo para la pista 18 y derecho para la pista 36.",
+                "id": 2
+            },
+            {
+                "text": "Derecho para la pista 9 e izquierdo para la pista 27.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Figura 50)¿Qué pista y que patrón de tráfico debe ser usado, según es indicado por el cono de viento en el círculo segmentado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Tráfico derecho para Pista 09.",
+                "id": 1
+            },
+            {
+                "text": "Tráfico derecho para Pista 18.",
+                "id": 2
+            },
+            {
+                "text": "Tráfico izquierda para Pista 36.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Después de aterrizar en un aeropuerto controlado por torre, ¿Cuándo debe el piloto contactar a control de tierra?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuando es avisado por la torre.",
+                "id": 1
+            },
+            {
+                "text": "Antes de girar para salir de la pista.",
+                "id": 2
+            },
+            {
+                "text": "Después de alcanzar una pista de rodaje que conduzca directamente al área de estacionamiento.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "La posición recomendada para la entrada al patrón de tráfico de un aeropuerto es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "5º a pierna básica, y a una altitud justo debajo del patrón. 45º",
+                "id": 1
+            },
+            {
+                "text": "Entrar a 45º y en el punto medio del tramo pierna con el viento y a la altitud del patrón de tráfico.",
+                "id": 2
+            },
+            {
+                "text": "Cruzar directo sobre el aeropuerto con la altitud del patrón, e intégrese a pierna con el viento.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Si es instruido por el control de tierra para carretear a la pista 9, el piloto puede proceder:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Vía pistas de rodaje y a través de pistas hacia; pero no sobre la pista 9.",
+                "id": 1
+            },
+            {
+                "text": "A la próxima intercepción de pistas, donde se requiere autorización adicional.",
+                "id": 2
+            },
+            {
+                "text": "Vía pistas de rodaje y a través de pistas hacia la pista 9, donde un despegue inmediato puede ser hecho.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la visibilidad mínima para que un piloto reciba una autorización de, aterrizaje y mantener corto, (LAHSO)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "3 millas nauticas.",
+                "id": 1
+            },
+            {
+                "text": "3 millas estatutas.",
+                "id": 2
+            },
+            {
+                "text": "1 milla estatuta.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuándo deben los pilotos rechazar una autorización de aterrizaje y mantener corto (LAHSO)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuando sea comprometida la seguridad",
+                "id": 1
+            },
+            {
+                "text": "Solamente cuando los operadores de la torre estén de acuerdo",
+                "id": 2
+            },
+            {
+                "text": "Los pilotos no pueden rechazar la autorización.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Dónde está publicada la distancia disponible de Aterrizaje (ALD) para un aeropuerto que utiliza Operaciones de aterrizaje y mantener corto (LAHSO)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En la sección especial de Noticias del directorio de facilidad del Aeropuerto (A/FD).",
+                "id": 1
+            },
+            {
+                "text": "RAD 91, Operación General y Reglas de Vuelo.",
+                "id": 2
+            },
+            {
+                "text": "Manual Informativo Aeronáutico (Gestión de la Información Aeronáutica) (AIM).",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Quién no debe participar en el programa de aterrizar y mantener corto (LAHSO)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Solamente los pilotos recreacionales.",
+                "id": 1
+            },
+            {
+                "text": "Pilotos militares.",
+                "id": 2
+            },
+            {
+                "text": "Estudiantes pilotos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Quién tiene autoridad final para aceptar o declinar cualquier autorización para aterrizaje y mantener corto (LAHSO)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Piloto al mando.",
+                "id": 1
+            },
+            {
+                "text": "Dueño/Operador.",
+                "id": 2
+            },
+            {
+                "text": "Segundo al mando.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "A menos que de otra manera, esté específicamente, autorizado, ninguna persona puede operar un avión que tenga un certificado experimental.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Debajo de la base del espacio aéreo Clase B.",
+                "id": 1
+            },
+            {
+                "text": "Sobre un área densamente poblada o en una aerovía congestionada.",
+                "id": 2
+            },
+            {
+                "text": "Del aeropuerto primario dentro del espacio aéreo Clase D.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Antes de entrar en un Área de Asesoría de Aeropuerto (Airport Advisory Area), el piloto debe:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Monitorear ATIS para la asesoría meteorológica y de tráfico.",
+                "id": 1
+            },
+            {
+                "text": "Contacte con control de aproximación para vectores al patrón de tráfico.",
+                "id": 2
+            },
+            {
+                "text": "Contacte con el FSS local para asesoría sobre tráfico y el aeropuerto.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cómo debería un plan de vuelo VFR ser cerrado al finalizar el vuelo en un aeropuerto controlado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La torre automáticamente cerrará el plan de vuelo cuando la aeronave salga de la pista.",
+                "id": 1
+            },
+            {
+                "text": "El piloto debe cerrar el plan de vuelo con Control Santo Domingo, o en otra facilidad del IDAC después del aterrizaje.",
+                "id": 2
+            },
+            {
+                "text": "La torre transmitirá las instrucciones a la facilidad apropiada más cercana cuando la aeronave contacte la torre para aterrizaje.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Al llamar por teléfono a una facilidad del informe del clima para información meteorológica de pre-vuelo, los pilotos deben indicar:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La identificación del avión o el nombre del piloto.",
+                "id": 1
+            },
+            {
+                "text": "Velocidad aérea verdadera.",
+                "id": 2
+            },
+            {
+                "text": "Combustible a bordo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Al solicitar información meteorológica para la mañana siguiente, un piloto debe solicitar:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un informe de perspectiva.",
+                "id": 1
+            },
+            {
+                "text": "Un informe estándar.",
+                "id": 2
+            },
+            {
+                "text": "Un informe abreviado.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Inicialmente ¿Qué deben los pilotos indicar al llamar por teléfono a una facilidad de informe meteorológico para información meteorológica de pre-vuelo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Decir el número de ocupantes a bordo.",
+                "id": 1
+            },
+            {
+                "text": "Identificarse como pilotos.",
+                "id": 2
+            },
+            {
+                "text": "Establecer su tiempo total de vuelo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Las difusiones transcritas del tiempo (TWEBs) pueden ser monitoreadas sintonizando el receptor de radio apropiado acierta:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Frecuencias consultivas del aeropuerto.",
+                "id": 1
+            },
+            {
+                "text": "Frecuencias VOR y NDB.",
+                "id": 2
+            },
+            {
+                "text": "Frecuencias ATIS.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "La mayoría de los accidentes de colisión en el aire ocurren durante:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En días de bruma.",
+                "id": 1
+            },
+            {
+                "text": "En días claros.",
+                "id": 2
+            },
+            {
+                "text": "Noches nubladas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Durante las operaciones a alturas de más de 1,200 pies AGL y sobre o por encima de los 10,000 pies MSL, la distancia mínima requerida sobre la nubes para vuelo VFR es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "500 pies.",
+                "id": 1
+            },
+            {
+                "text": "1,000 pies.",
+                "id": 2
+            },
+            {
+                "text": "1,500 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Durante las operaciones dentro del espacio aéreo controlado a una altura de más de 1,200 pies AGL, pero menor de 10,000 pies MSL, la distancia mínima sobre las nubes requerida para vuelos VFR es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "500 pies.",
+                "id": 1
+            },
+            {
+                "text": "1,000 pies.",
+                "id": 2
+            },
+            {
+                "text": "1,500 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Durante operaciones dentro del espacio aéreo controlado en alturas de menos de 1.200 pies AGL, la distancia horizontal mínima requerida desde las nubes para el vuelo VFR es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,000 Pies.",
+                "id": 1
+            },
+            {
+                "text": "1,500 Pies.",
+                "id": 2
+            },
+            {
+                "text": "2,000 Pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Durante operaciones fuera del espacio aéreo controlado en altitudes de más de 1.200 pies AGL, pero menos de 10.000 pies MSL, la visibilidad mínima de vuelo para el vuelo VFR en la noche son:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 milla.",
+                "id": 1
+            },
+            {
+                "text": "3 millas.",
+                "id": 2
+            },
+            {
+                "text": "5 millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Durante operaciones fuera del espacio aéreo controlado, a alturas de más de 1.200 piés AGL, pero menos de 10.000 piés MSL, el requisito de distancia mínima debajo de las nubes para vuelo VFR por la noche son:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "500 pies.",
+                "id": 1
+            },
+            {
+                "text": "1,000 pies.",
+                "id": 2
+            },
+            {
+                "text": "1,500 pies.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "El pronóstico mínimo del tiempo según el VFR básico para operar una aeronave dentro de la espacio aéreo clase D es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "500 pies de cielo maximo y 1 milla de visibilidad.",
+                "id": 1
+            },
+            {
+                "text": "1,000 pies de cielo maximo y 3 millas de visibilidad.",
+                "id": 2
+            },
+            {
+                "text": "Claro de nubes y 2 millas de visibilidad.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Fuera de espacio aéreo controlado, el requisito mínimo de visibilidad de vuelo para VFR sobre 1,.200 pies AGL y por debajo de 10,.000 pies MSL durante horas diurnas es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 Milla.",
+                "id": 1
+            },
+            {
+                "text": "3 Millas.",
+                "id": 2
+            },
+            {
+                "text": "5 Millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Fuera del espacio aéreo controlado, la mínima visibilidad para vuelo requerida para VFR, vuelo por encima de los 1,200 pies AGL y por debajo de los 10,000 pies MSL durante las horas del día es de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 Milla.",
+                "id": 1
+            },
+            {
+                "text": "3 Millas.",
+                "id": 2
+            },
+            {
+                "text": "5 Millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "La distancia mínima de las nubes requerida para operaciones VFR en una aerovía por debajo de los 10.000 pies MSL es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Que siga siendo libre de nubes",
+                "id": 1
+            },
+            {
+                "text": "500 piés por debabajo, 1.000 piés por encima, y 2.000 piés horizontalmente.",
+                "id": 2
+            },
+            {
+                "text": "500 pies por encima, 1.000 pies por de babajo, y 2.000 pies horizontalmente.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "La visibilidad mínima del vuelo requerida para los vuelos VFR sobre 10,.000 pies MSL y más de 1,.200 pies AGL en espacio aéreo controlado es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 Milla.",
+                "id": 1
+            },
+            {
+                "text": "3 Millas.",
+                "id": 2
+            },
+            {
+                "text": "5 Millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Ninguna persona puede despegar o aterrizar un avión bajo VFR básico en un aeropuerto que está dentro de espacio aéreo Clase D a menos que:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La visibilidad de vuelo en ese aeropuerto es por lo menos de 1 milla.",
+                "id": 1
+            },
+            {
+                "text": "La visibilidad de tierra en ese aeropuerto es de por lo menos 1 milla.",
+                "id": 2
+            },
+            {
+                "text": "La visibilidad de tierra en ese aeropuerto es de por lo menos 3 millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Ninguna persona puede operar un avión nocturno dentro del espacio aéreo clase D, bajo reglas de vuelo visual al menos que",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Los vuelos que pueden ser realizado 500 pies debajo de las nubes.",
+                "id": 1
+            },
+            {
+                "text": "El avión esté equipado para vuelo por instrumentos.",
+                "id": 2
+            },
+            {
+                "text": "La visibilidad es menor de 3 millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Para operaciones de vuelo VFR, por encima de los 10,000 pies MSL y más de 1,200 pies AGL, La mínima distancia de la nubes que se requiere es de:.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,000 pies.",
+                "id": 1
+            },
+            {
+                "text": "2,000 pies.",
+                "id": 2
+            },
+            {
+                "text": "1 milla.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Una autorización VFR especial, autoriza al piloto de un avión a operar VFR mientras este dentro del espacio aéreo Clase D cuando la visibilidad es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Menos de 1 milla y el tope esta a menos de 1,.000 piés.",
+                "id": 1
+            },
+            {
+                "text": "Por lo menos de 1 milla y el avión puede seguir libre de nubes.",
+                "id": 2
+            },
+            {
+                "text": "Por lo menos de 3 millas y el avión puede seguir libre de nubes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Vuelo VFR en espacio aéreo controlado, por encima de los 1,200 pies AGL y por debajo de los 10,000 pies MSL. Se requiere un mínimo de visibilidad y despeje vertical de nubes de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "3 millas, y 500 pies por debajo u, 1,000 pies por encima de las nubes en el espacio aereo controlado.",
+                "id": 1
+            },
+            {
+                "text": "5 millas y 1,000 pies debajo u 1,000 pies por encima de las nubes en cualquier altitud.",
+                "id": 2
+            },
+            {
+                "text": "5 millas y 1,000 pies por debajo u 1,000 pies por encima de las nubes solo en la Clase A del espacio aereo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Bajo qué condiciones, si las hay, puede un piloto privado operar un helicóptero bajo VFR especial en la noche dentro del espacio aéreo Clase D?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El helicóptero debe estar completamente equipado con instrumentos y el piloto debe tener una habilitación en instrumentos.",
+                "id": 1
+            },
+            {
+                "text": "La visibilidad del vuelo debe ser por lo menos de 1 milla.",
+                "id": 2
+            },
+            {
+                "text": "No hay condiciones; las regulaciones permitan esta operación.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la condición meteorológica mínima requerida para los aviones que operan bajo VFR especial en el espacio aéreo de Clase D?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 milla de visibilidad de vuelo.",
+                "id": 1
+            },
+            {
+                "text": "1 milla de visibilidad de vuelo y 1,000 pies de techo.",
+                "id": 2
+            },
+            {
+                "text": "3 millas de visibilidad de vuelo y 1,000 pies de techo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la mínima visibilidad y despeje de nubes que son requeridas para operaciones AFR en espacio aéreo clase G a 700 pies AGL o menos durante el día?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 milla de visibilidad y libre de nubes.",
+                "id": 1
+            },
+            {
+                "text": "1 milla de visibilidad, 500 pies debajo, 1,000 pies por encima, y 2,000 piesde libre horizontal de nubes.1 mile visibility",
+                "id": 2
+            },
+            {
+                "text": "3 millas de visibilidad y libre de nubes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la visibilidad mínima y de despeje de nubes que se le requiere a un piloto recreacional en el espacio aéreo de la Clase G a 1,200 Pies AGL por debajo ,en horas del día?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 milla de visibilidad y libre de nubes.",
+                "id": 1
+            },
+            {
+                "text": "3 millas de visibilidad y libre de nubes.",
+                "id": 2
+            },
+            {
+                "text": "3 millas de visibilidad y 500 pies por debajo de las nubes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuáles son los requisitos mínimos para operaciones de avión bajo VFR especial en espacio aéreo de Clase D durante la noche?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El avión debe estar bajo vigilancia del radar siempre mientras esté en espacio aéreo Clase D.",
+                "id": 1
+            },
+            {
+                "text": "El avión se debe equipar para IFR con un transpondedor que reporte la altitud.",
+                "id": 2
+            },
+            {
+                "text": "El piloto debe tener una habilitación de instrumentos y el avión debe estar equipado para IFR.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué visibilidad mínima de vuelo es requerida para las operaciones de vuelo VFR en una aerovía debajo de los 10,000 pies MSL?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 Milla.",
+                "id": 1
+            },
+            {
+                "text": "3 Millas.",
+                "id": 2
+            },
+            {
+                "text": "4 Millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "A menos que se autorice lo contrario, ¿cuál es la velocidad máxima indicada a la cual una persona puede operar una aeronave a menos de 10,000 pies MSL?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "200 Nudos.",
+                "id": 1
+            },
+            {
+                "text": "250 Nudos.",
+                "id": 2
+            },
+            {
+                "text": "288 Nudos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "A menos que sea autorizado de otra manera, las comunicaciones por radio de doble vía con el control de tráfico aéreo, son requeridas para aterrizajes o despegues:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En todos los aeropuertos controlados por torre sin importar condiciones",
+                "id": 1
+            },
+            {
+                "text": "En todos los aeropuertos controlados por torre, solamente cuando las condiciones atmosféricas son menos que VFR",
+                "id": 2
+            },
+            {
+                "text": "En todos los aeropuertos controlados por torre dentro del espacio aéreo Clase D, solamente cuando las condiciones atmosféricas son menos que VFR",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "A menos que, de otra forma sea autorizado, ¿Cuál es la velocidad máxima indicada en la que los aviones que pueden ser volado cuando están dentro o por debajo de los 2.500 pies AGL y dentro de las 4 millas náuticas del aeropuerto primario del espacio aéreo clase C.?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "200 Nudos.",
+                "id": 1
+            },
+            {
+                "text": "230 Nudos.",
+                "id": 2
+            },
+            {
+                "text": "250 Nudos",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Anterior al despegue ,el altímetro debe estar preparado, ¿Para que altura es la configuración de altímetro?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La configuración del altímetro local actual ,si está disponible, en la elevación del aeropuerto de salida",
+                "id": 1
+            },
+            {
+                "text": "La densidad correcta en la altura de la salida",
+                "id": 2
+            },
+            {
+                "text": "La presión correcta , por la altura de la salida de el aeropuerto",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Como piloto en mando, ¿Bajo cuál situación puede desviarse del ATC.?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuando opera en la CLASE A de el espacio aéreo en la noche",
+                "id": 1
+            },
+            {
+                "text": "Si el despeje de el CTA no es sobreentendido, y en las condicione de VFR.",
+                "id": 2
+            },
+            {
+                "text": "En respuesta al sistema de resolución de evitar colisión y alerta de tráfico.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Comunicación de doble vía, debe ser establecido con la facilidad del ATC que tenga la jurisdicción sobre el área, antes entrar en ¿Qué clase espacio aéreo.?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Clase C.",
+                "id": 1
+            },
+            {
+                "text": "Clase E.",
+                "id": 2
+            },
+            {
+                "text": "Clase G.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando se aproxima al aterrizaje a una pista servida por VASI, el piloto debe:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Mantener una altitud de captura, que la senda de planeo de por lo menos 2 millas umbral a la pista.",
+                "id": 1
+            },
+            {
+                "text": "Mantener una altura igual o superior a la senda de planeo.",
+                "id": 2
+            },
+            {
+                "text": "Mantenerse en la senda de planeo y de la tierra entre las dos barras de luz.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando se ha obtenido una autorización del ATC, ningún piloto al mando puede desviarse de esa autorización, a menos que ese piloto obtenga una autorización enmendada. La única excepción a esta regulación es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuando la autorización indica, a discreción del piloto.",
+                "id": 1
+            },
+            {
+                "text": "En una emergencia.",
+                "id": 2
+            },
+            {
+                "text": "La autorización contiene una restricción.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando dos o más aeronaves se aproximan a un aeropuerto con el fin de aterrizar, la aeronave con derecho a paso pertenece a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El que tenga su otro a su derecha.",
+                "id": 1
+            },
+            {
+                "text": "El que sea menos maniobrable.",
+                "id": 2
+            },
+            {
+                "text": "El que esté a mas baja altura , pero no tomará ventaja de esta regla para cortar en frente para adelantar al otro.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando se vuela por debajo del espacio aéreo Clase B ¿ Cuál es la velocidad máxima ?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "200 Nudos.",
+                "id": 1
+            },
+            {
+                "text": "230 Nudos.",
+                "id": 2
+            },
+            {
+                "text": "250 Nudos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando vuele en condiciones VFR, en un corredor designado a través de espacio aéreo Clase B, la velocidad máxima autorizadaes:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "180 Nudos.",
+                "id": 1
+            },
+            {
+                "text": "200 Nudos.",
+                "id": 2
+            },
+            {
+                "text": "250 Nudos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Durante la aproximación final para el aterrizaje, se recibe una luz verde y roja alterna seguida de una luz roja parpadeante desde la torre de control. En estas circunstancias, el piloto debería ",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Suspender la aproximación, volar el mismo patrón de tráfico, haga nueva aproximación, y aterrice.",
+                "id": 1
+            },
+            {
+                "text": "Tener mucho cuidado y abandonar la aproximación, reconociendo que el aeropuerto no es seguro para el aterrizaje.",
+                "id": 2
+            },
+            {
+                "text": "Abandonar la aproximación, circular el aeropuerto a la derecha y esperar una luz blanca intermitente cuando el aeropuerto sea seguro para el aterrizaje.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "El espacio aéreo en un aeropuerto con una torre de control que trabaja parte del tiempo (Part time) se clasifica como espacio aéreo Clase D solamente:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuando los mínimos climáticos están debajo de VFR básico.",
+                "id": 1
+            },
+            {
+                "text": "Cuando la torre de control asociada está en operación.",
+                "id": 2
+            },
+            {
+                "text": "Cuando la estación de Servicio de Vuelo asociada está en operación.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Mientras se opera en espacio aéreo Clase D, cada piloto de un avión que se aproxima a una pista servida por un indicador de aproximación visual (VASI):",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Mantendrá un deslizamiento de 3° hasta aproximadamente 1/2 milla a la pista antes de ir debajo del VASI.",
+                "id": 1
+            },
+            {
+                "text": "Mantendrá una altura en o sobre la trayectoria de descenso hasta que una altura más baja sea necesaria para un aterrizaje seguro.",
+                "id": 2
+            },
+            {
+                "text": "Permanecerá alto hasta que la pista se puede alcanzar en un aterrizaje sin Potencia.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Si la torre de control usa una luz como señal directa a un piloto para dar paso a otra aeronave y seguir circulando, esta luz será",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Roja parpadeante.",
+                "id": 1
+            },
+            {
+                "text": "Rojo fijo.",
+                "id": 2
+            },
+            {
+                "text": "Alterna Rojo y Verde.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Un círculo segmentado azul en una carta seccional muestra ¿qué clase de espacio aéreo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Clase B.",
+                "id": 1
+            },
+            {
+                "text": "Clase C.",
+                "id": 2
+            },
+            {
+                "text": "Clase D.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Un equipo respondedor de código 4096 y una codificación de altímetro de Modo C, se requieren en:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "En la clase de el espacio aéreo clase B, y dentro de las 30 millas del aeropuerto primario de espacio aereo clase B",
+                "id": 1
+            },
+            {
+                "text": "En la clase D de el espacio aereo.",
+                "id": 2
+            },
+            {
+                "text": "En la clase D de el espacio aereo por debajo de los 10,000 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Un hidroavión y una motonave que se encuentran en el cruce de cursos, si la motonave está a la izquierda de la hidroavión, ¿Quién tiene el derecho de vía?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La motonave",
+                "id": 1
+            },
+            {
+                "text": "El hidroavión.",
+                "id": 2
+            },
+            {
+                "text": "Ambos deben modificar su curso hacia la derecha.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Una señal constante de luz verde directa desde la torre de control a un avión en vuelo es una señal de que:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Esta autorizado para aterrizar.",
+                "id": 1
+            },
+            {
+                "text": "El piloto debe dar paso al otro avión y continuar circulando.",
+                "id": 2
+            },
+            {
+                "text": "El piloto debe retornar para aterrizaje.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Una señal de luz blanca intermitente de la torre de control a una aeronave en rodaje es una indicación para",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Carretear a una velocidad más rápida.",
+                "id": 1
+            },
+            {
+                "text": "Carretear solo en la calle de rodaje y no cruzar pistas de aterrizajes.",
+                "id": 2
+            },
+            {
+                "text": "Volver al punto de partida en el aeropuerto.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Una señal de luz roja y verde parpadeante dirigida desde la torre de control a una aeronave en vuelo es una señal de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Posición de espera.",
+                "id": 1
+            },
+            {
+                "text": "Ejercicio de precaución extrema.",
+                "id": 2
+            },
+            {
+                "text": "No aterrizaje, el aeropuerto es inseguro.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿A qué altura se fijará el altímetro a 29,92, cuando está ascendiendo para cruzar a nivel de vuelo.?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "14,500 Pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "18,000 Pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "24,000 Pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la certificación mínima requerida a un piloto para operar dentro del espacio aéreo Clase B ?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Licencia de piloto privado o licencia de estudiante piloto con endosos apropiados en el libro de vuelo.",
+                "id": 1
+            },
+            {
+                "text": "Una licencia de piloto recreacional.",
+                "id": 2
+            },
+            {
+                "text": "Una licencia de piloto privado con una habilitación de instrumentos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál luz de la torre de control es la señal para autorizar a un piloto a carreteo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Luz verde parpadeante",
+                "id": 1
+            },
+            {
+                "text": "Luz verde firme",
+                "id": 2
+            },
+            {
+                "text": "Luz blanca parpadeante",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuáles equipos mínimos de radio se requiere para operar dentro del espacio aéreo Clase C?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Equipo de comunicaciones de doble vía y un transpondedor 4096.",
+                "id": 1
+            },
+            {
+                "text": "Equipo de comunicaciones de doble vía por radio, un transpondedor 4096 códigos, y DME.",
+                "id": 2
+            },
+            {
+                "text": "Equipo de comunicaciones de doble vía un transpondedor 4096 códigos, y un altímetro codificado.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿En qué tipo de espacio aéreo están prohibidos los vuelos VFR?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Clase A.",
+                "id": 1
+            },
+            {
+                "text": "Clase B.",
+                "id": 2
+            },
+            {
+                "text": "Clase C.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué certificación mínima de piloto es requerida para operar dentro del espacio aéreo Clase B?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Certificación de piloto comercial.",
+                "id": 1
+            },
+            {
+                "text": "Certificado de piloto privado o certificado de estudiante de piloto con endosos apropiados en su bitácora de vuelo (Log Book).",
+                "id": 2
+            },
+            {
+                "text": "Certificado de Piloto privado con una habilitación en instrumentos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Si un ajuste del altímetro no está disponible antes del vuelo, a ¿Cuál altura debe el piloto ajustar el altímetro?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "A la elevación del aeropuerto más cercano corregido al nivel medio del mar.",
+                "id": 1
+            },
+            {
+                "text": "La elevación del área de salida.",
+                "id": 2
+            },
+            {
+                "text": "La presión de altura corregida por temperatura no estándar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 14.) El viento y la temperatura a 12,000 pies MSL, según lo reportado por un piloto son:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "090° a 21 MPH y -9°F.",
+                "id": 1
+            },
+            {
+                "text": "090° a 21 nudos y -9 °C.",
+                "id": 2
+            },
+            {
+                "text": "080° a 21 nudos y -7°C.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 48.) El área C en el aeropuerto representado se clasifica como una:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Área estabilizada.",
+                "id": 1
+            },
+            {
+                "text": "Helipuerto múltiple.",
+                "id": 2
+            },
+            {
+                "text": "Pista cerrada.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 48.) Esa porción de pista identificada con la letra A se puede utilizar para:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Aterrizaje.",
+                "id": 1
+            },
+            {
+                "text": "Carreteo y despegue.",
+                "id": 2
+            },
+            {
+                "text": "Carreteo y aterrizaje.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 48.) ¿Cuál es la diferencia entre el área A y el área E en el aeropuerto representado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "A' se puede utilizar para rodaje y despegue; 'E' se puede utilizar solamente como Zona de Seguridad de Extremo de Pista (RESA).",
+                "id": 1
+            },
+            {
+                "text": "A' puede ser utilizada para todas las operaciones excepto aterrizajes de aviones pesados; 'E' se puede utilizar solamente como Zona de Seguridad de Extremo de Pista (RESA).",
+                "id": 2
+            },
+            {
+                "text": "A' se puede utilizar solamente para rodaje; 'E' se puede utilizar para todas las operaciones excepto aterrizajes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 48.)De acuerdo al diagrama del aeropuerto, ¿Cuál declaración es verdad?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La pista 30 está equipada en la posición E con aparatos de contención de emergencia (Emergency arresting gear) para proveer un método de detener aeronaves militares.",
+                "id": 1
+            },
+            {
+                "text": "Los despegues pueden ser comenzados en la posición A en la pista 12, y la porción de aterrizaje de esta pista comienza en la posición B.",
+                "id": 2
+            },
+            {
+                "text": "La porción de despegue y aterrizaje de la pista 12 comienza en la posición B.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Figura 49) Las flechas que aparecen al final de la pista Norte/Sur indican que el área:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Puede ser utilizada sólo para rodaje.",
+                "id": 1
+            },
+            {
+                "text": "Es utilizable para rodaje, despegue y aterrizaje.",
+                "id": 2
+            },
+            {
+                "text": "No puede ser utilizada para aterrizaje, pero puede ser utilizada para rodaje y despegue.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando está acercándose a la “Línea de Mantener Posición” (Taxiway holding lines) desde el lado con las líneas continuas, el piloto",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Puede continuar el rodaje.",
+                "id": 1
+            },
+            {
+                "text": "No debe cruzar las líneas sin que el ATC lo autorice.",
+                "id": 2
+            },
+            {
+                "text": "Debe continuar el rodaje hasta que todas las partes de la aeronave hayan pasado las líneas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Los números 8 y 26 en los extremos de aproximación de la pista indican que la pista está orientada aproximadamente",
+        "image": " ",
+        "choices": [
+            {
+                "text": "008° y 026° verdadero.",
+                "id": 1
+            },
+            {
+                "text": "080° y 260° verdadero.",
+                "id": 2
+            },
+            {
+                "text": "080° y 260° magnético.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Los números 9 y 27 en una pista indican que la pista está orientada aproximadamente:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "009° y 027° verdadero.",
+                "id": 1
+            },
+            {
+                "text": "090° y 270° verdadero.",
+                "id": 2
+            },
+            {
+                "text": "090° y 270° magnético.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es el propósito de la señal de “Mantenga Posición” (Hold Position) de la pista?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Indica la entrada desde la pista de rodaje a la pista.",
+                "id": 1
+            },
+            {
+                "text": "Indica el área protegida para la aproximación de una aeronave o la partida desde la pista.",
+                "id": 2
+            },
+            {
+                "text": "Indica intersección de pistas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué identifica la señal de destino de salida (outbound destination sign)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Identifica la entrada a la pista desde una calle de rodaje.",
+                "id": 1
+            },
+            {
+                "text": "Identifica la dirección hacia las pistas de despegue.",
+                "id": 2
+            },
+            {
+                "text": "Identifica la pista en la que se encuentra una aeronave.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Como práctica estándar de operación, todo tráfico entrante hacia un aeropuerto sin una torre de control debe monitorear continuamente la instalación adecuada desde una distancia de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "25 millas.",
+                "id": 1
+            },
+            {
+                "text": "20 millas.",
+                "id": 2
+            },
+            {
+                "text": "10 millas",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando está operando bajo VFR por debajo de 18000 pies MLS, a menos que sea autorizado otra cosa, ¿Qué código de respondedor debería ser seleccionado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1200.",
+                "id": 1
+            },
+            {
+                "text": "7600.",
+                "id": 2
+            },
+            {
+                "text": "7700.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "El Servicio Automático de Información Terminal (ATIS) es la continua transmisión de información grabada concerniente:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Pilotos de aeronaves que han sido identificadas con radar, cuyas aeronaves están en proximidad de peligro al terreno o una obstrucción.",
+                "id": 1
+            },
+            {
+                "text": "La información no esencial para reducir congestión de la frecuencia.",
+                "id": 2
+            },
+            {
+                "text": "Información no relacionada con el control (noncontrol information) en áreas terminales seleccionada de alta actividad.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Si el control de tráfico aéreo anuncia que el servicio de radar está terminado cuando el piloto está saliendo del espacio aéreo Clase C, el transpondedor se debe fijar al código:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "0000.",
+                "id": 1
+            },
+            {
+                "text": "1200.",
+                "id": 2
+            },
+            {
+                "text": "4096.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿A menos que esté autorizado de otra manera, si vuela una aeronave equipada con transpondedor, un piloto recreacional o privado debe identificarse con que código VFR?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1200.",
+                "id": 1
+            },
+            {
+                "text": "7600.",
+                "id": 2
+            },
+            {
+                "text": "7700.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Cuándo se hace cambios de rutina en los códigos del transpondedor, los pilotos deben evitar la selección inadvertida de cuáles códigos?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "0700, 1700, 7000.",
+                "id": 1
+            },
+            {
+                "text": "1200, 1500, 7000.",
+                "id": 2
+            },
+            {
+                "text": "7500, 7600, 7700.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿De quién, debe una aeronave VFR para despegue, solicitar información de tráfico bajo radar durante las operaciones en tierra?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Entrega de autorización.",
+                "id": 1
+            },
+            {
+                "text": "Torre, justo antes del despegue.",
+                "id": 2
+            },
+            {
+                "text": "Control de tierra, al contacto inicial.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando vuela un HAWK N666CB, la fraseología apropiada para el contacto inicial con McAlester AFSS es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "MCALESTER RADIO, HAWK SIX, SIX, SIX CHARLIE BRAVO, RECEIVING ARDMORE VORTAC, OVER.",
+                "id": 1
+            },
+            {
+                "text": "MCALESTER RADIO, HAWK SIX, SIX, SIX, CEEBEE, RECEIVING ARDMORE VORTAC, OVER.",
+                "id": 2
+            },
+            {
+                "text": "MCALESTER FLIGTH SERVICE STATION, HAWK NOVEMBER, SIX, CHARLIE BRAVO, RECEIVING ARDMORE VORTAC, OVER.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "El procedimiento correcto de decir 10,500 pies MSL al ATC es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "DIEZ MIL, QUINIENTOS PIES.",
+                "id": 1
+            },
+            {
+                "text": "DIEZ PUNTO CINCO.",
+                "id": 2
+            },
+            {
+                "text": "UNO CERO MIL, QUINIENTOS",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "El procedimiento correcto de decir 4,500 pies MSL al ATC es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "CUATRO MIL QUINIENTOS",
+                "id": 1
+            },
+            {
+                "text": "CUATRO PUNTO CINCO",
+                "id": 2
+            },
+            {
+                "text": "CUATRO QUINIENTOS PIES MSL",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Si la radio de un avión falla, ¿Cuál es el procedimiento recomendado al aterrizar en un aeropuerto controlado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Observe el flujo de tráfico, incorpórese al patrón, y busque una señal de luz de la torre.",
+                "id": 1
+            },
+            {
+                "text": "Incorpórese a pierna de viento cruzado y oscile (rock) las alas.",
+                "id": 2
+            },
+            {
+                "text": "Destellar (flash) las luces de aterrizaje y completar un ciclo con el tren de aterrizaje mientras circula el aeropuerto.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver figura 25, área 7). El espacio aéreo por encima de Collin Co RGL McKinney (TKI) está controlado desde la superficie a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "2,500 pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "2,900 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "700 pies AGL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver figura 26, área 1.) Identifique el espacio aéreo sobre el Aeropuerto Tomlinson.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Espacio aéreo clase G: superficie hasta, pero sin incluir, 18,000 pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "Espacio aéreo clase G, de la superficie hacia arriba pero no incluyendo 1,200 pies AGL, espacio aéreo clase E, 1,200 pies AGL hacia arriba pero no incluyendo 18,000 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "Espacio aéreo clase G, de la superficie hacia arriba pero no incluyendo 700 pies MSL, espacio aéreo 700 pies a 14,500 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver figura 26, área 2) Los requisitos diurnos de visibilidad y distancia desde las nubes para operar sobre la ciudad de Cooperstown luego de la salida y ascenso desde el aeropuerto de Cooperstown a o por debajo de 700 pies AGL son:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "3 millas y libre de nubes.",
+                "id": 1
+            },
+            {
+                "text": "Una milla y sobre 1,000 pies, 500 pies por debajo, y 2,000 pies horizontalmente desde las nubes.",
+                "id": 2
+            },
+            {
+                "text": "Una milla y libre de nubes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver figura 26, área 2). Los requisitos de visibilidad y de distancia desde las nubes para operar VFR durante el día sobre la ciudad de Cooperstown entre 1.200 pies AGL y 10,000 pies MSL son:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una milla y libre de nubes.",
+                "id": 1
+            },
+            {
+                "text": "Una milla y 1,000 pies por encima, 500 pies por debajo, y 2,000 pies horizontalmente desde las nubes.",
+                "id": 2
+            },
+            {
+                "text": "3 millas, y 1,000 pies por encima, 500 pies por debajo, y 2,000 pies horizontalmente desde las nubes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver figura 26, área 5) El espacio aéreo por encima y dentro de 5 millas del aeropuerto Barnes Country es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El espacio aéreo clase D desde la superficie del suelo por encima de la clase E del espacio aéreo.",
+                "id": 1
+            },
+            {
+                "text": "El espacio aéreo clase E desde la superficie a 1,200 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "El espacio aéreo clase G desde la superficie a 700 pies AGL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la figura 25, Área 8) ¿Cuál es la altitud mínima requerida para volar sobre las torres Cedar Hill TV en la congestionada área del sur de NAS Dallas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "2,655 pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "3,549 pies MSL",
+                "id": 2
+            },
+            {
+                "text": "3,449 pies MSL",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la verdadera relación con los colores azul y el púrpura utilizados para representar los aeropuertos de la sección de cartas gráficas aeronáuticas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Aeropuertos con torres de control por debajo de la clase A, B y C, el espacio aéreo se muestra en azul, la clase D y E son el espacio aéreo púrpura",
+                "id": 1
+            },
+            {
+                "text": "Aeropuertos con torres de control por debajo de la clase C, D, y el espacio aéreo se muestra en púrpura",
+                "id": 2
+            },
+            {
+                "text": "Aeropuertos con torre de control subrayados la clase, B, C, D, y E, el espacio aéreo se muestra en azul",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    }
+]

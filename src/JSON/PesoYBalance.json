@@ -1,0 +1,62 @@
+[
+    {
+        "question": "(Ver FIg. 61) Si 50 libras de peso se encuentran en el punto X y 100 libras en el punto Z, ¿Cuánto peso debe haber en el punto Y para equilibrar la tabla?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "30 libras",
+                "id": 1
+            },
+            {
+                "text": "50 libras",
+                "id": 2
+            },
+            {
+                "text": "300 libras",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la Fig. 60) ¿Cómo debe cambiar el peso de 500 libras para equilibrar la tabla en el punto de apoyo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1 pulgada a la izquierda.",
+                "id": 1
+            },
+            {
+                "text": "1 pulgada a la derecha",
+                "id": 2
+            },
+            {
+                "text": "4.5 pulgadas a la derecha",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver figura 67). ¿Qué efecto tiene un consumo de combustible de 30 galones en el peso y balance si el avión pesaba 2,784 libras y el MOM/100 era 2,222 en el despegue?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Sin efecto en CG.",
+                "id": 1
+            },
+            {
+                "text": "El momento aumentará a 2,357 in-lb.",
+                "id": 2
+            },
+            {
+                "text": "El momento disminuirá a 2,087 in-lb.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    }
+]

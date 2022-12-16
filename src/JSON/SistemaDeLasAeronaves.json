@@ -1,0 +1,82 @@
+[
+    {
+        "question": "La posibilidad de formación de hielo en el carburador existe incluso cuando la temperatura ambiente es tan:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Alta como 70º F y la humedad relativa es alta.",
+                "id": 1
+            },
+            {
+                "text": "Alta como 95º F y hay humedad visible.",
+                "id": 2
+            },
+            {
+                "text": "Baja como 0º F y la humedad relativa es alta.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Las excesivas altas temperaturas en el motor, en cualquiera, en el aire o en tierra, podrían:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Aumentará el consumo de combustible y la potencia, debido al aumento de calor.",
+                "id": 1
+            },
+            {
+                "text": "Resultará en daños a la manguera conductora y calentadora de los abanicos de refrescamiento de los cilindros.",
+                "id": 2
+            },
+            {
+                "text": "Causará pérdida de potencia, excesivo consumo de aceite y un posible daño permanente en el interior del motor.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Para purgar correctamente el agua del sistema de combustible de una aeronave equipada con colectores (sumps) del tanque de combustible y un drenaje rápido del filtro de combustible, es necesario drenar el combustible desde el",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Filtro de drenaje de combustible.",
+                "id": 1
+            },
+            {
+                "text": "El punto más bajo en el sistema de combustible.",
+                "id": 2
+            },
+            {
+                "text": "Filtro de drenaje de combustible y del sumidero del tanque de combustible (fuel tank sumps).",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué cambios ocurren en la mezcla de combustible/aire cuando se activa el calentador del carburador?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una disminucion en las RPM como resultado de la mezcla ser mas pobre.",
+                "id": 1
+            },
+            {
+                "text": "La mezcla de combustible/aire se vuelve más rica.",
+                "id": 2
+            },
+            {
+                "text": "La mezcla de combustible/aire se vuelve más pobre.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    }
+]

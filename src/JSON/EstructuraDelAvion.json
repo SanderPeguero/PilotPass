@@ -1,0 +1,82 @@
+[
+    {
+        "question": "¿Cuál es uno de los propósitos de los FLAPS de las alas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Permite al piloto hacer aproximaciones más pronunciadas para aterrizaje sin aumentar la velocidad.",
+                "id": 1
+            },
+            {
+                "text": "Ayuda al piloto mantener una presión continua en el los controles.",
+                "id": 2
+            },
+            {
+                "text": "Para disminuir el área del ala y variar la sustentación.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Durante un vuelo nocturno, observas una luz blanca fija y una luz parpadeante roja delante y a la misma altitud. ¿Cuál es la dirección general de movimiento de la otra aeronave?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La otra aeronave está alejándose de usted.",
+                "id": 1
+            },
+            {
+                "text": "La otra aeronave está cruzando hacia la izquierda.",
+                "id": 2
+            },
+            {
+                "text": "La otra aeronave está cruzando hacia la derecha.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Durante un vuelo nocturno, usted observa luces rojas y verdes continuas delante y a la misma altitud. ¿Cuál es la dirección general del movimiento de la otra aeronave?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La otra aeronave está cruzando hacia la izquierda.",
+                "id": 1
+            },
+            {
+                "text": "La otra aeronave está volando alejándose de usted.",
+                "id": 2
+            },
+            {
+                "text": "La otra aeronave se está acercando de frente.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Durante un vuelo nocturno, usted observa una luz roja fija y una luz roja intermitente delante y a la misma altitud. ¿Cuál es la dirección general de movimiento de la otra aeronave?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La otra aeronave está cruzando hacia la izquierda.",
+                "id": 1
+            },
+            {
+                "text": "La otra aeronave está volando alejándose de usted.",
+                "id": 2
+            },
+            {
+                "text": "La otra aeronave se está acercando de frente.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    }
+]

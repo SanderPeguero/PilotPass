@@ -23,5 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 src/components/Signup2
-src/JSON
-src/containers/QuizCreator/QuizCreator.jsx

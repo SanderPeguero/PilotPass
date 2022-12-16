@@ -1,0 +1,1302 @@
+[
+    {
+        "question": "El aire húmedo estable que fluye de ladera, se puede esperar que:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Produzca nubes del tipo estrato.",
+                "id": 1
+            },
+            {
+                "text": "Cause chubascos y tormentas eléctricas.",
+                "id": 2
+            },
+            {
+                "text": "Desarrolla turbulencia convectiva.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Aproximadamente a qué altitud por encima de la superficie podría esperar el piloto la base de nubes cumuliformes si latemperatura del aire en superficie es de 82° F y el punto de rocío es 38° F?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "9,000 Pies AGL",
+                "id": 1
+            },
+            {
+                "text": "10,000 Pies AGL",
+                "id": 2
+            },
+            {
+                "text": "11,000 Pies AGL",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es la base aproximada de las nubes cúmulos si la temperatura del aire de la superficie a 1.000 pies MSL es 70°F y el punto de rocío es 48°F?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "4,000 feet MSL.",
+                "id": 1
+            },
+            {
+                "text": "5,000 feet MSL.",
+                "id": 2
+            },
+            {
+                "text": "6,000 pies MSL",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es una característica del aire estable?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubes Estratiformes.",
+                "id": 1
+            },
+            {
+                "text": "Visibilidad ilimitada",
+                "id": 2
+            },
+            {
+                "text": "Nubes cúmulo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuáles son características de una masa de aire húmeda, inestable?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubes Cumuliforme y precipitación de lluvia",
+                "id": 1
+            },
+            {
+                "text": "Visibilidad pobre y aire suave.",
+                "id": 2
+            },
+            {
+                "text": "Nubes estratiformes y precipitación de lluvia",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuáles son características del aire inestable?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Turbulencia y buena visibilidad en la superficie.",
+                "id": 1
+            },
+            {
+                "text": "Turbulencia y pobre visibilidad en la superficie",
+                "id": 2
+            },
+            {
+                "text": "Nubes nimbostratos y buena visibilidad en la superficie",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué característica esta asociada a una inversión de temperatura?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una capa estable de aire.",
+                "id": 1
+            },
+            {
+                "text": "Una capa instable de aire.",
+                "id": 2
+            },
+            {
+                "text": "Vientos de Chinook en las laderas de la montaña",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué disminuiría la estabilidad de una masa de aire?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Calentamiento desde abajo",
+                "id": 1
+            },
+            {
+                "text": "Enfriamiento desde abajo.",
+                "id": 2
+            },
+            {
+                "text": "Disminución de vapor de agua",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué medida se puede utilizar para determinar la estabilidad de la atmósfera?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Presión atmosférica.",
+                "id": 1
+            },
+            {
+                "text": "Gradiente real.",
+                "id": 2
+            },
+            {
+                "text": "Temperatura de la superficie",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Si una masa de aire inestable es forzada hacia arriba, qué tipo de nubes se pueden esperar?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubes Stratus con poco desarrollo vertical.",
+                "id": 1
+            },
+            {
+                "text": "Nubes Stratus con turbulencia asociada considerable",
+                "id": 2
+            },
+            {
+                "text": "Nubes con desarrollo vertical considerable y turbulencia asociada",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Las aproximaciones para aterrizar VFR por la noche deben ser realizadas:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "A una mayor velocidad.",
+                "id": 1
+            },
+            {
+                "text": "Con un descenso más pronunciado.",
+                "id": 2
+            },
+            {
+                "text": "Igual que durante las horas diurnas.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Para minimizar las cargas laterales puesta en el tren de aterrizaje durante el toque a tierra, el piloto debe mantener:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La dirección de movimiento de la aeronave paralela a la pista de aterrizaje.",
+                "id": 1
+            },
+            {
+                "text": "El eje longitudinal de la aeronave paralela a la dirección de su movimiento.",
+                "id": 2
+            },
+            {
+                "text": "El ala que está a favor del viento (downwind) bajada",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Si una situación de emergencia requiere un aterrizaje a favor del viento el piloto debe esperar mas rápida.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Velocidad al tocar tierra, un recorrido en tierra mas largo, y un mejor control durante el rodaje en tierra.",
+                "id": 1
+            },
+            {
+                "text": "Velocidad de tierra al toque, un recorrido de tierra mas largo y la posibilidad de sobrepasar el punto de toque deseado.",
+                "id": 2
+            },
+            {
+                "text": "Velocidad de tierra al tocar tierra, un recorrido en tierra más corto y la posibilidad de quedarse corto del punto de toque deseado.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué facilidad ATC debe el piloto contactar para recibir una autorización de salida VFR especial en espacio aéreo de Clase D?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Estación de Servicio Automatizada De Vuelo.",
+                "id": 1
+            },
+            {
+                "text": "Torre de Control de Tránsito Aéreo.",
+                "id": 2
+            },
+            {
+                "text": "Centro De Control De Tráfico De Ruta Aérea.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué procedimiento es recomendado cuando se asciende o desciende VFR en una aerovía?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Ejecute ligeros banqueos, a la izquierda y derecha para un continuo escaneo del espacio aéreo.",
+                "id": 1
+            },
+            {
+                "text": "Avise al control de vuelo más cercano de los cambios de altitud.",
+                "id": 2
+            },
+            {
+                "text": "Vuele fuera de la línea central de la aerovía antes de cambiar de altitud.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Durante un vuelo IFR usted recoge escarcha de hielo el cual usted estima es de 1 / 2 Pulgadas, de ancho en el borde de ataque de las alas, usted esta ahora por debajo de las nubes a 2000 pies AGL y aproximándose a su aeropuerto de destino bajo VFR. Visibilidad bajo las nubes es mayor de 10 millas, los vientos en el aeropuerto de destino es de 8 nudos justo en la pista y la temperatura en superficie es de 3- grados Celsius, usted decide:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Use un acercamiento mas rápido que lo normal.",
+                "id": 1
+            },
+            {
+                "text": "Aproximación y aterrizaje a la velocidad normal ya que el hielo no es lo suficientemente grueso para tener cualquier efecto notorio",
+                "id": 2
+            },
+            {
+                "text": "Volar a su acercamiento más lento de lo normal para reducir la temperatura de frio efecto y romper el hielo",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Una condición en vuelo necesaria para la formación de hielo estructural es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Pequeña separación de temperatura/punto de rocío.",
+                "id": 1
+            },
+            {
+                "text": "Nubes estratiformes.",
+                "id": 2
+            },
+            {
+                "text": "Humedad visible.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cómo afecta el hielo la superficie de sustentación de un avión en despegue?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El hielo pueden impedir que el avión emprenda el vuelo a velocidad normal despegue",
+                "id": 1
+            },
+            {
+                "text": "El hielo va a cambiar la inclinación del ala, incrementando su sustentación durante el despegue",
+                "id": 2
+            },
+            {
+                "text": "El hielo pueden hacer que el avión emprenda el vuelo con un ángulo de ataque menor a una velocidad indicada menor",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿En qué ambiente es el hielo estructural del avión más susceptible a su acumulación?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubes cúmulo con temperaturas bajo cero.",
+                "id": 1
+            },
+            {
+                "text": "Llovizna congelante.",
+                "id": 2
+            },
+            {
+                "text": "Lluvia congelante",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Por qué se considera la escarcha peligrosa para el vuelo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La escarcha cambia la forma aerodinámica básica de las superficies de sustentación, de tal modo que disminuye la sustentación.",
+                "id": 1
+            },
+            {
+                "text": "La escarcha retarda la circulación de aire sobre las superficies de sustentación, de tal modo que aumenta la eficacia del control.",
+                "id": 2
+            },
+            {
+                "text": "La escarcha estropea el flujo del aire sobre las alas, de tal modo que disminuye la capacidad de sustentación.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "La cantidad de vapor de agua que el aire puede contener depende de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Punto de rocío.",
+                "id": 1
+            },
+            {
+                "text": "Temperatura del aire.",
+                "id": 2
+            },
+            {
+                "text": "Estabilidad del aire.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "La presencia de pelotillas (Granizos) de hielo en la superficie es la evidencia de que allí:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Hay tormentas en el área.",
+                "id": 1
+            },
+            {
+                "text": "Ha pasado un frente frío.",
+                "id": 2
+            },
+            {
+                "text": "Hay una inversión de temperatura con lluvia congelante a una alturas más alta.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 4,
+        "explanation": " "
+    },
+    {
+        "question": "Las nubes, la niebla o el rocío se formarán siempre y cuando:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El vapor de agua se condense",
+                "id": 1
+            },
+            {
+                "text": "El vapor de agua este presente.",
+                "id": 2
+            },
+            {
+                "text": "La humedad relativa alcanza el 100%.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuál es el significado del término Punto de Rocío ?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La temperatura en la cual la condensación y la evaporación son iguales.",
+                "id": 1
+            },
+            {
+                "text": "La temperatura en la cual el rocío se formará siempre.",
+                "id": 2
+            },
+            {
+                "text": "La temperatura a la cual el aire se enfría para saturarse.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuáles son los procesos por los cuales se agrega humedad a un aire no saturado?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Evaporación y sublimación",
+                "id": 1
+            },
+            {
+                "text": "Calentamiento y condensación",
+                "id": 2
+            },
+            {
+                "text": "Super-saturación y evaporación",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué condiciones dan lugar a la formación de la hescarcha?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La temperatura de la superficie colectora está en o bajo cero cuando las gotitas pequeñas de humedad caen en la superficie.",
+                "id": 1
+            },
+            {
+                "text": "La temperatura de la superficie colectora está en o debajo del punto de rocío del aire adyacente y el punto de rocío esta bajo cero.",
+                "id": 2
+            },
+            {
+                "text": "La temperatura del aire circundante está en o bajo cero cuando las gotas pequeñas de humedad caen en la superficie colectora.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué fenómeno climático esta siempre con una tormenta eléctrica?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Relámpagos.",
+                "id": 1
+            },
+            {
+                "text": "Lluvia fuerte.",
+                "id": 2
+            },
+            {
+                "text": "Granizo",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "El límite entre dos diversas masas de aire se refiere como un:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Frontolysis",
+                "id": 1
+            },
+            {
+                "text": "Frontogenesis",
+                "id": 2
+            },
+            {
+                "text": "Frente",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Precipitación constante que precede un frente es una indicación de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubes estratiformes con turbulencias moderadas.",
+                "id": 1
+            },
+            {
+                "text": "Nubes cumuliformes con poco o nada de turbulencia.",
+                "id": 2
+            },
+            {
+                "text": "Nubes estratiformes con poco o nada de turbulencia.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Un fenómeno meteorológico que ocurrirá siempre al volar a través de un frente, es un cambio en la:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Dirección del viento",
+                "id": 1
+            },
+            {
+                "text": "Tipo de precipitación",
+                "id": 2
+            },
+            {
+                "text": "Estabilidad de la masa de aire",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Una de las discontinuidades más fácilmente reconocidas a través de un frente es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un cambio en la temperatura",
+                "id": 1
+            },
+            {
+                "text": "Un aumento en la cubierta de nubes",
+                "id": 2
+            },
+            {
+                "text": "Un incremento de la humedad relativa",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "La turbulencia de bajo nivel puede ocurrir y la formación de hielo puede llegar a ser peligrosa, ¿en qué tipo de niebla?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Niebla inducida por lluvia.",
+                "id": 1
+            },
+            {
+                "text": "Niebla ascendente o de ladera.",
+                "id": 2
+            },
+            {
+                "text": "Neblina de vapor",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "El sufijo nimbo utilizado en el nombramiento de las nubes, significa:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una nube con desarrollo vertical extenso.",
+                "id": 1
+            },
+            {
+                "text": "Una nube de lluvia.",
+                "id": 2
+            },
+            {
+                "text": "Una nube media que contiene pelotillas del hielo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Las nubes se dividen en cuatro familias según su:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Forma exterior",
+                "id": 1
+            },
+            {
+                "text": "Rango de altura",
+                "id": 2
+            },
+            {
+                "text": "Composición",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Las ondas y la crestas de una montaña se pueden marcar por las nubes inmóviles, en forma de lentes conocidas como:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubes mammatocumulus",
+                "id": 1
+            },
+            {
+                "text": "Nubes lenticulares.",
+                "id": 2
+            },
+            {
+                "text": "Nubes rodillo",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Una almendra o a una nube lente (En forma de lente) que aparece inmóvil, pero que puede contener vientos de 50 nudos o más, se conoce como:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una nube frontal inactiva",
+                "id": 1
+            },
+            {
+                "text": "Una nube embudo",
+                "id": 2
+            },
+            {
+                "text": "Una nube lenticular",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué nubes tienen la turbulencia más grave? ",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cúmulo en forma de torre",
+                "id": 1
+            },
+            {
+                "text": "Cumulonimbus",
+                "id": 2
+            },
+            {
+                "text": "Nimboestratus",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué tipos de nubes indicarían turbulencia convectiva?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubes Cirrus",
+                "id": 1
+            },
+            {
+                "text": "Nubes Nimbostratus",
+                "id": 2
+            },
+            {
+                "text": "Nubes en forma de torre",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿En qué situación la niebla de advección es más propensa a formarse?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Una masa de aire caliente, húmeda en los lado desde donde sopla el viento de las montañas",
+                "id": 1
+            },
+            {
+                "text": "Una masa de aire moviéndose tierra adentro desde la costa en invierno.",
+                "id": 2
+            },
+            {
+                "text": "Una brisa ligera que sopla aire más frío hacia afuera del mar.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué situación es la más conducente a la formación de niebla de radiación?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Aire caliente, aire húmedo sobre aire bajo, areas llanas en noches claras y tranquilas.",
+                "id": 1
+            },
+            {
+                "text": "Aire húmedo, tropical moviéndose sobre frío afuera de la costa.",
+                "id": 2
+            },
+            {
+                "text": "El movimiento de aire frío sobre agua mucho más caliente.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Si la diferencia de la temperatura/punto de rocío es pequeña y disminuye, y la temperatura es de 62°F, qué tipo de clima es más probable que se desarrolle?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Precipitación que congela",
+                "id": 1
+            },
+            {
+                "text": "Tormentas eléctricas",
+                "id": 2
+            },
+            {
+                "text": "Niebla o nubes bajas",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Para actualizar un previo informe climatológico, un piloto debe solicitar:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un informe resumido.",
+                "id": 1
+            },
+            {
+                "text": "Un informe estándar.",
+                "id": 2
+            },
+            {
+                "text": "Un informe de probabilidad",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Un informe climático que se proporciona cuando la información es solicitada con 6 o más horas del tiempo propuesto de la salida por adelantado es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un informe de perspectiva.",
+                "id": 1
+            },
+            {
+                "text": "Un informe de cobertura.",
+                "id": 2
+            },
+            {
+                "text": "Un informe de pronóstico.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 15.) El único tipo de nube pronosticado en informes TAF es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nimbostratus.",
+                "id": 1
+            },
+            {
+                "text": "Cumulonimbus.",
+                "id": 2
+            },
+            {
+                "text": "Cúmulos dispersos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Para los propósitos de la aviación, el techo se define como la altura sobre la superficie de la tierra de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "El oscurecimiento más bajo reportado y la capa más alta de nubes reportadas como cubierto.",
+                "id": 1
+            },
+            {
+                "text": "La rotura más baja o la Capa cubierta o la visibilidad vertical en un oscurecimiento.",
+                "id": 2
+            },
+            {
+                "text": "La capa más baja de nubes reportadas como dispersas, rotas, o delgadas.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Durante el ciclo de vida de una tormenta , ¿Qué etapa es caracterizada predominantemente por las corrientes descendentes?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "CúmulosCumulus.",
+                "id": 1
+            },
+            {
+                "text": "Disipación.",
+                "id": 2
+            },
+            {
+                "text": "Madura.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Las condiciones necesarias para la formación de las nubes cumulonimbus son acciones de levantamiento y:.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Aire inestable que contiene un exceso de núcleos de condensación",
+                "id": 1
+            },
+            {
+                "text": "Aire inestable, húmedo.",
+                "id": 2
+            },
+            {
+                "text": "Ni aire estable o inestable",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Las tormentas eléctricas alcanzan su intensidad más grande durante la:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Etapa de maduro",
+                "id": 1
+            },
+            {
+                "text": "Etapa de la corriente descendente",
+                "id": 2
+            },
+            {
+                "text": "Etapa de cúmulo.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Las tormentas que generalmente producen el peligro más intenso al avión son:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Tormentas eléctricas en línea de ráfaga",
+                "id": 1
+            },
+            {
+                "text": "Tormentas eléctricas de estado estacionario",
+                "id": 2
+            },
+            {
+                "text": "Tormentas eléctricas de frente caliente",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Si hay actividad de tormenta la vecindad de un aeropuerto en el cual usted planea aterrizar, ¿Cuál fenómeno atmosférico peligroso se puede esperar en la aproximación de aterrizaje?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Precipitación estática.",
+                "id": 1
+            },
+            {
+                "text": "Turbulencia de viento cortante o cizalladura de viento gradiente anemométrico.",
+                "id": 2
+            },
+            {
+                "text": "Lluvia constante.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Una banda estrecha, no frontal, de las tormentas eléctricas activas que se desarrollan a menudo delante de un frente frío es conocido como un:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Sistema prefrontal",
+                "id": 1
+            },
+            {
+                "text": "Línea de ráfaga.",
+                "id": 2
+            },
+            {
+                "text": "Línea seca.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué característica es normalmente asociada a la etapa de cúmulo de una tormenta.?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nube en rodillo.",
+                "id": 1
+            },
+            {
+                "text": "Corriente ascendente continúa",
+                "id": 2
+            },
+            {
+                "text": "Relámpagos frecuentes",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué condiciones son necesarias para la formación de tormentas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Humedad alta, fuerza de levantamiento y condiciones inestables.",
+                "id": 1
+            },
+            {
+                "text": "Humedad alta, temperatura alta y nubes cúmulo.",
+                "id": 2
+            },
+            {
+                "text": "Fuerza de levantamiento, aire húmedo y cubierta extensa de nubes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué fenómeno climático señala el comienzo de la etapa madura de una tormenta eléctrica?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La aparición de un yunque.",
+                "id": 1
+            },
+            {
+                "text": "Precipitación comenzando a caer.",
+                "id": 2
+            },
+            {
+                "text": "Índice de crecimiento máximo de las nubes.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Posible turbulencia de montaña se puede anticipar cuando los vientos de 40 nudos o mayor soplan:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "A través de la cresta de la montaña y el aire es estable.",
+                "id": 1
+            },
+            {
+                "text": "Por el valle de Montaña y el aire es inestable.",
+                "id": 2
+            },
+            {
+                "text": "paralelo al pico de la montaña y el aire es estable",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Un piloto puede esperar una zona de viento de cizalladura (Wind-shear) en una inversión de temperatura siempre que la velocidad del viento de 2,000 a 4,000 pies sobre la superficie esté por lo menos:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "10 nudos.10 knots.",
+                "id": 1
+            },
+            {
+                "text": "15 nudos.15 knots.",
+                "id": 2
+            },
+            {
+                "text": "25 nudos.25 knots.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Cuándo puede esperarse cortante de viento?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cuando aire estable cruza una barrera de montaña donde tiende a fluir en las capas que forman las nubes lenticulares.",
+                "id": 1
+            },
+            {
+                "text": "En áreas de inversión de la temperatura baja (A baja altura), zonas frontales, y turbulencia de aire claro (CAT).",
+                "id": 2
+            },
+            {
+                "text": "Siguiendo pasaje frontal, cuando las nubes estratocúmulos se forman indicando una mezcla mecánica.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "El viento a 5,000 pies AGL, está al suroeste mientras que el viento superficial está sureste. Esta diferencia en la dirección es sobre todo debido a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un gradiente de presión más fuerte en altitudes más altas.",
+                "id": 1
+            },
+            {
+                "text": "Fricción entre el viento y la superficie.",
+                "id": 2
+            },
+            {
+                "text": "Una fuerza más fuerte de coriolis en la superficie.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Cada proceso físico de condiciones meteorológicas está acompañado por, o es el resultado de un:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Movimiento del aire.",
+                "id": 1
+            },
+            {
+                "text": "Diferencial de presión",
+                "id": 2
+            },
+            {
+                "text": "Intercambio de calor.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "El tipo de suelo o superficie más frecuente de temperatura basado en la inversión es aquella que se produce por;.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Radiación del terreno, en noches claras, relativamente, y calmada.",
+                "id": 1
+            },
+            {
+                "text": "El aire caliente que se levanta rápidamente sobre la proximidad del terreno montañoso.",
+                "id": 2
+            },
+            {
+                "text": "Movimiento de aire frio, debajo de aire tibio o el movimiento de aire tibio sobre aire frio",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué causa variaciones en ajustes de altímetro entre los puntos de reporte meteorológicos?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Calor desigual de la superficie de la tierra.",
+                "id": 1
+            },
+            {
+                "text": "Variación en la elevación del terreno.",
+                "id": 2
+            },
+            {
+                "text": "Fuerza de coriolis.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué condiciones atmosféricas se deben esperar debajo de una inversión de temperatura a bajo nivel cuando la humedad relativa es alta?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Aire suave, visibilidad pobre, niebla, bruma, o nubes bajas.",
+                "id": 1
+            },
+            {
+                "text": "Ligero cizalladura de viento (Wind-Shear), visibilidad pobre, bruma, y lluvia ligera.",
+                "id": 2
+            },
+            {
+                "text": "Aire turbulento, visibilidad pobre, niebla, nubes bajas del tipo del estrato, y lluvia copiosa.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Una inversión de temperatura dará lugar muy probablemente a qué condición atmosférica?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubes con desarrollo vertical extenso sobre una inversión en el altura.",
+                "id": 1
+            },
+            {
+                "text": "Buena visibilidad en los niveles más bajos de la atmósfera y visibilidad pobre sobre una inversión en alturas.",
+                "id": 2
+            },
+            {
+                "text": "Un aumento de temperatura según aumente la altura.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Al encontrar turbulencia severa, ¿Cuál condición de vuelo debe el piloto procurar mantener?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Altitud y velocidad constantes.",
+                "id": 1
+            },
+            {
+                "text": "Ángulo de ataque constante.",
+                "id": 2
+            },
+            {
+                "text": "Actitud de vuelo a nivel.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué tipos de niebla dependen del viento para existir?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Niebla de Radiación e hielo.",
+                "id": 1
+            },
+            {
+                "text": "Niebla de vapor y de tierra.",
+                "id": 2
+            },
+            {
+                "text": "Niebla de advección y de ladera.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    }
+]

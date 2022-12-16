@@ -1,0 +1,842 @@
+[
+    {
+        "question": "(Ver la Figura 18) El tiempo para Vuelos IFR, en el Norte de Texas es debido a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Remolino de Arena.",
+                "id": 1
+            },
+            {
+                "text": "Techos bajos.",
+                "id": 2
+            },
+            {
+                "text": "Lluvia intermitente.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Ver la Figura 18) ¿Cuál es el estado del frente que se extienden desde Nebraska a través de lo la península superior de Michigan?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Frio",
+                "id": 1
+            },
+            {
+                "text": "Caliente",
+                "id": 2
+            },
+            {
+                "text": "Estatico",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Figura 19) Interprete el Símbolo Meteorológico descrito en Utah sobre las 12 horas en el Pronóstico de Cartografía Meteorológica de símbolos.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Turbulencia moderada, superficie a 18.000 pies.",
+                "id": 1
+            },
+            {
+                "text": "Base del aire turbulento a 18,000 pies",
+                "id": 2
+            },
+            {
+                "text": "Cúspide de la tormenta a 18,000 pies.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Figura 19) ¿A qué altitud se encuentra el nivel de congelación en el centro de Florida en la Carta de Pronóstico del Tiempo Significativo de 12 horas",
+        "image": " ",
+        "choices": [
+            {
+                "text": "4,000 pies.",
+                "id": 1
+            },
+            {
+                "text": "12,000 pies.",
+                "id": 2
+            },
+            {
+                "text": "8,000 pies.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Figura 18) De acuerdo a la carta de descripción Cartográfica, el clima para un vuelo desde el Sur de Michigan al Norte de Indiana es de techo:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,000 a 3,000 pies y/o visibilidad de 3 a 5 millas.",
+                "id": 1
+            },
+            {
+                "text": "Menos que 1,000 Pies y/o menos visibilidad de 3 millas.",
+                "id": 2
+            },
+            {
+                "text": "Mayor que 3,000 pies y visibilidad mayor que 5 millas",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Figura 18) ¿Qué fenómenos meteorológico está causando las condiciones IFR en el centro de Oklahoma?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Solamente baja visibilidad.",
+                "id": 1
+            },
+            {
+                "text": "Chubascos de fuertes",
+                "id": 2
+            },
+            {
+                "text": "Techo bajo y visibilidad",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la Figura 18) El tiempo marginal en el Centro de Kentucky es debido a baja",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Visibilidad",
+                "id": 1
+            },
+            {
+                "text": "Techo y visibilidad",
+                "id": 2
+            },
+            {
+                "text": "Techo",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la Figura 18) ¿De qué valor es el gráfico de descripción del clima para el piloto?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Para determinar las condiciones generales del tiempo en la cual se basa el plan de vuelo.",
+                "id": 1
+            },
+            {
+                "text": "Para un pronóstico de reportaje de nubes, visibilidades y actividad frontal.",
+                "id": 2
+            },
+            {
+                "text": "Para determinar el curso frontal y las características de la masa de aire.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Los pronósticos individuales para las rutas específicas de vuelo pueden ser obtenidos de ¿Cuáles fuente meteorológicas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Difusiones Transcritas Del Clima (TWEBs).",
+                "id": 1
+            },
+            {
+                "text": "Pronósticos de la Terminal.",
+                "id": 2
+            },
+            {
+                "text": "Pronósticos del área.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué deben declarar los pilotos inicialmente cuando llaman al facilitador para un informe meteorológico de pre-vuelo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Las rutas de vuelo previstas por frecuencia de radio",
+                "id": 1
+            },
+            {
+                "text": "La dirección del piloto al mando",
+                "id": 2
+            },
+            {
+                "text": "La ruta de vuelo prevista y el destino.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué tipo de informe del tiempo debe un piloto solicitar para suplir una masa de datos diseminada?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un informe de perspectiva",
+                "id": 1
+            },
+            {
+                "text": "Un informe suplementario.",
+                "id": 2
+            },
+            {
+                "text": "Un informe abreviado.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "( Ver la Figura 17) ¿Qué viento está pronosticado para STL a 12,000 pies?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "230° verdaderos a 56 nudos.",
+                "id": 1
+            },
+            {
+                "text": "230° magnético a 56 nudos.",
+                "id": 2
+            },
+            {
+                "text": "230° verdadero a 39 nudos.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 15.) Durante el período de tiempo de 0600Z a 0800Z, ¿qué visibilidad se pronostica para KOKC?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Mayor de 6 millas terrestres.",
+                "id": 1
+            },
+            {
+                "text": "No Pronosticado.",
+                "id": 2
+            },
+            {
+                "text": "Posiblemente 6 millas terrestres.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 15.) En el TAF de KOKC, el 'Grupo FM(DESDE)' es pronosticado para las horas desde las 1600Z hasta las 2200Z con viento desde:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "160° a 10 nudos.",
+                "id": 1
+            },
+            {
+                "text": "180° a 10 nudos, convirtiéndose 200° en 13 nudos.",
+                "id": 2
+            },
+            {
+                "text": "180º a 10 nudos",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 15.) En el TAF de KOKC, el cielo claro se convierte:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cubierto a 2,000 pies durante el período de pronóstico entre 2200Z y 2400Z.",
+                "id": 1
+            },
+            {
+                "text": "Cubierto a 200 pies con un 40% de probabilidad de volverse cubierto a 600 pies durante el período de pronóstico entre 2200Z y 2400Z.",
+                "id": 2
+            },
+            {
+                "text": "Cubierto a 200 pies con la probabilidad de volverse cubierto a 400 pies durante el período de pronóstico entre 2200Z y 2400Z.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 15.) ¿Entre 1000Z y 1200Z la visibilidad en KMEM se pronostica para estar?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "½ milla de estatuta.",
+                "id": 1
+            },
+            {
+                "text": "3 millas de estatutas.",
+                "id": 2
+            },
+            {
+                "text": "6 millas de estatutas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver fig. 15) ¿Cuál es el pronóstico de viento para KMEM desde las 1600Z hasta el final del pronóstico?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "No hay viento significativo.",
+                "id": 1
+            },
+            {
+                "text": "Variable en dirección a 4 nudos.",
+                "id": 2
+            },
+            {
+                "text": "Variable en dirección a 6 nudos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la Figura 17) Determine el viento y la temperatura en vuelo pronosticado para DEN a 9,000 pies.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "230° magnético a 53 nudos, temperatura 47 °C.",
+                "id": 1
+            },
+            {
+                "text": "230° verdadero a 53 nudos, temperatura -47 °C.",
+                "id": 2
+            },
+            {
+                "text": "230° verdadero a 21 nudos, temperatura -4 °C.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la Figura 17) Determine el viento y la temperatura en vuelo pronosticado para MKC a 6,000 pies.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "200° verdadero a 6 nudos, temperatura +3 °C.",
+                "id": 1
+            },
+            {
+                "text": "050° verdadero a 7 nudos, falta temperatura.",
+                "id": 2
+            },
+            {
+                "text": "200° magnético a 6 nudos, temperatura +3 °C.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver la Figura 17) ¿Qué viento está pronosticado para STL a 9,000 pies?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "230° verdadero a 32 nudos.",
+                "id": 1
+            },
+            {
+                "text": "230° magnético a 25 nudos.",
+                "id": 2
+            },
+            {
+                "text": "230° verdadero a 25 nudos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "AIRMETs son asesoramientos de los fenómenos significativos del clima pero de intensidades más reducidas que los Sigmets y están intencionado para la difusión a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Solamente pilotos IFR.",
+                "id": 1
+            },
+            {
+                "text": "Todos los pilotos.",
+                "id": 2
+            },
+            {
+                "text": "Solamente pilotos VFR",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "Cuando el término Ligero y variable ' (Light and variable) se utiliza en referencia a un Pronostico de Viento en Altura, el grupo codificado y la velocidad del viento es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "0000 y menos de 7 nudos.",
+                "id": 1
+            },
+            {
+                "text": "9900 y menos de 5 nudos.",
+                "id": 2
+            },
+            {
+                "text": "9999 y menos de 10 nudos",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "La sección del Pronóstico de área titulada VFR CLDS/ WX contiene una descripción general de:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Nubosidad y clima significativo a las operaciones de vuelo analizadas por los estados u otras áreas geográficas.",
+                "id": 1
+            },
+            {
+                "text": "Pronóstico de cielo cubierto, topes de nube, visibilidad y obstrucciones a la visión a lo largo de las rutas especificadas.",
+                "id": 2
+            },
+            {
+                "text": "Las nubes y tiempo que cubren un área mayor de 3.000 millas cuadradas y es significativa a las operaciones de vuelo VFR.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "Para determinar el nivel de congelamiento y las áreas probables de formación de hielo en el aire, el piloto debe referirse a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Avisos Meteorológicos en Vuelo para la Aviación.",
+                "id": 1
+            },
+            {
+                "text": "Carta de Descripción Climática.",
+                "id": 2
+            },
+            {
+                "text": "Pronóstico de Área.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Para determinar lo mejor posible las condiciones atmosféricas del pronóstico general sobre varios estados, el piloto debe referirse a:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Pronósticos De Área De Aviación.",
+                "id": 1
+            },
+            {
+                "text": "Cartas climáticas Descriptivas.",
+                "id": 2
+            },
+            {
+                "text": "Mapas satelitales.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "Para obtener un informe del tiempo transcrito sin interrupciones incluyendo vientos en alturas y rutas pronosticadas para un viaje de travesía, un piloto debe monitorear un:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Un informe transcrito del tiempo (TWEB) en una facilidad de NDB o VOR.",
+                "id": 1
+            },
+            {
+                "text": "Una frecuencia de a (VHF) de recepción de radio sintonizada a una frecuencia de servicio informativo automatica de la terminal.",
+                "id": 2
+            },
+            {
+                "text": "Un horario regularizado de pronosticos del tiempo en un a frecuencia de VOR.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿De qué fuente primaria se debe obtener la información, con respecto al clima a la hora prevista de llegada estimada, si su destino no tiene ningún pronóstico de terminal?.",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Carta Pronostica de Bajo nivel.",
+                "id": 1
+            },
+            {
+                "text": "Carta Descriptiva Del Clima.",
+                "id": 2
+            },
+            {
+                "text": "Pronóstico de área.",
+                "id": 3
+            } 
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Los SIGMETs se publican como advertencia de condiciones meteorológicas, peligrosas, a cual avión?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Aviones pequeños sólamente.",
+                "id": 1
+            },
+            {
+                "text": "Aviones grandes sólamente.",
+                "id": 2
+            },
+            {
+                "text": "Todos los aviones.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué significa, cuando un SIGMET CONVECTIVO actual pronostica tormentas eléctricas (thunderstorms)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Tormentas de truenos moderadas que cubren 30 por ciento del área.",
+                "id": 1
+            },
+            {
+                "text": "Turbulencias moderadas o severa.",
+                "id": 2
+            },
+            {
+                "text": "Tormentas obscurecidas por capas masivas de nube.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué aviso en vuelo contendría la información sobre la formación de hielo severo no asociado con tormentas eléctricas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "SIGMET Convectivo.",
+                "id": 1
+            },
+            {
+                "text": "SIGMET.",
+                "id": 2
+            },
+            {
+                "text": "AIRMET.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué información contiene un SIGMET CONVECTIVO?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Tornados, tormentas eléctricas encajadas y granizo de ¾ de pulgada o mayor en diámetro.",
+                "id": 1
+            },
+            {
+                "text": "Vientos en superficie a más de 40 nudos o tormentas eléctricas iguales a o el nivel mayor que el nivel 4 del procesador de video del integrador (VIP).",
+                "id": 2
+            },
+            {
+                "text": "Formación de hielo severa, turbulencia severa o tormentas de polvo extensas que bajan la visibilidad a menos de 3 millas.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué valores se utilizan para los pronósticos de los vientos en altura?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Dirección magnética y nudos.",
+                "id": 1
+            },
+            {
+                "text": "Dirección magnética y millas por hora.",
+                "id": 2
+            },
+            {
+                "text": "Dirección verdadera y nudos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 12.) La sección de las observaciones para KMDW tiene RAB35 listada. Esta entrada significa:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "La niebla soplada por el viento ha reducido la visibilidad a 1-1/2 SM.",
+                "id": 1
+            },
+            {
+                "text": "La lluvia comenzó a 1835 Z.",
+                "id": 2
+            },
+            {
+                "text": "El barómetro se ha elevado .35 plgs.Hg.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 12.) ¿Cuál de las estaciones del reporte tiene clima VFR?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Todas.",
+                "id": 1
+            },
+            {
+                "text": "KINK, KBOI y KJFK.",
+                "id": 2
+            },
+            {
+                "text": "KINK, KBOI y KLAX.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 12.) ¿Cuáles son las condiciones actuales mostradas para el aeropuerto de Midway Chicago (KMDW)? ",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Cielo cubierto a 700 pies, visibilidad 1-1/2sm, lluvia.",
+                "id": 1
+            },
+            {
+                "text": "Cielo cubierto a 700 pies, visibilidad 1-1/2sm, lluvia fuerte.",
+                "id": 2
+            },
+            {
+                "text": "Cielo cubierto a 700 pies, visibilidad 11, ocasionalmente 2SM, con lluvia.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "(Ver Figura 12) ¿Cuáles son las condiciones de viento en Wink, Texas (KINK)?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Calmado.",
+                "id": 1
+            },
+            {
+                "text": "110° a 12 nudos, ráfagas a 18 nudos.",
+                "id": 2
+            },
+            {
+                "text": "111° a 2 nudos, ráfagas de vientos a 18 nudos.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 14.) La base y los topes de la capa cubierta reportada por un piloto son:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "1,800 pies MSL y 5,500 pies MSL.",
+                "id": 1
+            },
+            {
+                "text": "5,500 pies AGL y 7,200 pies MSL.",
+                "id": 2
+            },
+            {
+                "text": "7,200 pies MSL y 8,900 pies MSL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 14.) La intensidad de la turbulencia reportada a una altitud específica es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Moderada desde 5,500 pies a 7,200 pies.",
+                "id": 1
+            },
+            {
+                "text": "Moderada a 5,500 pies y a 7,200 pies.",
+                "id": 2
+            },
+            {
+                "text": "Ligera desde 5,500 pies hasta los 7,200.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 3,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 14.) La intensidad y tipo de formación de hielo reportado por un piloto es:",
+        "image": " ",
+        "choices": [
+            {
+                "text": "De ligero a moderado.",
+                "id": 1
+            },
+            {
+                "text": "Escarcha, de ligera a moderada.",
+                "id": 2
+            },
+            {
+                "text": "De ligero a claro moderado.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 2,
+        "explanation": " "
+    },
+    {
+        "question": "(Refiérase a la fig. 14.) Si la elevación del terreno es 1,295 pies MSL, ¿Cuál es la altura sobre el nivel del suelo de la base del techo?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "505 pies AGL.",
+                "id": 1
+            },
+            {
+                "text": "1,295 pies AGL.",
+                "id": 2
+            },
+            {
+                "text": "6,586 pies AGL.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿A Qué se refiere la caja rectangular de líneas fuerte intermitente que forma una caja rectangular en el sumario de radar.?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Clima severo en el área de vigilancia.",
+                "id": 1
+            },
+            {
+                "text": "Áreas de granizo (hail) 1/4 de pulgada en diámetros.",
+                "id": 2
+            },
+            {
+                "text": "Áreas de lluvias torrenciales.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    },
+    {
+        "question": "¿Qué información es proporcionada por la Carta Resumen de Radar, que no es mostrada en otras cartas meteorológicas?",
+        "image": " ",
+        "choices": [
+            {
+                "text": "Líneas y células de tormentas eléctricas peligrosas.",
+                "id": 1
+            },
+            {
+                "text": "Techos y precipitaciones entre las estaciones de reporte.",
+                "id": 2
+            },
+            {
+                "text": "Tipos de nubes entre las estaciones de reporte.",
+                "id": 3
+            }
+        ],
+        "correctAnswer": 1,
+        "explanation": " "
+    }
+]
