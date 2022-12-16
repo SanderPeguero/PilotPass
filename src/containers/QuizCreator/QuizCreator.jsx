@@ -5,34 +5,10 @@ import { createControl, isFromValid, isValueValid } from "../../form/formFramewo
 import Button from "../../components/UI/Button/Button";
 import Input from "../../components/UI/Input/Input";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
-import Select from "../../components/UI/Select/Select";
-// import { createQuizQuestion, createQuiz } from "../../store/actions/quizCreatorActions";
-import { createSubject, resetResponse } from "../../redux/creator/slice";
-import { Tooltip } from "@mui/material";
-import { postSubject } from "../../redux/creator/functions";
+import Select from "../../components/UI/Select/Select"
+import { createSubject, resetResponse } from "../../redux/creator/slice"
+import { postSubject } from "../../redux/creator/functions"
 import Alert from '../../components/Alert/Snackbar'
-
-// function createFormControls() {
-//     return {
-//         question: createControl({
-//             label: "Question",
-//             errorMessage: "Question text is Empty"
-//         }, { required: true }),
-
-//         option1: createOptionControl(1, "A"),
-//         option2: createOptionControl(2, "B"),
-//         option3: createOptionControl(3, "C"),
-//         option4: createOptionControl(4, "D"),
-//     };
-// }
-
-// function createOptionControl(optionNumber, label) {
-//     return createControl({
-//         id: optionNumber,
-//         label: `Answer ${label})`,
-//         errorMessage: "Answer text is Empty"
-//     }, { required: true })
-// }
 
 
 const quizCreator = () => {
