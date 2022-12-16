@@ -10,9 +10,6 @@ import { createSubject, resetResponse } from "../../redux/creator/slice"
 import { postSubject } from "../../redux/creator/functions"
 import Alert from '../../components/Alert/Snackbar'
 
-import aerodinamica from '../../JSON/TeoriaDelClima.json'
-
-
 const quizCreator = () => {
     
     const [subject, setsubject] = useState("")
@@ -31,66 +28,29 @@ const quizCreator = () => {
     const error = useSelector(state => state.error.error);
     const response = useSelector(state => state.creator.response);
     
-    
-    const hidratar = (obj) => {
-        let pregunta = {
-            question,
-            answer1,
-            answer2,
-            answer3,
-            answer4,
-            correctAnswer
-        }
-        // console.log(obj)
-        
-        // setquestion(obj.question)
-        pregunta.question = obj.question
-        // setanswer1(obj.choices[0].text)
-        pregunta.answer1 = obj.choices[0].text
-        // setanswer2(obj.choices[1].text)
-        pregunta.answer2 = obj.choices[1].text
-        // setanswer3(obj.choices[2].text)
-        pregunta.answer3 = obj.choices[2].text
-        if(obj.choices[3]){
-            // setanswer4(obj.choices[3].text)
-            pregunta.answer4 = obj.choices[3].text
-
-        }else{
-            // setanswer4("")
-            pregunta.answer4 = ''
-        }
-        // setcorrectAnswer(obj.correctAnswer + 1)
-        let ca = obj.correctAnswer
-        pregunta.correctAnswer = ca.toString()
-        // sleep(500).then( r => {
-            // console.log(pregunta)
-        // })
-        questions.push(pregunta) 
-       
-
+    const pregunta = {
+        question,
+        answer1,
+        answer2,
+        answer3,
+        answer4,
+        correctAnswer
     }
 
     const addQuestionHandler = () => {
         
-        aerodinamica.map(obj => {
-            hidratar(obj)
+        
+        if(question.length > 0 && answer1.length > 0 && answer2.length > 0 && answer3.length > 0 && answer4.length > 0 && correctAnswer > 0){
+            
+            questions.push(pregunta)  
             setquestion("")
             setanswer1("")
             setanswer2("")
             setanswer3("")
             setanswer4("")
             setcorrectAnswer(1)
-        })
-        console.log(questions) 
-        
-        
-        //     console.log(pregunta)
-        
-        // console.log(questions)
-        // if(question.length > 0 && answer1.length > 0 && answer2.length > 0 && answer3.length > 0 && answer4.length > 0 && correctAnswer > 0){
-            
 
-        // }
+        }
         
     }
 
