@@ -5,6 +5,7 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
   --transition-speed2: 1000ms;
+  /* background: linear-gradient(#141e30, #243b55); */
 }
 
 body {
@@ -23,6 +24,7 @@ code {
 
 html {
   height: 100%;
+  /* background: linear-gradient(#141e30, #243b55); */
 }
 
 body {
@@ -262,7 +264,7 @@ body {
 
 .fa-primary {
   /* color: #ff7eee; */
-  color: #00ecfd;
+  color: #249dcd;
 }
 
 .fa-secondary {
@@ -337,6 +339,9 @@ body {
       margin: 0;
   }
   
+  .cards{
+    width: 95%;
+  }
 
 
 }
@@ -366,7 +371,14 @@ body {
   {
       left: 0px;
   }
+
+  .cards{
+    width: 80%;
+    left: 12%;
+    position: absolute;
+  }
 }
+
 
 .card {
   background: linear-gradient(
@@ -374,8 +386,8 @@ body {
     rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.05)
   );
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
-    1px 1px 2px #555;
+  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
+    1px 1px 2px #555; */
   backdrop-filter: blur(0.8rem);
   padding: 1.5rem;
   border-radius: 1rem;

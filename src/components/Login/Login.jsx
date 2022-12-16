@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { deleteError } from '../../redux/error/errorSlice'
 import { NavLink } from 'react-router-dom'
 import { auth } from '../../redux/user/authFunctions'
+import Button from "../UI/Button/Button";
 import Error from './Error.module.css'
 import Alert from '../../components/Alert/Snackbar'
 import './Login.css'
@@ -85,11 +86,11 @@ const login = () => {
     return(
         <div className="h-25 row">
             {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}
-            <div className='form'>
+            <div className='form' style={{margin: '10rem auto'}}>
                 <h1> Login </h1>
                 <div className='row'>
                     
-                    <fieldset className='col'>
+                    <fieldset className='col' style={{ marginBottom: '0'}}>
 
                         <div className={classNames}>
                             <label htmlFor="email">Email:</label>
@@ -119,8 +120,8 @@ const login = () => {
 
                 </div>
 
-                <button onClick={loginHandler}>Login</button>
-                <div style={{marginBottom: '1rem'}}>Dont have an accoung yet? <NavLink style={{color: '#82d99b', textDecoration: 'none'}} to='/signup'>create account</NavLink></div>
+                <Button onClick={loginHandler} type="primary" style={{border: 'none', fontSize: '18px'}}>Login</Button>
+                <div style={{marginBottom: '1rem'}}>Don't have an accoung yet? <NavLink style={{color: '#69c9ef', textDecoration: 'none'}} to='/signup'>create account</NavLink></div>
                 
             </div>
         </div>

@@ -54,7 +54,7 @@ const quizList = () => {
     return(
         <div className={classes.QuizList}>
             {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}
-            <div className="row justify-content-end" style={{ width:'80%', height:'95%', position:'absolute', left: '12%'}}>
+            <div className="row cards" style={{ height:'95%', position:'absolute'}}>
             <div className="col-lg-4 col-md-7 col-sm-12">
                 <h1 className="card-header col-lg-4 col-md-7 col-sm-12">My Courses</h1>
                 

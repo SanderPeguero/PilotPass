@@ -9,21 +9,14 @@ const AnswersList = (props) => {
     const answer2 = props.answers['answer2']
     const answer3 = props.answers['answer3']
     const answer4 = props.answers['answer4']
-
-    const correctAnswer = props.answers['correctAnswer']
     
     const answers = [answer1, answer2, answer3, answer4]
 
-    const dispatch = useDispatch();
-
-    // dispatch()
-    // console.log(answers)
 
     return(
         <ul className={classes.AnswersList}>
             {
                 answers.map((values, index, answer) => {
-                    // console.log(index.toString())
                     index += 1 
                     return (
                         <AnswerItem

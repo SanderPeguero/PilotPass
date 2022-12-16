@@ -1,5 +1,4 @@
 import axios from "../../axios/axios-quiz";
-import { resetQuizCreator } from "../../store/actions/quizCreatorActions";
 import { createError } from "../error/errorSlice";
 import { createResponse, resetSubject } from "./slice";
 

@@ -41,6 +41,24 @@ const Quiz = (props) => {
     const currentQuizQuestion = useSelector(state => state.courses.currentQuizQuestion);
     const isLoading = useSelector(state => state.courses.isLoading);
     const dispatch = useDispatch();
+    
+    const List = useSelector(state => state.courses.quizList);
+
+    // console.log(List)
+    const name = () => {
+        
+        let n = ''
+
+        List.map( obj => {
+            // console.log(obj["id"] == props.match.params.id)
+            obj["id"] == props.match.params.id ? n = obj.name : null
+
+        })
+
+        return n
+
+    }
+
 
     //Component did mount
     useEffect(() => {
@@ -70,52 +88,50 @@ const Quiz = (props) => {
 
     return (
         <Box className={classes.Quiz}>
-            <div className={classes.QuizWrapper}>
-                <div className="row">
-                <div className="container col-lg-4 col-md-7 col-sm-12" style={{borderRadius:'0'}}>
+            {/* <div className={classes.QuizWrapper}> */}
+                <div className="row cards col-lg-4 col-md-7 col-sm-12">
+                    {/* <div className="container col-lg-4 col-md-7 col-sm-12" style={{borderRadius:'0'}}> */}
 
-                    <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
-                        <h2 className="col-lg-4 col-md-7 col-sm-12">Exam Name</h2>
-                    </div>
-
-                    <div className="card col-lg-4 col-md-7 col-sm-12">
-                        <div className="card-header">
-                            <p className="row" style={{color:'white'}}> 
-                                <span className="">Question {activeQuestionNumber + 1}</span>  
-                                <span className="" style={{float:'right'}}>1:43:00</span> 
-                            </p>
+                        <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
+                            <h2 className="col-lg-4 col-md-7 col-sm-12">Test: {name()}</h2>
                         </div>
-                        <hr />
 
-                        <div>
-                            {
-                                isLoading || !quiz
-                                ? <Loader />
-                                :
-                                isQuizFinished
-                                ? 
-                            
-                                    <FinishedQuiz
-                                        results={results}
-                                        quiz={quiz}
-                                        onRetry={retryQuiz}
+                        <div className="card col-lg-4 col-md-7 col-sm-12">
+                            <div className="card-header">
+                                <p className="row" style={{color:'white'}}> 
+                                    <span className="">Question {activeQuestionNumber + 1}</span>  
+                                    <span className="" style={{float:'right'}}>1:43:00</span> 
+                                </p>
+                            </div>
+                            <hr />
+
+                            <div>
+                                {
+                                    isLoading || !quiz
+                                    ? <Loader />
+                                    :
+                                    isQuizFinished
+                                    ? 
+                                
+                                        <FinishedQuiz
+                                            results={results}
+                                            quiz={quiz}
+                                            onRetry={retryQuiz}
+                                        />
+
+                                    : <ActiveQuiz
+                                        questionNumber={activeQuestionNumber + 1}
+                                        question={currentQuizQuestion.question}
+                                        answers={currentQuizQuestion}
+                                        onAnswerClick={onAnswerClickHandler}
+                                        answerState={answerState}
+                                        quizLength={quiz.length}
                                     />
-
-                                : <ActiveQuiz
-                                    questionNumber={activeQuestionNumber + 1}
-                                    question={currentQuizQuestion.question}
-                                    answers={currentQuizQuestion}
-                                    onAnswerClick={onAnswerClickHandler}
-                                    answerState={answerState}
-                                    quizLength={quiz.length}
-                                />
-                            }
+                                }
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                </div>
-                
-
+                    {/* </div> */}
+                {/* </div> */}
             </div>
         </Box>
     )

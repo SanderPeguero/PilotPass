@@ -4,12 +4,42 @@
     flex-grow: 1;
 
     width: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
 
     background: linear-gradient(#141e30, #243b55);
     /* background: linear-gradient(90deg, #00a4f7 0%, #00b1b1 100%); */
 
     color: white;
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    
+    .QuizCreator {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        width: 100%;
+        padding-top: 100px;
+        background: linear-gradient(#141e30, #243b55);
+        color: white;
+    }
+
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    
+    .QuizCreator {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        width: 100%;
+        padding-top: 20px;
+        background: linear-gradient(#141e30, #243b55);
+        color: white;
+    }
+    
 }
 
 .QuizCreator > div {

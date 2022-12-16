@@ -1,10 +1,10 @@
   
   .form {
     max-width: 450px;
-    margin: 10px auto;
+    margin: 1rem auto;
     padding: 10px 20px;
     color: white;
-    background: rgb(244 247 248 / 8%);
+    background: rgb(0 0 0 / 50%);
     border-radius: 8px;
   }
   
@@ -53,7 +53,7 @@
   button {
     padding: 10px 39px 10px 39px;
     color: #FFF;
-    background-color: #4bc970;
+    background-color: #1096cb;
     font-size: 18px;
     text-align: center;
     font-style: normal;
@@ -85,7 +85,7 @@
   }
   
   .number {
-    background-color: #5fcf80;
+    background-color: #1096cb;
     color: #fff;
     height: 30px;
     width: 30px;

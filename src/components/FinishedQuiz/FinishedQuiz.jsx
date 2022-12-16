@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, Navigate, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import classes from "./FinishedQuiz.module.css"
 import Button from "../UI/Button/Button";
@@ -9,8 +9,14 @@ import { retryQuiz } from "../../redux/courses/functions";
 const FinishedQuiz = props => {
     
     const dispatch = useDispatch();
+    const navigate  = useNavigate()
 
-    const onClickHandler = () => {
+    const onQuizList = () => {
+        dispatch(retryQuiz())
+        navigate('/tests')
+    }
+
+    const onRetry = () => {
         dispatch(retryQuiz())
     }
 
@@ -22,7 +28,7 @@ const FinishedQuiz = props => {
 
     return (
         <React.Fragment>
-            <h1 style={{ margin: '25px' }}>Finished</h1>
+            <h1 style={{ margin: '0', marginTop: '25px' }}>Finished</h1>
             <div className={classes.FinishedQuiz}>
                 <h3>Right Answered: {rightAnswersCount}/{props.quiz.length}</h3>
                
@@ -45,11 +51,9 @@ const FinishedQuiz = props => {
 
                     </ul>
 
-                    <div>
-                        <Link to={"/tests"}>
-                            <Button onClick={onClickHandler} type="success">To Quiz List</Button>
-                        </Link>
-                        <Button onClick={onClickHandler} type="primary">Retry</Button>
+                    <div style={{display: 'flex'}}>
+                        <Button onClick={onQuizList} type="success">To Quiz List</Button>
+                        <Button onClick={onRetry} type="primary">Retry</Button>
                     </div>
             </div>
         </React.Fragment>

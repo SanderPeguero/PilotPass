@@ -1,5 +1,4 @@
 import axios from "../../axios/axios-quiz"
-import { CreateError } from "../../store/actions/appErrorActions"
 import { authSucceed, autoLogout, deleteName, updateName } from '../../redux/user/authTokenSlice.js'
 import { createError } from "../error/errorSlice"
 
