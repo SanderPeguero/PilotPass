@@ -10,8 +10,13 @@ const AnswersList = (props) => {
     const answer3 = props.answers['answer3']
     const answer4 = props.answers['answer4']
     
-    const answers = [answer1, answer2, answer3, answer4]
-
+    const answers = []
+    
+    if(answer4 != ''){
+        answers = [answer1, answer2, answer3, answer4]
+    }else{
+        answers = [answer1, answer2, answer3]
+    }
 
     return(
         <ul className={classes.AnswersList}>
