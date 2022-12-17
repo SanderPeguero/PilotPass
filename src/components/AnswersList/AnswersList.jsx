@@ -10,13 +10,15 @@ const AnswersList = (props) => {
     const answer3 = props.answers['answer3']
     const answer4 = props.answers['answer4']
     
+    let answers = []
+    
     if(answer4 != ''){
         
-       const answers = [answer1, answer2, answer3, answer4]
+       answers = [answer1, answer2, answer3, answer4]
        
     }else{
        
-        const answers = [answer1, answer2, answer3]
+        answers = [answer1, answer2, answer3]
         
     }
 
