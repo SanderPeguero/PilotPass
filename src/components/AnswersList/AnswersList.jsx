@@ -12,8 +12,6 @@ const AnswersList = (props) => {
 
     let answers = []
     
-    let answers = []
-    
     if(answer4 != ''){
         
        answers = [answer1, answer2, answer3, answer4]
