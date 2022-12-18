@@ -9,6 +9,8 @@ const AnswersList = (props) => {
     const answer2 = props.answers['answer2']
     const answer3 = props.answers['answer3']
     const answer4 = props.answers['answer4']
+
+    let answers = []
     
     let answers = []
     
