@@ -28,14 +28,9 @@ export function auth(email, password, isLogIn){
             dispatch(authSucceed(data.idToken))
             dispatch(autologout(data.expiresIn))
             dispatch(updateName(data.displayName))
-            // console.log(response)
 
         }catch(error){
-            // return error.response.data.error.message
-            // console.log("ERROR CAPTURADO: ")
-            // console.log(error)
             dispatch(createError(error.response.data.error.message))
-            // Alert(1, "Error", error.response.data.error.message)
         }
 
     }
@@ -46,7 +41,6 @@ export function signup( name, lastName, email, password, bio, formation, admin, 
         try{
             
             const authData = {
-                // userName,
                 name,
                 lastName,
                 email,
@@ -69,9 +63,7 @@ export function signup( name, lastName, email, password, bio, formation, admin, 
             const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
             const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
 
-            // const response2 = await axios.post('/users', authData)
-            const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData2)
-            
+            const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData2)            
             const response2 = await axios.post('users.json', authData)
 
             const data = response.data
@@ -86,11 +78,7 @@ export function signup( name, lastName, email, password, bio, formation, admin, 
             dispatch(updateName(data.displayName))
 
         }catch(error){
-            // return error.response.data.error.message
-            // console.log("ERROR CAPTURADO: ")
-            // console.log(error)
             dispatch(createError(error.response.data.error.message))
-            // Alert(1, "Error", error.response.data.error.message)
         }
     }
 }

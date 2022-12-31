@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, NavLink, Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import classes from "./FinishedQuiz.module.css"
 import Button from "../UI/Button/Button";
-import { Box } from '@mui/material'
 import { retryQuiz } from "../../redux/courses/functions";
 
 const FinishedQuiz = props => {

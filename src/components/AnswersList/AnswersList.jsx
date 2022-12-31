@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./AnswersList.module.css"
 import AnswerItem from "../AnswerItem/AnswerItem";
-import { useDispatch } from "react-redux";
 
 const AnswersList = (props) => {
 

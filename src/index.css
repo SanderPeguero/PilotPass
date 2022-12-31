@@ -5,7 +5,6 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
   --transition-speed2: 1000ms;
-  /* background: linear-gradient(#141e30, #243b55); */
 }
 
 body {
@@ -22,17 +21,11 @@ code {
     monospace;
 }
 
-html {
-  height: 100%;
-  /* background: linear-gradient(#141e30, #243b55); */
-}
 
 body {
   margin:0;
   padding:0;
-  /* font-family: sans-serif; */
   background: linear-gradient(#141e30, #243b55);
-  /* background-repeat: no-repeat; */
   background-attachment: fixed;
 }
 
@@ -100,11 +93,8 @@ body {
   color: #03e9f4;
   font-size: 16px;
   text-decoration: none;
-  /* text-transform: uppercase; */
   overflow: hidden;
   transition: .5s;
-  /* margin-top: 40px; */
-  /* letter-spacing: 4px */
 }
 
 .login-box a:hover:nth-child(1) {
@@ -263,7 +253,6 @@ body {
 }
 
 .fa-primary {
-  /* color: #ff7eee; */
   color: #249dcd;
 }
 
@@ -319,7 +308,6 @@ body {
   }
 
   .logo {
-      /* display: none; */
       margin-bottom: 0;
   }
 
@@ -386,18 +374,11 @@ body {
     rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.05)
   );
-  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
-    1px 1px 2px #555; */
   backdrop-filter: blur(0.8rem);
   padding: 1.5rem;
   border-radius: 1rem;
   animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardEnter;
-  /* position: absolute; */
 }
-
-@media screen and (max-width:900px){
-  
-}   
 
 .card__row {
   display: flex;
@@ -426,11 +407,6 @@ body {
   color: #fff;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
-
-
-/* .card__input--large {
-  font-size: 2rem !important;
-} */
 
 .card__input::placeholder {
   color: rgba(255, 255, 255, 0.5);
