@@ -104,45 +104,29 @@ const quizCreator = () => {
                 <h1>Create a Quiz</h1>
                 <div>
 
-                    {/* {this.renderInputs()} */}
-
                   {/*Question */}
                   <Auxiliary>
                         <Input
-                            // type={course.subject}
                             value={subject}
                             label={"Subject"}
                             shouldValidate={false}
                             onChange={event => setsubject(event.target.value)}
                             errorMessage = {"Answer text is Empty"}
                         />
-                         {/* <Select
-                            label="Subject"
-                            value={pregunta.correctAnswer}
-                            onChange={event => setcorrectAnswer(event.target.value)}
-                            options={[
-                                { text: "Meteorologia", value: 1 },
-                                { text: "Navegacion", value: 2 },
-                                { text: "Aerodinamica", value: 3 },
-                                { text: "Sistemas de Aeronaves", value: 4 }
-                            ]}
-                        /> */}
                         <hr style={{ marginBottom: '1rem'}}/> 
                     </Auxiliary>
                     
                     {/*Question */}
                     <Auxiliary>
                         <Input
-                            // type={pregunta.question}
                             value={question}
                             label={"Question"}
                             shouldValidate={false}
                             onChange={event => setquestion(event.target.value)}
                             errorMessage = {"Answer text is Empty"}
                         />
-                    {/* {index === 0 ? <hr /> : null} */}
+                
                     </Auxiliary>
-                    
 
                      {/*Answer A */}
                      <Auxiliary>
@@ -154,46 +138,39 @@ const quizCreator = () => {
                             onChange={event => setanswer1(event.target.value)}
                             errorMessage = {"Answer text is Empty"}
                         />
-                    {/* {index === 0 ? <hr /> : null} */}
                     </Auxiliary>
 
-                       {/*Answer B */}
-                       <Auxiliary>
+                    {/*Answer B */}
+                    <Auxiliary>
                         <Input
-                            // type={pregunta.answer2}
                             value={answer2}
                             label={"Answer B"}
                             shouldValidate={false}
                             onChange={event => setanswer2(event.target.value)}
                             errorMessage = {"Answer text is Empty"}
                         />
-                    {/* {index === 0 ? <hr /> : null} */}
                     </Auxiliary>
 
-                       {/*Answer C */}
-                       <Auxiliary>
+                    {/*Answer C */}
+                    <Auxiliary>
                         <Input
-                            // type={pregunta.answer3}
                             value={answer3}
                             label={"Answer C"}
                             shouldValidate={false}
                             onChange={event => setanswer3(event.target.value)}
                             errorMessage = {"Answer text is Empty"}
                         />
-                    {/* {index === 0 ? <hr /> : null} */}
                     </Auxiliary>
 
-                       {/*Answer D */}
-                       <Auxiliary>
+                    {/*Answer D */}
+                    <Auxiliary>
                         <Input
-                            // type={pregunta.answer4}
                             value={answer4}
                             label={"Answer D"}
                             shouldValidate={false}
                             onChange={event => setanswer4(event.target.value)}
                             errorMessage = {"Answer text is Empty"}
                         />
-                    {/* {index === 0 ? <hr /> : null} */}
                     </Auxiliary>
                     
                     <Select
@@ -209,32 +186,23 @@ const quizCreator = () => {
                     />
 
                     <div style={{display: 'flex'}}>
-                        {/* <Tooltip title="Add Quiz"> */}
-                            {/* <span> */}
-                                <Button
-                                    type="primary"
-                                    onClick={addQuestionHandler}
-                                    // disabled={isFormValid}
-                                    >
-                                    Add Subject Question &nbsp;&nbsp;<i className="fa fa-plus-circle" />
-                                </Button>
-                            {/* </span> */}
-                        {/* </Tooltip> */}
-                        {/* <Tooltip title="Save"> */}
-                            {/* <span> */}
-                                <Button
-                                    type="success"
-                                    onClick={onSubmitHandler}
-                                    disabled={questions.length === 0}
-                                    style={{marginRight: '0'}}
-                                    >
-                                    Save the Subject
-                                </Button>
-                            {/* </span> */}
-                        {/* </Tooltip> */}
+                        <Button
+                            type="primary"
+                            onClick={addQuestionHandler}
+                            // disabled={isFormValid}
+                            >
+                            Add Subject Question &nbsp;&nbsp;<i className="fa fa-plus-circle" />
+                        </Button>
+                    
+                        <Button
+                            type="success"
+                            onClick={onSubmitHandler}
+                            disabled={questions.length === 0}
+                            style={{marginRight: '0'}}
+                            >
+                            Save the Subject
+                        </Button>
                     </div>
-
-
                 </div>
             </div>
         </div>

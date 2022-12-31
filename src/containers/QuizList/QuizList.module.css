@@ -4,11 +4,7 @@
         display: flex;
         justify-content: center;
         flex-grow: 1;
-    
         width: 100%;
-        padding-top: 100px;
-        /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
-        background: linear-gradient(#141e30, #243b55);
     }
 }
 
@@ -18,11 +14,9 @@
         display: flex;
         justify-content: center;
         flex-grow: 1;
-    
         width: 100%;
         padding-top: 2rem;
-        /* background: linear-gradient(90deg, #24d1e8 0%, #009ef3 100%); */
-        background: linear-gradient(#141e30, #243b55);
+        padding-bottom: 2rem;
     }
 }
 

@@ -9,10 +9,6 @@ import Error from './Error.module.css'
 import Alert from '../../components/Alert/Snackbar'
 import './Login.css'
 
-// function isInvalid({valid, touched, shouldValidate}){
-//     return !valid && shouldValidate && touched
-// }
-
 const login = () => {
 
     //State
