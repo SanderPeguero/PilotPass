@@ -22,6 +22,178 @@ code {
 }
 
 
+body {
+  margin:0;
+  padding:0;
+  background: linear-gradient(#141e30, #243b55);
+  background-attachment: fixed;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 365px;
+  width: 365px;
+  padding: 45px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:invalid ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.login-box a:hover:nth-child(1) {
+  background: #03e9f4;
+  color: rgb(0, 0, 0);
+  border-radius: 1px;
+  box-shadow: 0 0 5px #03e9f4,
+             
+}
+
+.login-box a:hover:nth-child(2) {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 0 5px #03e9f4,
+             
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+      left: -100%;
+  }
+  50%,100% {
+      left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 5s linear infinite;
+  animation-delay: 1.25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+      top: -100%;
+  }
+  50%,100% {
+      top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 5s linear infinite;
+  animation-delay: 2.5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+      right: -100%;
+  }
+  50%,100% {
+      right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 5s linear infinite;
+  animation-delay: 3.75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+      bottom: -100%;
+  }
+  50%,100% {
+      bottom: 100%;
+  }
+}
+
+
 .navbar{
   position: fixed;
   background-color: #23232e;
@@ -81,8 +253,7 @@ code {
 }
 
 .fa-primary {
-  /* color: #ff7eee; */
-  color: #00ecfd;
+  color: #249dcd;
 }
 
 .fa-secondary {
@@ -137,7 +308,6 @@ code {
   }
 
   .logo {
-      /* display: none; */
       margin-bottom: 0;
   }
 
@@ -157,6 +327,9 @@ code {
       margin: 0;
   }
   
+  .cards{
+    width: 95%;
+  }
 
 
 }
@@ -186,7 +359,14 @@ code {
   {
       left: 0px;
   }
+
+  .cards{
+    width: 80%;
+    left: 12%;
+    position: absolute;
+  }
 }
+
 
 .card {
   background: linear-gradient(
@@ -194,18 +374,11 @@ code {
     rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.05)
   );
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
-    1px 1px 2px #555;
   backdrop-filter: blur(0.8rem);
   padding: 1.5rem;
   border-radius: 1rem;
   animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardEnter;
-  /* position: absolute; */
 }
-
-@media screen and (max-width:900px){
-  
-}   
 
 .card__row {
   display: flex;
@@ -234,11 +407,6 @@ code {
   color: #fff;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
-
-
-/* .card__input--large {
-  font-size: 2rem !important;
-} */
 
 .card__input::placeholder {
   color: rgba(255, 255, 255, 0.5);
