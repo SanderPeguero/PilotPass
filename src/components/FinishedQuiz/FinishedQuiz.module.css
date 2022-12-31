@@ -1,11 +1,6 @@
 .FinishedQuiz {
-    
-
     box-sizing: border-box;
-
-    /* border: 2px solid white; */
     border-radius: 5px;
-
     color: white;
 }
 
@@ -16,11 +11,6 @@
         padding: 20px;
     }
 }
-
-/* Small screens
-@media only screen and (max-width: 600px) {
-
-} */
 
 .FinishedQuiz ul {
     margin: 0;
@@ -43,8 +33,4 @@
 
 .BoxF {
     background-color: #4d5761;
-
-
-    /* width: 600px;
-    height:450px; */
 }

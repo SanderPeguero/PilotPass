@@ -1,4 +1,3 @@
-import { display } from "@mui/system";
 import axios from "../../axios/axios-quiz";
 import { createError } from "../error/errorSlice";
 import { fetchFailed, fetchQuizListSucceed, fetchQuizSucceed, fetchStart, quizFinished, quizNextQuestion, quizRetry, quizSetState, setResult } from "./slice";
@@ -12,7 +11,6 @@ export function fetchQuizList() {
             const response = await axios.get("quizList.json");
             const quizList = [];
 
-            // console.log(response)
             let data = response.data
 
             Object.keys(data).map((question, index, value) => {
@@ -53,9 +51,8 @@ export function fetchQuizById(quizId) {
 
 export function quizAnswerClick(answerId) {
     return (dispatch, getState) => {
-        // const state = getState().currentQuiz;
+
         const state = store.getState().courses;
-        
 
         // prevent event handles twice (on each click)
         let currentState = state.answerState;
@@ -75,12 +72,10 @@ export function quizAnswerClick(answerId) {
         let results = state.results;
         if(results){
             if (!results[activeQuestionNumber]){
-                // results[activeQuestionNumber] = answerState;
                 dispatch(setResult(answerState))
             } 
         }
         
-        // dispatch(quizsetState({[answerId]: answerState}, results));
         if(results[activeQuestionNumber] == "error"){
             dispatch(quizsetState({[answerId]: answerState}, {...results}));   
         }else{
@@ -89,7 +84,6 @@ export function quizAnswerClick(answerId) {
         
         // control colors changing and final state
         if (isRightAnswerChosen) {
-            // dispatch(quizsetState({[answerId]: answerState}, {...results, [activeQuestionNumber]: answerState}));
             const timeout = window.setTimeout(() => {
                 if (isFinalQuestion)
                 dispatch(finishquiz());

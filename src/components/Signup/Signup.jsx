@@ -147,14 +147,6 @@ const SignUp = () => {
                             }
                         </div>
                         
-                        
-                        {/* <label>Age:</label>
-                        <input type="radio" id="under_13" value="under_13" name="user_age"/>
-                        <label htmlFor="under_13" className="light">Under 13</label>
-                        <br/>
-                        <input type="radio" id="over_13" value="over_13" name="user_age"/>
-                        <label htmlFor="over_13" className="light">Over 13</label> */}
-                        
                     </fieldset>
                     <fieldset className='col'>  
                     
@@ -196,11 +188,6 @@ const SignUp = () => {
                             </optgroup>
                         </select>
                         
-                        {/* <label>Interests:</label>
-                        <input type="checkbox" id="development" value="interest_development" name="user_interest"/><label className="light" htmlFor="development">Development</label><br/>
-                        <input type="checkbox" id="design" value="interest_design" name="user_interest"/><label className="light" htmlFor="design">Design</label><br/>
-                        <input type="checkbox" id="business" value="interest_business" name="user_interest"/><label className="light" htmlFor="business">Business</label>
-                            */}
                     </fieldset>
                 </div>
             

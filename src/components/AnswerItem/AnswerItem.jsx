@@ -14,8 +14,6 @@ const AnswerItem = props => {
                 <div>
                     {props.answer}
                 </div>
-                {/* <label className="form-check-label" htmlFor={props.id} style={{margin:'2px 15px', position:'relative', bottom:'7px'}}>
-                </label> */}
             </div>
             
         </li>
