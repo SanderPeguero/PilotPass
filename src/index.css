@@ -5,6 +5,7 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
   --transition-speed2: 1000ms;
+  background: #141e30;
 }
 
 body {
@@ -25,7 +26,7 @@ code {
 body {
   margin:0;
   padding:0;
-  background: linear-gradient(#141e30, #243b55);
+  /* background: linear-gradient(#141e30, #243b55); */
   background-attachment: fixed;
 }
 
