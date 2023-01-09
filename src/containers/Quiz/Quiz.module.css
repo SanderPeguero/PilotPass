@@ -5,7 +5,6 @@
         justify-content: center;
         flex-grow: 1;
         width: 100%;
-        padding-top: 100px;
     }
 }
 
@@ -36,7 +35,6 @@
         justify-content: center;
         flex-grow: 1;
         width: 100%;
-        padding-top: 2rem;
     }
 }
 
