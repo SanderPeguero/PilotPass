@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import classes from "./Quiz.module.css"
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
@@ -60,6 +60,38 @@ const Quiz = (props) => {
         
     }, []);
 
+    const THREE_DAYS_IN_MS = 2 * 3600 * 1000;
+
+    const [timer, settimer] = useState(THREE_DAYS_IN_MS)
+
+    const hours = Math.floor((timer / 1000) / 3600);
+    const minutes = Math.floor((timer % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timer % (1000 * 60)) / 1000);
+
+    console.log(timer)
+    //Timer 
+    const MINUTE_MS = 1000;
+
+    useEffect(() => {
+        
+        if(timer > 0){
+
+            const interval = setInterval(() => {
+                let times = timer
+                settimer(times - 1000)
+            }, MINUTE_MS);
+            
+            // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+            return () => clearInterval(interval); 
+
+        }else{
+            console.log("Time is over!")
+
+        }
+
+
+    }, [timer])
+
     const onAnswerClickHandler = answerId => {
         dispatch(quizAnswerClick(answerId))
     }
@@ -75,7 +107,7 @@ const Quiz = (props) => {
                     <div className="card-header">
                         <p className="row" style={{color:'white'}}> 
                             <span className="">Question {activeQuestionNumber + 1}</span>  
-                            <span className="" style={{float:'right'}}>1:43:00</span> 
+                            <span className="" style={{float:'right'}}>{timer > 1 ? `Time Left: ${hours}:${minutes}:${seconds}` : "TIME IS OVER" }</span> 
                         </p>
                     </div>
                     <hr />
