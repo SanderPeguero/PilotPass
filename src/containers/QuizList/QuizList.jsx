@@ -6,6 +6,8 @@ import { fetchQuizList } from "../../redux/courses/functions";
 import Loader from "../../components/UI/Loader/Loader";
 import Alert from '../../components/Alert/Snackbar'
 
+import styles from './Card.module.css'
+
 
 const quizList = () => {
     
@@ -13,6 +15,7 @@ const quizList = () => {
     const quizlist = useSelector(state => state.courses.quizList);
     const isLoading = useSelector(state => state.courses);
     const error = useSelector(state => state.error.error);
+    const response = useSelector(state => state.courses.response)
 
     const dispatch = useDispatch();
     
@@ -23,17 +26,49 @@ const quizList = () => {
     }, []);
 
     const renderQuizList = () => {
-        return quizlist.map(quiz => {
-            return (
-                    <li key={quiz.id} className="list-group-item" style={{width:'100%', height:'100%', display:'flex'}}>
-                        <input className="form-check-input check" type="checkbox" id={quiz.id} disabled style={{width:"50px", height:'25px', float: "left"}}/>
-                        <NavLink to={"/quiz/" + quiz.id} style={{width:'100%', height:'100%'}}>
-                            {quiz.name}
-                        </NavLink>
-                        
-                    </li>
-            );
-        });
+        return (
+            <>   
+                {
+                    Object.keys(response).map(quiz => {
+                        return (
+                                // <li key={quiz.id} className="list-group-item" style={{width:'100%', height:'100%', display:'flex'}}>
+                                //     <input className="form-check-input check" type="checkbox" id={quiz.id} disabled style={{width:"50px", height:'25px', float: "left"}}/>
+                                    
+                                    
+                                // </li>
+
+                            <NavLink key={quiz} to={"/quiz/" + quiz} style={{width:'100%', height:'100%', textDecoration: 'none'}}>
+                                <div >
+                                    <div className={styles.card}>
+                                        <img className={styles.cardImage} src={response[quiz].imagen} alt={response[quiz].subject}/>
+                                        
+                                        <div className={styles.cardInfoContainer}>
+                                            
+                                            <h3 className={styles.cardInfoh3}>
+                                            {response[quiz].subject}
+                                            </h3>
+
+                                            <div style={{ width: "278px", textAlign: 'left', color: 'gray'}}>
+                                                {response[quiz].preguntas.length} preguntas.
+                                                <br/>
+                                                <br/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </NavLink>
+
+                        );
+                    })
+                }
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                
+            </>
+        )
     };
 
     const sleep = (ms) => {
@@ -61,14 +96,14 @@ const quizList = () => {
                     <div className="card col-lg-4 col-md-12 col-sm-12"  >
                     <h2 className="card-title col-lg-4 col-md-7 col-sm-12" style={{color:'white', fontWeight:'300'}}>Private Pilot</h2>
                     
-                    <div className="card-body col-lg-4 col-md-7 col-sm-12" >
+                    <div>
                         <hr style={{margin:'30px 0'}}/>
                         {
                             courses.isLoading && courses.quizList.length > 0
                                 ? <Loader/>
-                                : <ul className="list-group list-group-flush col-lg-4 col-md-7 col-sm-12">
+                                : <div className={styles.readthedocs}>
                                     {renderQuizList()}
-                                </ul>
+                                </div>
                         }
                     </div>
                     </div>
