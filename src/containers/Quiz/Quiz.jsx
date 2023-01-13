@@ -68,7 +68,6 @@ const Quiz = (props) => {
     const minutes = Math.floor((timer % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timer % (1000 * 60)) / 1000);
 
-    console.log(timer)
     //Timer 
     const MINUTE_MS = 1000;
 
