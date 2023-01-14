@@ -14,9 +14,9 @@
 }
 
 .AnswerItem.success {
-    background: rgba(87, 240, 118, 0.7)
+    background: rgba(2, 235, 49, 0.473)
 }
 
 .AnswerItem.error {
-    background: rgba(240, 87, 108, .7);
+    background: rgba(255, 0, 34, 0.47);
 }
