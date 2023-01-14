@@ -5,6 +5,10 @@ import classes from "./QuizList.module.css";
 import { fetchQuizList } from "../../redux/courses/functions";
 import Loader from "../../components/UI/Loader/Loader";
 import Alert from '../../components/Alert/Snackbar'
+import { fetchResponse } from "../../redux/courses/functions";
+import { db } from '../../firebase/firebase'
+import { ref, onValue } from 'firebase/database'
+import { getAuth } from "firebase/auth";
 
 import styles from './Card.module.css'
 
@@ -22,6 +26,15 @@ const quizList = () => {
     useEffect(() => {
         
         dispatch(fetchQuizList())   
+        // const starCountRef = ref(db, 'quizList/');
+        // const auth = getAuth();
+      
+        // onValue(starCountRef, (snapshot) => {
+        //     const data = snapshot.val();
+        //     console.log(data)
+        //     dispatch(fetchResponse(data))
+
+        // });
 
     }, []);
 
@@ -49,7 +62,9 @@ const quizList = () => {
                                             </h3>
 
                                             <div style={{ width: "278px", textAlign: 'left', color: 'gray'}}>
-                                                {response[quiz].preguntas.length} preguntas.
+                                                
+                                                {response[quiz].preguntas ? `${response[quiz].preguntas.length} preguntas.` : null }
+                                                {/* {console.log(response[quiz].preguntas)} */}
                                                 <br/>
                                                 <br/>
                                             </div>
