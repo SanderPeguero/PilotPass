@@ -14,6 +14,7 @@ export function auth(email, password, isLogIn){
                 const user = userCredential.user;
                 const time = user["stsTokenManager"]
                 const expirationDate = new Date(time["expirationTime"])
+                console.log(user)
                 
                 //Token
                 user.getIdToken().then((value) => { 
@@ -22,8 +23,10 @@ export function auth(email, password, isLogIn){
                 })
 
                 //Time
-                localStorage.setItem("expirationDate", expirationDate)
-                dispatch(autologout(expirationDate))
+                const expiration =(expirationDate.getTime() - Date.now()) / 1000
+                localStorage.setItem("expirationDate", expiration)
+                console.log(expiration)
+                dispatch(autologout(expiration))
     
 
                 //Name
@@ -42,11 +45,11 @@ export function auth(email, password, isLogIn){
                 returnSecureToken: true
             }
 
-            const FIREBASE_API_KEY = import.meta.env.VITE_APP_FIREBASE_API_KEY
-            const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
-            const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
+            // const FIREBASE_API_KEY = import.meta.env.VITE_APP_FIREBASE_API_KEY
+            // const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
+            // const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
 
-            const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData)
+            // const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData)
             // const data = response.data
             // const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
             // console.log(expirationDate)
@@ -125,7 +128,7 @@ export function autoLogin(){
             dispatch(logout())
         }else{
             dispatch(authSucceed(token))
-            dispatch(autologout((expirationDate.getTime() - new Date().getTime()) / 1000))
+            // dispatch(autologout((expirationDate.getTime() - new Date().getTime()) / 1000))
             dispatch(updateName(displayName))
         }
     }
