@@ -1,11 +1,40 @@
 import axios from "../../axios/axios-quiz"
 import { authSucceed, autoLogout, deleteName, updateName } from '../../redux/user/authTokenSlice.js'
 import { createError } from "../error/errorSlice"
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export function auth(email, password, isLogIn){
     return async dispatch => {
         
         try{
+
+            const auth = getAuth();
+            signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                const time = user["stsTokenManager"]
+                const expirationDate = new Date(time["expirationTime"])
+                
+                //Token
+                user.getIdToken().then((value) => { 
+                    localStorage.setItem("token", value)
+                    dispatch(authSucceed(value))
+                })
+
+                //Time
+                localStorage.setItem("expirationDate", expirationDate)
+                dispatch(autologout(expirationDate))
+    
+
+                //Name
+                localStorage.setItem("displayName", user.displayName)
+                dispatch(updateName(user.displayName))
+
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                dispatch(createError(errorMessage))
+            });
             
             const authData = {
                 email,
@@ -18,16 +47,19 @@ export function auth(email, password, isLogIn){
             const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
 
             const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData)
-            const data = response.data
-            const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
+            // const data = response.data
+            // const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
+            // console.log(expirationDate)
 
-            localStorage.setItem("token", data.idToken)
-            localStorage.setItem("expirationDate", expirationDate)
-            localStorage.setItem("displayName", data.displayName)
+            // console.log(expirationDate)
 
-            dispatch(authSucceed(data.idToken))
-            dispatch(autologout(data.expiresIn))
-            dispatch(updateName(data.displayName))
+            // localStorage.setItem("token", data.idToken)
+            // localStorage.setItem("expirationDate", expirationDate)
+            // localStorage.setItem("displayName", data.displayName)
+
+            // dispatch(authSucceed(data.idToken))
+            // dispatch(autologout(data.expiresIn))
+            // dispatch(updateName(data.displayName))
 
         }catch(error){
             dispatch(createError(error.response.data.error.message))

@@ -15,6 +15,7 @@ const ActiveQuiz = props => (
                 answers={props.answers}
                 onAnswerClick={props.onAnswerClick}
                 answerState={props.answerState}
+                questionId={props.questionNumber}
             />
         </div>
     </React.Fragment>
