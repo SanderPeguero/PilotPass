@@ -20,7 +20,7 @@ const AnswersList = (props) => {
         answers = [answer1, answer2, answer3]
         
     }
-
+    
     return(
         <ul className={classes.AnswersList}>
             {
@@ -32,7 +32,7 @@ const AnswersList = (props) => {
                             answer={values}
                             id={index.toString()}
                             onAnswerClick={props.onAnswerClick}
-                            answerState={props.answerState ? props.answerState[answer.id] : null}
+                            answerState={props.answerState ? props.answerState[index] : null}
                         />
                     )
                 })

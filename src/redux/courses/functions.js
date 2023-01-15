@@ -1,27 +1,26 @@
 import axios from "../../axios/axios-quiz";
 import { createError } from "../error/errorSlice";
-import { fetchFailed, fetchQuizListSucceed, fetchQuizSucceed, fetchStart, quizFinished, quizNextQuestion, quizRetry, quizSetState, setResult } from "./slice";
+import { fetchFailed, fetchQuizListSucceed, fetchQuizSucceed, fetchStart, quizFinished, quizNextQuestion, quizRetry, quizSetState, setResult, setResponse } from "./slice";
 import store from "../store";
+import { db } from '../../firebase/firebase'
+import { ref, onValue } from 'firebase/database'
+import { getAuth } from "firebase/auth";
 
 export function fetchQuizList() {
     return async dispatch => {
         dispatch(fetchstart());
 
         try {
-            const response = await axios.get("quizList.json");
-            const quizList = [];
-
-            let data = response.data
-
-            Object.keys(data).map((question, index, value) => {
-                quizList.push({
-                    id: question,
-                    name: data[question].subject
-                })
-            })
-
-            dispatch(fetchquizListSucceed(quizList))
             
+            const starCountRef = ref(db, 'quizList/');
+            const auth = getAuth()
+      
+            onValue(starCountRef, (snapshot) => {
+                const data = snapshot.val();
+                dispatch(fetchResponse(data))
+
+
+            });
 
         } catch (error) {
             dispatch(createError(error))
@@ -36,10 +35,20 @@ export function fetchQuizById(quizId) {
         dispatch(fetchstart());
 
         try {
-            const response = await axios.get(`quizList/${quizId}.json`);
-            const quiz = response.data.preguntas;
+            const starCountRef = ref(db, `quizList/${quizId}`);
 
-            dispatch(fetchquizSucceed(quiz));
+            const auth = getAuth()
+            
+            onValue(starCountRef, (snapshot) => {
+                const quiz = snapshot.val();
+                // console.log(quiz)
+                dispatch(fetchResponse(quiz))
+                dispatch(fetchquizSucceed(quiz.preguntas));
+            });
+
+            // const response = await axios.get(`quizList/${quizId}.json`);
+            // const quiz = response.data.preguntas;
+            // console.log(quiz)
 
         } catch (error) {
 
@@ -117,6 +126,14 @@ export function fetchquizListSucceed(quizList) {
     return dispatch => {
         dispatch(fetchQuizListSucceed({
             quizList: quizList
+        }))
+    }
+}
+
+export function fetchResponse(quizList){
+    return dispatch => {
+        dispatch(setResponse({
+            response: quizList
         }))
     }
 }

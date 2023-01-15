@@ -10,7 +10,7 @@ const Navbar = ({ isAuthenticated }) => {
 
         <nav className="navbar" style={{
             position: 'fixed',
-            backgroundColor: '#23232e',
+            backgroundColor: 'rgb(6 11 21 / 80%)',
             transition: 'width 600ms ease',
             overflow: 'hidden',
             zIndex: '1'

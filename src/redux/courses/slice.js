@@ -13,10 +13,15 @@ export const slice = createSlice({
         isQuizFinished: false,
         answerState: null,
         results: {},
-        quiz: null
+        quiz: null,
+        response: []
     },
 
     reducers: {
+
+        setResponse: (state, action) => {
+            state.response = action.payload.response
+        },
 
         fetchStart: state => {
             state.isLoading = true
@@ -70,6 +75,6 @@ export const slice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { fetchStart, fetchFailed, fetchQuizListSucceed, fetchQuizSucceed, quizSetState, quizNextQuestion, quizFinished, quizRetry, setResult } = slice.actions
+export const { fetchStart, fetchFailed, fetchQuizListSucceed, fetchQuizSucceed, quizSetState, quizNextQuestion, quizFinished, quizRetry, setResult, setResponse } = slice.actions
 
 export default slice.reducer
