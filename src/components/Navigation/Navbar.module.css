@@ -1,0 +1,53 @@
+.Menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    /* gap: 40px; */
+    padding-left: 3.5rem;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.navbarLink{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* height: 3rem; */
+    color: #cfc8c8;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 60ms;
+    font-size: 1.15rem;
+}
+
+.MobileNavLink{
+    color: rgb(255, 255, 255);
+    font-size: 1.95rem;
+    margin-left: 2rem;
+    margin: 1rem;
+    height: 3rem;
+}
+
+.MobileButton{
+   
+    font-size: 1.95rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 3rem;
+    padding: 0%;
+    border: 0ch;
+    
+   
+}
+
+.MobileStyleNav{
+    background-color: black;
+   
+}
+
+.navbarLink:hover{
+    filter: grayscale(0%) opacity(1);
+    color: #ececec;
+}
+
+
