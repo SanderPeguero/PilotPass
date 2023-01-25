@@ -1,10 +1,10 @@
   
   .form {
     max-width: 450px;
-    margin: 10px auto;
+    margin: 10rem auto;
     padding: 10px 20px;
     color: white;
-    background: rgb(244 247 248 / 8%);
+    background: rgb(0 0 0 / 50%);
     border-radius: 8px;
   }
   
@@ -63,7 +63,6 @@ body {
     outline: 0;
     padding: 10px;
     width: 100%;
-    /* background-color: #e8eeef; */
     color: #ffffff;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 10px;
@@ -80,7 +79,7 @@ body {
     border-radius: 2px;
   }
   
-  button {
+  .button {
     padding: 10px 39px 10px 39px;
     color: #FFF;
     background-color: #4bc970;

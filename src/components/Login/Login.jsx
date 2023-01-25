@@ -4,15 +4,17 @@ import { useState, useEffect } from 'react'
 import { deleteError } from '../../redux/error/errorSlice'
 import { NavLink } from 'react-router-dom'
 import { auth } from '../../redux/user/authFunctions'
+import Button from "../UI/Button/Button";
 import Error from './Error.module.css'
 import Alert from '../../components/Alert/Snackbar'
 import './Login.css'
 
-// function isInvalid({valid, touched, shouldValidate}){
-//     return !valid && shouldValidate && touched
-// }
-
 const login = () => {
+
+    //State
+    const classNames = [Error.input]
+    const error = useSelector(state => state.error.error)
+    const dispatch = useDispatch()
 
     const [email, setemail] = useState({
         value: '',
@@ -32,6 +34,7 @@ const login = () => {
         touched: false
     });
 
+    //Use Effects
     useEffect(() => {
         if(email.value.length > 0){
 
@@ -48,11 +51,15 @@ const login = () => {
 
     }, [email.value, password.value]);
 
-    let classNames = [Error.input]
-    const dispatch = useDispatch()
+    useEffect(() => {
 
-    const error = useSelector(state => state.error.error)
+        sleep(5000).then( r => {
+            dispatch(deleteError())
+        })
 
+    }, [error]);
+
+    //Handlers and Helpers
     const onChangeHandler = (event, state, setState) => {
         
         setState({...state, 
@@ -65,33 +72,21 @@ const login = () => {
 
     function loginHandler(){
         dispatch(auth(email.value, password.value, true))
-        // try{
-        //     dispatch(auth(email.value, password.value, true))
-        // }catch(e){
-        //     console.log(e)
-        // }
     }
+
     const sleep = (ms) => {
         return new Promise((resolve) => setTimeout(resolve, ms));
     };
-
-    useEffect(() => {
-
-        sleep(5000).then( r => {
-            dispatch(deleteError())
-        })
-
-    }, [error]);
-
+    
 
     return(
         <div className="h-25 row">
             {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}
-            <div className='form'>
+            <div className='form' style={{margin: '10rem auto'}}>
                 <h1> Login </h1>
                 <div className='row'>
                     
-                    <fieldset className='col'>
+                    <fieldset className='col' style={{ marginBottom: '0'}}>
 
                         <div className={classNames}>
                             <label htmlFor="email">Email:</label>
@@ -121,8 +116,8 @@ const login = () => {
 
                 </div>
 
-                <button onClick={loginHandler}>Login</button>
-                <div style={{marginBottom: '1rem'}}>Dont have an accoung yet? <NavLink style={{color: '#82d99b', textDecoration: 'none'}} to='/signup'>create account</NavLink></div>
+                <Button onClick={loginHandler} type="primary" style={{border: 'none', fontSize: '18px'}}>Login</Button>
+                <div style={{marginBottom: '1rem'}}>Don't have an accoung yet? <NavLink style={{color: '#69c9ef', textDecoration: 'none'}} to='/signup'>create account</NavLink></div>
                 
             </div>
         </div>

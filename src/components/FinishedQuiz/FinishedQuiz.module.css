@@ -1,13 +1,15 @@
 .FinishedQuiz {
-    margin: 0 10px;
-    padding: 20px;
-
     box-sizing: border-box;
-
-    /* border: 2px solid white; */
     border-radius: 5px;
-
     color: white;
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .FinishedQuiz{
+        margin: 0 10px;
+        padding: 20px;
+    }
 }
 
 .FinishedQuiz ul {
@@ -31,8 +33,4 @@
 
 .BoxF {
     background-color: #4d5761;
-
-
-    /* width: 600px;
-    height:450px; */
 }
