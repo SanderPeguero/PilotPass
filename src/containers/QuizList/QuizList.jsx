@@ -25,7 +25,18 @@ const quizList = () => {
     
     useEffect(() => {
         
-        dispatch(fetchQuizList())   
+        dispatch(fetchQuizList())
+
+        // const starCountRef = ref(db, 'quizList/');
+        // const auth = getAuth()
+
+        // onValue(starCountRef, (snapshot) => {
+        //     const data = snapshot.val();
+        //     dispatch(fetchResponse(data))
+
+        // });
+
+
         // const starCountRef = ref(db, 'quizList/');
         // const auth = getAuth();
       

@@ -7,14 +7,15 @@ import { ref, onValue } from 'firebase/database'
 import { getAuth } from "firebase/auth";
 
 export function fetchQuizList() {
-    return async dispatch => {
-        dispatch(fetchstart());
+    return dispatch => {
 
+        dispatch(fetchstart());
         try {
             
             const starCountRef = ref(db, 'quizList/');
             const auth = getAuth()
-      
+
+            
             onValue(starCountRef, (snapshot) => {
                 const data = snapshot.val();
                 dispatch(fetchResponse(data))
@@ -30,22 +31,24 @@ export function fetchQuizList() {
 }
 
 export function fetchQuizById(quizId) {
-    return async dispatch => {
+    return (dispatch) => {
 
         dispatch(fetchstart());
 
         try {
-            const starCountRef = ref(db, `quizList/${quizId}`);
+            // const starCountRef = ref(db, `quizList/${quizId}`);
 
-            const auth = getAuth()
+            // const auth = getAuth()
             
-            onValue(starCountRef, (snapshot) => {
-                const quiz = snapshot.val();
-                // console.log(quiz)
-                dispatch(fetchResponse(quiz))
-                dispatch(fetchquizSucceed(quiz.preguntas));
-            });
+            // onValue(starCountRef, (snapshot) => {
+            //     const quiz = snapshot.val();
+            //     console.log(quiz)
+            //     dispatch(fetchResponse(quiz))
+            //     dispatch(fetchquizSucceed(quiz.preguntas));
+            // });
 
+            const quiz = store.getState().courses.response[quizId];
+            dispatch(fetchquizSucceed(quiz.preguntas))
             // const response = await axios.get(`quizList/${quizId}.json`);
             // const quiz = response.data.preguntas;
             // console.log(quiz)

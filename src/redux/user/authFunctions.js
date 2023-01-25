@@ -14,7 +14,6 @@ export function auth(email, password, isLogIn){
                 const user = userCredential.user;
                 const time = user["stsTokenManager"]
                 const expirationDate = new Date(time["expirationTime"])
-                console.log(user)
                 
                 //Token
                 user.getIdToken().then((value) => { 
@@ -25,7 +24,6 @@ export function auth(email, password, isLogIn){
                 //Time
                 const expiration =(expirationDate.getTime() - Date.now()) / 1000
                 localStorage.setItem("expirationDate", expiration)
-                console.log(expiration)
                 dispatch(autologout(expiration))
     
 

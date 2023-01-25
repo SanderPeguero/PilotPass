@@ -39,7 +39,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route exact path={'/logout'} element={<Logout/>}></Route>
-          <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route>
+          {/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
           <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
           <Route exact path={'/tests'} element={<QuizList/>}></Route>
           <Route path="*" element={<Navigate to="/tests" replace/>}/>

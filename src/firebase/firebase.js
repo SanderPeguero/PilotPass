@@ -1,13 +1,6 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
-// import { getDatabase } from "firebase/database";
-
-
-
-import { getDatabase, ref, child, get, onValue} from "firebase/database";
-
+import { getDatabase, ref } from "firebase/database";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -30,21 +23,13 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = (app);
 
-
 //Mantenerse pendiente a los cambios de los datos en la base de datos y actualizar los de la aplicacion
 const db = getDatabase();
-// const starCountRef = ref(db, 'posts/' + postId + '/starCount');
-// const starCountRef = ref(db, 'quizList/');
-// onValue(starCountRef, (snapshot) => {
-//   const data = snapshot.val();
-//   updateStarCount(postElement, data);
-// });
-
 
 //Leer los datos una sola vez
-const dbRef = ref(getDatabase());
+// const dbRef = ref(getDatabase());
 
 
 
 
-export { auth, db, dbRef };
+export { auth, db };

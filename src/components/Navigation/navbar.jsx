@@ -1,61 +1,118 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import logo from '../../Images/Logo.png'
+import { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import styles from './Navbar.module.css'
+import ButtonUnstyled from '@mui/base/ButtonUnstyled'
+import Container from '@mui/material/Container'
+import Tooltip from '@mui/material/Tooltip';
+import Avatar from '@mui/material/Avatar';
 
-const Navbar = ({ isAuthenticated }) => {
-    
-    if(isAuthenticated){
-     
-      return(
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout', 'Pedidos'];
 
-        <nav className="navbar" style={{
-            position: 'fixed',
-            backgroundColor: 'rgb(6 11 21 / 80%)',
-            transition: 'width 600ms ease',
-            overflow: 'hidden',
-            zIndex: '1'
-        }}>
-            <ul className="navbar-nav">
+const Navbar = ({ setOpenSignIn, setOpenLogin, setOpenCarShop, shoppingCart, products, ItemsCount }) => {
 
-                <li className="logo">
-                    <NavLink to="/" className="nav-link">
-                        <span className="link-text logo-text">PilotPass</span>
-                        <img src={logo}/>                            
-                    </NavLink>
-                </li>
+  const handleOpenSigIn = () => setOpenSignIn(true)
+  const handleOpenLogin = () => setOpenLogin(true)
+  const handleOpenCarShop = () => setOpenCarShop(true)
+  
+  const [anchorElNav, setAnchorElNav] = useState(null)
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
-                {/* Test List */}
-                <li className="nav-item">
-                    <NavLink to="/tests" className="nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" className="fa-primary" d="M0 96C0 60.7 28.7 32 64 32H512c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM128 288c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32zm32-128c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM128 384c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32zm96-248c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224z"/></svg>
-                        <span className="link-text">Tests</span>
-                    </NavLink>
-                </li>
+  const [UserId, setUserId] = useState(localStorage.UserId);
+  const [UserName, setUserName] = useState(localStorage.UserName);
+  const [UserLastName, setUserLastName] = useState(localStorage.UserLastName);
 
-                <li className="nav-item">
-                    <NavLink to="/quiz-creator" className="nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" className="fa-primary" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
-                        <span className="link-text">Create</span>
-                    </NavLink>
-                </li>
+  const name = useSelector(state => state.user.name);
 
-                {/* Log Out */}
-                <li className="nav-item">
-                    <NavLink to="/logout" className="nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" className="fa-primary" d="M534.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L434.7 224 224 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM192 96c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-53 0-96 43-96 96l0 256c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z"/></svg>
-                        <span className="link-text">Log Out</span>
-                    </NavLink>
-                </li>
 
-            </ul>
-        </nav>
-       
-      )
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  }
 
-    }
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  }
 
-   
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
+  //LogOut
+  const handleLogOut = (event) => {
+
+    localStorage.setItem('UserId', '')
+    localStorage.setItem('UserName', '')
+    localStorage.setItem('UserLastName', '')
+    localStorage.setItem('UserEmail', '')
+    localStorage.setItem('UserSecretKey', '')
+    handleCloseUserMenu()
+
+  }
+
+  // useEffect(() => {
+  //   if(localStorage.getItem('UserId')){
+  //     setUser(JSON.parse(localStorage.getItem('user')))
+  //   }
+  //   if(localStorage.getItem('room')){
+  //     setroom(localStorage.getItem('room'))
+  //   }
+  // }, [])
+
+  // const handleUser = () => {
+  //   return true if localStorage.getItem("UserId")
+  // }
+
+  return (
+
+    <AppBar position="static" style={{
+      background: 'rgb(6 11 21 / 80%)',
+      height: '5rem',
+      boxShadow: 'none',
+      zIndex: '1'
+    }}>
+      <Container maxWidth="xl" style={{ marginTop: '0.5rem' }}>
+        <Toolbar disableGutters>
+          {/*------------------------------------Large Screen NavBar Menu----------------------------------------*/}
+          <Box sx={{ flexGrow: 1 }} style={{ margin: '0' }}>
+            <Toolbar onClick={handleCloseNavMenu} style={{ display: 'flex', justifyContent: 'flex-end', height: '-webkit-fill-available', marginLeft: '1rem' }} >
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', md: 'block' } }}
+              >
+                <ButtonUnstyled className={styles.navbarLink} style={{
+                    fontSize: '1.15rem',
+                    fontfamily: 'arial',
+                    textTransform: 'none',
+                    background: 'none',
+                    border: '0',
+                    margin: '0, 1rem, 0, 0',
+                    padding: '0'
+                }}>
+                    {name}  
+                </ButtonUnstyled>
+                <Tooltip title="Open settings">
+                    <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                        <Avatar alt={name} src={name} />
+                    </IconButton>
+                </Tooltip>
+              </Typography>
+            </Toolbar>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  )
 }
 
 
-export default Navbar;
+export default Navbar
