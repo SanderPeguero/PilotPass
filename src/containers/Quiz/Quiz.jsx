@@ -41,20 +41,26 @@ const Quiz = (props) => {
         return n
     }
 
+    
     //Component did mount
     useEffect(() => {
 
         dispatch(fetchQuizById(props.match.params.id))
         
     }, []);
-
-    //Component will unmount
+    
+    // Component will unmount
     useEffect(() => {
-
+        
+        // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
         return () => {
 
-            dispatch(fetchQuizById(props.match.params.id))
             dispatch(retryQuiz())
+            dispatch(fetchQuizById(props.match.params.id))
+            // const interval = setInterval(() => {
+            // }, 100);
+
+            // clearInterval(interval)
 
         }
         

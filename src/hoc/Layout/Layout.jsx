@@ -1,6 +1,7 @@
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux"
 import classes from './Layout.module.css'
-import Navbar from "../../components/Navigation/navbar.jsx";
+import Sidebar from "../../components/Navigation/sidebar"
+import Navbar from "../../components/Navigation/navbar"
 
 const Layout = (props) => {
     
@@ -8,7 +9,8 @@ const Layout = (props) => {
 
     return(
         <div className={classes.Layout}>
-            <Navbar
+            <Navbar/>
+            <Sidebar
                 isAuthenticated={authToken}
             />
             <main>
