@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import classes from "./Quiz.module.css"
+import classes from "../Quiz/Quiz.module.css"
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
 import Loader from "../../components/UI/Loader/Loader";
 import { fetchQuizById, quizAnswerClick, retryQuiz } from "../../redux/courses/functions";
+import { getChoiceQuestions } from "../../redux/test/functions";
 import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 
@@ -44,8 +45,8 @@ const Test = (props) => {
     
     //Component did mount
     useEffect(() => {
-
-        dispatch(fetchQuizById(props.match.params.id))
+        dispatch(getChoiceQuestions(90))
+       // dispatch(fetchQuizById(props.match.params.id))
         
     }, []);
     
@@ -147,4 +148,4 @@ const Test = (props) => {
     )
 }
 
-export default withRouter(Quiz)
+export default withRouter(Test)
