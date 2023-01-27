@@ -12,6 +12,7 @@ import Signup from './components/Signup/Signup.jsx'
 import Logout from './components/Logout/Logout.jsx'
 import QuizList from './containers/QuizList/QuizList.jsx'
 import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
+import Test from './containers/Test/Test.jsx'
 
 const App = () => {
 
@@ -42,6 +43,7 @@ const App = () => {
           {/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
           <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
           <Route exact path={'/tests'} element={<QuizList/>}></Route>
+          <Route exact path={'/test'} element={<Test/>}></Route>
           <Route path="*" element={<Navigate to="/tests" replace/>}/>
         </Routes>
       </Layout>
