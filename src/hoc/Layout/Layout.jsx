@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux"
 import classes from './Layout.module.css'
 import Sidebar from "../../components/Navigation/sidebar"
-import Navbar from "../../components/Navigation/navbar"
 
 const Layout = (props) => {
     
@@ -9,11 +8,10 @@ const Layout = (props) => {
 
     return(
         <div className={classes.Layout}>
-            <Navbar/>
             <Sidebar
                 isAuthenticated={authToken}
             />
-            <main>
+            <main style={{marginTop: '4rem'}}>
                 {props.children}
             </main>
         </div>

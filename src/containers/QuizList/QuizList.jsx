@@ -11,6 +11,7 @@ import { ref, onValue } from 'firebase/database'
 import { getAuth } from "firebase/auth";
 
 import styles from './Card.module.css'
+import Navbar from "../../components/Navigation/navbar"
 
 
 const quizList = () => {
@@ -51,7 +52,7 @@ const quizList = () => {
 
     const renderQuizList = () => {
         return (
-            <>   
+            <>  
                 {
                     Object.keys(response).map(quiz => {
                         return (
@@ -112,31 +113,34 @@ const quizList = () => {
     }, [error]);
 
     return(
-        <div className={classes.QuizList}>
-            {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}
-            <div className="row cards" style={{ height:'95%', position:'absolute'}}>
-            <div className="col-lg-4 col-md-7 col-sm-12" style={{ paddingTop: '2rem' , paddingBottom: '100px'}}>
-                <h1 className="card-header col-lg-4 col-md-7 col-sm-12">My Courses</h1>
-                
-                <div className="row">
-                    <div className="card col-lg-4 col-md-12 col-sm-12"  >
-                    <h2 className="card-title col-lg-4 col-md-7 col-sm-12" style={{color:'white', fontWeight:'300'}}>Private Pilot</h2>
+        <>
+            <Navbar className="mt-[-4rem] z-[1]"/>
+            <div className={classes.QuizList}>
+                {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}
+                <div className="row cards" style={{ height:'95%', position:'absolute'}}>
+                <div className="col-lg-4 col-md-7 col-sm-12" style={{ paddingTop: '2rem' , paddingBottom: '100px'}}>
+                    <h1 className="card-header col-lg-4 col-md-7 col-sm-12">My Courses</h1>
                     
-                    <div>
-                        <hr style={{margin:'30px 0'}}/>
-                        {
-                            courses.isLoading && courses.quizList.length > 0
-                                ? <Loader/>
-                                : <div className={styles.readthedocs}>
-                                    {renderQuizList()}
-                                </div>
-                        }
-                    </div>
+                    <div className="row">
+                        <div className="card col-lg-4 col-md-12 col-sm-12"  >
+                        <h2 className="card-title col-lg-4 col-md-7 col-sm-12" style={{color:'white', fontWeight:'300'}}>Private Pilot</h2>
+                        
+                        <div>
+                            <hr style={{margin:'30px 0'}}/>
+                            {
+                                courses.isLoading && courses.quizList.length > 0
+                                    ? <Loader/>
+                                    : <div className={styles.readthedocs}>
+                                        {renderQuizList()}
+                                    </div>
+                            }
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </div> 
+                </div>
+            </div> 
+        </>
     )
 }
 
