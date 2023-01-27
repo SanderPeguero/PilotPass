@@ -30,6 +30,24 @@ export function fetchQuizList() {
     }
 }
 
+export function getChoiceQuestions(num) {
+
+    return (dispatch, getState) => {
+        const questions = getState().courses.response['-NJQ3XIELBr0xMsLKTHi'].preguntas;
+
+        let selectedQuestions = [];
+
+        for(let i = 0; i < num; i++){
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            selectedQuestions.push(questions[randomIndex]);
+            questions.splice(randomIndex, 1);
+        }
+
+        dispatch() // selectedQuestions;
+    }
+
+}
+
 export function fetchQuizById(quizId) {
     return (dispatch) => {
 
