@@ -14,17 +14,6 @@ import styles from './Card.module.css'
 
 
 
-const getChoiceQuestions= () => {
-    let selectedQuestions = [];
-
-    for(let i = 0; i < num; i++){
-        const randomIndex = Math.floor(Math.random() * questions.length);
-        selectedQuestions.push(questions[randomIndex]);
-        questions.splice(randomIndex, 1);
-    }
-    
-    return selectedQuestions;
-}
 
 
 const quizList = () => {
