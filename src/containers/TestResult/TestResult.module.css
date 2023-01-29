@@ -1,0 +1,9 @@
+
+.RightAnswered{
+    color: green;
+}
+  .IncorrectAnswered {
+    color: red;
+    /* background: red; */
+  }
+
