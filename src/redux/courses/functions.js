@@ -1,87 +1,72 @@
-import axios from "../../axios/axios-quiz";
-import { createError } from "../error/errorSlice";
-import { fetchFailed, fetchQuizListSucceed, fetchQuizSucceed, fetchStart, quizFinished, quizNextQuestion, quizRetry, quizSetState, setResult, setResponse } from "./slice";
-import store from "../store";
+import store from "../store"
+import { getAuth } from "firebase/auth"
 import { db } from '../../firebase/firebase'
 import { ref, onValue } from 'firebase/database'
-import { getAuth } from "firebase/auth";
+import { createError } from "../error/errorSlice"
+import {
+  fetchFailed, fetchQuizListSucceed, 
+  fetchQuizSucceed, quizFinished,
+  quizNextQuestion, quizRetry, 
+  quizSetState, setResult, setResponse
+} from "./slice"
 
 export function fetchQuizList() {
     return dispatch => {
-
-        dispatch(fetchstart());
         try {
             
-            const starCountRef = ref(db, 'quizList/');
+            const starCountRef = ref(db, 'quizList/')
             const auth = getAuth()
 
             
             onValue(starCountRef, (snapshot) => {
-                const data = snapshot.val();
+                const data = snapshot.val()
                 dispatch(fetchResponse(data))
 
-
-            });
+            })
 
         } catch (error) {
             dispatch(createError(error))
-            dispatch(fetchfailed(error));
+            dispatch(fetchfailed(error))
         }
     }
 }
 
 export function fetchQuizById(quizId) {
     return (dispatch) => {
-
-        dispatch(fetchstart());
-
         try {
-            // const starCountRef = ref(db, `quizList/${quizId}`);
 
-            // const auth = getAuth()
-            
-            // onValue(starCountRef, (snapshot) => {
-            //     const quiz = snapshot.val();
-            //     console.log(quiz)
-            //     dispatch(fetchResponse(quiz))
-            //     dispatch(fetchquizSucceed(quiz.preguntas));
-            // });
-
-            const quiz = store.getState().courses.response[quizId];
+            const quiz = store.getState().courses.response[quizId]
             dispatch(fetchquizSucceed(quiz.preguntas))
-            // const response = await axios.get(`quizList/${quizId}.json`);
-            // const quiz = response.data.preguntas;
-            // console.log(quiz)
 
         } catch (error) {
-
-            dispatch(fetchfailed(error));
+            dispatch(createError(error))
+            dispatch(fetchfailed(error))
 
         }
-    };
+    }
 }
 
 export function quizAnswerClick(answerId) {
     return (dispatch, getState) => {
 
-        const state = store.getState().courses;
+        const state = store.getState().courses
 
         // prevent event handles twice (on each click)
-        let currentState = state.answerState;
+        let currentState = state.answerState
         if (currentState) {
-            const key = Object.keys(currentState)[0];
-            if (currentState[key] === "success") return;
+            const key = Object.keys(currentState)[0]
+            if (currentState[key] === "success") return
         }
 
         // initialize variables
-        let activeQuestionNumber = state.activeQuestionNumber;
-        let currentQuiz = state.quiz[activeQuestionNumber];
-        let isRightAnswerChosen = currentQuiz.correctAnswer === answerId;
-        let isFinalQuestion = activeQuestionNumber + 1 === state.quiz.length;
+        let activeQuestionNumber = state.activeQuestionNumber
+        let currentQuiz = state.quiz[activeQuestionNumber]
+        let isRightAnswerChosen = currentQuiz.correctAnswer === answerId
+        let isFinalQuestion = activeQuestionNumber + 1 === state.quiz.length
 
         // set answer state and first chosen result
-        let answerState = isRightAnswerChosen ? "success" : "error";
-        let results = state.results;
+        let answerState = isRightAnswerChosen ? "success" : "error"
+        let results = state.results
         if(results){
             if (!results[activeQuestionNumber]){
                 dispatch(setResult(answerState))
@@ -89,39 +74,31 @@ export function quizAnswerClick(answerId) {
         }
         
         if(results[activeQuestionNumber] == "error"){
-            dispatch(quizsetState({[answerId]: answerState}, {...results}));   
+            dispatch(quizsetState({[answerId]: answerState}, {...results}))
         }else{
-            dispatch(quizsetState({[answerId]: answerState}, {...results, [activeQuestionNumber]: answerState}));
+            dispatch(quizsetState({[answerId]: answerState}, {...results, [activeQuestionNumber]: answerState}))
         }
         
         // control colors changing and final state
         if (isRightAnswerChosen) {
             const timeout = window.setTimeout(() => {
                 if (isFinalQuestion)
-                dispatch(finishquiz());
+                dispatch(finishquiz())
                 else {
-                    let nextQuestionNumber = activeQuestionNumber + 1;
-                    dispatch(quiznextQuestion(nextQuestionNumber, state.quiz[nextQuestionNumber]));
+                    let nextQuestionNumber = activeQuestionNumber + 1
+                    dispatch(quiznextQuestion(nextQuestionNumber, state.quiz[nextQuestionNumber]))
                 }
                 
-                window.clearTimeout(timeout);
-            }, 500);
+                window.clearTimeout(timeout)
+            }, 500)
         }
 
     }
 }
 
-export function fetchstart() {
-    return dispatch => {
-        dispatch(fetchStart())
-    }
-}
-
 export function fetchfailed(error) {
     return dispatch => {
-        dispatch(fetchFailed({
-            error: error
-        }))
+        dispatch(fetchFailed(error))
     }
 }
 
@@ -176,8 +153,8 @@ export function finishquiz() {
 
 export function retryQuiz() {
     return dispatch => {
-        const state = store.getState().courses;
-        dispatch(resetquizState(state.quiz[0]));
+        const state = store.getState().courses
+        dispatch(resetquizState(state.quiz[0]))
     }
 }
 
