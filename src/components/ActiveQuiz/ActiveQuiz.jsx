@@ -9,7 +9,6 @@ const ActiveQuiz = props => (
                 <span className="col-lg-4 col-md-7 col-sm-12">
                     <strong>{props.questionNumber}. {props.question}</strong>
                 </span>
-                <small style={{ width: '20rem', textAlign: 'end'}}>{props.questionNumber} / {props.quizLength}</small>
             </p>
             <AnswersList
                 answers={props.answers}

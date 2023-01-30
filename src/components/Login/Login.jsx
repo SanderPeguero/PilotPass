@@ -1,20 +1,21 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { isFromValid, isValueValid } from '../../form/formFramework'
-import { useState, useEffect } from 'react'
-import { deleteError } from '../../redux/error/errorSlice'
-import { NavLink } from 'react-router-dom'
-import { auth } from '../../redux/user/authFunctions'
-import Button from "../UI/Button/Button";
-import Error from './Error.module.css'
-import Alert from '../../components/Alert/Snackbar'
 import './Login.css'
+import Error from './Error.module.css'
+import Button from "../UI/Button/Button"
+import { NavLink } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import Alert from '../../components/Alert/Snackbar'
+import { auth } from '../../redux/user/authFunctions'
+import { useDispatch, useSelector } from 'react-redux'
+import { deleteError } from '../../redux/error/errorSlice'
+import { isFromValid, isValueValid } from '../../form/formFramework'
+
 
 const login = () => {
 
     //State
+    const dispatch = useDispatch()
     const classNames = [Error.input]
     const error = useSelector(state => state.error.error)
-    const dispatch = useDispatch()
 
     const [email, setemail] = useState({
         value: '',
@@ -25,14 +26,14 @@ const login = () => {
             required: true,
             email: true
         }
-    });
+    })
 
     const [password, setpassword] = useState({
         value: '',
         errorMessage: 'Password Must Have 8 Characters or More',
         valid: null,
         touched: false
-    });
+    })
 
     //Use Effects
     useEffect(() => {
@@ -49,7 +50,7 @@ const login = () => {
             })
         }
 
-    }, [email.value, password.value]);
+    }, [email.value, password.value])
 
     useEffect(() => {
 
@@ -57,7 +58,7 @@ const login = () => {
             dispatch(deleteError())
         })
 
-    }, [error]);
+    }, [error])
 
     //Handlers and Helpers
     const onChangeHandler = (event, state, setState) => {
@@ -75,8 +76,8 @@ const login = () => {
     }
 
     const sleep = (ms) => {
-        return new Promise((resolve) => setTimeout(resolve, ms));
-    };
+        return new Promise((resolve) => setTimeout(resolve, ms))
+    }
     
 
     return(

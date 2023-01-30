@@ -109,6 +109,7 @@ export function signup( name, lastName, email, password, bio, formation, admin, 
             dispatch(authSucceed(data.idToken))
             dispatch(autologout(data.expiresIn))
             dispatch(updateName(data.displayName))
+            dispatch(autoLogin())
 
         }catch(error){
             dispatch(createError(error.response.data.error.message))

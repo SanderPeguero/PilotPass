@@ -1,11 +1,12 @@
-import { isFromValid, isValueValid } from '../../form/formFramework'
-import { useDispatch, useSelector } from 'react-redux'
-import { useState, useEffect } from 'react'
-import { deleteError } from '../../redux/error/errorSlice'
-import { signup } from '../../redux/user/authFunctions'
-import Error from './Error.module.css'
-import Alert from '../../components/Alert/Snackbar'
 import './signup.css'
+import Error from './Error.module.css'
+import Button from "../UI/Button/Button"
+import { useState, useEffect } from 'react'
+import Alert from '../../components/Alert/Snackbar'
+import { useDispatch, useSelector } from 'react-redux'
+import { signup } from '../../redux/user/authFunctions'
+import { deleteError } from '../../redux/error/errorSlice'
+import { isFromValid, isValueValid } from '../../form/formFramework'
 
 const SignUp = () => {
 
@@ -191,7 +192,7 @@ const SignUp = () => {
                     </fieldset>
                 </div>
             
-                <button onClick={signUpHandler}>Sign Up</button>
+                <Button onClick={signUpHandler} type="primary" style={{border: 'none', fontSize: '18px'}}>Sign Up</Button>
                 
             </div>
         </div>
