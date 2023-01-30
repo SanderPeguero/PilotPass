@@ -2,6 +2,7 @@ import './signup.css'
 import Error from './Error.module.css'
 import Button from "../UI/Button/Button"
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Alert from '../../components/Alert/Snackbar'
 import { useDispatch, useSelector } from 'react-redux'
 import { signup } from '../../redux/user/authFunctions'
@@ -10,6 +11,7 @@ import { isFromValid, isValueValid } from '../../form/formFramework'
 
 const SignUp = () => {
 
+    const navigate = useNavigate()
     //State
     const [name, setname] = useState({
         value: '',
@@ -97,6 +99,7 @@ const SignUp = () => {
     
     function signUpHandler(){
         dispatch(signup( name.value, lastName.value, email.value, password.value, bio.value, formation.value, admin, account, false))
+        navigate('/')
     }
 
     const sleep = (ms) => {
