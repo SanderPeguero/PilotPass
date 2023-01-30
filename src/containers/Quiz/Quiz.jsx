@@ -35,12 +35,9 @@ const Quiz = (props) => {
             dispatch(fetchStart())
             dispatch(fetchQuizList())
         }else if(response){
-            if(!quiz){
-                dispatch(fetchQuizById(props.match.params.id))
-                dispatch(fetchStop())
-            }else{
-                dispatch(fetchStop())
-            }
+            dispatch(fetchQuizById(props.match.params.id))
+            dispatch(fetchStop())
+            dispatch(fetchStop())
         }
             
         window.addEventListener("beforeunload", alertUser)
