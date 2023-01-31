@@ -44,11 +44,11 @@ const App = () => {
         <Routes>
           <Route exact path={'/logout'} element={<Logout/>}></Route>
           {/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
-          <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
-          <Route exact path={'/tests'} element={<QuizList/>}></Route>
+          {/* <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
+          <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
           <Route exact path={'/result/:id'} element={<Result/>}></Route>
           <Route exact path={'/testresult'} element={<TestResult/>}></Route>
-          <Route path="*" element={<Navigate to="/tests" replace/>}/>
+          {/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
           <Route exact path={'/'} element={<QuizList/>}></Route>
           {/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
           <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
