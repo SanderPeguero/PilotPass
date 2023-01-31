@@ -14,7 +14,7 @@ export const slice = createSlice({
         answerState: null,
         results: {},
         quiz: null,
-        response: []
+        response: null
     },
 
     reducers: {

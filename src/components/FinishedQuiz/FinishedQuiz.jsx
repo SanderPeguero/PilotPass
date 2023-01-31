@@ -12,7 +12,7 @@ const FinishedQuiz = props => {
 
     const onQuizList = () => {
         dispatch(retryQuiz())
-        navigate('/tests')
+        navigate('/')
     }
 
     const onRetry = () => {
