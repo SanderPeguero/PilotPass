@@ -5,7 +5,7 @@
     margin: 2rem;
   } */
 
-  .cardall {
+  /* .cardall {
     background-color: transparent;
   }
 
@@ -19,10 +19,10 @@
   }
   p {
     margin: .5rem 0 2rem;
-  }
+  } */
   
   /*--- TABLE ---*/
-  table {
+  /* table {
     border-collapse: collapse;
     border-spacing: 1;
     margin: 2rem 0;
@@ -31,10 +31,10 @@
   th, td {
     padding: 1rem 1.5rem;
     text-align: left;
-  }
-  th {
-    background-color: transparent; /* header background color */
-    color: #fff; /* header text color */
+  } */
+  /* th {
+    background-color: transparent; 
+    color: #fff; 
     font-weight: 600;
   }
   tr {
@@ -43,13 +43,13 @@
   td {
     vertical-align: middle;
     background-color: transparent;
-  }
+  } */
   /* tr:nth-child(even) td {
     background-color: rgba(197, 197, 197, 0.968); 
   } */
 
   
-  @media screen and (max-width: 640px) {
+  /* @media screen and (max-width: 640px) {
     thead, th {
       display: none;
     }
@@ -76,4 +76,4 @@
       font-weight: bold;
       margin-right: 1rem;
     }
-  }
+  } */
