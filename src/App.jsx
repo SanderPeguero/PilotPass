@@ -11,6 +11,10 @@ import Layout from './hoc/Layout/Layout.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Logout from './components/Logout/Logout.jsx'
 import QuizList from './containers/QuizList/QuizList.jsx'
+import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
+import TestResult from './containers/TestResult/TestResult.jsx'
+import Result from './containers/Result/Result.jsx'
+import AnswerResult from './components/AnswerResult/AnswerResult.jsx'
 import { fetchStart, fetchStop } from './redux/loading/slice'
 
 const App = () => {
@@ -40,6 +44,11 @@ const App = () => {
         <Routes>
           <Route exact path={'/logout'} element={<Logout/>}></Route>
           {/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
+          {/* <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
+          <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
+          <Route exact path={'/result/:id'} element={<Result/>}></Route>
+          <Route exact path={'/testresult'} element={<TestResult/>}></Route>
+          {/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
           <Route exact path={'/'} element={<QuizList/>}></Route>
           {/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
           <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
