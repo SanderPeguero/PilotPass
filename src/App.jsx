@@ -19,16 +19,23 @@ import { fetchStart, fetchStop } from './redux/loading/slice'
 
 const App = () => {
 
-  const dispatch = useDispatch();
-  const authToken = Boolean(useSelector(state => state.user.authToken));
-  const authaccount = useSelector(state => state.user.accountsallowed)
+  const dispatch = useDispatch()
+  const authToken = Boolean(useSelector(state => state.user.authToken))
   
   useEffect(() => {
     dispatch(fetchStart())
     dispatch(autoLogin())
     dispatch(fetchStop())
-   
-  }, []);
+  }, [])
+
+  useEffect(() => {
+    if(authToken) {
+      dispatch(fetchStart())
+      dispatch(autoLogin())
+      dispatch(fetchStop())
+    }
+  }, [authToken])
+
 
   if(!authToken){
     return(
