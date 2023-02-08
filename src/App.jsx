@@ -21,20 +21,20 @@ const App = () => {
 
   const dispatch = useDispatch();
   const authToken = Boolean(useSelector(state => state.user.authToken));
+  const authaccount = useSelector(state => state.user.accountsallowed)
   
   useEffect(() => {
     dispatch(fetchStart())
     dispatch(autoLogin())
     dispatch(fetchStop())
+   
   }, []);
 
   if(!authToken){
     return(
         <Routes>
-          {/* <Route exact path={'/'} element={<Home/>}></Route> */}
           <Route exact path='/' element={<Login/>} ></Route>
           <Route exact path='/signup' element={<Signup/>} ></Route>
-          {/* <Route path="*" element={<Navigate to="/" replace/>}/> */}
         </Routes>
     )
     
@@ -43,16 +43,11 @@ const App = () => {
       <Layout>
         <Routes>
           <Route exact path={'/logout'} element={<Logout/>}></Route>
-          {/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
-          {/* <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
-          <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
           <Route exact path={'/result/:id'} element={<Result/>}></Route>
           <Route exact path={'/testresult'} element={<TestResult/>}></Route>
-          {/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
           <Route exact path={'/'} element={<QuizList/>}></Route>
-          {/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
           <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
-          {/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
+          
         </Routes>
       </Layout>
     )
@@ -62,3 +57,13 @@ const App = () => {
 }
 
 export default App
+
+
+{/* <Route exact path={'/'} element={<Home/>}></Route> */}
+{/* <Route path="*" element={<Navigate to="/" replace/>}/> */}
+{/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
+{/* <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
+<Route exact path={'/tests'} element={<QuizList/>}></Route> */}
+{/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
+{/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
+{/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
