@@ -4,10 +4,11 @@ import classes from "../Quiz/Quiz.module.css"
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
 import Loader from "../../components/UI/Loader/Loader";
-import { fetchQuizById, quizAnswerClick, retryQuiz } from "../../redux/courses/functions";
-import { getChoiceQuestions } from "../../redux/test/functions";
+// import { quizAnswerClick, retryQuiz } from "../../redux/courses/functions"; 
+import { fetchTest, testAnswerClick } from "../../redux/test/functions";
 import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
+import store from "../../redux/store";
 
 export function withRouter(Children) {
 
@@ -20,51 +21,57 @@ export function withRouter(Children) {
 
 const Test = (props) => {
 
-    const activeQuestionNumber = useSelector(state => state.courses.activeQuestionNumber);
-    const isQuizFinished = useSelector(state => state.courses.isQuizFinished);
-    const answerState = useSelector(state => state.courses.answerState);
-    const results = useSelector(state => state.courses.results);
-    const quiz = useSelector(state => state.courses.quiz);
-    const currentQuizQuestion = useSelector(state => state.courses.currentQuizQuestion);
-    const isLoading = useSelector(state => state.courses.isLoading);
+    const activeQuestionNumber = useSelector(state => state.test.activeQuestionNumber)
+    const currentQuizQuestion = useSelector(state => state.test.currentTestQuestion)
+    const isQuizFinished = useSelector(state => state.test.isTestFinished)
+    const answerState = useSelector(state => state.test.answerState)
+    const results = useSelector(state => state.test.results)
+    const quiz = useSelector(state => state.test.questions)
+    const [isLoading, setIsLoading] = useState(false)
+    console.log(currentQuizQuestion)  //
+        //  const quiz = store.getState().test.questions;
+    //useSelector(state => state.courses.isLoading);
     const dispatch = useDispatch();
-    
+
     const List = useSelector(state => state.courses.quizList);
 
     const name = () => {
 
         let n = ''
 
-        List.map( obj => {
+        List.map(obj => {
             obj["id"] == props.match.params.id ? n = obj.name : null
         })
 
         return n
     }
 
-    
+
     //Component did mount
     useEffect(() => {
-        dispatch(getChoiceQuestions(90))
-       // dispatch(fetchQuizById(props.match.params.id))
-        
+        setIsLoading(true)
+        dispatch(fetchTest())
+        console.log("UseEffect DidMount in Test Component")
+        setIsLoading(false)
+        // dispatch(fetchQuizById(props.match.params.id))
+
     }, []);
-    
+
     // Component will unmount
     useEffect(() => {
-        
+
         // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
         return () => {
 
             dispatch(retryQuiz())
-            dispatch(fetchQuizById(props.match.params.id))
+            //dispatch(fetchQuizById(props.match.params.id))
             // const interval = setInterval(() => {
             // }, 100);
 
             // clearInterval(interval)
 
         }
-        
+
     }, []);
 
     const THREE_DAYS_IN_MS = 2 * 3600 * 1000;
@@ -79,18 +86,18 @@ const Test = (props) => {
     const MINUTE_MS = 1000;
 
     useEffect(() => {
-        
-        if(timer > 0){
+
+        if (timer > 0) {
 
             const interval = setInterval(() => {
                 let times = timer
                 settimer(times - 1000)
             }, MINUTE_MS);
-            
-            // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
-            return () => clearInterval(interval); 
 
-        }else{
+            // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+            return () => clearInterval(interval);
+
+        } else {
             console.log("Time is over!")
 
         }
@@ -99,21 +106,21 @@ const Test = (props) => {
     }, [timer])
 
     const onAnswerClickHandler = answerId => {
-        dispatch(quizAnswerClick(answerId))
+        dispatch(testAnswerClick(answerId))
     }
 
     return (
         <Box className={classes.Quiz}>
-            <div className="row cards col-lg-4 col-md-7 col-sm-12" style={{ paddingTop: '2rem' , paddingBottom: '100px'}}>
-                <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{color:'white', margin: "2%"}}>
+            <div className="row cards col-lg-4 col-md-7 col-sm-12" style={{ paddingTop: '2rem', paddingBottom: '100px' }}>
+                <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{ color: 'white', margin: "2%" }}>
                     <h2 className="col-lg-4 col-md-7 col-sm-12">Test: {name()}</h2>
                 </div>
 
                 <div className="card col-lg-4 col-md-7 col-sm-12">
                     <div className="card-header">
-                        <p className="row" style={{color:'white'}}> 
-                            <span className="">Question {activeQuestionNumber + 1}</span>  
-                            <span className="" style={{float:'right'}}>{timer > 1 ? `Time Left: ${hours}:${minutes}:${seconds}` : "TIME IS OVER" }</span> 
+                        <p className="row" style={{ color: 'white' }}>
+                            <span className="">Question {activeQuestionNumber + 1}</span>
+                            <span className="" style={{ float: 'right' }}>{timer > 1 ? `Time Left: ${hours}:${minutes}:${seconds}` : "TIME IS OVER"}</span>
                         </p>
                     </div>
                     <hr />
@@ -121,25 +128,25 @@ const Test = (props) => {
                     <div>
                         {
                             isLoading || !quiz
-                            ? <Loader />
-                            :
-                            isQuizFinished
-                            ? 
-                        
-                                <FinishedQuiz
-                                    results={results}
-                                    quiz={quiz}
-                                    onRetry={retryQuiz}
-                                />
+                                ? <Loader />
+                                :
+                                isQuizFinished
+                                    ?
 
-                            : <ActiveQuiz
-                                questionNumber={activeQuestionNumber + 1}
-                                question={currentQuizQuestion.question}
-                                answers={currentQuizQuestion}
-                                onAnswerClick={onAnswerClickHandler}
-                                answerState={answerState}
-                                quizLength={quiz.length}
-                            />
+                                    <FinishedQuiz
+                                        results={results}
+                                        quiz={quiz}
+                                        onRetry={retryQuiz}
+                                    />
+
+                                    : <ActiveQuiz
+                                        questionNumber={activeQuestionNumber + 1}
+                                        question={currentQuizQuestion.question}
+                                        answers={currentQuizQuestion}
+                                        onAnswerClick={onAnswerClickHandler}
+                                        answerState={answerState}
+                                        quizLength={quiz.length}
+                                    />
                         }
                     </div>
                 </div>

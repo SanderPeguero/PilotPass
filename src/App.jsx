@@ -18,33 +18,33 @@ const App = () => {
 
   const dispatch = useDispatch();
   const authToken = Boolean(useSelector(state => state.user.authToken));
-  
+
   useEffect(() => {
     dispatch(autoLogin())
   });
 
-  if(!authToken){
-      
-    return(
-        <Routes>
-          {/* <Route exact path={'/'} element={<Home/>}></Route> */}
-          <Route exact path='/' element={<Login/>} ></Route>
-          <Route exact path='/signup' element={<Signup/>} ></Route>
-          <Route path="*" element={<Navigate to="/" replace/>}/>
-        </Routes>
-    )
-    
-  }else{
+  if (!authToken) {
 
-   return(
+    return (
+      <Routes>
+        {/* <Route exact path={'/'} element={<Home/>}></Route> */}
+        <Route exact path='/' element={<Login />} ></Route>
+        <Route exact path='/signup' element={<Signup />} ></Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    )
+
+  } else {
+
+    return (
       <Layout>
         <Routes>
-          <Route exact path={'/logout'} element={<Logout/>}></Route>
+          <Route exact path={'/logout'} element={<Logout />}></Route>
           {/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
-          <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
-          <Route exact path={'/tests'} element={<QuizList/>}></Route>
-          <Route exact path={'/test'} element={<Test/>}></Route>
-          <Route path="*" element={<Navigate to="/tests" replace/>}/>
+          <Route exact path={'/quiz/:id'} element={<Quiz />}></Route>
+          <Route exact path={'/tests'} element={<QuizList />}></Route>
+          <Route exact path={'/test'} element={<Test />}></Route>
+          <Route path="*" element={<Navigate to="/tests" replace />} />
         </Routes>
       </Layout>
     )

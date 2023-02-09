@@ -82,7 +82,7 @@ const quizList = () => {
                                             <div style={{ width: "278px", textAlign: 'left', color: 'gray'}}>
                                                 
                                                 {response[quiz].preguntas ? `${response[quiz].preguntas.length} preguntas.` : null }
-                                                {console.log(response[quiz].preguntas.length)}
+                                                {/* {console.log(response[quiz].preguntas.length)} */}
                                                 <br/>
                                                 <br/>
                                             </div>
