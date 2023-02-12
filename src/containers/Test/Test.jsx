@@ -5,7 +5,7 @@ import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
 import Loader from "../../components/UI/Loader/Loader";
 // import { quizAnswerClick, retryQuiz } from "../../redux/courses/functions"; 
-import { fetchTest, testAnswerClick } from "../../redux/test/functions";
+import { fetchTest, testAnswerClick, retryQuiz } from "../../redux/test/functions";
 import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 import store from "../../redux/store";
@@ -26,9 +26,9 @@ const Test = (props) => {
     const isQuizFinished = useSelector(state => state.test.isTestFinished)
     const answerState = useSelector(state => state.test.answerState)
     const results = useSelector(state => state.test.results)
-    const quiz = useSelector(state => state.test.questions)
+    const quiz = useSelector(state => state.test.test)
     const [isLoading, setIsLoading] = useState(false)
-    console.log(currentQuizQuestion)  //
+    // console.log(currentQuizQuestion.question)
         //  const quiz = store.getState().test.questions;
     //useSelector(state => state.courses.isLoading);
     const dispatch = useDispatch();

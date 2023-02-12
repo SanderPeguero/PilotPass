@@ -32,6 +32,16 @@ export function fetchTest() {
   };
 }
 
+
+
+
+
+
+
+
+
+
+
 export function testAnswerClick(answerId) {
   console.log("Hasta aqui no hay fallos")
   return (dispatch, getState) => {
@@ -48,7 +58,7 @@ export function testAnswerClick(answerId) {
     let activeQuestionNumber = state.activeQuestionNumber;
     let currentQuiz = state.test[activeQuestionNumber];
     let isRightAnswerChosen = currentQuiz.correctAnswer === answerId;
-    let isFinalQuestion = activeQuestionNumber + 1 === state.quiz.length;
+    let isFinalQuestion = activeQuestionNumber + 1 === state.test.length;
 
     // set answer state and first chosen result
     let answerState = isRightAnswerChosen ? "success" : "error";
@@ -72,13 +82,21 @@ export function testAnswerClick(answerId) {
 
     // control colors changing and final state
     if (isRightAnswerChosen) {
+
       const timeout = window.setTimeout(() => {
-        if (isFinalQuestion) dispatch(finishquiz());
-        else {
+
+        if (isFinalQuestion){ 
+          console.log("Al finalizar...")
+            dispatch(finishquiz())
+        }else{
+
           let nextQuestionNumber = activeQuestionNumber + 1;
           dispatch(
-            quiznextQuestion(nextQuestionNumber, state.quiz[nextQuestionNumber])
+            quiznextQuestion(nextQuestionNumber, state.test[nextQuestionNumber])
           );
+
+          
+
         }
 
         window.clearTimeout(timeout);
@@ -86,6 +104,24 @@ export function testAnswerClick(answerId) {
     }
   };
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export function fetchtestSucceed(test) {
   return (dispatch) => {
@@ -114,7 +150,7 @@ export function quiznextQuestion(nextQuestionNumber, nextQuizQuestion) {
     dispatch(
       testNextQuestion({
         activeQuestionNumber: nextQuestionNumber,
-        currentQuizQuestion: nextQuizQuestion,
+        currentTestQuestion: nextQuizQuestion,
       })
     );
   };
