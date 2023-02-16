@@ -1,9 +1,9 @@
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import authTokenReducer from './user/authTokenSlice'
 import errorReducer from './error/errorSlice'
 import creatorReducer from './creator/slice'
 import coursesReducer from './courses/slice'
-import testReducer from './test/slice'
+import loadingReducer from './loading/slice'
 
 export default configureStore({
     
@@ -12,7 +12,7 @@ export default configureStore({
       creator: creatorReducer,
       courses: coursesReducer,
       error: errorReducer,
-      test: testReducer
+      loading: loadingReducer
   },
 
   devTools: true

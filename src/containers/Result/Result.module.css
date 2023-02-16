@@ -1,0 +1,44 @@
+/* Large screens */
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .Quiz {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        width: 70%;
+    }
+}
+
+.Quiz h1 {
+    margin-left: 10px;
+    color: white;
+}
+
+.QuizWrapper {
+    width: 85%;
+    height:  auto;
+    background-color: #4d576100;
+    position: relative;
+    bottom: 10%;
+    left: 2%;
+    margin: 0 10%;
+}
+
+.AvatarSty {
+    background-color: grey;
+    border-radius: 10rem;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .Quiz {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        width: 100%;
+    }
+}
+
