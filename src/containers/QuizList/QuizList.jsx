@@ -57,6 +57,7 @@ const quizList = () => {
 
                                             <div style={{ width: "278px", textAlign: 'left', color: 'gray'}}>
                                                 {response[quiz].preguntas ? `${response[quiz].preguntas.length} preguntas.` : null }
+                                              
                                                 <br/>
                                                 <br/>
                                             </div>

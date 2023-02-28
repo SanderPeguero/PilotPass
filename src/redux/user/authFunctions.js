@@ -1,42 +1,46 @@
 import axios from "../../axios/axios-quiz"
-import { authSucceed, autoLogout, deleteName, updateName } from '../../redux/user/authTokenSlice.js'
+import { authSucceed, autoLogout, deleteName, updateName, AccountsAllowed } from '../../redux/user/authTokenSlice.js'
 import { createError } from "../error/errorSlice"
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { getDatabase, ref, set } from "firebase/database";
 
-export function auth(email, password, isLogIn){
+
+export function auth(email, password, isLogIn) {
     return async dispatch => {
-        
-        try{
+
+        try {
 
             const auth = getAuth();
             signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                const user = userCredential.user;
-                const time = user["stsTokenManager"]
-                const expirationDate = new Date(time["expirationTime"])
-                
-                //Token
-                user.getIdToken().then((value) => { 
-                    localStorage.setItem("token", value)
-                    dispatch(authSucceed(value))
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    const time = user["stsTokenManager"]
+                    const expirationDate = new Date(time["expirationTime"])
+                    console.log(userCredential)
+                    //Token
+                    user.getIdToken().then((value) => {
+                        localStorage.setItem("token", value)
+                        dispatch(authSucceed(value))
+                    })
+
+                    //Time
+                    const expiration = (expirationDate.getTime() - Date.now()) / 1000
+                    localStorage.setItem("expirationDate", expiration)
+                    dispatch(autologout(expiration))
+
+
+                    //Name
+                    localStorage.setItem("displayName", user.displayName)
+                    dispatch(updateName(user.displayName))
+
+                 
+
                 })
+                .catch((error) => {
+                    const errorMessage = error.message;
+                    dispatch(createError(errorMessage))
+                });
 
-                //Time
-                const expiration =(expirationDate.getTime() - Date.now()) / 1000
-                localStorage.setItem("expirationDate", expiration)
-                dispatch(autologout(expiration))
-    
-
-                //Name
-                localStorage.setItem("displayName", user.displayName)
-                dispatch(updateName(user.displayName))
-
-            })
-            .catch((error) => {
-                const errorMessage = error.message;
-                dispatch(createError(errorMessage))
-            });
-            
             const authData = {
                 email,
                 password,
@@ -49,6 +53,7 @@ export function auth(email, password, isLogIn){
 
             // const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData)
             // const data = response.data
+
             // const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
             // console.log(expirationDate)
 
@@ -62,70 +67,150 @@ export function auth(email, password, isLogIn){
             // dispatch(autologout(data.expiresIn))
             // dispatch(updateName(data.displayName))
 
-        }catch(error){
+        } catch (error) {
             dispatch(createError(error.response.data.error.message))
         }
 
     }
 }
 
-export function signup( name, lastName, email, password, bio, formation, admin, account, isLogIn) {
+export function signup(name, lastName, email, password, bio, formation, admin, account, isLogIn) {
     return async dispatch => {
-        try{
+        try {
             
-            const authData = {
-                name,
-                lastName,
-                email,
-                password,
-                bio,
-                formation,
-                admin,
-                account
-            }
+            // const authData2 = {
+                //     displayName: name + " " + lastName,
+                //     email,
+                //     password,
+                //     returnSecureToken: true,
+                // }
+                
+            const auth1 = getAuth()
 
-            const authData2 = {
-                displayName: name + " " + lastName,
+            const inforuser = await createUserWithEmailAndPassword(
+                auth1,
                 email,
-                password,
-                returnSecureToken: true
-            }
+                password
+            ).then((user) => {
 
-            const FIREBASE_API_KEY = import.meta.env.VITE_APP_FIREBASE_API_KEY
+                const expirationDate = new Date(new Date().getTime() + user._tokenResponse.expiresIn * 1000)
+                localStorage.setItem("token", user._tokenResponse.idToken)
+                localStorage.setItem("expirationDate", expirationDate)
+                localStorage.setItem("displayName", name + " " + lastName)
+                // localStorage.setItem("phoneNumber", user.user.phoneNumber)
+
+                updateProfile(
+                    auth1.currentUser,
+                    { displayName: name + " " + lastName }
+                )
+                
+                const dataid = user.user.uid
+                const db = getDatabase()
+                
+                set(ref(db, 'users/' + dataid), {
+                    name: name,
+                    lastName: lastName,
+                    email: email,
+                    password: password,
+                    bio: bio,
+                    formation: formation,
+                    admin: admin,
+                    account: account
+                })
+
+                dispatch(autologout(user._tokenResponse.expiresIn))
+                dispatch(autoLogin())
+            })
+
+            // console.log(inforuser)
+            // const auth2 = getAuth()
             
-            const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
-            const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
 
-            const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData2)            
-            const response2 = await axios.post('users.json', authData)
+            // const FIREBASE_API_KEY = import.meta.env.VITE_APP_FIREBASE_API_KEY
+            // const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
+            //const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
+            //const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData2)     
+            // const response = await axios.post(loginUrl, authData2)
+            // const data = response.data
 
-            const data = response.data
-            const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
+            // Jose Alberto
+            // dispatch(autologout(data.expiresIn))
+            // inforuser.user.getIdToken().then((value) => {
+            //     localStorage.setItem("token", value)
+            //     dispatch(authSucceed(value))
+            // })
+            // dispatch(updateName(authData2.displayName))
 
-            localStorage.setItem("token", data.idToken)
-            localStorage.setItem("expirationDate", expirationDate)
-            localStorage.setItem("displayName", data.displayName)
+            // dispatch(authSucceed(data.idToken))
+            // dispatch(autologout(inforuser.user.))
 
-            dispatch(authSucceed(data.idToken))
-            dispatch(autologout(data.expiresIn))
-            dispatch(updateName(data.displayName))
-            dispatch(autoLogin())
+            // const authData = {
+            //     data: {
 
-        }catch(error){
-            dispatch(createError(error.response.data.error.message))
+            //     }
+            // }
+
+
+
+            // const response2 = await axios.post(`users.json/${inforuser.user.uid}`, authData)
+
+
+
+            // dispatch(authSucceed(data.idToken))
+            // dispatch(autologout(data.expiresIn))
+            // dispatch(updateName(data.displayName))
+            // dispatch(AccountsAllowed(account))
+            // dispatch(autoLogin())
+
+
+
+            // const FIREBASE_API_KEY = import.meta.env.VITE_APP_FIREBASE_API_KEY
+
+            // const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`
+            // const signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`
+
+            // const response = await axios.post(isLogIn ? loginUrl : signUpUrl, authData2)            
+            // const response2 = await axios.post('users.json', authData)
+
+            // const data = response.data
+            // const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
+
+            // const auth1 = getAuth()
+
+
+
+            //     console.log("id sig: " + inforuser.user.uid)
+            // localStorage.setItem("token", data.idToken)
+            // localStorage.setItem("expirationDate", expirationDate)
+            // localStorage.setItem("displayName", data.displayName)
+            // localStorage.setItem("phoneNumber", data.phoneNumber)
+
+            // console.log("Este es el nombre: " + data.displayName)
+            // console.log("Este es el numero: " + account)
+
+
+            // dispatch(authSucceed(data.idToken))
+            // dispatch(autologout(data.expiresIn))
+            // dispatch(updateName(data.displayName))
+            // dispatch(AccountsAllowed(account))
+            // dispatch(autoLogin())
+
+        } catch (error) {
+            dispatch(createError(error))
         }
     }
 }
 
-export function autoLogin(){
+export function autoLogin() {
     return async dispatch => {
         const token = localStorage.getItem("token")
         const expirationDate = new Date(localStorage.getItem("expirationDate"))
         const displayName = localStorage.getItem('displayName')
 
-        if(!token || expirationDate <= new Date()){
+
+        if (!token || expirationDate <= new Date()) {
             dispatch(logout())
-        }else{
+        } else {
             dispatch(authSucceed(token))
             dispatch(autologout((expirationDate.getTime() - new Date().getTime()) / 1000))
             dispatch(updateName(displayName))
@@ -134,20 +219,22 @@ export function autoLogin(){
 
 }
 
-export function autologout(timeInSeconds){
+export function autologout(timeInSeconds) {
     return dispatch => {
+        console.log(timeInSeconds)
         setTimeout(() => {
             dispatch(logout())
         }, timeInSeconds * 1000)
     }
 }
 
-export function logout(){
-    
+export function logout() {
+
     localStorage.removeItem("token")
     localStorage.removeItem("expirationDate")
     localStorage.removeItem("displayName")
-    
+
+
     return dispatch => {
         dispatch(autoLogout())
         dispatch(deleteName())
