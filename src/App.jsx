@@ -11,6 +11,7 @@ import Layout from './hoc/Layout/Layout.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Logout from './components/Logout/Logout.jsx'
 import QuizList from './containers/QuizList/QuizList.jsx'
+import { fetchQuizList } from "./redux/courses/functions"
 import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
 import TestResult from './containers/TestResult/TestResult.jsx'
 import Result from './containers/Result/Result.jsx'
@@ -21,6 +22,7 @@ const App = () => {
 
   const dispatch = useDispatch()
   const authToken = Boolean(useSelector(state => state.user.authToken))
+  const response = useSelector(state => state.courses.response)
   
   useEffect(() => {
     dispatch(fetchStart())
@@ -29,10 +31,15 @@ const App = () => {
   }, [])
 
   useEffect(() => {
+    console.log("UseEffect AuthToken: " + authToken)
     if(authToken) {
-      dispatch(fetchStart())
-      dispatch(autoLogin())
-      dispatch(fetchStop())
+      console.log("UseEffect AuthToken is True: " + authToken)
+      if(response){
+        console.log("UseEffect AuthToken is true but response is false: " + response)
+        dispatch(fetchStart())
+        dispatch(fetchQuizList())
+        dispatch(fetchStop())
+      }
     }
   }, [authToken])
 

@@ -212,7 +212,7 @@ export function autoLogin() {
             dispatch(logout())
         } else {
             dispatch(authSucceed(token))
-            // dispatch(autologout((expirationDate.getTime() - new Date().getTime()) / 1000))
+            dispatch(autologout((expirationDate.getTime() - new Date().getTime()) / 1000))
             dispatch(updateName(displayName))
         }
     }
