@@ -1,18 +1,5 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import classNamees from "./Result.module.css"
-import { Box } from "@mui/material";
-import TableResult from "../../components/Table/TableResult";
-import { serverTimestamp } from "firebase/database";
-// import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-// import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
-
-// import { DateTimePicker } from "@mui/x-date-pickers";
-// import { LocalizationProvider } from "@mui/x-date-pickers";
-import { TextField } from "@mui/material";
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import { useState } from "react";
 
 export function withRouter(Children) {
     return (props) => {
