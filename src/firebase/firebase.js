@@ -32,4 +32,4 @@ const db = getDatabase();
 
 
 
-export { auth, db };
+export  { auth, db };

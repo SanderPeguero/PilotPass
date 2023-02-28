@@ -11,6 +11,10 @@ import Layout from './hoc/Layout/Layout.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Logout from './components/Logout/Logout.jsx'
 import QuizList from './containers/QuizList/QuizList.jsx'
+import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
+import TestResult from './containers/TestResult/TestResult.jsx'
+import Result from './containers/Result/Result.jsx'
+import AnswerResult from './components/AnswerResult/AnswerResult.jsx'
 import { fetchStart, fetchStop } from './redux/loading/slice'
 
 const App = () => {
@@ -36,10 +40,8 @@ const App = () => {
   if(!authToken){
     return(
         <Routes>
-          {/* <Route exact path={'/'} element={<Home/>}></Route> */}
           <Route exact path='/' element={<Login/>} ></Route>
           <Route exact path='/signup' element={<Signup/>} ></Route>
-          {/* <Route path="*" element={<Navigate to="/" replace/>}/> */}
         </Routes>
     )
     
@@ -48,11 +50,11 @@ const App = () => {
       <Layout>
         <Routes>
           <Route exact path={'/logout'} element={<Logout/>}></Route>
-          {/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
+          <Route exact path={'/result/:id'} element={<Result/>}></Route>
+          <Route exact path={'/testresult'} element={<TestResult/>}></Route>
           <Route exact path={'/'} element={<QuizList/>}></Route>
-          {/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
           <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
-          {/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
+          
         </Routes>
       </Layout>
     )
@@ -62,3 +64,13 @@ const App = () => {
 }
 
 export default App
+
+
+{/* <Route exact path={'/'} element={<Home/>}></Route> */}
+{/* <Route path="*" element={<Navigate to="/" replace/>}/> */}
+{/* <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route> */}
+{/* <Route exact path={'/quiz/:id'} element={<Quiz/>}></Route>
+<Route exact path={'/tests'} element={<QuizList/>}></Route> */}
+{/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
+{/* <Route exact path={'/tests'} element={<QuizList/>}></Route> */}
+{/* <Route path="*" element={<Navigate to="/tests" replace/>}/> */}
