@@ -18,7 +18,18 @@ const quizList = () => {
     const error = useSelector(state => state.error.error);
     const response = useSelector(state => state.courses.response)
     
+    // useEffect(() => {
+    //     if(!response){
+    //         console.log("UseEffect is Mount in QuizList: " + response)
+    //         dispatch(fetchStart())
+    //         dispatch(fetchQuizList())
+    //     }else{
+    //         dispatch(fetchStop())
+    //     }
+    // }, []);
+
     useEffect(() => {
+        console.log("UseEffect response in QuizList: " + response)
         if(!response){
             dispatch(fetchStart())
             dispatch(fetchQuizList())

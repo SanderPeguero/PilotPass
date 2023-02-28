@@ -125,6 +125,7 @@ const Quiz = (props) => {
                                 : <ActiveQuiz
                                     questionNumber={activeQuestionNumber + 1}
                                     question={currentQuizQuestion.question}
+                                    image={currentQuizQuestion.imagen}
                                     answers={currentQuizQuestion}
                                     onAnswerClick={onAnswerClickHandler}
                                     answerState={answerState}
