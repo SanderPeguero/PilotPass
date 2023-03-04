@@ -22,7 +22,7 @@ const quizList = () => {
                 {   
                     Object.keys(response).map(quiz => {
                         return (
-                            <NavLink key={quiz} to={"/quiz/" + quiz} style={{width:'100%', height:'100%', textDecoration: 'none'}}>
+                            <NavLink key={quiz} to={"/quiz/" + quiz} style={{width:'100%', height:'100%', textDecoration: 'none', textAlign: '-webkit-center'}}>
                                 <div >
                                     <div className={styles.card}>
                                         <img className={styles.cardImage} src={response[quiz].imagen} alt={response[quiz].subject}/>
