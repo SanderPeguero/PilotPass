@@ -16,7 +16,7 @@ export function auth(email, password, isLogIn) {
                     const user = userCredential.user;
                     const time = user["stsTokenManager"]
                     const expirationDate = new Date(time["expirationTime"])
-                    console.log(userCredential)
+                    // console.log(userCredential)
                     //Token
                     user.getIdToken().then((value) => {
                         localStorage.setItem("token", value)
@@ -203,12 +203,15 @@ export function signup(name, lastName, email, password, bio, formation, admin, a
 
 export function autoLogin() {
     return async dispatch => {
+        
         const token = localStorage.getItem("token")
-        const expirationDate = new Date(localStorage.getItem("expirationDate"))
         const displayName = localStorage.getItem('displayName')
 
+        const actual = new Date()
+        const expiration = new Date().getTime() + (localStorage.getItem("expirationDate") * 1000)
+        const expirationDate = new Date(expiration)
 
-        if (!token || expirationDate <= new Date()) {
+        if (!token || expirationDate <= actual) {
             dispatch(logout())
         } else {
             dispatch(authSucceed(token))
@@ -221,7 +224,7 @@ export function autoLogin() {
 
 export function autologout(timeInSeconds) {
     return dispatch => {
-        console.log(timeInSeconds)
+        // console.log(timeInSeconds)
         setTimeout(() => {
             dispatch(logout())
         }, timeInSeconds * 1000)

@@ -54,9 +54,12 @@ const login = () => {
 
     useEffect(() => {
 
-        sleep(5000).then( r => {
-            dispatch(deleteError())
-        })
+        if(error){
+
+            sleep(5000).then( r => {
+                dispatch(deleteError())
+            })
+        }
 
     }, [error])
 
