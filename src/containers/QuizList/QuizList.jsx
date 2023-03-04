@@ -1,42 +1,20 @@
+import React  from "react"
 import store from "../../redux/store"
 import styles from './Card.module.css'
 import {NavLink} from "react-router-dom"
-import React , { useEffect } from "react"
+import { useSelector } from "react-redux"
 import classes from "./QuizList.module.css"
 import Loader from "../../components/Loader/Loader"
 import Alert from '../../components/Alert/Snackbar'
-import { useDispatch, useSelector } from "react-redux"
 import Navbar from "../../components/Navigation/navbar"
-import { fetchQuizList } from "../../redux/courses/functions"
-import { fetchStart, fetchStop } from "../../redux/loading/slice"
 
 
 const quizList = () => {
 
-    const dispatch = useDispatch();
     const loader = store.getState().loading.loading
     const error = useSelector(state => state.error.error);
     const response = useSelector(state => state.courses.response)
     
-    // useEffect(() => {
-    //     if(!response){
-    //         console.log("UseEffect is Mount in QuizList: " + response)
-    //         dispatch(fetchStart())
-    //         dispatch(fetchQuizList())
-    //     }else{
-    //         dispatch(fetchStop())
-    //     }
-    // }, []);
-
-    useEffect(() => {
-        console.log("UseEffect response in QuizList: " + response)
-        if(!response){
-            dispatch(fetchStart())
-            dispatch(fetchQuizList())
-        }else{
-            dispatch(fetchStop())
-        }
-    }, [response]);
     
     const renderQuizList = () => {
         return (
