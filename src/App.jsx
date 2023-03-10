@@ -18,6 +18,8 @@ import Result from './containers/Result/Result.jsx'
 // import AnswerResult from './components/AnswerResult/AnswerResult.jsx'
 // import { fetchStart, fetchStop } from './redux/loading/slice'
 import { autoLoginRx, fetchQuizListRx } from './hoc/Auxiliary/Fetch.js'
+import Worldchat from './containers/worldchat/App'
+import Devchat from './containers/devchat/App'
 // import { fetchStart } from './redux/loading/slice.js'
 
 const App = () => {
@@ -52,6 +54,8 @@ const App = () => {
           <Route exact path={'/logout'} element={<Logout/>}></Route>
           <Route exact path={'/result/:id'} element={<Result/>}></Route>
           <Route exact path={'/testresult'} element={<TestResult/>}></Route>
+          <Route exact path={'/worldchat'} element={<Worldchat/>}></Route>
+          <Route exact path={'/devchat'} element={<Devchat/>}></Route>
           <Route exact path={'/'} element={<QuizList/>}></Route>
           <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
           

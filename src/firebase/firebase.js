@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getDatabase, ref } from "firebase/database";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -21,15 +23,12 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const auth = (app);
+const auth = getAuth(app);
 
 //Mantenerse pendiente a los cambios de los datos en la base de datos y actualizar los de la aplicacion
-const db = getDatabase();
+const db = getDatabase()
 
-//Leer los datos una sola vez
-// const dbRef = ref(getDatabase());
-
+const firedb = getFirestore(app)
 
 
-
-export  { auth, db };
+export  { auth, db, firedb };

@@ -7,11 +7,16 @@
   --transition-speed: 600ms;
   --transition-speed2: 1000ms;
   background: #141e30;
+  background-color: #141e30!important;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.containerWrap {
+  @apply container mx-auto max-w-4xl
+}
 
 body {
   margin: 0;
@@ -200,7 +205,7 @@ body {
 }
 
 
-.navbar{
+.Navbar{
   position: fixed;
   background-color: #23232e;
   transition: width 600ms ease;
@@ -299,13 +304,13 @@ body {
   transition: var(--transition-speed);
 }
 
-.navbar:hover .logo img {
+.Navbar:hover .logo img {
   transform: rotate(-360deg);
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-  .navbar {
+  .Navbar {
       bottom: 0;
       width: 105vw;
       height: 5rem;
@@ -342,26 +347,26 @@ body {
 
 /* Large screens */
 @media only screen and (min-width: 600px) {
-  .navbar {
+  .Navbar {
       top: 0;
       width: 5rem;
       height: 100vh;
   }
 
-  .navbar:hover {
+  .Navbar:hover {
       width: 16rem;
   }
 
-  .navbar:hover .link-text {
+  .Navbar:hover .link-text {
       display: inline;
   }
 
-  .navbar:hover .logo img
+  .Navbar:hover .logo img
   {
       margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
+  .Navbar:hover .logo-text
   {
       left: 0px;
   }
