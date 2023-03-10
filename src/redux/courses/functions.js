@@ -10,6 +10,8 @@ import {
   quizSetState, setResult, setResponse
 } from "./slice"
 
+import { fetchStop } from "../loading/slice"
+
 export function fetchQuizList() {
     return dispatch => {
         try {
@@ -21,9 +23,10 @@ export function fetchQuizList() {
             onValue(starCountRef, (snapshot) => {
                 const data = snapshot.val()
                 dispatch(fetchResponse(data))
-
+                
             })
-
+            
+            // dispatch(fetchStop())
         } catch (error) {
             dispatch(createError(error))
             dispatch(fetchfailed(error))

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { autoLogin } from './redux/user/authFunctions.js'
+// import { autoLogin } from './redux/user/authFunctions.js'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -11,28 +11,30 @@ import Layout from './hoc/Layout/Layout.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Logout from './components/Logout/Logout.jsx'
 import QuizList from './containers/QuizList/QuizList.jsx'
-import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
+// import { fetchQuizList } from "./redux/courses/functions"
+// import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
 import TestResult from './containers/TestResult/TestResult.jsx'
 import Result from './containers/Result/Result.jsx'
-import AnswerResult from './components/AnswerResult/AnswerResult.jsx'
-import { fetchStart, fetchStop } from './redux/loading/slice'
+// import AnswerResult from './components/AnswerResult/AnswerResult.jsx'
+// import { fetchStart, fetchStop } from './redux/loading/slice'
+import { autoLoginRx, fetchQuizListRx } from './hoc/Auxiliary/Fetch.js'
+import Worldchat from './containers/worldchat/App'
+import Devchat from './containers/devchat/App'
+// import { fetchStart } from './redux/loading/slice.js'
 
 const App = () => {
 
   const dispatch = useDispatch()
   const authToken = Boolean(useSelector(state => state.user.authToken))
+  const response = Boolean(useSelector(state => state.courses.response))
   
   useEffect(() => {
-    dispatch(fetchStart())
-    dispatch(autoLogin())
-    dispatch(fetchStop())
+    dispatch(autoLoginRx())
   }, [])
 
   useEffect(() => {
-    if(authToken) {
-      dispatch(fetchStart())
-      dispatch(autoLogin())
-      dispatch(fetchStop())
+    if(authToken && !response) {
+      dispatch(fetchQuizListRx())
     }
   }, [authToken])
 
@@ -52,6 +54,8 @@ const App = () => {
           <Route exact path={'/logout'} element={<Logout/>}></Route>
           <Route exact path={'/result/:id'} element={<Result/>}></Route>
           <Route exact path={'/testresult'} element={<TestResult/>}></Route>
+          <Route exact path={'/worldchat'} element={<Worldchat/>}></Route>
+          <Route exact path={'/devchat'} element={<Devchat/>}></Route>
           <Route exact path={'/'} element={<QuizList/>}></Route>
           <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
           
