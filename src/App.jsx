@@ -58,6 +58,7 @@ const App = () => {
           <Route exact path={'/devchat'} element={<Devchat/>}></Route>
           <Route exact path={'/'} element={<QuizList/>}></Route>
           <Route path={'/quiz/:id'} element={<Quiz/>}></Route>
+          <Route exact path={'/quiz-creator'} element={<QuizCreator/>} ></Route>
           
         </Routes>
       </Layout>
