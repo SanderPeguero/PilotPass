@@ -73,7 +73,6 @@ const App = () => {
           <Route exact path={'/devchat'} element={<Devchat/>}></Route>
           <Route exact path={'/'} element={<QuizList/>}></Route>
           <Route path={'/quiz/:course/:id'} element={<Quiz/>}></Route>
-          
         </Routes>
       </Layout>
     )
