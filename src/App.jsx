@@ -12,7 +12,7 @@ import Signup from './components/Signup/Signup.jsx'
 import Logout from './components/Logout/Logout.jsx'
 import QuizList from './containers/QuizList/QuizList.jsx'
 // import { fetchQuizList } from "./redux/courses/functions"
-// import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
+import QuizCreator from './containers/QuizCreator/QuizCreator.jsx'
 import TestResult from './containers/TestResult/TestResult.jsx'
 import Result from './containers/Result/Result.jsx'
 // import AnswerResult from './components/AnswerResult/AnswerResult.jsx'
