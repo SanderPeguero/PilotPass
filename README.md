@@ -1,6 +1,6 @@
 # PilotPass
 
-The aeronautic community on Dominican Republic needs a platform in which their pilots, students and afficionates can study what they love and prepare for their written test with the IDAC(Instituto Dominicano de Aviacion Civil) which is the equivalent to the FAA but in DR.
+The aeronautic community on Dominican Republic needs a platform in which their pilots, students and afficionates can study what they love and prepare for their written test for IDAC which is the equivalent to the FAA on the Dominican Republic.
 
 Link: https://pilotpass.netlify.app/
 
