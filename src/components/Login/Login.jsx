@@ -56,7 +56,7 @@ const login = () => {
 
         if(error){
 
-            sleep(5000).then( r => {
+            sleep(10000).then( r => {
                 dispatch(deleteError())
             })
         }

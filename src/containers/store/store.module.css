@@ -1,0 +1,12 @@
+.grid {
+    width: auto;
+    color: #888;
+    display: grid;
+    flex-direction: row;
+    margin: 0;
+    gap: 1rem;
+    overflow: hidden;
+    margin-bottom: 100px;
+  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}

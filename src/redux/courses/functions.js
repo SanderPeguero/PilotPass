@@ -34,11 +34,31 @@ export function fetchQuizList() {
     }
 }
 
-export function fetchQuizById(quizId) {
+// export function fetchQuizById(quizId) {
+//     return (dispatch) => {
+//         try {
+
+//             console.log(quizId)
+//             const quiz = store.getState().courses.response[quizId]
+//             dispatch(fetchquizSucceed(quiz.preguntas))
+
+//         } catch (error) {
+//             dispatch(createError(error))
+//             dispatch(fetchfailed(error))
+
+//         }
+//     }
+// }
+
+export function fetchQuizById(course, quizId) {
     return (dispatch) => {
         try {
 
-            const quiz = store.getState().courses.response[quizId]
+            // console.log(course)
+            
+            const coursePull = store.getState().courses.response[course]
+            const quiz = coursePull[quizId]
+            console.log(quiz)
             dispatch(fetchquizSucceed(quiz.preguntas))
 
         } catch (error) {

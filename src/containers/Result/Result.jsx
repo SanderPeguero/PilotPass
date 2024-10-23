@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react"
+import { useParams } from "react-router-dom"
 
 export function withRouter(Children) {
     return (props) => {

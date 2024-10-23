@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import classes from "./FinishedQuiz.module.css"
 import Button from "../UI/Button/Button";
-import { retryQuiz } from "../../redux/courses/functions";
+// import { retryQuiz } from "../../redux/courses/functions";
 
 const FinishedQuiz = props => {
     
@@ -11,12 +11,12 @@ const FinishedQuiz = props => {
     const navigate  = useNavigate()
 
     const onQuizList = () => {
-        dispatch(retryQuiz())
+        dispatch(props.onRetry())
         navigate('/')
     }
 
     const onRetry = () => {
-        dispatch(retryQuiz())
+        dispatch(props.onRetry())
     }
 
     const rightAnswersCount = Object.keys(props.results).reduce((total, key) => {
@@ -29,7 +29,7 @@ const FinishedQuiz = props => {
         <React.Fragment>
             <h1 style={{ margin: '0', marginTop: '25px' }}>Finished</h1>
             <div className={classes.FinishedQuiz}>
-                <h3>Right Answered: {rightAnswersCount}/{props.quiz.length}</h3>
+                <h3>Right Answered: {(rightAnswersCount/props.quiz.length) * 100}%</h3>
                
                     <ul>
 
