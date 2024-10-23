@@ -1,8 +1,8 @@
 import axios from "../../axios/axios-quiz"
-import { authSucceed, autoLogout, deleteName, updateName, AccountsAllowed } from '../../redux/user/authTokenSlice.js'
 import { createError } from "../error/errorSlice"
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set } from "firebase/database"
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
+import { authSucceed, autoLogout, deleteName, updateName, AccountsAllowed } from '../../redux/user/authTokenSlice.js'
 
 
 export function auth(email, password, isLogIn) {
@@ -223,10 +223,15 @@ export function autoLogin() {
 }
 
 export function autologout(timeInSeconds) {
+    
+    // const navigate = useNavigate();
+
     return dispatch => {
         // console.log(timeInSeconds)
         setTimeout(() => {
             dispatch(logout())
+            window.location.replace('/')
+            dispatch(createError("The current sesion expired"))
         }, timeInSeconds * 1000)
     }
 }

@@ -1,12 +1,18 @@
-import { fetchStartTest, createTest, deleteTest, createQuestions, fetchTestSucceed, testFinished, testNextQuestion, testSetState, setResult, testRetry} from "./slice";
+import { fetchStartTest, createTest, deleteTest, createQuestions, fetchTestSucceed, testFinished, testNextQuestion, testSetState, setResult, testRetry, createResponse} from "./slice";
 import { createError } from "../error/errorSlice";
 // import store from 'redux/toolkit'
 import store from "../store"
-export function getChoiceQuestions(num) {
+import { getAuth } from "firebase/auth"
+// import { db } from '../../firebase/firebase'
+// import { ref, onValue } from 'firebase/database'
+import { getDatabase, ref, onValue} from "firebase/database"
+
+export function getChoiceQuestions(num, params) {
   return ( dispatch, getState ) => {
 
     //Gets all questions from the 415 questions test
-    let questions = getState().courses.response["-NJQ3XIELBr0xMsLKTHi"].preguntas;
+    let questions = getState().test.response[params].preguntas;
+
     
     let selectedQuestions = [];
     
@@ -19,27 +25,67 @@ export function getChoiceQuestions(num) {
   }
 }
 
-export function fetchTest() {
+export function fetchExamById(examId){
+  return (dispatch) => {
+    try{
+
+      const exam = store.getState().test.response[examId]
+      dispatch(fetchExamSucceed(exam.preguntas))
+
+    } catch (error){
+      
+      dispatch(createError(error))
+      dispatch(fetchFailed(error))
+      
+    }
+  }
+}
+
+
+export function fetchExams() {
+  return dispatch => {
+      try {
+
+          const db = getDatabase()
+          
+          const auth = getAuth()
+          const starCountRef = ref(db, 'exams/')
+          
+          onValue(starCountRef, (snapshot) => {
+              const data = snapshot.val()
+              dispatch(createResponse(data))
+              
+          })
+          
+          // dispatch(fetchStop())
+      } catch (error) {
+          dispatch(createError(error))
+          dispatch(fetchfailed(error))
+      }
+  }
+}
+
+export function fetchRandomExam(params) {
   return (dispatch) => {
     try {
-
-      let quiz = dispatch(getChoiceQuestions(90)) //store.getState().courses.response[quizId];
-
-      dispatch(fetchtestSucceed(quiz));
+      // console.log("Entro el useEffect de la Lista")
+      let quiz = dispatch(getChoiceQuestions(90, params)) //store.getState().courses.response[quizId];
+      dispatch(fetchExamSucceed(quiz));
     } catch (error) {
       // dispatch(createError(error));
     }
   };
 }
 
-
-
-
-
-
-
-
-
+export function fetchExamSucceed(exam){
+  console.log(exam)
+  return dispatch => {
+    dispatch(fetchTestSucceed({
+      exam: exam,
+      currentExamQuestion: exam[0]
+    }))
+  }
+}
 
 
 export function testAnswerClick(answerId) {
@@ -105,34 +151,16 @@ export function testAnswerClick(answerId) {
   };
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export function fetchtestSucceed(test) {
-  return (dispatch) => {
-    dispatch(
-      fetchTestSucceed({
-        test: test,
-        currentTestQuestion: test[0],
-      })
-    );
-  };
-}
+// export function fetchtestSucceed(test) {
+//   return (dispatch) => {
+//     dispatch(
+//       fetchTestSucceed({
+//         test: test,
+//         currentTestQuestion: test[0],
+//       })
+//     );
+//   };
+// }
 
 export function quizsetState(answerState, results) {
   return (dispatch) => {
@@ -162,19 +190,19 @@ export function finishquiz() {
   };
 }
 
-export function resetquizState(firstQuizQuestion) {
+export function retryExam() {
+  return (dispatch) => {
+    const state = store.getState().test;
+    dispatch(resetExamState(state.test[0]));
+  };
+}
+
+export function resetExamState(firstQuizQuestion) {
   return (dispatch) => {
     dispatch(
       testRetry({
         currentTestQuestion: firstQuizQuestion,
       })
     );
-  };
-}
-
-export function retryQuiz() {
-  return (dispatch) => {
-    const state = store.getState().test;
-    dispatch(resetquizState(state.test[0]));
   };
 }

@@ -4,6 +4,7 @@ export const testSlice = createSlice({
   name: "test",
 
   initialState: {
+    response: null,
     test: null,
     questions: [],
     isLoading: null,
@@ -16,8 +17,15 @@ export const testSlice = createSlice({
 
   reducers: {
     
+    createResponse: (state, action) => {
+      state.response = action.payload
+    },
     fetchStartTest: state => {
       state.isLoading = true
+    },
+    fetchFailed: (state, action) => {
+      state.isLoading = false,
+      state.error = action.payload.error
     },
     createTest: (state, action) => {
       state.test = action.payload;
@@ -33,8 +41,8 @@ export const testSlice = createSlice({
 
     fetchTestSucceed: (state, action) => {
       state.isLoading = false,
-      state.test = action.payload.test,
-      state.currentTestQuestion = action.payload.currentTestQuestion
+      state.test = action.payload.exam,
+      state.currentTestQuestion = action.payload.currentExamQuestion
     },
     testFinished: (state) => {
       state.isTestFinished = true
@@ -58,7 +66,7 @@ export const testSlice = createSlice({
     testRetry: (state,action) => {
       state.currentTestQuestion = action.payload.currentTestQuestion,
       state.activeQuestionNumber = 0,
-      state.isQuizFinished = false,
+      state.isTestFinished = false,
       state.answerState = null,
       state.results = {}
 
@@ -68,6 +76,6 @@ export const testSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const {fetchStartTest, createTest, deleteTest, createQuestions, fetchTestSucceed, testFinished, testNextQuestion, testSetState, setResult, testRetry} = testSlice.actions;
+export const {fetchStartTest, fetchFailed, createTest, deleteTest, createQuestions, fetchTestSucceed, testFinished, testNextQuestion, testSetState, setResult, testRetry, createResponse} = testSlice.actions;
 
 export default testSlice.reducer;
