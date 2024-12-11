@@ -1,55 +1,57 @@
-import React, {useState, useEffect} from 'react'
-import { useSelector } from 'react-redux'
+import React, { useState, useEffect } from 'react'
+
+import { useContextPilotPass } from '../../Context'
 
 const Navbar = ({ className }) => {
 
-const [prevScrollPos, setPrevScrollPos] = useState(0)
-const [visible, setVisible] = useState(true)
-const name = useSelector(state => state.user.name)
+  const {name, } = useContextPilotPass()
 
-const handleScroll = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = () => {
     const currentScrollPos = window.scrollY
     const topOfThePage = window.screenTop
     const screenTop = window.screenY
 
-    if(currentScrollPos == 0){
+    if (currentScrollPos == 0) {
       setVisible(true)
-    }else{ 
-      if(currentScrollPos > prevScrollPos && currentScrollPos > 70){
+    } else {
+      if (currentScrollPos > prevScrollPos && currentScrollPos > 70) {
         setVisible(false)
-      }else{
+      } else {
         setVisible(true)
       }
     }
 
     setPrevScrollPos(currentScrollPos)
-}
+  }
 
-useEffect( () => {
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll)
-},[window.scrollY])
+  }, [window.scrollY])
 
-return (
+  return (
     <div className={`${className} transition bg-[#060b15cc]  fixed w-[100%] ease-linear ${visible ? ' h-[5rem]' : ' h-[0]'} duration-300`}>
-        {/* {visible ? ( */}
-        <div 
+      {/* {visible ? ( */}
+      <div
         className={`transition bg-[#060b15cc] fixed flex  justify-center md:justify-center lg:justify-end w-[100%] z-[1] ease-linear ${visible ? ' h-[5rem]' : ' h-[0]'} duration-300`}
-        >
-            <p className={`text-white self-center pr-[0rem] md:pl-[3rem] lg:pr-[5rem] ${visible ? '' : 'hidden'}`}>
-                Welcome {name.split(" ")[0]}!
-            </p>
-        </div>
-        {/* <p className={`transition-all ease-linear  text-white ${visible ? '' : 'hidden'} delay-300 duration-[900ms]`}>
+      >
+        <p className={`text-white self-center pr-[0rem] md:pl-[3rem] lg:pr-[5rem] ${visible ? '' : 'hidden'}`}>
+          Welcome {name.split(" ")[0]}!
+        </p>
+      </div>
+      {/* <p className={`transition-all ease-linear  text-white ${visible ? '' : 'hidden'} delay-300 duration-[900ms]`}>
           Some Company Name
         </p> */}
-        {/* ) : ( */}
-          {/* <div></div> */}
-        {/* )         */}
-        {/* } */}
+      {/* ) : ( */}
+      {/* <div></div> */}
+      {/* )         */}
+      {/* } */}
     </div>
-)
+  )
 }
 
 export default Navbar

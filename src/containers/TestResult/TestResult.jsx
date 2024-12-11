@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import classes from "./TestResult.module.css";
 import Loader from "../../components/UI/Loader/Loader";
 import Alert from '../../components/Alert/Snackbar'
-import styles from '../QuizList/Card.module.css'
+import styles from '../../pages/Tests/QuizList/Card.module.css'
 import result1 from '../../Images/result1.jpg'
 import Navbar from "../../components/Navigation/navbar"
 

@@ -1,0 +1,65 @@
+:root {
+  color-scheme: dark;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 py-8;
+}
+
+.header {
+  @apply bg-gray-900/50 backdrop-blur-sm border-b border-gray-700/50;
+}
+
+.header-content {
+  @apply max-w-7xl mx-auto px-4 py-4 flex justify-between items-center;
+}
+
+.main-title {
+  @apply text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300;
+}
+
+.datepicker-custom {
+  @apply bg-gray-800 border-gray-700 text-gray-100 !important;
+}
+
+.react-datepicker {
+  @apply bg-gray-800 border-gray-700 !important;
+}
+
+.react-datepicker__header {
+  @apply bg-gray-900 border-gray-700 !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day {
+  @apply text-gray-100 !important;
+}
+
+.react-datepicker__day:hover {
+  @apply bg-blue-600 !important;
+}
+
+.react-datepicker__day--selected {
+  @apply bg-blue-500 !important;
+}
+
+.react-datepicker__time-container {
+  @apply bg-gray-800 border-gray-700 !important;
+}
+
+.react-datepicker__time-box {
+  @apply bg-gray-800 !important;
+}
+
+.react-datepicker__time-list-item {
+  @apply text-gray-100 !important;
+}
+
+.react-datepicker__time-list-item:hover {
+  @apply bg-blue-600 !important;
+}
+
+.react-datepicker__time-list-item--selected {
+  @apply bg-blue-500 !important;
+}

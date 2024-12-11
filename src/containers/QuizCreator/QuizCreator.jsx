@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import classes from "./QuizCreator.module.css";
 import { createControl, isFromValid, isValueValid } from "../../form/formFramework";
 import Button from "../../components/UI/Button/Button";
 import Input from "../../components/UI/Input/Input";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
 import Select from "../../components/UI/Select/Select"
-import { createSubject, resetResponse } from "../../redux/creator/slice"
-import { postSubject } from "../../redux/creator/functions"
 import Alert from '../../components/Alert/Snackbar'
 
+import { useContextPilotPass } from "../../Context";
+
 const quizCreator = () => {
+
+    const {error, CreatorResponse, createSubject, postSubject, resetResponse, deleteError } = useContextPilotPass()
     
     const [subject, setsubject] = useState("")
     const [question, setquestion] = useState("")
@@ -24,9 +25,6 @@ const quizCreator = () => {
         "subject": '',
         "preguntas": []
     })
-    const dispatch = useDispatch();
-    const error = useSelector(state => state.error.error);
-    const response = useSelector(state => state.creator.response);
     
     const pregunta = {
         question,
@@ -65,8 +63,8 @@ const quizCreator = () => {
         if(course["subject"].length > 0 && questions.length > 0){
 
             setcourse(course.preguntas = questions)
-            dispatch(createSubject(course))
-            dispatch(postSubject(course))
+            createSubject(course)
+            postSubject(course)
             setquestions([])
             setcourse({
                 "subject": '',
@@ -84,23 +82,23 @@ const quizCreator = () => {
         
         if(error){
             sleep(5000).then( r => {
-                dispatch(deleteError())
+                deleteError()
             })
         }
 
-        if(response){
+        if(CreatorResponse){
             sleep(5000).then( r => {
-                dispatch(resetResponse())
+                resetResponse()
             })
         }
 
-    }, [error, response]);
+    }, [error, CreatorResponse]);
 
     return(
         <div className={classes.QuizCreator}>
             <div >
                 {error ? <Alert severity={5} title={"Error"} detail={error}/> : null} 
-                {response ? <Alert severity={1} title={"Response"} detail={response}/> : null} 
+                {CreatorResponse ? <Alert severity={1} title={"Response"} detail={CreatorResponse}/> : null} 
                 <h1>Create a Quiz</h1>
                 <div>
 

@@ -1,22 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
 import classes from "./FinishedQuiz.module.css"
 import Button from "../UI/Button/Button";
-// import { retryQuiz } from "../../redux/courses/functions";
 
 const FinishedQuiz = props => {
     
-    const dispatch = useDispatch();
     const navigate  = useNavigate()
 
     const onQuizList = () => {
-        dispatch(props.onRetry())
+        props.onRetry()
         navigate('/')
     }
 
     const onRetry = () => {
-        dispatch(props.onRetry())
+        props.onRetry()
     }
 
     const rightAnswersCount = Object.keys(props.results).reduce((total, key) => {

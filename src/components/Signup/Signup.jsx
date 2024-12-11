@@ -4,12 +4,13 @@ import Button from "../UI/Button/Button"
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Alert from '../../components/Alert/Snackbar'
-import { useDispatch, useSelector } from 'react-redux'
-import { signup } from '../../redux/user/authFunctions'
-import { deleteError } from '../../redux/error/errorSlice'
 import { isFromValid, isValueValid } from '../../form/formFramework'
 
+import { useContextPilotPass } from '../../Context'
+
 const SignUp = () => {
+
+    const { deleteError, signup, error,  } = useContextPilotPass()
 
     const navigate = useNavigate()
     //State
@@ -55,8 +56,6 @@ const SignUp = () => {
     const [formation, setformation] = useState({ value: 'Student' });
     const [admin, setadmin] = useState(false);
     const [account, setaccount] = useState(1);
-    const dispatch = useDispatch()
-    const error = useSelector(state => state.error.error)
     const classNames = [Error.input]
 
     //Use Effects
@@ -80,10 +79,10 @@ const SignUp = () => {
 
     useEffect(() => {
 
-        if(error){
+        if (error) {
 
             sleep(5000).then(r => {
-                dispatch(deleteError())
+                deleteError()
             })
         }
 
@@ -104,7 +103,7 @@ const SignUp = () => {
     }
 
     function signUpHandler() {
-        dispatch(signup(name.value, lastName.value, email.value, password.value, bio.value, formation.value, admin, account, false))
+        signup(name.value, lastName.value, email.value, password.value, bio.value, formation.value, admin, account, false)
         navigate('/')
     }
 
@@ -208,7 +207,7 @@ const SignUp = () => {
 
                         <label htmlFor="formation">Formation:</label>
                         <select id="formation" name="user_formation" value={formation.value} onChange={
-                            event => onChangeHandler(event,formation,setformation)
+                            event => onChangeHandler(event, formation, setformation)
                         }
                         >
                             <optgroup label="Initial">
