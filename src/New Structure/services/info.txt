@@ -1,0 +1,13 @@
+Purpose:
+- Abstracts API service functions and external integrations.
+
+Usage:
+- Use this folder for functions that handle HTTP requests and third-party integrations.
+
+Rules:
+1. Ensure consistent return formats.
+2. Do not directly manipulate state or DOM in service files.
+
+Example:
+authService.js
+productService.js

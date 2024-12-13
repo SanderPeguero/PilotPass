@@ -1,0 +1,14 @@
+Purpose:
+- Contains integration and end-to-end (E2E) tests for the application.
+
+Usage:
+- Use this folder for tests that span across multiple components or validate full application flows.
+
+Rules:
+1. Use tools like Jest for integration tests and Cypress for E2E tests.
+2. Structure tests logically by feature or app section.
+3. Test file names should clearly indicate the feature or flow being tested.
+
+Example:
+auth.test.js
+dashboardFlow.test.js

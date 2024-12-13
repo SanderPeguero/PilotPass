@@ -1,0 +1,19 @@
+Purpose:
+- Contains feature-specific business logic, state management, and related components.
+
+Usage:
+- Use for grouping components, Redux slices, and utilities for a specific feature (e.g., Auth, Cart).
+
+Rules:
+1. Each feature must have its own folder, named in PascalCase.
+2. Include:
+   - All components and utilities specific to this feature.
+   - A `featureSlice.js` file for state management (if using Redux).
+3. Use reusable components from `components/` whenever possible.
+
+Example:
+Auth/
+├── LoginForm.jsx
+├── RegistrationForm.jsx
+├── authSlice.js
+└── Auth.module.css

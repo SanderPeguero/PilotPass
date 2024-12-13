@@ -1,0 +1,13 @@
+Purpose:
+- Manages shared state using the React Context API.
+
+Usage:
+- Use this folder for shared state that doesn’t fit well in `features/` or Redux.
+
+Rules:
+1. Ensure state is encapsulated and exposed via context providers.
+2. Avoid creating overly large contexts; keep them domain-specific.
+
+Example:
+AuthContext.js
+ThemeContext.js

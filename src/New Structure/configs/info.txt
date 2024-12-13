@@ -1,0 +1,14 @@
+Purpose:
+- Holds app-wide configuration files and constants.
+
+Usage:
+- Use this folder for environment-specific configurations and constants.
+
+Rules:
+1. Avoid hardcoding sensitive data; use `.env` files for secrets.
+2. Organize constants logically by domain.
+
+Example:
+apiConfig.js
+appSettings.js
+constants.js
