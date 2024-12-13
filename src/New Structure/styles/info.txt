@@ -1,0 +1,14 @@
+Purpose:
+- Contains global styles, CSS variables, and theming configuration.
+
+Usage:
+- Use this folder for app-wide styles and configurations like Tailwind or CSS resets.
+
+Rules:
+1. Use modular CSS for component-specific styles; keep global styles minimal.
+2. Organize logically (e.g., resets, typography, variables).
+
+Example:
+global.css
+variables.css
+tailwind.config.js

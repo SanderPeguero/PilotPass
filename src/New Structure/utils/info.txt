@@ -1,0 +1,13 @@
+Purpose:
+- Contains general-purpose utility functions used across the app.
+
+Usage:
+- Use this folder for non-component-specific logic, like formatting or API clients.
+
+Rules:
+1. Functions must be small and focused on one task.
+2. Do not include app-specific logic here.
+
+Example:
+dateFormatter.js
+apiClient.js

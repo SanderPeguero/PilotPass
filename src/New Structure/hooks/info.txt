@@ -1,0 +1,13 @@
+Purpose:
+- Contains custom React hooks for reusable logic.
+
+Usage:
+- Use this folder for encapsulating logic like data fetching, authentication, or subscriptions.
+
+Rules:
+1. Hooks must be named with the `use` prefix (e.g., `useAuth`, `useFetch`).
+2. Ensure hooks are pure and reusable across components.
+
+Example:
+useAuth.js
+useFetch.js

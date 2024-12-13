@@ -1,0 +1,14 @@
+Purpose:
+- Contains static files like images, fonts, and icons.
+
+Usage:
+- Use this folder for organizing and storing static assets.
+
+Rules:
+1. Name assets descriptively and use kebab-case (e.g., `user-avatar.png`).
+2. Optimize images and use modern formats (e.g., WebP).
+
+Example:
+images/
+fonts/
+icons/
