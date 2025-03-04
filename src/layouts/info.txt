@@ -1,0 +1,12 @@
+Purpose:
+- Contains layout components that define the structure of pages (e.g., headers, sidebars).
+
+Usage:
+- Use this folder for reusable layout components like MainLayout or AdminLayout.
+
+Rules:
+1. Layouts should focus on structure, not data or state management.
+2. Use `props.children` to make layouts reusable.
+
+Example:
+MainLayout.jsx

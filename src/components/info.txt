@@ -1,0 +1,16 @@
+Purpose:
+- Contains reusable UI components that are small, self-contained, and focused on presentation.
+
+Usage:
+- Use this folder for components like buttons, modals, dropdowns, and form elements.
+- Components here should not manage state or have side effects but rely on props for data.
+
+Rules:
+1. Each component must have its own folder, named in PascalCase.
+2. Include:
+   - A `Component.jsx` file for logic.
+3. Write clean, reusable, and well-documented code.
+
+Example:
+├── Button.jsx
+

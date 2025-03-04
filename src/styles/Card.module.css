@@ -1,0 +1,76 @@
+
+.card{
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 28 36 / var(--tw-bg-opacity));
+    cursor: pointer;
+    border-radius: 15px;
+    max-width: 310px;
+}
+
+.cardImage{
+    vertical-align: middle;
+    display: block;
+    /* height: auto; */
+    height: 200px;
+    /* height: 100%; */
+    /* width: 310px; */
+    width: 100%;
+    /* max-width: 310px; */
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.cardInfoContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.cardInfo{
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cardInfoh3{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    font-family: Epilogue, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* Large screens */
+@media only screen and (max-width: 640px) {
+    .card{
+        width: 305px;
+        /* width: 100%; */
+    }
+    
+}
+
+/* Small screens */
+@media only screen and (min-width: 640px) {
+    .card{
+        width: 100%;
+    }
+}
+
+.readthedocs {
+    width: auto;
+    color: #888;
+    display: grid;
+    flex-direction: row;
+    margin: 0;
+    gap: 1rem;
+    overflow: hidden;
+    margin-bottom: 100px;
+  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
