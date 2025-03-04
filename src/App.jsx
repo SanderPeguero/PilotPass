@@ -8,7 +8,7 @@ import QuizList from './containers/QuizList'
 import Exam from './containers/Exam'
 import ExamList from './containers/ExamList'
 import Login from './components/Login'
-import Signup from './components/Signup'
+import { PasswordProtected as Signup } from './components/Signup'
 import Logout from './components/Logout'
 import Layout from './layouts/Layout'
 // import QuizCreator from './containers/QuizCreator'
@@ -27,6 +27,31 @@ import Devchat from './containers/DevChat/App'
 import { useAuth } from './contexts/AuthContext'
 import { useQuiz } from './contexts/QuizContext'
 import { useExam } from './contexts/ExamContext'
+
+const PasswordProtected = ({ correctPassword, children }) => {
+  const [password, setPassword] = useState("");
+  const [accessGranted, setAccessGranted] = useState(false);
+
+  return accessGranted ? (
+    children
+  ) : (
+    <div className="flex flex-col items-center justify-center min-h-[50vh] bg-gray-900 text-white">
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="p-2 text-black rounded"
+        placeholder="Enter password"
+      />
+      <button
+        onClick={() => setAccessGranted(password === correctPassword)}
+        className="mt-2 bg-blue-500 text-white py-1 px-3 rounded"
+      >
+        Submit
+      </button>
+    </div>
+  );
+};
 
 // Custom Hook for Data Fetching Logic
 const useDataFetching = (isAuthorized, testResponseAvailable, examResponseAvailable, fetchQuizList, fetchExams) => {
@@ -64,7 +89,11 @@ const getRoutes = (isAuthorized) => {
     return (
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/signup" element={
+          <PasswordProtected correctPassword={"3ZXM-4RFO-J7M3"}>
+            <Signup />
+          </PasswordProtected>
+        } />
       </Routes>
     );
   }
@@ -83,7 +112,7 @@ const getRoutes = (isAuthorized) => {
         <Route path="/worldchat" element={<Worldchat />} />
         <Route path="/devchat" element={<Devchat />} />
         <Route path="/quizList" element={<QuizList />} />
-        <Route path="/" element={<HomePage/>} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/rentaplane" element={<RentPlanes />} />
         <Route path="/logbook" element={<Logbook />} />
         <Route path="/quiz/:course/:id" element={<Quiz />} />

@@ -15,6 +15,7 @@ import QuizCreator from './containers/QuizCreator'
 import TestResult from './containers/TestResult'
 import Result from './containers/Result.jsx'
 import Loader from './utils/Loader.jsx'
+import PasswordProtected from '../components/PasswordProtected';
 
 //apps
 import RentPlanes from './containers/RentPlanes/RentPlanes';
@@ -32,17 +33,17 @@ const useDataFetching = (isAuthorized, testResponseAvailable, examResponseAvaila
   useEffect(() => {
     const fetchData = async () => {
       if (isAuthorized) {
-        try{
+        try {
           // Fetch quiz list if not already available
           if (!testResponseAvailable) await fetchQuizList();
           // Fetch exams if not already available
           if (!examResponseAvailable) await fetchExams();
-        }catch(err){
+        } catch (err) {
           setError('Error fetching data');  // Set error message if data fetching fails
-        }finally {
+        } finally {
           setLoading(false);  // Mark the loading state as false once fetching is done
         }
-      }else{
+      } else {
         setLoading(false)
       }
     };
@@ -60,7 +61,11 @@ const getRoutes = (isAuthorized) => {
     return (
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/signup" element={
+          <PasswordProtected>
+            <Signup />
+          </PasswordProtected>
+        } />
       </Routes>
     );
   }
@@ -110,7 +115,7 @@ const App = () => {
   );
 
   // If still loading, show a loading message
-  if (loading) return <div><Loader/></div>;
+  if (loading) return <div><Loader /></div>;
 
   // If an error occurred during data fetching, show an error message
   if (error) return <div>{error}</div>;
