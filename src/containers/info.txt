@@ -1,0 +1,19 @@
+Purpose:
+- Holds page-level components or "smart" components that handle state, fetch data, and compose smaller reusable components.
+
+Usage:
+- Use this folder for components that correspond to routes or app sections (e.g., Home, Dashboard).
+
+Rules:
+1. Each page-level component must have its own folder, named in PascalCase.
+2. Include:
+   - A `Component.jsx` file for logic.
+   - A `Component.module.css` file for styles (if applicable).
+   - A `Component.test.js` file for unit tests.
+3. Delegate reusable logic or state management to `features/` or `hooks/`.
+
+Example:
+Home/
+├── Home.jsx
+├── Home.module.css
+└── Home.test.js

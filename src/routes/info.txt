@@ -1,0 +1,13 @@
+Purpose:
+- Holds the app's routing logic and related utilities.
+
+Usage:
+- Use this folder for route definitions and components like ProtectedRoute.
+
+Rules:
+1. Keep all route definitions here.
+2. Avoid hardcoding routes; use constants or dynamic imports.
+
+Example:
+index.js
+ProtectedRoute.js

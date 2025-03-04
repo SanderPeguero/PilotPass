@@ -1,0 +1,93 @@
+/* body {
+background: #222;
+} */
+
+.wings {
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 3px;
+    animation: wings 1s infinite ease;
+    animation-timing-function: cubic-bezier(0.57, -0.28, 0.37, 0.88);
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: #2e2d2d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: circle_ani 0.5 infinate ease;
+}
+
+.arc {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 5px #ffffff;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-left: solid 3px rgba(223, 223, 194, 0);
+    border-right: solid 3px rgba(223, 223, 194, 0);
+    border-bottom: solid 3px rgba(223, 223, 194, 0);
+    animation: spin2 1s infinite ease;
+}
+
+.arc2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 5px #03e9f4;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-left: solid 3px rgba(255, 235, 78, 0);
+    border-right: solid 3px rgba(255, 235, 78, 0);
+    border-bottom: solid 3px rgba(255, 235, 78, 0);
+    transform: rotateZ(180deg);
+    animation: spin 1s infinite ease;
+}
+
+@keyframes circle_ani {
+    0%, 100% {
+        transform: scale(10, 10);
+    }
+    50% {
+        transform: scale(-10, -10);
+    }
+}
+@keyframes spin {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotateZ(180deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotateZ(-900deg);
+    }
+}
+@keyframes spin2 {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotateZ(-180deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotateZ(900deg);
+    }
+}
+@keyframes wings {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotateZ(-4deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotateZ(4deg);
+    }
+}
