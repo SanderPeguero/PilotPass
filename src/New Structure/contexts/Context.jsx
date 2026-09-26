@@ -205,13 +205,13 @@ export function ProviderContext({ children }) {
 
   // New Navigation functions
   const goToPrevQuestion = () => {
-    if (activeQuestionNumber > 0 && quiz) {
+    if (quiz && activeQuestionNumber > 0) {
       quiznextQuestion(activeQuestionNumber - 1, quiz[activeQuestionNumber - 1]);
     }
   };
 
   const goToNextQuestion = () => {
-    if (activeQuestionNumber < quiz.length - 1 && quiz) {
+    if (quiz && activeQuestionNumber < quiz.length - 1) {
       quiznextQuestion(activeQuestionNumber + 1, quiz[activeQuestionNumber + 1]);
     }
   };
