@@ -16,6 +16,7 @@ import TestResult from './containers/TestResult'
 import Result from './containers/Result.jsx'
 import Loader from './utils/Loader.jsx'
 import PasswordProtected from '../components/PasswordProtected';
+import Settings from '../containers/Settings/Settings';
 
 //apps
 import RentPlanes from './containers/RentPlanes/RentPlanes';
@@ -86,6 +87,7 @@ const getRoutes = (isAuthorized) => {
         <Route path="/" element={<QuizList />} />
         <Route path="/RentPlanes" element={<RentPlanes />} />
         <Route path="/quiz/:course/:id" element={<Quiz />} />
+        <Route path="/config" element={<Settings />} />
 
       </Routes>
     </Layout>

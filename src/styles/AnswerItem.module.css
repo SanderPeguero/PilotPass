@@ -20,3 +20,7 @@
 .AnswerItem.error {
     background: rgba(255, 0, 34, 0.47);
 }
+.AnswerItem.selected {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid white;
+}

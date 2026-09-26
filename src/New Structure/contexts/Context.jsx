@@ -203,6 +203,19 @@ export function ProviderContext({ children }) {
 
   const setResults = (data) => setresults(data.answerState);
 
+  // New Navigation functions
+  const goToPrevQuestion = () => {
+    if (activeQuestionNumber > 0 && quiz) {
+      quiznextQuestion(activeQuestionNumber - 1, quiz[activeQuestionNumber - 1]);
+    }
+  };
+
+  const goToNextQuestion = () => {
+    if (activeQuestionNumber < quiz.length - 1 && quiz) {
+      quiznextQuestion(activeQuestionNumber + 1, quiz[activeQuestionNumber + 1]);
+    }
+  };
+
 
   //Functions
   function fetchQuizList() {
@@ -221,9 +234,33 @@ export function ProviderContext({ children }) {
 
   function fetchQuizById(course, quizId) {
     try {
-      const quiz = response[course]?.[quizId];
-      if (quiz) {
-        fetchquizSucceed(quiz.preguntas);
+      const quizData = response[course]?.[quizId];
+      if (quizData) {
+        // Load progress if available
+        let savedProgress = null;
+        try {
+          const localStr = localStorage.getItem(`quizProgress_${course}_${quizId}`);
+          if (localStr) {
+             savedProgress = JSON.parse(localStr);
+          }
+        } catch(e) { console.error("Error reading progress", e); }
+
+        const qList = quizData.preguntas;
+        setisLoading(false);
+        setquiz(qList);
+
+        if (savedProgress) {
+            setactiveQuestionNumber(savedProgress.activeQuestionNumber);
+            setcurrentQuizQuestion(qList[savedProgress.activeQuestionNumber]);
+            setresults(savedProgress.results);
+            setanswerState(savedProgress.answerState);
+        } else {
+            setactiveQuestionNumber(0);
+            setcurrentQuizQuestion(qList[0]);
+            setresults({});
+            setanswerState(null);
+            setisQuizFinished(false);
+        }
       } else {
         createError("Quiz not found");
       }
@@ -234,10 +271,28 @@ export function ProviderContext({ children }) {
   }
 
 
-  function quizAnswerClick(answerId) {
+  function saveProgress(course, quizId, stateUpdates) {
+      const progress = {
+          activeQuestionNumber: stateUpdates.activeQuestionNumber !== undefined ? stateUpdates.activeQuestionNumber : activeQuestionNumber,
+          results: stateUpdates.results || results,
+          answerState: stateUpdates.answerState || answerState,
+      };
+      localStorage.setItem(`quizProgress_${course}_${quizId}`, JSON.stringify(progress));
+
+      const authObj = getAuth();
+      if(authObj.currentUser) {
+          const progressRef = ref(db, `users/${authObj.currentUser.uid}/progress/${course}_${quizId}`);
+          set(progressRef, progress);
+      }
+  }
+
+
+  function quizAnswerClick(answerId, course, quizId) {
     try {
-      // Prevent event handles twice (on each click)
-      if (answerState && Object.values(answerState)[0] === "success") return;
+      const isExamSimulation = localStorage.getItem('isExamSimulation') === 'true';
+
+      // Prevent event handles twice (on each click) only in regular mode when they get it right
+      if (!isExamSimulation && answerState && Object.values(answerState)[0] === "success") return;
 
       // Initialize variables
       const currentQuiz = quiz[activeQuestionNumber];
@@ -247,26 +302,31 @@ export function ProviderContext({ children }) {
       // Set answer state and first chosen result
       const internalAnswerState = isRightAnswerChosen ? "success" : "error";
 
-      if (results && !results[activeQuestionNumber]) {
-        setResult(internalAnswerState);
+      let updatedResults = { ...results };
+
+      // If it's the very first time they are answering THIS question, record the result
+      if (!results[activeQuestionNumber]) {
+        updatedResults = { ...results, [activeQuestionNumber]: internalAnswerState };
+        setresults(updatedResults); // Directly setting results array since quizSetState doesn't merge
       }
 
-      const updatedResults = results[activeQuestionNumber] === "error"
-        ? { [answerId]: internalAnswerState, ...results }
-        : { ...results, [activeQuestionNumber]: internalAnswerState };
+      if (isExamSimulation) {
+          // Exam Simulation: Do not show right/wrong. Just show it as selected.
+          const newAnswerState = { [answerId]: "selected" }; // Wait, there's no selected CSS class by default, let's just use success color but we actually shouldn't give it away. Let's use 'selected' assuming we'll add it or it will just be a neutral state. Actually 'success' is green, 'error' is red. In exam mode, maybe we don't show any colors until the end?
+          // I will use "selected" and we can add a simple CSS class if needed.
+          const currentAnswerState = { [answerId]: "selected" };
+          quizsetState(currentAnswerState, updatedResults);
+          saveProgress(course, quizId, { answerState: currentAnswerState, results: updatedResults });
+          // In exam simulation, don't automatically move to next question
+      } else {
+          // Regular Mode: Show right/wrong immediately
+          // Keep showing their choice as success/error
+          const currentAnswerState = { [answerId]: internalAnswerState };
+          quizsetState(currentAnswerState, updatedResults);
+          saveProgress(course, quizId, { answerState: currentAnswerState, results: updatedResults });
 
-      quizsetState({ [answerId]: internalAnswerState }, updatedResults);
-
-      // Control colors changing and final state
-      if (isRightAnswerChosen) {
-        const timeout = setTimeout(() => {
-          if (isFinalQuestion) {
-            finishquiz();
-          } else {
-            quiznextQuestion(activeQuestionNumber + 1, quiz[activeQuestionNumber + 1]);
-          }
-          clearTimeout(timeout);
-        }, 500);
+          // We remove the automatic progression to the next question,
+          // because we added a 'Next' button specifically for this so the user can manually proceed.
       }
 
     } catch (error) {
@@ -299,6 +359,14 @@ export function ProviderContext({ children }) {
       activeQuestionNumber: nextQuestionNumber,
       currentQuizQuestion: nextQuizQuestion,
     });
+
+    // Attempt to extract course and quizId from current window location as a fallback,
+    // though in a real app this would be passed around cleanly.
+    // Here we'll do a quick check of hash routing
+    const match = window.location.hash.match(/#\/quiz\/([^\/]+)\/([^\/]+)/);
+    if(match) {
+        saveProgress(match[1], match[2], { activeQuestionNumber: nextQuestionNumber });
+    }
   }
 
   function finishquiz() {

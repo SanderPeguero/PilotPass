@@ -31,7 +31,11 @@ const Quiz = (props) => {
         isQuizFinished,
         quizAnswerClick,
         currentQuizQuestion,
-        activeQuestionNumber
+        activeQuestionNumber,
+        quizNextQuestion,
+        finishquiz,
+        goToPrevQuestion,
+        goToNextQuestion
     } = useContextPilotPass();
 
     // Fetch quiz data on component mount or when response changes
@@ -89,7 +93,7 @@ const Quiz = (props) => {
 
     // Handler when the user clicks on an answer
     const onAnswerClickHandler = (answerId) => {
-        quizAnswerClick(answerId); // Update the state with the selected answer
+        quizAnswerClick(answerId, props.match.params.course, props.match.params.id); // Update the state with the selected answer
     };
 
     return (
@@ -135,6 +139,9 @@ const Quiz = (props) => {
                                                 onAnswerClick={onAnswerClickHandler} // Handle answer selection
                                                 answerState={answerState} // Display the state of the selected answer
                                                 quizLength={quiz.length} // Provide the total number of questions
+                                                onPrevClick={goToPrevQuestion}
+                                                onNextClick={goToNextQuestion}
+                                                onFinishClick={finishquiz}
                                               />
                                 }
                             </div>
