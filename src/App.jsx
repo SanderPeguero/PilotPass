@@ -40,12 +40,19 @@ const PasswordProtected = ({ correctPassword, children }) => {
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            setAccessGranted(password === correctPassword);
+          }
+        }}
         className="p-2 text-black rounded"
         placeholder="Enter password"
+        aria-label="Enter password to access signup"
       />
       <button
         onClick={() => setAccessGranted(password === correctPassword)}
-        className="mt-2 bg-blue-500 text-white py-1 px-3 rounded"
+        className="mt-2 bg-blue-500 hover:bg-blue-600 focus-visible:ring-2 focus-visible:ring-blue-300 text-white py-1 px-3 rounded transition-colors"
+        aria-label="Submit password"
       >
         Submit
       </button>
