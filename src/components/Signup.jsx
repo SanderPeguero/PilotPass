@@ -133,37 +133,23 @@ const SignUp = () => {
                         <legend><span className="number">1</span> Your Basic Info</legend>
 
                         <label htmlFor="name" >Name:</label>
-                        <input type="text" id="name" name="user_name" value={name.value} onChange={
-                            event => onChangeHandler(event, name, setname)
-                        } />
+                        <input type="text" id="name" name="user_name" value={name.value} required aria-invalid={name.valid === false} aria-describedby={name.valid === false ? "name-error" : undefined} onChange={event => onChangeHandler(event, name, setname)} />
+                        {name.valid === false && <span id="name-error">Enter valid data</span>}
 
                         <label htmlFor="last_name">Last Name:</label>
-                        <input type="text" id="last_name" name="last_name" onChange={
-                            event => onChangeHandler(event, lastName, setlastName)
-                        } />
+                        <input type="text" id="last_name" name="last_name" required aria-invalid={lastName.valid === false} aria-describedby={lastName.valid === false ? "lastname-error" : undefined} onChange={event => onChangeHandler(event, lastName, setlastName)} />
+                        {lastName.valid === false && <span id="lastname-error">Enter valid data</span>}
 
                         <div className={classNames}>
                             <label htmlFor="email">Email:</label>
-                            <input style={(email.valid) == false ? { border: "1.5px solid rgb(252 0 34)" } : null} type="email" id="email" name="user_email" onChange={
-                                event => onChangeHandler(event, email, setemail)
-                            } />
-                            {
-                                (email.valid == false)
-                                    ? <span>{email.errorMessage || "Enter valid data"}</span>
-                                    : null
-                            }
+                            <input style={(email.valid) == false ? { border: "1.5px solid rgb(252 0 34)" } : null} type="email" id="email" name="user_email" required aria-invalid={email.valid === false} aria-describedby={email.valid === false ? "email-error" : undefined} onChange={event => onChangeHandler(event, email, setemail)} />
+                            {email.valid === false ? <span id="email-error">{email.errorMessage || "Enter valid data"}</span> : null}
                         </div>
 
                         <div className={classNames}>
                             <label htmlFor="password">Password:</label>
-                            <input style={(password.valid) == false ? { border: "1.5px solid rgb(252 0 34)" } : null} type="password" id="password" name="user_password" onChange={
-                                event => onChangeHandler(event, password, setpassword)
-                            } />
-                            {
-                                (password.valid == false)
-                                    ? <span>{password.errorMessage || "Enter valid data"}</span>
-                                    : null
-                            }
+                            <input style={(password.valid) == false ? { border: "1.5px solid rgb(252 0 34)" } : null} type="password" id="password" name="user_password" required aria-invalid={password.valid === false} aria-describedby={password.valid === false ? "password-error" : undefined} onChange={event => onChangeHandler(event, password, setpassword)} />
+                            {password.valid === false ? <span id="password-error">{password.errorMessage || "Enter valid data"}</span> : null}
                         </div>
 
                     </fieldset>

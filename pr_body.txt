@@ -1,13 +1,17 @@
 💡 **What:**
-- Replaced the redundant `Object.keys().reduce()` loop inside `FinishedQuiz` with `Object.values().filter().length` wrapped in a `useMemo` hook.
+- Added `aria-invalid` and `aria-describedby` attributes to dynamic inputs in `Login.jsx` and `Signup.jsx`.
+- Connected error messages to input fields via unique IDs (e.g., `id="email-error"`).
+- Added `required` attributes to essential inputs.
+- Enhanced `PasswordProtected` component in `App.jsx` with `onKeyDown` 'Enter' submission support and `aria-label` attributes.
 
 🎯 **Why:**
-- The `FinishedQuiz` component was recalculating the right answers count unnecessarily on every re-render, even when `props.results` hadn't changed. Wrapping this expensive calculation inside `useMemo` prevents useless work.
-- The iteration method itself (`Object.keys().reduce()`) was slightly inefficient compared to fetching values directly and filtering.
+- To improve accessibility and provide native semantic feedback to screen reader users regarding invalid inputs.
+- Form elements now explicitely link their error states to descriptive spans, improving user guidance.
+- Submitting via the "Enter" key on password prompts is a standard and highly expected interaction that was previously missing.
 
-📊 **Measured Improvement:**
-- Established a raw micro-benchmark to evaluate the `reduce` vs. `filter` performance.
-  - **Baseline** (reduce): ~3018 ms
-  - **Optimized** (filter): ~1153 ms
-  - **Improvement**: Execution time reduced by ~60% in a loop of 1,000,000 items.
-- In combination with the `useMemo` caching the result across re-renders, the CPU savings compound heavily.
+♿ **Accessibility:**
+- Ensures screen readers announce exactly why an input is invalid by relating the input to its corresponding error message element.
+- Makes the generic "Submit" button clearer with `aria-label`.
+
+📸 **Before/After:**
+- N/A (Non-visual behavior changes/UX logic upgrades)

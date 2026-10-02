@@ -98,10 +98,13 @@ const Login = () => {
                                 type="email" 
                                 id="email" 
                                 name="user_email" 
+                                required
+                                aria-invalid={email.valid === false}
+                                aria-describedby={email.valid === false ? "email-error" : undefined}
                                 onChange={(event) => onChangeHandler(event, email, setemail)} // Update state on input change
                             />
                             {/* Display email error message if invalid */}
-                            {email.valid === false && <span>{email.errorMessage || "Enter valid data"}</span>}
+                            {email.valid === false && <span id="email-error">{email.errorMessage || "Enter valid data"}</span>}
                         </div>
                         
                         {/* Password input field */}
@@ -112,6 +115,9 @@ const Login = () => {
                                 type="password" 
                                 id="password" 
                                 name="user_password" 
+                                required
+                                aria-invalid={password.valid === false}
+                                aria-describedby={password.valid === false ? "password-error" : undefined}
                                 onChange={(event) => onChangeHandler(event, password, setpassword)} // Update state on input change
                                 onKeyDown={(event) => {
                                     if (event.key === "Enter") {
@@ -120,7 +126,7 @@ const Login = () => {
                                 }}
                             />
                             {/* Display password error message if invalid */}
-                            {password.valid === false && <span>{password.errorMessage || "Enter valid data"}</span>}
+                            {password.valid === false && <span id="password-error">{password.errorMessage || "Enter valid data"}</span>}
                         </div>
                     </fieldset>
                 </div>
