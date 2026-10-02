@@ -42,7 +42,7 @@ const Navbar = ({ className }) => {
         className={`transition bg-[#060b15cc] fixed flex  justify-center md:justify-center lg:justify-end w-[100%] z-[1] ease-linear ${visible ? ' h-[5rem]' : ' h-[0]'} duration-300`}
       >
         <p className={`text-white self-center pr-[0rem] md:pl-[3rem] lg:pr-[5rem] ${visible ? '' : 'hidden'}`}>
-          Welcome {name.split(" ")[0]}!
+          Welcome {name ? name.split(" ")[0] : ""}!
         </p>
       </div>
       {/* <p className={`transition-all ease-linear  text-white ${visible ? '' : 'hidden'} delay-300 duration-[900ms]`}>
