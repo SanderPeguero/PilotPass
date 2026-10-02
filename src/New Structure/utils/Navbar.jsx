@@ -1,59 +1,49 @@
-//dependencies
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { useContextPilotPass } from '../contexts/Context';
 
-//contexts
-import { useContextPilotPass } from '../contexts/Context'
+const Navbar = () => {
+    const { name } = useContextPilotPass();
+    const [scrolled, setScrolled] = useState(false);
 
-const Navbar = ({ className }) => {
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
-  const {name, } = useContextPilotPass()
+    return (
+        <header className={`
+            hidden md:flex fixed top-0 right-0 left-64 h-20 items-center justify-between px-8 z-40 transition-all duration-300
+            ${scrolled ? 'bg-gray-900/80 backdrop-blur-md border-b border-gray-800' : 'bg-transparent'}
+        `}>
+            <div className="flex items-center gap-4">
+                <div className="relative hidden lg:block">
+                    <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+                        🔍
+                    </span>
+                    <input
+                        type="text"
+                        placeholder="Search courses, exams..."
+                        className="bg-gray-800 border border-gray-700 text-white text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-64 pl-10 p-2.5 outline-none transition-colors"
+                    />
+                </div>
+            </div>
 
-  const [prevScrollPos, setPrevScrollPos] = useState(0)
-  const [visible, setVisible] = useState(true)
+            <div className="flex items-center gap-6">
+                <div className="text-right hidden sm:block">
+                    <p className="text-sm font-medium text-white">
+                        Welcome, {name ? name.split(" ")[0] : "Cadet"}
+                    </p>
+                    <p className="text-xs text-blue-400">Student Pilot - Active</p>
+                </div>
+                <div className="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold border-2 border-gray-800 ring-2 ring-blue-500/30">
+                    {name ? name.charAt(0).toUpperCase() : "👨‍✈️"}
+                </div>
+            </div>
+        </header>
+    );
+};
 
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY
-    const topOfThePage = window.screenTop
-    const screenTop = window.screenY
-
-    if (currentScrollPos == 0) {
-      setVisible(true)
-    } else {
-      if (currentScrollPos > prevScrollPos && currentScrollPos > 70) {
-        setVisible(false)
-      } else {
-        setVisible(true)
-      }
-    }
-
-    setPrevScrollPos(currentScrollPos)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [window.scrollY])
-
-  return (
-    <div className={`${className} transition bg-[#060b15cc]  fixed w-[100%] ease-linear ${visible ? ' h-[5rem]' : ' h-[0]'} duration-300`}>
-      {/* {visible ? ( */}
-      <div
-        className={`transition bg-[#060b15cc] fixed flex  justify-center md:justify-center lg:justify-end w-[100%] z-[1] ease-linear ${visible ? ' h-[5rem]' : ' h-[0]'} duration-300`}
-      >
-        <p className={`text-white self-center pr-[0rem] md:pl-[3rem] lg:pr-[5rem] ${visible ? '' : 'hidden'}`}>
-          Welcome {name ? name.split(" ")[0] : ""}!
-        </p>
-      </div>
-      {/* <p className={`transition-all ease-linear  text-white ${visible ? '' : 'hidden'} delay-300 duration-[900ms]`}>
-          Some Company Name
-        </p> */}
-      {/* ) : ( */}
-      {/* <div></div> */}
-      {/* )         */}
-      {/* } */}
-    </div>
-  )
-}
-
-export default Navbar
+export default Navbar;

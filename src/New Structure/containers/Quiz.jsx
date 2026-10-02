@@ -1,6 +1,6 @@
 //dependencies
 import React, { useEffect, useState } from "react" // React hooks for managing state and side-effects
-import { Box } from "@mui/material" // Material-UI Box component for layout
+; // Material-UI Box component for layout
 
 //styles
 import classes from "../styles/Quiz.module.css" // Import styles for the Quiz component
@@ -100,7 +100,7 @@ const Quiz = (props) => {
         <>
             {/* If quiz data is not available, return null */}
             {!quiz ? null : (
-                <Box className={classes.Quiz}>
+                <div className={classes.Quiz}>
                     <div className="row cards col-lg-4 col-md-7 col-sm-12" style={{ paddingTop: '2rem', paddingBottom: '100px' }}>
                         <div className="card-header col-lg-4 col-md-7 col-sm-12" style={{ color: 'white', margin: "2%" }}>
                             {/* Header is empty, could display the quiz title here if needed */}
@@ -147,7 +147,7 @@ const Quiz = (props) => {
                             </div>
                         </div>
                     </div>
-                </Box>
+                </div>
             )}
         </>
     );
