@@ -373,14 +373,20 @@ export function ProviderContext({ children }) {
   // Functions
   function getChoiceQuestions(num, params) {
     const questions = ExamResponse[params].preguntas;
-    const selectedQuestions = [];
 
-    for (let i = 0; i < num; i++) {
-      const randomIndex = Math.floor(Math.random() * questions.length);
-      selectedQuestions.push(questions[randomIndex]);
+    // Create a shallow copy to avoid mutating the original array
+    const shuffled = [...questions];
+    const limit = Math.min(num, shuffled.length);
+
+    // Partial Fisher-Yates shuffle to pick 'limit' unique random elements
+    for (let i = 0; i < limit; i++) {
+      const randomIndex = i + Math.floor(Math.random() * (shuffled.length - i));
+      const temp = shuffled[i];
+      shuffled[i] = shuffled[randomIndex];
+      shuffled[randomIndex] = temp;
     }
 
-    return selectedQuestions;
+    return shuffled.slice(0, limit);
   }
 
   function fetchExamById(examId) {
