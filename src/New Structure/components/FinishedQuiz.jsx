@@ -1,5 +1,5 @@
 //dependencies
-import React from "react";
+import React, { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 
 //styles
@@ -21,11 +21,9 @@ const FinishedQuiz = props => {
         props.onRetry()
     }
 
-    const rightAnswersCount = Object.keys(props.results).reduce((total, key) => {
-        if (props.results[key] === "success")
-            total++;
-        return total;
-    }, 0);
+    const rightAnswersCount = useMemo(() => {
+        return Object.values(props.results).filter(v => v === "success").length;
+    }, [props.results]);
 
     return (
         <React.Fragment>
