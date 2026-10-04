@@ -1,25 +1,2 @@
-//dendencies
-import React from "react";
-
-//styles
-import classes from "../styles/AnswerItem.module.css"
-
-const AnswerItem = props => {
-    
-    const classNames = [classes.AnswerItem];
-    if (props.answerState)
-        classNames.push(classes[props.answerState]);
-
-    return (
-        <li className={classNames.join(" ")} onClick={() => props.onAnswerClick(props.id)}>
-            <div className="form-check" style={{margin:'5px', display: '-webkit-inline-box', alignItems: 'center'}} >
-                <div>
-                    {props.answer}
-                </div>
-            </div>
-            
-        </li>
-    );
-};
-
+import AnswerItem from '../New Structure/components/AnswerItem';
 export default AnswerItem;
