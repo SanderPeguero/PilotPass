@@ -1,5 +1,6 @@
 import Loader from '../utils/Loader';
 import Sidebar from "../utils/Sidebar";
+import Navbar from "../utils/Navbar";
 import { useContextPilotPass } from '../contexts/Context';
 
 const Layout = (props) => {
@@ -16,8 +17,9 @@ const Layout = (props) => {
   return (
     <div className="min-h-screen bg-gray-900 font-sans text-gray-100 flex flex-col md:flex-row">
       <Sidebar isAuthenticated={authToken} />
+      {authToken && <Navbar />}
       
-      <main className={`flex-1 w-full relative transition-all duration-300 ${authToken ? 'md:ml-64' : ''}`}>
+      <main className={`flex-1 w-full relative transition-all duration-300 ${authToken ? 'md:ml-64 mt-20' : ''}`}>
         {props.children}
       </main>
     </div>

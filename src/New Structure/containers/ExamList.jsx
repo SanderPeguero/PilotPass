@@ -9,7 +9,7 @@ import classes from "../styles/ExamList.module.css"  // Styles for the exam list
 //components
 import Loader from "../utils/Loader"  // Loader component to show loading state
 import Alert from '../utils/Snackbar'  // Alert component to show errors
-import Navbar from "../utils/Navbar"  // Navbar component
+
 
 //contexts
 import { useContextPilotPass } from "../contexts/Context"  // Custom context to fetch exams data
@@ -88,7 +88,7 @@ const examList = () => {
 
     return (
         <>
-            <Navbar className="mt-[-4rem] z-[1]" />  {/* Navbar with specific styles */}
+
             <div className={classes.QuizList}>  {/* Main container for the quiz list */}
                 {/* Show an alert if there's an error */}
                 {error ? <Alert severity={5} title={"Error"} detail={error}/> : null}

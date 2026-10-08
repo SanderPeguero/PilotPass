@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
 // import Alert from '../../components/Alert/Snackbar'
 // import styles from '../../pages/Tests/QuizList/Card.module.css'
 // import result1 from '../../Images/result1.jpg'
-import Navbar from "../utils/Navbar"
+
 
 const result = [
 
@@ -204,7 +204,7 @@ const TestResult = () => {
 
     return (
         <>
-          <Navbar className="mt-[-4rem] z-[1]"/>
+
             <div>
                 <div className="cards">
                     <div className=" " style={{ paddingTop: '4rem', paddingBottom: '100px' }}>
