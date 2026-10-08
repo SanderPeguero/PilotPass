@@ -1,31 +1,25 @@
-//styles
-import classes from '../styles/Layout.module.css'; // Import the CSS module for layout styles
-
-//components
-import Loader from '../utils/Loader'; // Import the Loader component for loading state
-import Sidebar from "../utils/Sidebar"; // Import the Sidebar component for navigation
-
-//contexts
-import { useContextPilotPass } from '../contexts/Context'; // Import the context hook for accessing authentication and loading state
+import Loader from '../utils/Loader';
+import Sidebar from "../utils/Sidebar";
+import Navbar from "../utils/Navbar";
+import { useContextPilotPass } from '../contexts/Context';
 
 const Layout = (props) => {
-  // Destructure authToken and isLoading values from the context
   const { authToken, isLoading } = useContextPilotPass();
 
-  // If the app is in a loading state, show the Loader component
   if (isLoading) {
-    return <Loader />; // This displays the loading spinner while data is being fetched or processed
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+            <Loader />
+        </div>
+    );
   }
 
-  // If not loading, render the main layout
   return (
-    <div className={classes.Layout}> {/* Main layout container */}
-      {/* Sidebar will only be visible if the user is authenticated */}
+    <div className="min-h-screen bg-gray-900 font-sans text-gray-100 flex flex-col md:flex-row">
       <Sidebar isAuthenticated={authToken} />
+      {authToken && <Navbar />}
       
-      {/* Main content area, with a top margin of 4rem */}
-      <main style={{ marginTop: '4rem' }}>
-        {/* Render children passed to the Layout component */}
+      <main className={`flex-1 w-full relative transition-all duration-300 ${authToken ? 'md:ml-64 mt-20' : ''}`}>
         {props.children}
       </main>
     </div>
@@ -33,4 +27,3 @@ const Layout = (props) => {
 };
 
 export default Layout;
-

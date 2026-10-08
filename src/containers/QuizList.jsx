@@ -88,7 +88,7 @@ const QuizList = () => {
     return (
         <>
             {/* Navbar is displayed at the top */}
-            <Navbar className="mt-[-4rem] z-[1]" />
+
             
             <div className={classes.QuizList}>
                 {/* Show error alert if there was an error fetching the quizzes */}
