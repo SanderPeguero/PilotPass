@@ -48,6 +48,7 @@ const Navbar = () => {
                     </span>
                     <input
                         type="text"
+                        aria-label="Search courses and exams"
                         placeholder="Search courses, exams..."
                         className="bg-gray-800 border border-gray-700 text-white text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-64 pl-10 p-2.5 outline-none transition-colors placeholder-gray-500"
                     />
@@ -65,6 +66,9 @@ const Navbar = () => {
                 {/* Profile Dropdown Trigger */}
                 <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
+                    aria-label="User profile menu"
+                    aria-expanded={dropdownOpen}
+                    aria-haspopup="true"
                     className="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold border-2 border-gray-800 ring-2 ring-blue-500/30 cursor-pointer hover:ring-blue-500/60 transition-all focus:outline-none"
                 >
                     {name ? name.charAt(0).toUpperCase() : (
