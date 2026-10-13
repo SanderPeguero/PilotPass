@@ -31,7 +31,7 @@ const SnackbarAlert = ({ severity, title, detail }) => {
 
     return (
         <div className="fixed bottom-20 left-1/2 transform -translate-x-1/2 z-50 animate-fade-in-up">
-            <div className={`flex items-start p-4 border-l-4 rounded shadow-lg max-w-sm ${colors}`}>
+            <div role="alert" aria-live="assertive" className={`flex items-start p-4 border-l-4 rounded shadow-lg max-w-sm ${colors}`}>
                 <div className="mr-3">
                     <span className="text-xl">{icon}</span>
                 </div>
@@ -42,6 +42,8 @@ const SnackbarAlert = ({ severity, title, detail }) => {
                 <button
                     onClick={() => setOpen(false)}
                     className="ml-auto -mx-1.5 -my-1.5 p-1.5 rounded-lg focus:ring-2 inline-flex h-8 w-8 hover:bg-black/10"
+                    aria-label="Close notification"
+                    title="Close notification"
                 >
                     <span className="sr-only">Close</span>
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
