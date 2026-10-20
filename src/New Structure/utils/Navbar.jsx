@@ -65,7 +65,10 @@ const Navbar = () => {
                 {/* Profile Dropdown Trigger */}
                 <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold border-2 border-gray-800 ring-2 ring-blue-500/30 cursor-pointer hover:ring-blue-500/60 transition-all focus:outline-none"
+                    aria-label="User profile menu"
+                    aria-haspopup="true"
+                    aria-expanded={dropdownOpen}
+                    className="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold border-2 border-gray-800 ring-2 ring-blue-500/30 cursor-pointer hover:ring-blue-500/60 transition-all focus:outline-none focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                 >
                     {name ? name.charAt(0).toUpperCase() : (
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
