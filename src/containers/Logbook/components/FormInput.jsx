@@ -18,10 +18,11 @@ export default function FormInput({
   if (type === 'textarea') {
     return (
       <div>
-        <label className="block text-sm font-medium text-gray-200 mb-1">
+        <label htmlFor={name} className="block text-sm font-medium text-gray-200 mb-1">
           {label}
         </label>
         <textarea
+          id={name}
           name={name}
           value={value}
           onChange={onChange}
@@ -33,10 +34,11 @@ export default function FormInput({
 
   return (
     <div>
-      <label className="block text-sm font-medium text-gray-200 mb-1">
+      <label htmlFor={name} className="block text-sm font-medium text-gray-200 mb-1">
         {label}
       </label>
       <input
+        id={name}
         type={type}
         name={name}
         value={value}
