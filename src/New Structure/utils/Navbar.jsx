@@ -64,6 +64,7 @@ const Navbar = () => {
 
                 {/* Profile Dropdown Trigger */}
                 <button
+                    aria-label="User menu"
                     onClick={() => setDropdownOpen(!dropdownOpen)}
                     className="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold border-2 border-gray-800 ring-2 ring-blue-500/30 cursor-pointer hover:ring-blue-500/60 transition-all focus:outline-none"
                 >
