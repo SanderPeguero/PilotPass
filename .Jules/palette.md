@@ -1,0 +1,1 @@
+## 2024-10-16 - FormInput Accessibility\n**Learning:** In reusable form components (like `FormInput`), the `name` attribute can be used for the `id` when a dedicated `id` is absent, to easily associate `htmlFor` on labels. \n**Action:** Add `htmlFor` and `id` to labels and input fields whenever encountering form inputs to ensure proper keyboard and screen reader accessibility.
