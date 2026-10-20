@@ -1,3 +1,4 @@
+import { useId } from 'react';
 import classes from '../styles/Input.module.css'
 
 function isInvalid({valid, touched, shouldValidate}){
@@ -8,7 +9,8 @@ const Input = props => {
     
     const inputType = props.type || "text"
     const classNames = [classes.Input]
-    const htmlFor = `${inputType}-${Math.random()}`
+    const generatedId = useId();
+    const htmlFor = `${inputType}-${generatedId}`
     const errorOcurred = isInvalid(props)
 
     if(errorOcurred){

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 
 export default function FormInput({ 
   label, 
@@ -8,6 +8,9 @@ export default function FormInput({
   onChange,
   step
 }) {
+  const generatedId = useId();
+  const inputId = `${name}-${generatedId}`;
+
   const baseClasses = `
     w-full rounded-lg bg-white/5 border border-white/10 
     text-white placeholder-gray-400
@@ -18,10 +21,11 @@ export default function FormInput({
   if (type === 'textarea') {
     return (
       <div>
-        <label className="block text-sm font-medium text-gray-200 mb-1">
+        <label htmlFor={inputId} className="block text-sm font-medium text-gray-200 mb-1">
           {label}
         </label>
         <textarea
+          id={inputId}
           name={name}
           value={value}
           onChange={onChange}
@@ -33,10 +37,11 @@ export default function FormInput({
 
   return (
     <div>
-      <label className="block text-sm font-medium text-gray-200 mb-1">
+      <label htmlFor={inputId} className="block text-sm font-medium text-gray-200 mb-1">
         {label}
       </label>
       <input
+        id={inputId}
         type={type}
         name={name}
         value={value}

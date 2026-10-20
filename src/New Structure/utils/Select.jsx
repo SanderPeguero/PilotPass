@@ -1,7 +1,9 @@
+import { useId } from 'react';
 import classes from "../styles/Select.module.css";
 
 const Select = props => {
-    const htmlFor = `${props.label}-${Math.random()}`;
+    const generatedId = useId();
+    const htmlFor = `${props.label}-${generatedId}`;
 
     return (
         <div className={classes.Select}>
