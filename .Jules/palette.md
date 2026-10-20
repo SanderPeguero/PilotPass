@@ -1,0 +1,3 @@
+## 2024-10-21 - Accessible Profile Avatars
+**Learning:** User profile avatar buttons that fall back to an icon when a user's name is not available become inaccessible to screen readers because they lack an accessible name.
+**Action:** Always ensure that icon-only buttons, or buttons that can conditionally become icon-only, include an explicit `aria-label` (e.g., `aria-label="User menu"`) to provide context for screen reader users.
