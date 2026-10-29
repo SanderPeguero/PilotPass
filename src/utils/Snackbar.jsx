@@ -40,6 +40,7 @@ const SnackbarAlert = ({ severity, title, detail }) => {
                     <div className="text-sm mt-1">{detail}</div>
                 </div>
                 <button
+                    aria-label="Close snackbar"
                     onClick={() => setOpen(false)}
                     className="ml-auto -mx-1.5 -my-1.5 p-1.5 rounded-lg focus:ring-2 inline-flex h-8 w-8 hover:bg-black/10"
                 >
