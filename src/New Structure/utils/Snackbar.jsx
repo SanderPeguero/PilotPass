@@ -41,7 +41,7 @@ const SnackbarAlert = ({ severity, title, detail }) => {
                 </div>
                 <button
                     onClick={() => setOpen(false)}
-                    className="ml-auto -mx-1.5 -my-1.5 p-1.5 rounded-lg focus:ring-2 inline-flex h-8 w-8 hover:bg-black/10"
+                    aria-label="Close" className="ml-auto -mx-1.5 -my-1.5 p-1.5 rounded-lg focus:ring-2 inline-flex h-8 w-8 hover:bg-black/10"
                 >
                     <span className="sr-only">Close</span>
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import { addHours, isAfter } from 'date-fns';
+
 
 function RentalModal({ aircraftId, onClose, onSubmit, rentalService, currentUserId }) {
   const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(addHours(new Date(), 2));
+  const [endDate, setEndDate] = useState(new Date(new Date().getTime() + 2 * 60 * 60 * 1000));
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    if (!isAfter(endDate, startDate)) {
+    if (endDate <= startDate) {
       setError('End time must be after start time');
       return;
     }
