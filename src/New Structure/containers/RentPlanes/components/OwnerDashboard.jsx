@@ -1,5 +1,5 @@
 import React from 'react';
-import { format } from 'date-fns';
+
 
 function OwnerDashboard({ rentals, aircraft, onUpdateRentalStatus }) {
   const handleStatusUpdate = (rentalId, newStatus) => {
@@ -20,11 +20,11 @@ function OwnerDashboard({ rentals, aircraft, onUpdateRentalStatus }) {
               <div className="mt-4 space-y-2">
                 <p className="text-gray-300 flex items-center">
                   <span className="w-16 text-gray-400">From:</span>
-                  {format(new Date(rental.startDate), 'PPP p')}
+                  {new Date(rental.startDate).toLocaleString()}
                 </p>
                 <p className="text-gray-300 flex items-center">
                   <span className="w-16 text-gray-400">To:</span>
-                  {format(new Date(rental.endDate), 'PPP p')}
+                  {new Date(rental.endDate).toLocaleString()}
                 </p>
               </div>
               <div className="mt-4 flex items-center gap-4">
